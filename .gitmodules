@@ -1,0 +1,15 @@
+[submodule "aaeonFramework"]
+	path = aaeonFramework
+	url = https://github.com/LucasSuT/aaeonFramework.git
+[submodule "aaeonEAPI"]
+	path = aaeonEAPI
+	url = https://github.com/LucasSuT/aaeonEAPI.git
+[submodule "aaeonApp"]
+	path = aaeonApp
+	url = https://github.com/LucasSuT/aaeonApp.git
+[submodule "aaeonHiSafeProjectsTutorial"]
+	path = aaeonHiSafeProjectsTutorial
+	url = https://github.com/LucasSuT/aaeonHiSafeProjectsTutorial.git
+[submodule "aaeonTypeScriptSDKs"]
+	path = aaeonTypeScriptSDKs
+	url = https://github.com/LucasSuT/aaeonTypeScriptSDKs.git
