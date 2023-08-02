@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SupportedAccess>
+ <!-- <Access name="Android Debugger (ADB)" /> -->
+  <Access name="Direct (HW)" />
+  <Access name="File" />
+ <!-- <Access name="Socket" /> -->
+</SupportedAccess>

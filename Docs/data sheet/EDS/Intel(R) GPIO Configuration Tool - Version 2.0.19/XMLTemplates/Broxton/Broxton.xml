@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BroxtonXML name="Broxton" shortName="BXT" CFG0_Name="DW0" CFG1_Name="DW1" IOA="SB" BaseAddress="0xD0000000" SBReadOpCode="0x06" SBWriteOpCode="0x07">
+  <GPIO>
+	<Community name="North" max="83" BaseAddress="0xC50000" SBBaseAddress="0x0000" SBPort="0xC5">
+		  <Pins>
+			  <Pin No="GPIO_0" CFG0_offset="0x400" CFG1_offset="0x404" Ball="BB55" PWR="NA" Name="GPIO_0" Bump="GPIO_0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d063" />
+			  <Pin No="GPIO_1" CFG0_offset="0x408" CFG1_offset="0x40c" Ball="BD57" PWR="NA" Name="GPIO_1" Bump="GPIO_1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d064" />
+			  <Pin No="GPIO_2" CFG0_offset="0x410" CFG1_offset="0x414" Ball="BE56" PWR="NA" Name="GPIO_2" Bump="GPIO_2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d065" />
+			  <Pin No="GPIO_3" CFG0_offset="0x418" CFG1_offset="0x41c" Ball="BB57" PWR="NA" Name="GPIO_3" Bump="GPIO_3" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d066" />
+			  <Pin No="GPIO_4" CFG0_offset="0x420" CFG1_offset="0x424" Ball="BH60" PWR="NA" Name="GPIO_4" Bump="GPIO_4" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d067" />
+			  <Pin No="GPIO_5" CFG0_offset="0x428" CFG1_offset="0x42c" Ball="BC58" PWR="NA" Name="GPIO_5" Bump="GPIO_5" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d068" />
+			  <Pin No="GPIO_6" CFG0_offset="0x430" CFG1_offset="0x434" Ball="BA56" PWR="NA" Name="GPIO_6" Bump="GPIO_6" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d069" />
+			  <Pin No="GPIO_7" CFG0_offset="0x438" CFG1_offset="0x43c" Ball="BF59" PWR="NA" Name="GPIO_7" Bump="GPIO_7" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d06a" />
+			  <Pin No="GPIO_8" CFG0_offset="0x440" CFG1_offset="0x444" Ball="BE58" PWR="NA" Name="GPIO_8" Bump="GPIO_8" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d06b" />
+			  <Pin No="GPIO_9" CFG0_offset="0x448" CFG1_offset="0x44c" Ball="BD59" PWR="NA" Name="GPIO_9" Bump="GPIO_9" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x0000106c" />
+			  <Pin No="GPIO_10" CFG0_offset="0x450" CFG1_offset="0x454" Ball="BB59" PWR="NA" Name="GPIO_10" Bump="GPIO_10" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0000106d" />
+			  <Pin No="GPIO_11" CFG0_offset="0x458" CFG1_offset="0x45c" Ball="BB51" PWR="NA" Name="GPIO_11" Bump="GPIO_11" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x40900102" Expected_CFG1="0x0000106e" />
+			  <Pin No="GPIO_12" CFG0_offset="0x460" CFG1_offset="0x464" Ball="BC52" PWR="NA" Name="GPIO_12" Bump="GPIO_12" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000100" Expected_CFG1="0x0002506f" />
+			  <Pin No="GPIO_13" CFG0_offset="0x468" CFG1_offset="0x46c" Ball="BA58" PWR="NA" Name="GPIO_13" Bump="GPIO_13" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x40000102" Expected_CFG1="0x0000306f" />
+			  <Pin No="GPIO_14" CFG0_offset="0x470" CFG1_offset="0x474" Ball="AY55" PWR="NA" Name="GPIO_14" Bump="GPIO_14" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x42100100" Expected_CFG1="0x00025071" />
+			  <Pin No="GPIO_15" CFG0_offset="0x478" CFG1_offset="0x47c" Ball="AY57" PWR="NA" Name="GPIO_15" Bump="GPIO_15" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x00001072" />
+			  <Pin No="GPIO_16" CFG0_offset="0x480" CFG1_offset="0x484" Ball="AY51" PWR="NA" Name="GPIO_16" Bump="GPIO_16" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00001073" />
+			  <Pin No="GPIO_17" CFG0_offset="0x488" CFG1_offset="0x48c" Ball="AV59" PWR="NA" Name="GPIO_17" Bump="GPIO_17" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x40800102" Expected_CFG1="0x00003074" />
+			  <Pin No="GPIO_18" CFG0_offset="0x490" CFG1_offset="0x494" Ball="AY59" PWR="NA" Name="GPIO_18" Bump="GPIO_18" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x00001075" />
+			  <Pin No="GPIO_19" CFG0_offset="0x498" CFG1_offset="0x49c" Ball="AW58" PWR="NA" Name="GPIO_19" Bump="GPIO_19" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000100" Expected_CFG1="0x00001076" />
+			  <Pin No="GPIO_20" CFG0_offset="0x4a0" CFG1_offset="0x4a4" Ball="AM59" PWR="NA" Name="GPIO_20" Bump="GPIO_20" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000100" Expected_CFG1="0x00027077" />
+			  <Pin No="GPIO_21" CFG0_offset="0x4a8" CFG1_offset="0x4ac" Ball="AN60" PWR="NA" Name="GPIO_21" Bump="GPIO_21" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000100" Expected_CFG1="0x00025032" />
+			  <Pin No="GPIO_22" CFG0_offset="0x4b0" CFG1_offset="0x4b4" Ball="AN58" PWR="NA" Name="GPIO_22" Bump="GPIO_22" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x42800102" Expected_CFG1="0x00027033" />
+			  <Pin No="GPIO_23" CFG0_offset="0x4b8" CFG1_offset="0x4bc" Ball="AW54" PWR="NA" Name="GPIO_23" Bump="GPIO_23" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x40000100" Expected_CFG1="0x00001034" />
+			  <Pin No="GPIO_24" CFG0_offset="0x4c0" CFG1_offset="0x4c4" Ball="AR59" PWR="NA" Name="GPIO_24" Bump="GPIO_24" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00001035" />
+			  <Pin No="GPIO_25" CFG0_offset="0x4c8" CFG1_offset="0x4cc" Ball="AV51" PWR="NA" Name="GPIO_25" Bump="GPIO_25" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x46000102" Expected_CFG1="0x00025036" />
+			  <Pin No="GPIO_26" CFG0_offset="0x4d0" CFG1_offset="0x4d4" Ball="AV57" PWR="NA" Name="GPIO_26" Bump="GPIO_26" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x46000102" Expected_CFG1="0x00025037" />
+			  <Pin No="GPIO_27" CFG0_offset="0x4d8" CFG1_offset="0x4dc" Ball="AJ59" PWR="NA" Name="GPIO_27" Bump="GPIO_27" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00001038" />
+			  <Pin No="GPIO_28" CFG0_offset="0x4e0" CFG1_offset="0x4e4" Ball="AV55" PWR="NA" Name="GPIO_28" Bump="GPIO_28" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x40100102" Expected_CFG1="0x00027039" />
+			  <Pin No="GPIO_29" CFG0_offset="0x4e8" CFG1_offset="0x4ec" Ball="AR57" PWR="NA" Name="GPIO_29" Bump="GPIO_29" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x0000103a" />
+			  <Pin No="GPIO_30" CFG0_offset="0x4f0" CFG1_offset="0x4f4" Ball="AU58" PWR="NA" Name="GPIO_30" Bump="GPIO_30" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x0000103b" />
+			  <Pin No="GPIO_31" CFG0_offset="0x4f8" CFG1_offset="0x4fc" Ball="AR51" PWR="NA" Name="GPIO_31" Bump="GPIO_31" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0000103c" />
+			  <Pin No="GPIO_32" CFG0_offset="0x500" CFG1_offset="0x504" Ball="AU56" PWR="NA" Name="GPIO_32" Bump="GPIO_32" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x40100100" Expected_CFG1="0x0002503d" />
+			  <Pin No="GPIO_33" CFG0_offset="0x508" CFG1_offset="0x50c" Ball="AL58" PWR="NA" Name="GPIO_33" Bump="GPIO_33" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x42900100" Expected_CFG1="0x0002503e" />
+			  <Pin No="GPIO_34" CFG0_offset="0x510" CFG1_offset="0x514" Ball="BM50" PWR="NA" Name="PWM0" Bump="PWM0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0000103f" />
+			  <Pin No="GPIO_35" CFG0_offset="0x518" CFG1_offset="0x51c" Ball="BR48" PWR="NA" Name="PWM1" Bump="PWM1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x00001040" />
+			  <Pin No="GPIO_36" CFG0_offset="0x520" CFG1_offset="0x524" Ball="BN48" PWR="NA" Name="PWM2" Bump="PWM2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00003041" />
+			  <Pin No="GPIO_37" CFG0_offset="0x528" CFG1_offset="0x52c" Ball="BL48" PWR="NA" Name="PWM3" Bump="PWM3" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x40800100" Expected_CFG1="0x00027042" />
+			  <Pin No="GPIO_38" CFG0_offset="0x530" CFG1_offset="0x534" Ball="BF53" PWR="NA" Name="LPSS_UART0_RXD" Bump="LPSS_UART0_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023143" />
+			  <Pin No="GPIO_39" CFG0_offset="0x538" CFG1_offset="0x53c" Ball="BN52" PWR="NA" Name="LPSS_UART0_TXD" Bump="LPSS_UART0_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00003144" />
+			  <Pin No="GPIO_40" CFG0_offset="0x540" CFG1_offset="0x544" Ball="BL53" PWR="NA" Name="LPSS_UART0_RTS_B" Bump="LPSS_UART0_RTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00003145" />
+			  <Pin No="GPIO_41" CFG0_offset="0x548" CFG1_offset="0x54c" Ball="BK55" PWR="NA" Name="LPSS_UART0_CTS_B" Bump="LPSS_UART0_CTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00023146" />
+			  <Pin No="GPIO_42" CFG0_offset="0x550" CFG1_offset="0x554" Ball="BK52" PWR="NA" Name="LPSS_UART1_RXD" Bump="LPSS_UART1_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x40800100" Expected_CFG1="0x00024047" />
+			  <Pin No="GPIO_43" CFG0_offset="0x558" CFG1_offset="0x55c" Ball="BU52" PWR="NA" Name="LPSS_UART1_TXD" Bump="LPSS_UART1_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x00003048" />
+			  <Pin No="GPIO_44" CFG0_offset="0x560" CFG1_offset="0x564" Ball="BR52" PWR="NA" Name="LPSS_UART1_RTS_B" Bump="LPSS_UART1_RTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00003049" />
+			  <Pin No="GPIO_45" CFG0_offset="0x568" CFG1_offset="0x56c" Ball="BF51" PWR="NA" Name="LPSS_UART1_CTS_B" Bump="LPSS_UART1_CTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x42000100" Expected_CFG1="0x0000104a" />
+			  <Pin No="GPIO_46" CFG0_offset="0x570" CFG1_offset="0x574" Ball="BP50" PWR="NA" Name="LPSS_UART2_RXD" Bump="LPSS_UART2_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0002314b" />
+			  <Pin No="GPIO_47" CFG0_offset="0x578" CFG1_offset="0x57c" Ball="BT53" PWR="NA" Name="LPSS_UART2_TXD" Bump="LPSS_UART2_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0000314c" />
+			  <Pin No="GPIO_48" CFG0_offset="0x580" CFG1_offset="0x584" Ball="BH52" PWR="NA" Name="LPSS_UART2_RTS_B" Bump="LPSS_UART2_RTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0000314d" />
+			  <Pin No="GPIO_49" CFG0_offset="0x588" CFG1_offset="0x58c" Ball="BT50" PWR="NA" Name="LPSS_UART2_CTS_B" Bump="LPSS_UART2_CTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0000304e" />
+			  <Pin No="GPIO_50" CFG0_offset="0x590" CFG1_offset="0x594" Ball="BH54" PWR="NA" Name="ISH_UART0_RXD" Bump="ISH_UART0_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x0000304f" />
+			  <Pin No="GPIO_51" CFG0_offset="0x598" CFG1_offset="0x59c" Ball="BU55" PWR="NA" Name="ISH_UART0_TXD" Bump="ISH_UART0_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00003050" />
+			  <Pin No="GPIO_52" CFG0_offset="0x5a0" CFG1_offset="0x5a4" Ball="BL56" PWR="NA" Name="ISH_UART0_RTS_B" Bump="ISH_UART0_RTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00003051" />
+			  <Pin No="GPIO_53" CFG0_offset="0x5a8" CFG1_offset="0x5ac" Ball="BF55" PWR="NA" Name="ISH_UART0_CTS_B" Bump="ISH_UART0_CTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x46000100" Expected_CFG1="0x00001052" />
+			  <Pin No="GPIO_54" CFG0_offset="0x5b0" CFG1_offset="0x5b4" Ball="BR55" PWR="NA" Name="ISH_UART1_RXD" Bump="ISH_UART1_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023153" />
+			  <Pin No="GPIO_55" CFG0_offset="0x5b8" CFG1_offset="0x5bc" Ball="BK57" PWR="NA" Name="ISH_UART1_TXD" Bump="ISH_UART1_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00003154" />
+			  <Pin No="GPIO_56" CFG0_offset="0x5c0" CFG1_offset="0x5c4" Ball="BR57" PWR="NA" Name="ISH_UART1_RTS_B" Bump="ISH_UART1_RTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00003155" />
+			  <Pin No="GPIO_57" CFG0_offset="0x5c8" CFG1_offset="0x5cc" Ball="BN57" PWR="NA" Name="ISH_UART1_CTS_B" Bump="ISH_UART1_CTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00023156" />
+			  <Pin No="GPIO_58" CFG0_offset="0x5d0" CFG1_offset="0x5d4" Ball="BL58" PWR="NA" Name="ISH_UART2_RXD" Bump="ISH_UART2_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c02" Expected_CFG1="0x00023157" />
+			  <Pin No="GPIO_59" CFG0_offset="0x5d8" CFG1_offset="0x5dc" Ball="BN59" PWR="NA" Name="ISH_UART2_TXD" Bump="ISH_UART2_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c00" Expected_CFG1="0x00003158" />
+			  <Pin No="GPIO_60" CFG0_offset="0x5e0" CFG1_offset="0x5e4" Ball="BK59" PWR="NA" Name="ISH_UART2_RTS_B" Bump="ISH_UART2_RTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c00" Expected_CFG1="0x00003159" />
+			  <Pin No="GPIO_61" CFG0_offset="0x5e8" CFG1_offset="0x5ec" Ball="BH58" PWR="NA" Name="ISH_UART2_CTS_B" Bump="ISH_UART2_CTS_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c00" Expected_CFG1="0x0002315a" />
+			  <Pin No="GPIO_62" CFG0_offset="0x5f0" CFG1_offset="0x5f4" Ball="AR55" PWR="NA" Name="GP_CAMERASB00" Bump="GP_CAMERASB00" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0001d05b" />
+			  <Pin No="GPIO_63" CFG0_offset="0x5f8" CFG1_offset="0x5fc" Ball="AM57" PWR="NA" Name="GP_CAMERASB01" Bump="GP_CAMERASB01" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0001d05c" />
+			  <Pin No="GPIO_64" CFG0_offset="0x600" CFG1_offset="0x604" Ball="AE51" PWR="NA" Name="GP_CAMERASB02" Bump="GP_CAMERASB02" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0001d05d" />
+			  <Pin No="GPIO_65" CFG0_offset="0x608" CFG1_offset="0x60c" Ball="AM55" PWR="NA" Name="GP_CAMERASB03" Bump="GP_CAMERASB03" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0001d05e" />
+			  <Pin No="GPIO_66" CFG0_offset="0x610" CFG1_offset="0x614" Ball="AJ53" PWR="NA" Name="GP_CAMERASB04" Bump="GP_CAMERASB04" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0001d05f" />
+			  <Pin No="GPIO_67" CFG0_offset="0x618" CFG1_offset="0x61c" Ball="AJ51" PWR="NA" Name="GP_CAMERASB05" Bump="GP_CAMERASB05" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0001d060" />
+			  <Pin No="GPIO_68" CFG0_offset="0x620" CFG1_offset="0x624" Ball="AJ55" PWR="NA" Name="GP_CAMERASB06" Bump="GP_CAMERASB06" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0001d061" />
+			  <Pin No="GPIO_69" CFG0_offset="0x628" CFG1_offset="0x62c" Ball="AE53" PWR="NA" Name="GP_CAMERASB07" Bump="GP_CAMERASB07" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0001d062" />
+			  <Pin No="GPIO_70" CFG0_offset="0x630" CFG1_offset="0x634" Ball="AM53" PWR="NA" Name="GP_CAMERASB08" Bump="GP_CAMERASB08" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0001d063" />
+			  <Pin No="GPIO_71" CFG0_offset="0x638" CFG1_offset="0x63c" Ball="AG54" PWR="NA" Name="GP_CAMERASB09" Bump="GP_CAMERASB09" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x0001d064" />
+			  <Pin No="GPIO_72" CFG0_offset="0x640" CFG1_offset="0x644" Ball="AG52" PWR="NA" Name="GP_CAMERASB10" Bump="GP_CAMERASB10" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00001065" />
+			  <Pin No="GPIO_73" CFG0_offset="0x648" CFG1_offset="0x64c" Ball="AN54" PWR="NA" Name="GP_CAMERASB11" Bump="GP_CAMERASB11" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x42800100" Expected_CFG1="0x00000066" />
+			  <Pin No="TCK" CFG0_offset="0x650" CFG1_offset="0x654" Ball="AG58" PWR="NA" Name="TCK" Bump="TCK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00c3d000" />
+			  <Pin No="TRST_B" CFG0_offset="0x658" CFG1_offset="0x65c" Ball="AE59" PWR="NA" Name="TRST_B" Bump="TRST_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00c3d000" />
+			  <Pin No="TMS" CFG0_offset="0x660" CFG1_offset="0x664" Ball="AG60" PWR="NA" Name="TMS" Bump="TMS" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00c3f000" />
+			  <Pin No="TDI" CFG0_offset="0x668" CFG1_offset="0x66c" Ball="AE55" PWR="NA" Name="TDI" Bump="TDI" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00c3f000" />
+			  <Pin No="CX_PMODE" CFG0_offset="0x670" CFG1_offset="0x674" Ball="AJ57" PWR="NA" Name="CX_PMODE" Bump="CX_PMODE" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00c3f000" />
+			  <Pin No="CX_PREQ_B" CFG0_offset="0x678" CFG1_offset="0x67c" Ball="AE57" PWR="NA" Name="CX_PREQ_B" Bump="CX_PREQ_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00c3f000" />
+			  <Pin No="JTAGX" CFG0_offset="0x680" CFG1_offset="0x684" Ball="AM51" PWR="NA" Name="JTAGX" Bump="JTAGX" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00c3f000" />
+			  <Pin No="CX_PRDY_B" CFG0_offset="0x688" CFG1_offset="0x68c" Ball="AL54" PWR="NA" Name="CX_PRDY_B" Bump="CX_PRDY_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0043f000" />
+			  <Pin No="TDO" CFG0_offset="0x690" CFG1_offset="0x694" Ball="AL56" PWR="NA" Name="TDO" Bump="TDO" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0043f000" />
+		  </Pins>
+		  <Interrupts>
+			  <GPIOInterrupts>
+				  <GPIOInterrupt name="GPIO_14" padname="GPIO_14" assignment="BT_HOST_WAKE" type="Shared IRQ">
+					  <Register name="PAD_CFG_DW0_GPIO_14" offset="0x0470" size="32">
+						  <Field name="GPIROUTIOXAPIC" sBit="20" eBit="20" vGold="0x0" />
+					  </Register>
+					  <Register name="PAD_CFG_DW1_GPIO_14" offset="0x0474" size="32">
+						  <Field name="INTSEL" sBit="0" eBit="7" vGold="0x71" />
+					  </Register>
+					  <Register name="HOSTSW_OWN_NORTH_0" offset="0x0080" size="32">
+						  <Field name="HOSTSW_OWN_GPIO_14" sBit="14" eBit="14" vGold="0x1" />
+					  </Register>
+				  </GPIOInterrupt>
+				  <GPIOInterrupt name="GPIO_22" padname="GPIO_22" assignment="FUEL_GUAGE_ALRT" type="Shared IRQ">
+					  <Register name="PAD_CFG_DW0_GPIO_22" offset="0x04B0" size="32">
+						  <Field name="GPIROUTIOXAPIC" sBit="20" eBit="20" vGold="0x0" />
+					  </Register>
+					  <Register name="PAD_CFG_DW1_GPIO_22" offset="0x04B4" size="32">
+						  <Field name="INTSEL" sBit="0" eBit="7" vGold="0x33" />
+					  </Register>
+					  <Register name="HOSTSW_OWN_NORTH_0" offset="0x0080" size="32">
+						  <Field name="HOSTSW_OWN_GPIO_22" sBit="22" eBit="22" vGold="0x1" />
+					  </Register>
+				  </GPIOInterrupt>
+				  <GPIOInterrupt name="GPIO_25" padname="GPIO_25" assignment="VOLUME_DN_BTN_N" type="Shared IRQ">
+					  <Register name="PAD_CFG_DW0_GPIO_25" offset="0x04C8" size="32">
+						  <Field name="GPIROUTIOXAPIC" sBit="20" eBit="20" vGold="0x0" />
+					  </Register>
+					  <Register name="PAD_CFG_DW1_GPIO_25" offset="0x04CC" size="32">
+						  <Field name="INTSEL" sBit="0" eBit="7" vGold="0x36" />
+					  </Register>
+					  <Register name="HOSTSW_OWN_NORTH_0" offset="0x0080" size="32">
+						  <Field name="HOSTSW_OWN_GPIO_25" sBit="25" eBit="25" vGold="0x1" />
+					  </Register>
+				  </GPIOInterrupt>
+				  <GPIOInterrupt name="GPIO_26" padname="GPIO_26" assignment="VOLUME_UP_BTN_N" type="Shared IRQ">
+					  <Register name="PAD_CFG_DW0_GPIO_26" offset="0x04D0" size="32">
+						  <Field name="GPIROUTIOXAPIC" sBit="20" eBit="20" vGold="0x0" />
+					  </Register>
+					  <Register name="PAD_CFG_DW1_GPIO_26" offset="0x04D4" size="32">
+						  <Field name="INTSEL" sBit="0" eBit="7" vGold="0x37" />
+					  </Register>
+					  <Register name="HOSTSW_OWN_NORTH_0" offset="0x0080" size="32">
+						  <Field name="HOSTSW_OWN_GPIO_26" sBit="26" eBit="26" vGold="0x1" />
+					  </Register>
+				  </GPIOInterrupt>
+				  <GPIOInterrupt name="GPIO_28" padname="GPIO_28" assignment="DISP0_TOUCH_INT" type="Direct IRQ">
+					  <Register name="PAD_CFG_DW0_GPIO_28" offset="0x04E0" size="32">
+						  <Field name="GPIROUTIOXAPIC" sBit="20" eBit="20" vGold="0x1" />
+					  </Register>
+					  <Register name="PAD_CFG_DW1_GPIO_28" offset="0x04E4" size="32">
+						  <Field name="INTSEL" sBit="0" eBit="7" vGold="0x39" />
+					  </Register>
+					  <Register name="HOSTSW_OWN_NORTH_0" offset="0x0080" size="32">
+						  <Field name="HOSTSW_OWN_GPIO_28" sBit="28" eBit="28" vGold="0x0" />
+					  </Register>
+				  </GPIOInterrupt>
+				  <GPIOInterrupt name="GPIO_32" padname="GPIO_32" assignment="WLAN_IRQ" type="Direct IRQ Wake Wire">
+					  <Register name="PAD_CFG_DW0_GPIO_32" offset="0x0500" size="32">
+						  <Field name="GPIROUTIOXAPIC" sBit="20" eBit="20" vGold="0x1" />
+					  </Register>
+					  <Register name="PAD_CFG_DW1_GPIO_32" offset="0x0504" size="32">
+						  <Field name="INTSEL" sBit="0" eBit="7" vGold="0x3D" />
+					  </Register>
+					  <Register name="HOSTSW_OWN_NORTH_1" offset="0x0084" size="32">
+						  <Field name="HOSTSW_OWN_GPIO_32" sBit="0" eBit="0" vGold="0x0" />
+					  </Register>
+				  </GPIOInterrupt>
+				  <GPIOInterrupt name="GPIO_42" padname="GPIO_42" assignment="GPS_HOST_WAKE_INT" type="Shared IRQ">
+					  <Register name="PAD_CFG_DW0_GPIO_42" offset="0x0550" size="32">
+						  <Field name="GPIROUTIOXAPIC" sBit="20" eBit="20" vGold="0x0" />
+					  </Register>
+					  <Register name="PAD_CFG_DW1_GPIO_42" offset="0x0554" size="32">
+						  <Field name="INTSEL" sBit="0" eBit="7" vGold="0x47" />
+					  </Register>
+					  <Register name="HOSTSW_OWN_NORTH_1" offset="0x0084" size="32">
+						  <Field name="HOSTSW_OWN_GPIO_42" sBit="10" eBit="10" vGold="0x1" />
+					  </Register>
+				  </GPIOInterrupt>
+
+			  </GPIOInterrupts>
+			  <ACPIInterrupts>
+				  <ACPIInterrupt name="GPIO_14" no="0x0000000E" padname="GPIO_14" assignment="BT_HOST_WAKE" resource="\\_SB.GPO0" waketype="Shared">				  
+					  <Property name="EdgeLevel" vGold="Edge" />
+					  <Property name="ActiveLevel" vGold="ActiveLow" />
+					  <Property name="Shared" vGold="ExclusiveAndWake" />
+					  <Property name="PinConfig" vGold="PullUp" />
+					  <Property name="DebounceTimeout" vGold="0x0000" />
+					  <Property name="ResourceSourceIndex" vGold="0x00" />
+					  <Property name="ResourceUsage" vGold="ResourceConsumer" />
+					  <Property name="DescriptorName" vGold="NA" />
+				  </ACPIInterrupt>
+				  <ACPIInterrupt name="GPIO_22" no="0x00000016" padname="GPIO_22" assignment="FUEL_GUAGE_ALRT" resource="\\_SB.GPO0" waketype="Shared">				  
+					  <Property name="EdgeLevel" vGold="Edge" />
+					  <Property name="ActiveLevel" vGold="ActiveLow" />
+					  <Property name="Shared" vGold="ExclusiveAndWake" />
+					  <Property name="PinConfig" vGold="PullUp" />
+					  <Property name="DebounceTimeout" vGold="0x0000" />
+					  <Property name="ResourceSourceIndex" vGold="0x00" />
+					  <Property name="ResourceUsage" vGold="ResourceConsumer" />
+					  <Property name="DescriptorName" vGold="NA" />
+				  </ACPIInterrupt>
+				  <ACPIInterrupt name="GPIO_25" no="0x00000019" padname="GPIO_25" assignment="VOLUME_DN_BTN_N" resource="\\_SB.GPO0" waketype="Shared">				  
+					  <Property name="EdgeLevel" vGold="Edge" />
+					  <Property name="ActiveLevel" vGold="ActiveBoth" />
+					  <Property name="Shared" vGold="Exclusive" />
+					  <Property name="PinConfig" vGold="PullDefault" />
+					  <Property name="DebounceTimeout" vGold="0x0BB8" />
+					  <Property name="ResourceSourceIndex" vGold="0x00" />
+					  <Property name="ResourceUsage" vGold="ResourceConsumer" />
+					  <Property name="DescriptorName" vGold="NA" />
+				  </ACPIInterrupt>
+				  <ACPIInterrupt name="GPIO_26" no="0x0000001A" padname="GPIO_26" assignment="VOLUME_UP_BTN_N" resource="\\_SB.GPO0" waketype="Shared">				  
+					  <Property name="EdgeLevel" vGold="Edge" />
+					  <Property name="ActiveLevel" vGold="ActiveBoth" />
+					  <Property name="Shared" vGold="Exclusive" />
+					  <Property name="PinConfig" vGold="PullDefault" />
+					  <Property name="DebounceTimeout" vGold="0x0BB8" />
+					  <Property name="ResourceSourceIndex" vGold="0x00" />
+					  <Property name="ResourceUsage" vGold="ResourceConsumer" />
+					  <Property name="DescriptorName" vGold="NA" />
+				  </ACPIInterrupt>
+				  <ACPIInterrupt name="GPIO_28" no="0x0000001C" padname="GPIO_28" assignment="DISP0_TOUCH_INT" resource="0x00000039"  waketype="Direct">				  
+					  <Property name="EdgeLevel" vGold="Level" />
+					  <Property name="ActiveLevel" vGold="ActiveHigh" />
+					  <Property name="Shared" vGold="Exclusive" />
+					  <Property name="PinConfig" vGold="NA" />
+					  <Property name="DebounceTimeout" vGold="NA" />
+					  <Property name="ResourceSourceIndex" vGold="NA" />
+					  <Property name="ResourceUsage" vGold="ResourceConsumer" />
+					  <Property name="DescriptorName" vGold="NA" />
+				  </ACPIInterrupt>
+				  <ACPIInterrupt name="GPIO_32" no="0x00000020" padname="GPIO_32" assignment="WLAN_IRQ" resource="0x0000003D"  waketype="Direct Wake">				  
+					  <Property name="EdgeLevel" vGold="Edge" />
+					  <Property name="ActiveLevel" vGold="ActiveHigh" />
+					  <Property name="Shared" vGold="ExclusiveAndWake" />
+					  <Property name="PinConfig" vGold="NA" />
+					  <Property name="DebounceTimeout" vGold="NA" />
+					  <Property name="ResourceSourceIndex" vGold="NA" />
+					  <Property name="ResourceUsage" vGold="ResourceConsumer" />
+					  <Property name="DescriptorName" vGold="NA" />
+				  </ACPIInterrupt>
+				  <ACPIInterrupt name="GPIO_42" no="0x0000002A" padname="GPIO_42" assignment="GPS_HOST_WAKE_INT" resource="\\_SB.GPO0" waketype="Shared">				  
+					  <Property name="EdgeLevel" vGold="Edge" />
+					  <Property name="ActiveLevel" vGold="ActiveLow" />
+					  <Property name="Shared" vGold="ExclusiveAndWake" />
+					  <Property name="PinConfig" vGold="PullNone" />
+					  <Property name="DebounceTimeout" vGold="0x0000" />
+					  <Property name="ResourceSourceIndex" vGold="0x00" />
+					  <Property name="ResourceUsage" vGold="ResourceConsumer" />
+					  <Property name="DescriptorName" vGold="NA" />
+				  </ACPIInterrupt>
+
+  			  </ACPIInterrupts>
+		  </Interrupts>
+	</Community>
+	<Community name="North-West" max="72" BaseAddress="0xC40000" SBBaseAddress="0x0000" SBPort="0xC4">
+		  <Pins>
+			  <Pin No="PMC_SPI_FS0" CFG0_offset="0x400" CFG1_offset="0x404" Ball="BJ25" PWR="NA" Name="PMC_SPI_FS0" Bump="PMC_SPI_FS0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00003000" />
+			  <Pin No="PMC_SPI_FS1" CFG0_offset="0x408" CFG1_offset="0x40c" Ball="BN23" PWR="NA" Name="PMC_SPI_FS1" Bump="PMC_SPI_FS1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00003000" />
+			  <Pin No="PMC_SPI_FS2" CFG0_offset="0x410" CFG1_offset="0x414" Ball="BU23" PWR="NA" Name="PMC_SPI_FS2" Bump="PMC_SPI_FS2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00003000" />
+			  <Pin No="PMC_SPI_RXD" CFG0_offset="0x418" CFG1_offset="0x41c" Ball="BM24" PWR="NA" Name="PMC_SPI_RXD" Bump="PMC_SPI_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00001000" />
+			  <Pin No="PMC_SPI_TXD" CFG0_offset="0x420" CFG1_offset="0x424" Ball="BK24" PWR="NA" Name="PMC_SPI_TXD" Bump="PMC_SPI_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+			  <Pin No="PMC_SPI_CLK" CFG0_offset="0x428" CFG1_offset="0x42c" Ball="BR23" PWR="NA" Name="PMC_SPI_CLK" Bump="PMC_SPI_CLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+			  <Pin No="PMC_UART_RXD" CFG0_offset="0x430" CFG1_offset="0x434" Ball="BU25" PWR="NA" Name="PMC_UART_RXD" Bump="PMC_UART_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000102" Expected_CFG1="0x00003000" />
+			  <Pin No="PMC_UART_TXD" CFG0_offset="0x438" CFG1_offset="0x43c" Ball="BT24" PWR="NA" Name="PMC_UART_TXD" Bump="PMC_UART_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000102" Expected_CFG1="0x00003000" />
+			  <Pin No="PMC_PWRGOOD" CFG0_offset="0x440" CFG1_offset="0x444" Ball="BR25" PWR="NA" Name="PMIC_PWRGOOD" Bump="PMIC_PWRGOOD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003c000" />
+			  <Pin No="PMC_RESET_B" CFG0_offset="0x448" CFG1_offset="0x44c" Ball="BN25" PWR="NA" Name="PMIC_RESET_B" Bump="PMIC_RESET_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003c000" />
+			  <Pin No="RTC_CLK" CFG0_offset="0x450" CFG1_offset="0x454" Ball="BL25" PWR="NA" Name="RTC_CLK" Bump="RTC_CLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003c000" />
+			  <Pin No="PMIC_SDWN_B" CFG0_offset="0x458" CFG1_offset="0x45c" Ball="BJ28" PWR="NA" Name="PMIC_SDWN_B" Bump="PMIC_SDWN_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00000000" />
+			  <Pin No="PMIC_BCUDISW2" CFG0_offset="0x460" CFG1_offset="0x464" Ball="BM27" PWR="NA" Name="PMIC_BCUDISW2" Bump="PMIC_BCUDISW2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00000000" />
+			  <Pin No="PMIC_BCUDISCRIT" CFG0_offset="0x468" CFG1_offset="0x46c" Ball="BP27" PWR="NA" Name="PMIC_BCUDISCRIT" Bump="PMIC_BCUDISCRIT" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00000000" />
+			  <Pin No="PMIC_THERMTRIP_B" CFG0_offset="0x470" CFG1_offset="0x474" Ball="BT27" PWR="NA" Name="PMIC_THERMTRIP_B" Bump="PMIC_THERMTRIP_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00003000" />
+			  <Pin No="PMIC_STDBY" CFG0_offset="0x478" CFG1_offset="0x47c" Ball="BL28" PWR="NA" Name="PMIC_STDBY" Bump="PMIC_STDBY" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d000" />
+			  <Pin No="SVIDO_ALERT_B" CFG0_offset="0x480" CFG1_offset="0x484" Ball="BK30" PWR="NA" Name="SVID0_ALERT_B" Bump="SVID0_ALERT_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003c000" />
+			  <Pin No="SVIDO_DATA" CFG0_offset="0x488" CFG1_offset="0x48c" Ball="BN28" PWR="NA" Name="SVID0_DATA" Bump="SVID0_DATA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003c000" />
+			  <Pin No="SVIDO_CLK" CFG0_offset="0x490" CFG1_offset="0x494" Ball="BM30" PWR="NA" Name="SVID0_CLK" Bump="SVID0_CLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003f000" />
+			  <Pin No="PMIC_I2C_SCL" CFG0_offset="0x498" CFG1_offset="0x49c" Ball="BU28" PWR="NA" Name="PMIC_I2C_SCL" Bump="PMIC_I2C_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003f000" />
+			  <Pin No="PMIC_I2C_SDA" CFG0_offset="0x4a0" CFG1_offset="0x4a4" Ball="BR28" PWR="NA" Name="PMIC_I2C_SDA" Bump="PMIC_I2C_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003f000" />
+			  <Pin No="GPIO_74" CFG0_offset="0x4a8" CFG1_offset="0x4ac" Ball="BL40" PWR="NA" Name="AVS_I2S1_MCLK" Bump="AVS_I2S1_MCLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d032" />
+			  <Pin No="GPIO_75" CFG0_offset="0x4b0" CFG1_offset="0x4b4" Ball="BP39" PWR="NA" Name="AVS_I2S1_BCLK" Bump="AVS_I2S1_BCLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d033" />
+			  <Pin No="GPIO_76" CFG0_offset="0x4b8" CFG1_offset="0x4bc" Ball="BM39" PWR="NA" Name="AVS_I2S1_WS_SYNC" Bump="AVS_I2S1_WS_SYNC" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d034" />
+			  <Pin No="GPIO_77" CFG0_offset="0x4c0" CFG1_offset="0x4c4" Ball="BU37" PWR="NA" Name="AVS_I2S1_SDI" Bump="AVS_I2S1_SDI" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00025235" />
+			  <Pin No="GPIO_78" CFG0_offset="0x4c8" CFG1_offset="0x4cc" Ball="BR37" PWR="NA" Name="AVS_I2S1_SDO" Bump="AVS_I2S1_SDO" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d036" />
+			  <Pin No="GPIO_79" CFG0_offset="0x4d0" CFG1_offset="0x4d4" Ball="BN37" PWR="NA" Name="AVS_M_CLK_A1" Bump="AVS_M_CLK_A1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d037" />
+			  <Pin No="GPIO_80" CFG0_offset="0x4d8" CFG1_offset="0x4dc" Ball="BT36" PWR="NA" Name="AVS_M_CLK_B1" Bump="AVS_M_CLK_B1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d038" />
+			  <Pin No="GPIO_81" CFG0_offset="0x4e0" CFG1_offset="0x4e4" Ball="BL37" PWR="NA" Name="AVS_M_DATA_1" Bump="AVS_M_DATA_1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00025239" />
+			  <Pin No="GPIO_82" CFG0_offset="0x4e8" CFG1_offset="0x4ec" Ball="BM36" PWR="NA" Name="AVS_M_CLK_AB2" Bump="AVS_M_CLK_AB2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d03a" />
+			  <Pin No="GPIO_83" CFG0_offset="0x4f0" CFG1_offset="0x4f4" Ball="BJ37" PWR="NA" Name="AVS_M_DATA_2" Bump="AVS_M_DATA_2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0002523b" />
+			  <Pin No="GPIO_84" CFG0_offset="0x4f8" CFG1_offset="0x4fc" Ball="BU34" PWR="NA" Name="AVS_I2S2_MCLK" Bump="AVS_I2S2_MCLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000100" Expected_CFG1="0x0000103c" />
+			  <Pin No="GPIO_85" CFG0_offset="0x500" CFG1_offset="0x504" Ball="BR34" PWR="NA" Name="AVS_I2S2_BCLK" Bump="AVS_I2S2_BCLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d03d" />
+			  <Pin No="GPIO_86" CFG0_offset="0x508" CFG1_offset="0x50c" Ball="BN34" PWR="NA" Name="AVS_I2S2_WS_SYNC" Bump="AVS_I2S2_WS_SYNC" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d03e" />
+			  <Pin No="GPIO_87" CFG0_offset="0x510" CFG1_offset="0x514" Ball="BK36" PWR="NA" Name="AVS_I2S2_SDI" Bump="AVS_I2S2_SDI" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0002523f" />
+			  <Pin No="GPIO_88" CFG0_offset="0x518" CFG1_offset="0x51c" Ball="BL34" PWR="NA" Name="AVS_I2S2_SDO" Bump="AVS_I2S2_SDO" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d040" />
+			  <Pin No="GPIO_89" CFG0_offset="0x520" CFG1_offset="0x524" Ball="BT32" PWR="NA" Name="AVS_I2S3_BCLK" Bump="AVS_I2S3_BCLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d041" />
+			  <Pin No="GPIO_90" CFG0_offset="0x528" CFG1_offset="0x52c" Ball="BP32" PWR="NA" Name="AVS_I2S3_WS_SYNC" Bump="AVS_I2S3_WS_SYNC" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d042" />
+			  <Pin No="GPIO_91" CFG0_offset="0x530" CFG1_offset="0x534" Ball="BM32" PWR="NA" Name="AVS_I2S3_SDI" Bump="AVS_I2S3_SDI" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00025243" />
+			  <Pin No="GPIO_92" CFG0_offset="0x538" CFG1_offset="0x53c" Ball="BU31" PWR="NA" Name="AVS_I2S3_SDO" Bump="AVS_I2S3_SDO" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d044" />
+			  <Pin No="GPIO_93" CFG0_offset="0x540" CFG1_offset="0x544" Ball="BR31" PWR="NA" Name="AVS_I2S4_BCLK" Bump="AVS_I2S4_BCLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d045" />
+			  <Pin No="GPIO_94" CFG0_offset="0x548" CFG1_offset="0x54c" Ball="BJ34" PWR="NA" Name="AVS_I2S4_WS_SYNC" Bump="AVS_I2S4_WS_SYNC" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d046" />
+			  <Pin No="GPIO_95" CFG0_offset="0x550" CFG1_offset="0x554" Ball="BN31" PWR="NA" Name="AVS_I2S4_SDI" Bump="AVS_I2S4_SDI" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00025247" />
+			  <Pin No="GPIO_96" CFG0_offset="0x558" CFG1_offset="0x55c" Ball="BT30" PWR="NA" Name="AVS_I2S4_SDO" Bump="AVS_I2S4_SDO" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d048" />
+			  <Pin No="PROCHOT_B" CFG0_offset="0x560" CFG1_offset="0x564" Ball="BL31" PWR="NA" Name="PROCHOT_B" Bump="PROCHOT_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+			  <Pin No="GPIO_97" CFG0_offset="0x568" CFG1_offset="0x56c" Ball="BJ48" PWR="NA" Name="FST_SPI_CS0_B" Bump="FST_SPI_CS0_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003f049" />
+			  <Pin No="GPIO_98" CFG0_offset="0x570" CFG1_offset="0x574" Ball="BK47" PWR="NA" Name="FST_SPI_CS1_B" Bump="FST_SPI_CS1_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x42000102" Expected_CFG1="0x0000304a" />
+			  <Pin No="GPIO_99" CFG0_offset="0x578" CFG1_offset="0x57c" Ball="BU48" PWR="NA" Name="FST_SPI_MOSI_IO0" Bump="FST_SPI_MOSI_IO0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d04b" />
+			  <Pin No="GPIO_100" CFG0_offset="0x580" CFG1_offset="0x584" Ball="BM47" PWR="NA" Name="FST_SPI_MISO_IO1" Bump="FST_SPI_MISO_IO1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003f04c" />
+			  <Pin No="GPIO_101" CFG0_offset="0x588" CFG1_offset="0x58c" Ball="BT47" PWR="NA" Name="FST_SPI_IO2" Bump="FST_SPI_IO2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003f04d" />
+			  <Pin No="GPIO_102" CFG0_offset="0x590" CFG1_offset="0x594" Ball="BJ46" PWR="NA" Name="FST_SPI_IO3" Bump="FST_SPI_IO3" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003f04e" />
+			  <Pin No="GPIO_103" CFG0_offset="0x598" CFG1_offset="0x59c" Ball="BN46" PWR="NA" Name="FST_SPI_CLK" Bump="FST_SPI_CLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d04f" />
+			  <Pin No="FST_SPI_CLK_FB" CFG0_offset="0x5a0" CFG1_offset="0x5a4" Ball="DoNt" PWR="NA" Name="FST_SPI_CLK_FB" Bump="FST_SPI_CLK_FB" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003c000" />
+			  <Pin No="GPIO_104" CFG0_offset="0x5a8" CFG1_offset="0x5ac" Ball="BJ43" PWR="NA" Name="GP_SSP_0_CLK" Bump="GP_SSP_0_CLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001050" />
+			  <Pin No="GPIO_105" CFG0_offset="0x5b0" CFG1_offset="0x5b4" Ball="BL46" PWR="NA" Name="GP_SSP_0_FS0" Bump="GP_SSP_0_FS0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001051" />
+			  <Pin No="GPIO_106" CFG0_offset="0x5b8" CFG1_offset="0x5bc" Ball="BR46" PWR="NA" Name="GP_SSP_0_FS1" Bump="GP_SSP_0_FS1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00003052" />
+			  <Pin No="GPIO_107" CFG0_offset="0x5c0" CFG1_offset="0x5c4" Ball="BU46" PWR="NA" Name="GP_SSP_0_FS2" Bump="GP_SSP_0_FS2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000802" Expected_CFG1="0x00001053" />
+			  <Pin No="GPIO_109" CFG0_offset="0x5c8" CFG1_offset="0x5cc" Ball="BM44" PWR="NA" Name="GP_SSP_0_RXD" Bump="GP_SSP_0_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d054" />
+			  <Pin No="GPIO_110" CFG0_offset="0x5d0" CFG1_offset="0x5d4" Ball="BL43" PWR="NA" Name="GP_SSP_0_TXD" Bump="GP_SSP_0_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001055" />
+			  <Pin No="GPIO_111" CFG0_offset="0x5d8" CFG1_offset="0x5dc" Ball="BT44" PWR="NA" Name="GP_SSP_1_CLK" Bump="GP_SSP_1_CLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000700" Expected_CFG1="0x00003056" />
+			  <Pin No="GPIO_112" CFG0_offset="0x5e0" CFG1_offset="0x5e4" Ball="BP44" PWR="NA" Name="GP_SSP_1_FS0" Bump="GP_SSP_1_FS0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000700" Expected_CFG1="0x00003057" />
+			  <Pin No="GPIO_113" CFG0_offset="0x5e8" CFG1_offset="0x5ec" Ball="BN43" PWR="NA" Name="GP_SSP_1_FS1" Bump="GP_SSP_1_FS1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00003058" />
+			  <Pin No="GPIO_114" CFG0_offset="0x5f0" CFG1_offset="0x5f4" Ball="BR43" PWR="NA" Name="GP_SSP_1_FS2" Bump="GP_SSP_1_FS2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x42800102" Expected_CFG1="0x00003059" />
+			  <Pin No="GPIO_115" CFG0_offset="0x5f8" CFG1_offset="0x5fc" Ball="BK41" PWR="NA" Name="GP_SSP_1_FS3" Bump="GP_SSP_1_FS3" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0000305a" />
+			  <Pin No="GPIO_116" CFG0_offset="0x600" CFG1_offset="0x604" Ball="BU43" PWR="NA" Name="GP_SSP_1_RXD" Bump="GP_SSP_1_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000702" Expected_CFG1="0x0000305b" />
+			  <Pin No="GPIO_117" CFG0_offset="0x608" CFG1_offset="0x60c" Ball="BM41" PWR="NA" Name="GP_SSP_1_TXD" Bump="GP_SSP_1_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000700" Expected_CFG1="0x0000305c" />
+			  <Pin No="GPIO_118" CFG0_offset="0x610" CFG1_offset="0x614" Ball="BT41" PWR="NA" Name="GP_SSP_2_CLK" Bump="GP_SSP_2_CLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c00" Expected_CFG1="0x0000105d" />
+			  <Pin No="GPIO_119" CFG0_offset="0x618" CFG1_offset="0x61c" Ball="BJ40" PWR="NA" Name="GP_SSP_2_FS0" Bump="GP_SSP_2_FS0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c00" Expected_CFG1="0x0000105e" />
+			  <Pin No="GPIO_120" CFG0_offset="0x620" CFG1_offset="0x624" Ball="BU40" PWR="NA" Name="GP_SSP_2_FS1" Bump="GP_SSP_2_FS1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c00" Expected_CFG1="0x0000105f" />
+			  <Pin No="GPIO_121" CFG0_offset="0x628" CFG1_offset="0x62c" Ball="BR40" PWR="NA" Name="GP_SSP_2_FS2" Bump="GP_SSP_2_FS2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00003060" />
+			  <Pin No="GPIO_122" CFG0_offset="0x630" CFG1_offset="0x634" Ball="BT39" PWR="NA" Name="GP_SSP_2_RXD" Bump="GP_SSP_2_RXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c00" Expected_CFG1="0x0001d061" />
+			  <Pin No="GPIO_123" CFG0_offset="0x638" CFG1_offset="0x63c" Ball="BN40" PWR="NA" Name="GP_SSP_2_TXD" Bump="GP_SSP_2_TXD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c00" Expected_CFG1="0x00001062" />
+		  </Pins>
+	  </Community>
+	<Community name="South" max="20" BaseAddress="0xC20000" SBBaseAddress="0x0000" SBPort="0xC2">
+		  <Pins>
+			<Pin No="GPIO_187" CFG0_offset="0x400" CFG1_offset="0x404" Ball="AL8" PWR="NA" Name="HV_DDI0_DDC_SDA" Bump="HV_DDI0_DDC_SDA" Module="NA" Validate="true" Verify="true"  Expected_CFG0="0x44000400" Expected_CFG1="0x00003000" />
+			<Pin No="GPIO_188" CFG0_offset="0x408" CFG1_offset="0x40c" Ball="AL10" PWR="NA" Name="HV_DDI0_DDC_SCL" Bump="HV_DDI0_DDC_SCL" Module="NA" Validate="true" Verify="true"  Expected_CFG0="0x44000400" Expected_CFG1="0x00003000" />
+			<Pin No="GPIO_189" CFG0_offset="0x410" CFG1_offset="0x414" Ball="AJ11" PWR="NA" Name="HV_DDI1_DDC_SDA" Bump="HV_DDI1_DDC_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x40800102" Expected_CFG1="0x00027000" />
+			<Pin No="GPIO_190" CFG0_offset="0x418" CFG1_offset="0x41c" Ball="AL2" PWR="NA" Name="HV_DDI1_DDC_SCL" Bump="HV_DDI1_DDC_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x40800102" Expected_CFG1="0x00027000" />
+			<Pin No="GPIO_191" CFG0_offset="0x420" CFG1_offset="0x424" Ball="AJ9" PWR="NA" Name="DBI_SDA" Bump="DBI_SDA" Module="NA" Validate="true" Verify="true"  Expected_CFG0="0x44000c00" Expected_CFG1="0x0001f000" />
+			<Pin No="GPIO_192" CFG0_offset="0x428" CFG1_offset="0x42c" Ball="AL4" PWR="NA" Name="DBI_SCL" Bump="DBI_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x0001f000" />
+			<Pin No="GPIO_193" CFG0_offset="0x430" CFG1_offset="0x434" Ball="AD10" PWR="NA" Name="PANEL0_VDDEN" Bump="PANEL0_VDDEN" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00001000" />
+			<Pin No="GPIO_194" CFG0_offset="0x438" CFG1_offset="0x43c" Ball="AG8" PWR="NA" Name="PANEL0_BKLTEN" Bump="PANEL0_BKLTEN" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000200" Expected_CFG1="0x00001000" />
+			<Pin No="GPIO_195" CFG0_offset="0x440" CFG1_offset="0x444" Ball="AE9" PWR="NA" Name="PANEL0_BKLTCTL" Bump="PANEL0_BKLTCTL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00005000" />
+			<Pin No="GPIO_196" CFG0_offset="0x448" CFG1_offset="0x44c" Ball="AE7" PWR="NA" Name="PANEL1_VDDEN" Bump="PANEL1_VDDEN" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+			<Pin No="GPIO_197" CFG0_offset="0x450" CFG1_offset="0x454" Ball="AJ5" PWR="NA" Name="PANEL1_BKLTEN" Bump="PANEL1_BKLTEN" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+			<Pin No="GPIO_198" CFG0_offset="0x458" CFG1_offset="0x45c" Ball="AJ7" PWR="NA" Name="PANEL1_BKLTCTL" Bump="PANEL1_BKLTCTL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+			<Pin No="GPIO_199" CFG0_offset="0x460" CFG1_offset="0x464" Ball="AG6" PWR="NA" Name="DBI_CSX" Bump="DBI_CSX" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c02" Expected_CFG1="0x00003000" />
+			<Pin No="GPIO_200" CFG0_offset="0x468" CFG1_offset="0x46c" Ball="AJ3" PWR="NA" Name="DBI_RESX" Bump="DBI_RESX" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000c00" Expected_CFG1="0x00003000" />
+			<Pin No="GPIO_201" CFG0_offset="0x470" CFG1_offset="0x474" Ball="AD8" PWR="NA" Name="GP_INTD_DSI_TE1" Bump="GP_INTD_DSI_TE1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00005000" />
+			<Pin No="GPIO_202" CFG0_offset="0x478" CFG1_offset="0x47c" Ball="AE3" PWR="NA" Name="GP_INTD_DSI_TE2" Bump="GP_INTD_DSI_TE2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00005000" />
+			<Pin No="GPIO_203" CFG0_offset="0x480" CFG1_offset="0x484" Ball="AE5" PWR="NA" Name="USB_OC0_B" Bump="USB_OC0_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003f000" />
+			<Pin No="GPIO_204" CFG0_offset="0x488" CFG1_offset="0x48c" Ball="AG4" PWR="NA" Name="USB_OC1_B" Bump="USB_OC1_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003f000" />
+			<Pin No="GPIO_205" CFG0_offset="0x490" CFG1_offset="0x494" Ball="AD2" PWR="NA" Name="MEX_WAKE0_B" Bump="MEX_WAKE0_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00027000" />
+			<Pin No="GPIO_206" CFG0_offset="0x498" CFG1_offset="0x49c" Ball="AD4" PWR="NA" Name="MEX_WAKE1_B" Bump="MEX_WAKE1_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00027000" />
+		  </Pins>
+		  <Interrupts>
+			  <GPIOInterrupts>
+				  <GPIOInterrupt name="GPIO_189" padname="HV_DDI1_DDC_SDA" assignment="HOME_WIN_BTN" type="Shared IRQ">
+					  <Register name="PAD_CFG_DW0_GPIO_189" offset="0x0410" size="32">
+					  <Field name="GPIROUTIOXAPIC" sBit="20" eBit="20" vGold="0x0" />
+					  </Register>
+					  <Register name="HOSTSW_OWN_SOUTH_0" offset="0x0080" size="32">
+						  <Field name="HOSTSW_OWN_GPIO_189" sBit="2" eBit="2" vGold="0x1" />
+					  </Register>
+				  </GPIOInterrupt>
+				  <GPIOInterrupt name="GPIO_190" padname="HV_DDI1_DDC_SCL" assignment="PMIC_PWRBTNOUT_N" type="Shared IRQ">
+					  <Register name="PAD_CFG_DW0_GPIO_190" offset="0x0418" size="32">
+					     <Field name="GPIROUTIOXAPIC" sBit="20" eBit="20" vGold="0x0" />
+					  </Register>
+
+					  <Register name="HOSTSW_OWN_SOUTH_0" offset="0x0080" size="32">
+						  <Field name="HOSTSW_OWN_GPIO_190" sBit="3" eBit="3" vGold="0x1" />
+					  </Register>
+				  </GPIOInterrupt>
+
+
+			  </GPIOInterrupts>
+			  <ACPIInterrupts>
+				  <ACPIInterrupt name="GPIO_189" no="0x00000002" padname="HV_DDI1_DDC_SDA" assignment="HOME_WIN_BTN" resource="\\_SB.GPO4"  waketype="Shared">
+					  <Property name="EdgeLevel" vGold="Edge" />
+					  <Property name="ActiveLevel" vGold="ActiveBoth" />
+					  <Property name="Shared" vGold="ExclusiveAndWake" />
+					  <Property name="PinConfig" vGold="PullDefault" />
+					  <Property name="DebounceTimeout" vGold="0x0BB8" />
+					  <Property name="ResourceSourceIndex" vGold="0x00" />
+					  <Property name="ResourceUsage" vGold="ResourceConsumer" />
+					  <Property name="DescriptorName" vGold="NA" />
+				  </ACPIInterrupt>
+				  <ACPIInterrupt name="GPIO_190" no="0x00000003" padname="HV_DDI1_DDC_SCL" assignment="PMIC_PWRBTNOUT_N" resource="\\_SB.GPO4"  waketype="Shared">
+					  <Property name="EdgeLevel" vGold="Edge" />
+					  <Property name="ActiveLevel" vGold="ActiveBoth" />
+					  <Property name="Shared" vGold="ExclusiveAndWake" />
+					  <Property name="PinConfig" vGold="PullDefault" />
+					  <Property name="DebounceTimeout" vGold="0x0BB8" />
+					  <Property name="ResourceSourceIndex" vGold="0x00" />
+					  <Property name="ResourceUsage" vGold="ResourceConsumer" />
+					  <Property name="DescriptorName" vGold="NA" />
+				  </ACPIInterrupt>				  
+			  </ACPIInterrupts>
+		  </Interrupts>		  
+    </Community>
+	<Community name="South-West" max="31" BaseAddress="0xC00000" SBBaseAddress="0x0000" SBPort="0xC0">
+		<Pins>
+		<Pin No="GPIO_156" CFG0_offset="0x400" CFG1_offset="0x404" Ball="AY3" PWR="NA" Name="EMMC0_CLK" Bump="EMMC0_CLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00005000" />
+		<Pin No="GPIO_157" CFG0_offset="0x408" CFG1_offset="0x40c" Ball="BA4" PWR="NA" Name="EMMC0_D0" Bump="EMMC0_D0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_158" CFG0_offset="0x410" CFG1_offset="0x414" Ball="AW4" PWR="NA" Name="EMMC0_D1" Bump="EMMC0_D1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_159" CFG0_offset="0x418" CFG1_offset="0x41c" Ball="AY5" PWR="NA" Name="EMMC0_D2" Bump="EMMC0_D2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_160" CFG0_offset="0x420" CFG1_offset="0x424" Ball="BB7" PWR="NA" Name="EMMC0_D3" Bump="EMMC0_D3" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_161" CFG0_offset="0x428" CFG1_offset="0x42c" Ball="BC4" PWR="NA" Name="EMMC0_D4" Bump="EMMC0_D4" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_162" CFG0_offset="0x430" CFG1_offset="0x434" Ball="BB3" PWR="NA" Name="EMMC0_D5" Bump="EMMC0_D5" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_163" CFG0_offset="0x438" CFG1_offset="0x43c" Ball="BB5" PWR="NA" Name="EMMC0_D6" Bump="EMMC0_D6" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_164" CFG0_offset="0x440" CFG1_offset="0x444" Ball="BC8" PWR="NA" Name="EMMC0_D7" Bump="EMMC0_D7" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_165" CFG0_offset="0x448" CFG1_offset="0x44c" Ball="BC6" PWR="NA" Name="EMMC0_CMD" Bump="EMMC0_CMD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_166" CFG0_offset="0x450" CFG1_offset="0x454" Ball="AU10" PWR="NA" Name="SDIO_CLK" Bump="SDIO_CLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00005000" />
+		<Pin No="GPIO_167" CFG0_offset="0x458" CFG1_offset="0x45c" Ball="AN4" PWR="NA" Name="SDIO_D0" Bump="SDIO_D0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_168" CFG0_offset="0x460" CFG1_offset="0x464" Ball="AV9" PWR="NA" Name="SDIO_D1" Bump="SDIO_D1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_169" CFG0_offset="0x468" CFG1_offset="0x46c" Ball="AU8" PWR="NA" Name="SDIO_D2" Bump="SDIO_D2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_170" CFG0_offset="0x470" CFG1_offset="0x474" Ball="AR5" PWR="NA" Name="SDIO_D3" Bump="SDIO_D3" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_171" CFG0_offset="0x478" CFG1_offset="0x47c" Ball="AV7" PWR="NA" Name="SDIO_CMD" Bump="SDIO_CMD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_172" CFG0_offset="0x480" CFG1_offset="0x484" Ball="AW8" PWR="NA" Name="SDCARD_CLK" Bump="SDCARD_CLK" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00005000" />
+		<Pin No="GPIO_173" CFG0_offset="0x488" CFG1_offset="0x48c" Ball="AY7" PWR="NA" Name="SDCARD_D0" Bump="SDCARD_D0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_174" CFG0_offset="0x490" CFG1_offset="0x494" Ball="AR3" PWR="NA" Name="SDCARD_D1" Bump="SDCARD_D1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_175" CFG0_offset="0x498" CFG1_offset="0x49c" Ball="AY9" PWR="NA" Name="SDCARD_D2" Bump="SDCARD_D2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_176" CFG0_offset="0x4a0" CFG1_offset="0x4a4" Ball="AV5" PWR="NA" Name="SDCARD_D3" Bump="SDCARD_D3" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00023000" />
+		<Pin No="GPIO_177" CFG0_offset="0x4a8" CFG1_offset="0x4ac" Ball="AW6" PWR="NA" Name="SDCARD_CD_B" Bump="SDCARD_CD_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x42000102" Expected_CFG1="0x00027000" />
+		<Pin No="GPIO_178" CFG0_offset="0x4b0" CFG1_offset="0x4b4" Ball="AU4" PWR="NA" Name="SDCARD_CMD" Bump="SDCARD_CMD" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00003000" />
+		<Pin No="GPIO_179" CFG0_offset="0x4b8" CFG1_offset="0x4bc" Ball="AV3" PWR="NA" Name="SDCARD_LVL_CLK_FB" Bump="SDCARD_LVL_CLK_FB" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+		<Pin No="GPIO_180" CFG0_offset="0x4c0" CFG1_offset="0x4c4" Ball="BA8" PWR="NA" Name="SDCARD_LVL_CMD_DIR" Bump="SDCARD_LVL_CMD_DIR" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+		<Pin No="GPIO_181" CFG0_offset="0x4c8" CFG1_offset="0x4cc" Ball="AU2" PWR="NA" Name="SDCARD_LVL_DAT_DIR" Bump="SDCARD_LVL_DAT_DIR" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+		<Pin No="GPIO_182" CFG0_offset="0x4d0" CFG1_offset="0x4d4" Ball="BB9" PWR="NA" Name="EMMC0_STROBE" Bump="EMMC0_STROBE" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0001d000" />
+		<Pin No="GPIO_183" CFG0_offset="0x4d8" CFG1_offset="0x4dc" Ball="AR9" PWR="NA" Name="SDIO_PWR_DOWN_B" Bump="SDIO_PWR_DOWN_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00001000" />
+		<Pin No="GPIO_184" CFG0_offset="0x4e0" CFG1_offset="0x4e4" Ball="AR11" PWR="NA" Name="SDCARD_PWR_DOWN_B" Bump="SDCARD_PWR_DOWN_B" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000003" Expected_CFG1="0x00001000" />
+		<Pin No="GPIO_185" CFG0_offset="0x4e8" CFG1_offset="0x4ec" Ball="AR7" PWR="NA" Name="SDCARD_LVL_SEL" Bump="SDCARD_LVL_SEL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+		<Pin No="GPIO_186" CFG0_offset="0x4f0" CFG1_offset="0x4f4" Ball="AN6" PWR="NA" Name="SDCARD_LVL_WP" Bump="SDCARD_LVL_WP" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x42800102" Expected_CFG1="0x00001000" />
+	</Pins>
+	</Community>
+  <Community name="West" max="42" BaseAddress="0xC70000" SBBaseAddress="0x0000" SBPort="0xC7">	
+      <Pins>
+        <Pin No="GPIO_124" CFG0_offset="0x400" CFG1_offset="0x404" Ball="BK12" PWR="NA" Name="LPSS_I2C0_SDA" Bump="LPSS_I2C0_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_125" CFG0_offset="0x408" CFG1_offset="0x40c" Ball="BH6" PWR="NA" Name="LPSS_I2C0_SCL" Bump="LPSS_I2C0_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_126" CFG0_offset="0x410" CFG1_offset="0x414" Ball="BF11" PWR="NA" Name="LPSS_I2C1_SDA" Bump="LPSS_I2C1_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_127" CFG0_offset="0x418" CFG1_offset="0x41c" Ball="BK5" PWR="NA" Name="LPSS_I2C1_SCL" Bump="LPSS_I2C1_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_128" CFG0_offset="0x420" CFG1_offset="0x424" Ball="BP8" PWR="NA" Name="LPSS_I2C2_SDA" Bump="LPSS_I2C2_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_129" CFG0_offset="0x428" CFG1_offset="0x42c" Ball="BH4" PWR="NA" Name="LPSS_I2C2_SCL" Bump="LPSS_I2C2_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_130" CFG0_offset="0x430" CFG1_offset="0x434" Ball="BL4" PWR="NA" Name="LPSS_I2C3_SDA" Bump="LPSS_I2C3_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_131" CFG0_offset="0x438" CFG1_offset="0x43c" Ball="BL2" PWR="NA" Name="LPSS_I2C3_SCL" Bump="LPSS_I2C3_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_132" CFG0_offset="0x440" CFG1_offset="0x444" Ball="BK7" PWR="NA" Name="LPSS_I2C4_SDA" Bump="LPSS_I2C4_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_133" CFG0_offset="0x448" CFG1_offset="0x44c" Ball="BR5" PWR="NA" Name="LPSS_I2C4_SCL" Bump="LPSS_I2C4_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_134" CFG0_offset="0x450" CFG1_offset="0x454" Ball="BN5" PWR="NA" Name="LPSS_I2C5_SDA" Bump="LPSS_I2C5_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_135" CFG0_offset="0x458" CFG1_offset="0x45c" Ball="BN3" PWR="NA" Name="LPSS_I2C5_SCL" Bump="LPSS_I2C5_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_136" CFG0_offset="0x460" CFG1_offset="0x464" Ball="BL8" PWR="NA" Name="LPSS_I2C6_SDA" Bump="LPSS_I2C6_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_137" CFG0_offset="0x468" CFG1_offset="0x46c" Ball="BK10" PWR="NA" Name="LPSS_I2C6_SCL" Bump="LPSS_I2C6_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00012700" />
+        <Pin No="GPIO_138" CFG0_offset="0x470" CFG1_offset="0x474" Ball="BU7" PWR="NA" Name="LPSS_I2C7_SDA" Bump="LPSS_I2C7_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00000000" />
+        <Pin No="GPIO_139" CFG0_offset="0x478" CFG1_offset="0x47c" Ball="BR7" PWR="NA" Name="LPSS_I2C7_SCL" Bump="LPSS_I2C7_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x42000102" Expected_CFG1="0x00027000" />
+        <Pin No="GPIO_140" CFG0_offset="0x480" CFG1_offset="0x484" Ball="BH8" PWR="NA" Name="ISH_I2C0_SDA" Bump="ISH_I2C0_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003e400" />
+        <Pin No="GPIO_141" CFG0_offset="0x488" CFG1_offset="0x48c" Ball="BJ14" PWR="NA" Name="ISH_I2C0_SCL" Bump="ISH_I2C0_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003e400" />
+        <Pin No="GPIO_142" CFG0_offset="0x490" CFG1_offset="0x494" Ball="BN10" PWR="NA" Name="ISH_I2C1_SDA" Bump="ISH_I2C1_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003e400" />
+        <Pin No="GPIO_143" CFG0_offset="0x498" CFG1_offset="0x49c" Ball="BT8" PWR="NA" Name="ISH_I2C1_SCL" Bump="ISH_I2C1_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003e400" />
+        <Pin No="GPIO_144" CFG0_offset="0x4a0" CFG1_offset="0x4a4" Ball="BK3" PWR="NA" Name="ISH_I2C2_SDA" Bump="ISH_I2C2_SDA" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000802" Expected_CFG1="0x0003e400" />
+        <Pin No="GPIO_145" CFG0_offset="0x4a8" CFG1_offset="0x4ac" Ball="BU10" PWR="NA" Name="ISH_I2C2_SCL" Bump="ISH_I2C2_SCL" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000802" Expected_CFG1="0x0003e400" />
+        <Pin No="GPIO_146" CFG0_offset="0x4b0" CFG1_offset="0x4b4" Ball="BR10" PWR="NA" Name="ISH_GPIO_0" Bump="ISH_GPIO_0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d000" />
+        <Pin No="GPIO_147" CFG0_offset="0x4b8" CFG1_offset="0x4bc" Ball="BT12" PWR="NA" Name="ISH_GPIO_1" Bump="ISH_GPIO_1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x0003d000" />
+        <Pin No="GPIO_148" CFG0_offset="0x4c0" CFG1_offset="0x4c4" Ball="BL14" PWR="NA" Name="ISH_GPIO_2" Bump="ISH_GPIO_2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d000" />
+        <Pin No="GPIO_149" CFG0_offset="0x4c8" CFG1_offset="0x4cc" Ball="BM12" PWR="NA" Name="ISH_GPIO_3" Bump="ISH_GPIO_3" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d000" />
+        <Pin No="GPIO_150" CFG0_offset="0x4d0" CFG1_offset="0x4d4" Ball="BL16" PWR="NA" Name="ISH_GPIO_4" Bump="ISH_GPIO_4" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d000" />
+        <Pin No="GPIO_151" CFG0_offset="0x4d8" CFG1_offset="0x4dc" Ball="BM15" PWR="NA" Name="ISH_GPIO_5" Bump="ISH_GPIO_5" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d000" />
+        <Pin No="GPIO_152" CFG0_offset="0x4e0" CFG1_offset="0x4e4" Ball="BN14" PWR="NA" Name="ISH_GPIO_6" Bump="ISH_GPIO_6" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d000" />
+        <Pin No="GPIO_153" CFG0_offset="0x4e8" CFG1_offset="0x4ec" Ball="BP15" PWR="NA" Name="ISH_GPIO_7" Bump="ISH_GPIO_7" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d000" />
+        <Pin No="GPIO_154" CFG0_offset="0x4f0" CFG1_offset="0x4f4" Ball="BK18" PWR="NA" Name="ISH_GPIO_8" Bump="ISH_GPIO_8" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x0003d000" />
+        <Pin No="GPIO_155" CFG0_offset="0x4f8" CFG1_offset="0x4fc" Ball="BR14" PWR="NA" Name="ISH_GPIO_9" Bump="ISH_GPIO_9" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000201" Expected_CFG1="0x00001000" />
+        <Pin No="MODEM_CLKREQ" CFG0_offset="0x500" CFG1_offset="0x504" Ball="BU14" PWR="NA" Name="MODEM_CLKREQ" Bump="MODEM_CLKREQ" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000402" Expected_CFG1="0x00001000" />
+        <Pin No="DGCLKDBG_PMC_0" CFG0_offset="0x508" CFG1_offset="0x50c" Ball="BN16" PWR="NA" Name="DGCLKDBG_PMC_0" Bump="DGCLKDBG_PMC_0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000800" Expected_CFG1="0x00001000" />
+        <Pin No="DGCLKDBG_PMC_1" CFG0_offset="0x510" CFG1_offset="0x514" Ball="BR16" PWR="NA" Name="DGCLKDBG_PMC_1" Bump="DGCLKDBG_PMC_1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000700" Expected_CFG1="0x00001000" />
+        <Pin No="DGCLKDBG_PMC_2" CFG0_offset="0x518" CFG1_offset="0x51c" Ball="BT15" PWR="NA" Name="DGCLKDBG_PMC_2" Bump="DGCLKDBG_PMC_2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000700" Expected_CFG1="0x00001000" />
+        <Pin No="DGCLKDBG_ICLK_0" CFG0_offset="0x520" CFG1_offset="0x524" Ball="BN20" PWR="NA" Name="DGCLKDBG_ICLK_0" Bump="DGCLKDBG_ICLK_0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+        <Pin No="DGCLKDBG_ICLK_1" CFG0_offset="0x528" CFG1_offset="0x52c" Ball="BT18" PWR="NA" Name="DGCLKDBG_ICLK_1" Bump="DGCLKDBG_ICLK_1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+        <Pin No="OSC_CLK_OUT_0" CFG0_offset="0x530" CFG1_offset="0x534" Ball="BL20" PWR="NA" Name="OSC_CLK_OUT_0" Bump="OSC_CLK_OUT_0" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+        <Pin No="OSC_CLK_OUT_1" CFG0_offset="0x538" CFG1_offset="0x53c" Ball="BJ20" PWR="NA" Name="OSC_CLK_OUT_1" Bump="OSC_CLK_OUT_1" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+        <Pin No="OSC_CLK_OUT_2" CFG0_offset="0x540" CFG1_offset="0x544" Ball="BU16" PWR="NA" Name="OSC_CLK_OUT_2" Bump="OSC_CLK_OUT_2" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+        <Pin No="OSC_CLK_OUT_3" CFG0_offset="0x548" CFG1_offset="0x54c" Ball="BM18" PWR="NA" Name="OSC_CLK_OUT_3" Bump="OSC_CLK_OUT_3" Module="NA" Validate="true" Verify="true" Expected_CFG0="0x44000400" Expected_CFG1="0x00001000" />
+      </Pins>
+    </Community>
+  </GPIO>
+  <GPIOPadRstCfg>
+    <PadRstCfg>Powergood</PadRstCfg>
+    <PadRstCfg>DeepGPIOReset</PadRstCfg>
+    <PadRstCfg>GPIOReset</PadRstCfg>
+    <PadRstCfg>Reserved</PadRstCfg>
+  </GPIOPadRstCfg>
+  <GPIORXPadStSel>
+    <RXPadStSel>RawRX</RXPadStSel>
+    <RXPadStSel>InternalRX</RXPadStSel>
+  </GPIORXPadStSel>
+  <GPIORXRAW1>
+    <RXRAW1>NoOverride</RXRAW1>
+    <RXRAW1>RXDriveInternally</RXRAW1>
+  </GPIORXRAW1>
+  <GPIORxEvCfg>
+    <RxEvCfg>Level</RxEvCfg>
+    <RxEvCfg>Edge</RxEvCfg>
+    <RxEvCfg>Disabled</RxEvCfg>
+    <RxEvCfg>Either</RxEvCfg>
+  </GPIORxEvCfg>
+  <GPIORxInvert>
+    <RxInvert>NoInversion</RxInvert>
+    <RxInvert>Inversion</RxInvert>
+  </GPIORxInvert>
+  <GPIORouteIOxAPIC>
+    <RouteIOxAPIC>NoPeripheralIRQ</RouteIOxAPIC>
+    <RouteIOxAPIC>PeripheralIRQ</RouteIOxAPIC>
+  </GPIORouteIOxAPIC>
+  <GPIORoutSCI>
+    <RouteSCI>No SCI Routing</RouteSCI>
+    <RouteSCI>SCI Routing</RouteSCI>
+  </GPIORoutSCI>
+  <GPIORoutSMI>
+    <RouteSMI>No SMI Routing</RouteSMI>
+    <RouteSMI>SMI Routing</RouteSMI>
+  </GPIORoutSMI>
+  <GPIORoutNMI>
+    <RouteNMI>No NMI Routing</RouteNMI>
+    <RouteNMI>NMI Routing</RouteNMI>
+  </GPIORoutNMI>
+  <GPIORxDisable>
+    <RxDisable>Enable</RxDisable>
+    <RxDisable>Disable</RxDisable>
+  </GPIORxDisable>
+  <GPIOTxDisable>
+    <TxDisable>Enable</TxDisable>
+    <TxDisable>Disable</TxDisable>
+  </GPIOTxDisable>
+  <GPIOTxState>
+    <TxState>Level 0</TxState>
+    <TxState>Level 1</TxState>
+  </GPIOTxState>
+  <GPIORxState>
+    <RxState>Level 0</RxState>
+    <RxState>Level 1</RxState>
+  </GPIORxState>
+  <GPIOPullType>
+    <PullType>None</PullType>
+    <PullType>5K PullDown</PullType>
+    <PullType>20K PullDown</PullType>
+    <PullType>1K PullUp</PullType>
+    <PullType>2K PullUp</PullType>
+    <PullType>5K PullUp</PullType>
+    <PullType>20K PullUp</PullType>
+    <PullType>1K_2K PullUp</PullType>
+    <PullType>Native</PullType>
+  </GPIOPullType>
+  <GPIOInterrupt>
+	<Interrupt>0h</Interrupt>
+	<Interrupt>1h</Interrupt>
+	<Interrupt>2h</Interrupt>
+	<Interrupt>3h</Interrupt>
+	<Interrupt>4h</Interrupt>
+	<Interrupt>5h</Interrupt>
+	<Interrupt>6h</Interrupt>
+	<Interrupt>7h</Interrupt>
+	<Interrupt>8h</Interrupt>
+	<Interrupt>9h</Interrupt>
+	<Interrupt>Ah</Interrupt>
+	<Interrupt>Bh</Interrupt>
+	<Interrupt>Ch</Interrupt>
+	<Interrupt>Dh</Interrupt>
+	<Interrupt>Eh</Interrupt>
+	<Interrupt>Fh</Interrupt>
+	<Interrupt>10h</Interrupt>
+	<Interrupt>11h</Interrupt>
+	<Interrupt>12h</Interrupt>
+	<Interrupt>13h</Interrupt>
+	<Interrupt>14h</Interrupt>
+	<Interrupt>15h</Interrupt>
+	<Interrupt>16h</Interrupt>
+	<Interrupt>17h</Interrupt>
+	<Interrupt>18h</Interrupt>
+	<Interrupt>19h</Interrupt>
+	<Interrupt>1Ah</Interrupt>
+	<Interrupt>1Bh</Interrupt>
+	<Interrupt>1Ch</Interrupt>
+	<Interrupt>1Dh</Interrupt>
+	<Interrupt>1Eh</Interrupt>
+	<Interrupt>1Fh</Interrupt>
+	<Interrupt>20h</Interrupt>
+	<Interrupt>21h</Interrupt>
+	<Interrupt>22h</Interrupt>
+	<Interrupt>23h</Interrupt>
+	<Interrupt>24h</Interrupt>
+	<Interrupt>25h</Interrupt>
+	<Interrupt>26h</Interrupt>
+	<Interrupt>27h</Interrupt>
+	<Interrupt>28h</Interrupt>
+	<Interrupt>29h</Interrupt>
+	<Interrupt>2Ah</Interrupt>
+	<Interrupt>2Bh</Interrupt>
+	<Interrupt>2Ch</Interrupt>
+	<Interrupt>2Dh</Interrupt>
+	<Interrupt>2Eh</Interrupt>
+	<Interrupt>2Fh</Interrupt>
+	<Interrupt>30h</Interrupt>
+	<Interrupt>31h</Interrupt>
+	<Interrupt>32h</Interrupt>
+	<Interrupt>33h</Interrupt>
+	<Interrupt>34h</Interrupt>
+	<Interrupt>35h</Interrupt>
+	<Interrupt>36h</Interrupt>
+	<Interrupt>37h</Interrupt>
+	<Interrupt>38h</Interrupt>
+	<Interrupt>39h</Interrupt>
+	<Interrupt>3Ah</Interrupt>
+	<Interrupt>3Bh</Interrupt>
+	<Interrupt>3Ch</Interrupt>
+	<Interrupt>3Dh</Interrupt>
+	<Interrupt>3Eh</Interrupt>
+	<Interrupt>3Fh</Interrupt>
+	<Interrupt>40h</Interrupt>
+	<Interrupt>41h</Interrupt>
+	<Interrupt>42h</Interrupt>
+	<Interrupt>43h</Interrupt>
+	<Interrupt>44h</Interrupt>
+	<Interrupt>45h</Interrupt>
+	<Interrupt>46h</Interrupt>
+	<Interrupt>47h</Interrupt>
+	<Interrupt>48h</Interrupt>
+	<Interrupt>49h</Interrupt>
+	<Interrupt>4Ah</Interrupt>
+	<Interrupt>4Bh</Interrupt>
+	<Interrupt>4Ch</Interrupt>
+	<Interrupt>4Dh</Interrupt>
+	<Interrupt>4Eh</Interrupt>
+	<Interrupt>4Fh</Interrupt>
+	<Interrupt>50h</Interrupt>
+	<Interrupt>51h</Interrupt>
+	<Interrupt>52h</Interrupt>
+	<Interrupt>53h</Interrupt>
+	<Interrupt>54h</Interrupt>
+	<Interrupt>55h</Interrupt>
+	<Interrupt>56h</Interrupt>
+	<Interrupt>57h</Interrupt>
+	<Interrupt>58h</Interrupt>
+	<Interrupt>59h</Interrupt>
+	<Interrupt>5Ah</Interrupt>
+	<Interrupt>5Bh</Interrupt>
+	<Interrupt>5Ch</Interrupt>
+	<Interrupt>5Dh</Interrupt>
+	<Interrupt>5Eh</Interrupt>
+	<Interrupt>5Fh</Interrupt>
+	<Interrupt>60h</Interrupt>
+	<Interrupt>61h</Interrupt>
+	<Interrupt>62h</Interrupt>
+	<Interrupt>63h</Interrupt>
+	<Interrupt>64h</Interrupt>
+	<Interrupt>65h</Interrupt>
+	<Interrupt>66h</Interrupt>
+	<Interrupt>67h</Interrupt>
+	<Interrupt>68h</Interrupt>
+	<Interrupt>69h</Interrupt>
+	<Interrupt>6Ah</Interrupt>
+	<Interrupt>6Bh</Interrupt>
+	<Interrupt>6Ch</Interrupt>
+	<Interrupt>6Dh</Interrupt>
+	<Interrupt>6Eh</Interrupt>
+	<Interrupt>6Fh</Interrupt>
+	<Interrupt>70h</Interrupt>
+	<Interrupt>71h</Interrupt>
+	<Interrupt>72h</Interrupt>
+	<Interrupt>73h</Interrupt>
+	<Interrupt>74h</Interrupt>
+	<Interrupt>75h</Interrupt>
+	<Interrupt>76h</Interrupt>
+	<Interrupt>77h</Interrupt>
+	<Interrupt>78h</Interrupt>
+	<Interrupt>79h</Interrupt>
+	<Interrupt>7Ah</Interrupt>
+	<Interrupt>7Bh</Interrupt>
+	<Interrupt>7Ch</Interrupt>
+	<Interrupt>7Dh</Interrupt>
+	<Interrupt>7Eh</Interrupt>
+	<Interrupt>7Fh</Interrupt>  
+  </GPIOInterrupt>
+  <GPIOFunctions>
+    <Function>GPIO Mode</Function>
+    <Function>Native Fn1</Function>
+    <Function>Native Fn2</Function>
+    <Function>Native Fn3</Function>
+    <Function>Native Fn4</Function>
+    <Function>Native Fn5</Function>
+    <Function>Native Fn6</Function>
+    <Function>Native Fn7</Function>
+  </GPIOFunctions>
+  <GPIOTxRxEnConfig>
+    <TxRxEnConfig>PadMode Controls Tx and Rx</TxRxEnConfig>
+    <TxRxEnConfig>Fn Controls Tx and Rx Set to 0</TxRxEnConfig>
+    <TxRxEnConfig>Fn Controls Tx and Rx Set to 1</TxRxEnConfig>
+    <TxRxEnConfig>Fn Controls Tx and Rx Always Enabled</TxRxEnConfig>
+  </GPIOTxRxEnConfig>  
+</BroxtonXML>

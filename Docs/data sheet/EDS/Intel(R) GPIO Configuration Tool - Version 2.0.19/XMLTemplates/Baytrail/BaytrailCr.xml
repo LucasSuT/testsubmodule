@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BaytrailXML name="BayTrail(CR)" shortName="BYT_CR" CFG0_Name="Cntrl" CFG1_Name="Pad" IOA="SB" BaseAddress="0xFED0C000" SBReadOpCode="0x06" SBWriteOpCode="0x07">
+  <GPIO>
+    <Community name="NorthCluster" max="27" BaseAddress="0x1000" SBBaseAddress="0x4000" SBPort="0x13">
+      <Pins>
+        <Pin No="GPIO_NC_00" CFG0_offset="0x130" CFG1_offset="0x138" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_01" CFG0_offset="0x120" CFG1_offset="0x128" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_02" CFG0_offset="0x110" CFG1_offset="0x118" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_03" CFG0_offset="0x140" CFG1_offset="0x148" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_04" CFG0_offset="0x150" CFG1_offset="0x158" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_05" CFG0_offset="0x160" CFG1_offset="0x168" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_06" CFG0_offset="0x180" CFG1_offset="0x188" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_07" CFG0_offset="0x190" CFG1_offset="0x198" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_08" CFG0_offset="0x170" CFG1_offset="0x178" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_09" CFG0_offset="0x100" CFG1_offset="0x108" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_10" CFG0_offset="0x0e0" CFG1_offset="0x0e8" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_11" CFG0_offset="0x0f0" CFG1_offset="0x0f8" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_12" CFG0_offset="0x0c0" CFG1_offset="0x0c8" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_13" CFG0_offset="0x1a0" CFG1_offset="0x1a8" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_14" CFG0_offset="0x1b0" CFG1_offset="0x1b8" Ball="NA" PWR="NA" Name="NA" Bump="NA" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_15" CFG0_offset="0x010" CFG1_offset="0x018" Ball="D17" PWR="V1P8S" Name="GPIO_S0_NC[15]" Bump="GPIO_S0_NC[15]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_16" CFG0_offset="0x040" CFG1_offset="0x048" Ball="B16" PWR="V1P8S" Name="GPIO_S0_NC[16]" Bump="GPIO_S0_NC[16]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_17" CFG0_offset="0x080" CFG1_offset="0x088" Ball="C15" PWR="V1P8S" Name="GPIO_S0_NC[17]" Bump="GPIO_S0_NC[17]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_18" CFG0_offset="0x0b0" CFG1_offset="0x0b8" Ball="C14" PWR="V1P8S" Name="GPIO_S0_NC[18]" Bump="GPIO_S0_NC[18]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_19" CFG0_offset="0x000" CFG1_offset="0x008" Ball="C17" PWR="V1P8S" Name="GPIO_S0_NC[19]" Bump="GPIO_S0_NC[19]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_20" CFG0_offset="0x030" CFG1_offset="0x038" Ball="C16" PWR="V1P8S" Name="GPIO_S0_NC[20]" Bump="GPIO_S0_NC[20]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_21" CFG0_offset="0x060" CFG1_offset="0x068" Ball="D16" PWR="V1P8S" Name="GPIO_S0_NC[21]" Bump="GPIO_S0_NC[21]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_22" CFG0_offset="0x0a0" CFG1_offset="0x0a8" Ball="D15" PWR="V1P8S" Name="GPIO_S0_NC[22]" Bump="GPIO_S0_NC[22]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_23" CFG0_offset="0x0d0" CFG1_offset="0x0d8" Ball="D14" PWR="V1P8S" Name="GPIO_S0_NC[23]" Bump="GPIO_S0_NC[23]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_24" CFG0_offset="0x020" CFG1_offset="0x028" Ball="F18" PWR="V1P8S" Name="GPIO_S0_NC[24]" Bump="GPIO_S0_NC[24]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_25" CFG0_offset="0x050" CFG1_offset="0x058" Ball="E17" PWR="V1P8S" Name="GPIO_S0_NC[25]" Bump="GPIO_S0_NC[25]" Module="NA" Validate="true" />
+        <Pin No="GPIO_NC_26" CFG0_offset="0x090" CFG1_offset="0x098" Ball="E16" PWR="V1P8S" Name="GPIO_S0_NC[26]" Bump="GPIO_S0_NC[26]" Module="NA" Validate="true" />
+      </Pins>
+    </Community>
+    <Community name="SouthCluster" max="102" BaseAddress="0x0000" SBBaseAddress="0x4000" SBPort="0x48">
+      <Pins>
+        <Pin No="GPIO_SC_00" CFG0_offset="0x550" CFG1_offset="0x558" Ball="AB6" PWR="V1P8S" Name="GPIO_S0_SC[00]" Bump="GPIO_S0_SC[00]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_01" CFG0_offset="0x590" CFG1_offset="0x598" Ball="AA6" PWR="V1P8S" Name="GPIO_S0_SC[01]" Bump="GPIO_S0_SC[01]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_02" CFG0_offset="0x5d0" CFG1_offset="0x5d8" Ball="Y6" PWR="V1P8S" Name="GPIO_S0_SC[02]" Bump="GPIO_S0_SC[02]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_03" CFG0_offset="0x600" CFG1_offset="0x608" Ball="AC5" PWR="V1P8S" Name="GPIO_S0_SC[003]" Bump="GPIO_S0_SC[003]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_04" CFG0_offset="0x630" CFG1_offset="0x638" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[004]" Bump="GPIO_S0_SC[004]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_05" CFG0_offset="0x660" CFG1_offset="0x668" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[005]" Bump="GPIO_S0_SC[005]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_06" CFG0_offset="0x620" CFG1_offset="0x628" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[006]" Bump="GPIO_S0_SC[006]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_07" CFG0_offset="0x650" CFG1_offset="0x658" Ball="AA5" PWR="V1P8S" Name="GPIO_S0_SC[07]" Bump="GPIO_S0_SC[07]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_08" CFG0_offset="0x220" CFG1_offset="0x228" Ball="Y16" PWR="VAZA" Name="I2S0_CLK" Bump="I2S0_CLK" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_09" CFG0_offset="0x250" CFG1_offset="0x258" Ball="Y14" PWR="VAZA" Name="I2S0_L_R" Bump="I2S0_L_R" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_10" CFG0_offset="0x240" CFG1_offset="0x248" Ball="AA14" PWR="VAZA" Name="I2S0_DATAOUT" Bump="I2S0_DATAOUT" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_11" CFG0_offset="0x260" CFG1_offset="0x268" Ball="Y13" PWR="VAZA" Name="I2S0_DATAIN" Bump="I2S0_DATAIN" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_12" CFG0_offset="0x270" CFG1_offset="0x278" Ball="AC13" PWR="VAZA" Name="I2S1_CLK" Bump="I2S1_CLK" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_13" CFG0_offset="0x230" CFG1_offset="0x238" Ball="AC14" PWR="VAZA" Name="I2S1_L_R" Bump="I2S1_L_R" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_14" CFG0_offset="0x280" CFG1_offset="0x288" Ball="AB14" PWR="VAZA" Name="I2S1_DATAOUT" Bump="I2S1_DATAOUT" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_15" CFG0_offset="0x540" CFG1_offset="0x548" Ball="Y10" PWR="V1P8S" Name="I2S1_DATAIN" Bump="I2S1_DATAIN" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_16" CFG0_offset="0x3e0" CFG1_offset="0x3e8" Ball="AE8" PWR="V1P8S" Name="MMC1_CLK" Bump="MMC1_CLK" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_17" CFG0_offset="0x3d0" CFG1_offset="0x3d8" Ball="AB7" PWR="V1P8S" Name="MMC1_D0" Bump="MMC1_D0" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_18" CFG0_offset="0x400" CFG1_offset="0x408" Ball="AC7" PWR="V1P8S" Name="MMC1_D1" Bump="MMC1_D1" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_19" CFG0_offset="0x3b0" CFG1_offset="0x3b8" Ball="AC8" PWR="V1P8S" Name="MMC1_D2" Bump="MMC1_D2" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_20" CFG0_offset="0x360" CFG1_offset="0x368" Ball="AB9" PWR="V1P8S" Name="MMC1_D3" Bump="MMC1_D3" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_21" CFG0_offset="0x380" CFG1_offset="0x388" Ball="AA9" PWR="V1P8S" Name="MMC1_D4" Bump="MMC1_D4" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_22" CFG0_offset="0x3c0" CFG1_offset="0x3c8" Ball="AA8" PWR="V1P8S" Name="MMC1_D5" Bump="MMC1_D5" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_23" CFG0_offset="0x370" CFG1_offset="0x378" Ball="Y8" PWR="V1P8S" Name="MMC1_D6" Bump="MMC1_D6" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_24" CFG0_offset="0x3f0" CFG1_offset="0x3f8" Ball="Y7" PWR="V1P8S" Name="MMC1_D7" Bump="MMC1_D7" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_25" CFG0_offset="0x390" CFG1_offset="0x398" Ball="AB8" PWR="V1P8S" Name="MMC1_CMD" Bump="MMC1_CMD" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_26" CFG0_offset="0x330" CFG1_offset="0x338" Ball="AD8" PWR="V1P8S" Name="MMC1_RST#" Bump="MMC1_RST#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_27" CFG0_offset="0x320" CFG1_offset="0x328" Ball="AE9" PWR="V1P8S" Name="SD2_CLK" Bump="SD2_CLK" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_28" CFG0_offset="0x350" CFG1_offset="0x358" Ball="AB11" PWR="V1P8S" Name="SD2_D0" Bump="SD2_D0" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_29" CFG0_offset="0x2f0" CFG1_offset="0x2f8" Ball="AB10" PWR="V1P8S" Name="SD2_D1" Bump="SD2_D1" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_30" CFG0_offset="0x340" CFG1_offset="0x348" Ball="AC10" PWR="V1P8S" Name="SD2_D2" Bump="SD2_D2" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_31" CFG0_offset="0x310" CFG1_offset="0x318" Ball="AD10" PWR="V1P8S" Name="SD2_D3" Bump="SD2_D3" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_32" CFG0_offset="0x300" CFG1_offset="0x308" Ball="AC9" PWR="V1P8S" Name="SD2_CMD" Bump="SD2_CMD" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_33" CFG0_offset="0x2b0" CFG1_offset="0x2b8" Ball="AC12" PWR="VSDIO" Name="SD3_CLK" Bump="SD3_CLK" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_34" CFG0_offset="0x2e0" CFG1_offset="0x2e8" Ball="AC11" PWR="VSDIO" Name="SD3_D0" Bump="SD3_D0" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_35" CFG0_offset="0x290" CFG1_offset="0x298" Ball="AB13" PWR="VSDIO" Name="SD3_D1" Bump="SD3_D1" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_36" CFG0_offset="0x2d0" CFG1_offset="0x2d8" Ball="AA12" PWR="VSDIO" Name="SD3_D2" Bump="SD3_D2" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_37" CFG0_offset="0x2a0" CFG1_offset="0x2a8" Ball="AA13" PWR="VSDIO" Name="SD3_D3" Bump="SD3_D3" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_38" CFG0_offset="0x3a0" CFG1_offset="0x3a8" Ball="Y12" PWR="V1P8S" Name="SD3_CD#" Bump="SD3_CD#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_39" CFG0_offset="0x2c0" CFG1_offset="0x2c8" Ball="AB12" PWR="VSDIO" Name="SD3_CMD" Bump="SD3_CMD" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_40" CFG0_offset="0x5f0" CFG1_offset="0x5f8" Ball="Y9" PWR="V1P8S" Name="SD3_1P8EN" Bump="SD3_1P8EN" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_41" CFG0_offset="0x690" CFG1_offset="0x698" Ball="AA10" PWR="V1P8S" Name="SD3_PWREN#" Bump="SD3_PWREN#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_42" CFG0_offset="0x460" CFG1_offset="0x468" Ball="AE5" PWR="VLPC" Name="ILB_LPC_AD[0]" Bump="ILB_LPC_AD[0]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_43" CFG0_offset="0x440" CFG1_offset="0x448" Ball="E9" PWR="VLPC" Name="ILB_LPC_AD[1]" Bump="ILB_LPC_AD[1]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_44" CFG0_offset="0x430" CFG1_offset="0x438" Ball="D7" PWR="VLPC" Name="ILB_LPC_AD[2]" Bump="ILB_LPC_AD[2]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_45" CFG0_offset="0x420" CFG1_offset="0x428" Ball="F9" PWR="VLPC" Name="ILB_LPC_AD[3]" Bump="ILB_LPC_AD[3]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_46" CFG0_offset="0x450" CFG1_offset="0x458" Ball="E8" PWR="VLPC" Name="ILB_LPC_FRAME#" Bump="ILB_LPC_FRAME#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_47" CFG0_offset="0x470" CFG1_offset="0x478" Ball="F8" PWR="VLPC" Name="ILB_LPC_CLK[0]" Bump="ILB_LPC_CLK[0]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_48" CFG0_offset="0x410" CFG1_offset="0x418" Ball="D6" PWR="VLPC" Name="ILB_LPC_CLK[1]" Bump="ILB_LPC_CLK[1]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_49" CFG0_offset="0x480" CFG1_offset="0x488" Ball="D4" PWR="VLPC" Name="ILB_LPC_CLKRUN#" Bump="ILB_LPC_CLKRUN#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_50" CFG0_offset="0x560" CFG1_offset="0x568" Ball="NA" PWR="V1P8S" Name="ILB_LPC_SERIRQ" Bump="ILB_LPC_SERIRQ" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_51" CFG0_offset="0x5a0" CFG1_offset="0x5a8" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[51]" Bump="GPIO_S0_SC[51]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_52" CFG0_offset="0x580" CFG1_offset="0x588" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[52]" Bump="GPIO_S0_SC[52]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_53" CFG0_offset="0x5c0" CFG1_offset="0x5c8" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[53]" Bump="GPIO_S0_SC[53]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_54" CFG0_offset="0x670" CFG1_offset="0x678" Ball="AE5" PWR="V1P8S" Name="GPIO_S0_SC[54]" Bump="GPIO_S0_SC[54]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_55" CFG0_offset="0x4d0" CFG1_offset="0x4d8" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[55]" Bump="GPIO_S0_SC[55]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_56" CFG0_offset="0x4f0" CFG1_offset="0x4f8" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[56]" Bump="GPIO_S0_SC[56]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_57" CFG0_offset="0x530" CFG1_offset="0x538" Ball="AC6" PWR="V1P8S" Name="GPIO_S0_SC[57]" Bump="GPIO_S0_SC[57]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_58" CFG0_offset="0x4e0" CFG1_offset="0x4e8" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[58]" Bump="GPIO_S0_SC[58]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_59" CFG0_offset="0x510" CFG1_offset="0x518" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[59]" Bump="GPIO_S0_SC[59]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_60" CFG0_offset="0x500" CFG1_offset="0x508" Ball="NA" PWR="V1P8S" Name="GPIO_S0_SC[60]" Bump="GPIO_S0_SC[60]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_61" CFG0_offset="0x520" CFG1_offset="0x528" Ball="AD6" PWR="V1P8S" Name="GPIO_S0_SC[61]" Bump="GPIO_S0_SC[61]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_62" CFG0_offset="0x0d0" CFG1_offset="0x0d8" Ball="NA" PWR="V1P8S" Name="LPE_I2S2_CLK" Bump="LPE_I2S2_CLK" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_63" CFG0_offset="0x0c0" CFG1_offset="0x0c8" Ball="NA" PWR="V1P8S" Name="LPE_I2S2_FRM" Bump="LPE_I2S2_FRM" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_64" CFG0_offset="0x0f0" CFG1_offset="0x0f8" Ball="NA" PWR="V1P8S" Name="LPE_I2S2_DATAIN" Bump="LPE_I2S2_DATAIN" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_65" CFG0_offset="0x0e0" CFG1_offset="0x0e8" Ball="U17" PWR="V1P8S" Name="GPIO_S0_SC[65]" Bump="GPIO_S0_SC[65]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_66" CFG0_offset="0x110" CFG1_offset="0x118" Ball="NA" PWR="V1P8S" Name="SIO_SPI_CS#" Bump="SIO_SPI_CS#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_67" CFG0_offset="0x120" CFG1_offset="0x128" Ball="NA" PWR="V1P8S" Name="SIO_SPI_MISO" Bump="SIO_SPI_MISO" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_68" CFG0_offset="0x130" CFG1_offset="0x138" Ball="NA" PWR="V1P8S" Name="SIO_SPI_MOSI" Bump="SIO_SPI_MOSI" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_69" CFG0_offset="0x100" CFG1_offset="0x108" Ball="NA" PWR="V1P8S" Name="SIO_SPI_CLK" Bump="SIO_SPI_CLK" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_70" CFG0_offset="0x020" CFG1_offset="0x028" Ball="AB19" PWR="V1P8S" Name="SIO_UART1_RXD" Bump="SIO_UART1_RXD" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_71" CFG0_offset="0x010" CFG1_offset="0x018" Ball="AC19" PWR="V1P8S" Name="SIO_UART1_TXD" Bump="SIO_UART1_TXD" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_72" CFG0_offset="0x000" CFG1_offset="0x008" Ball="AC18" PWR="V1P8S" Name="SIO_UART1_RTS#" Bump="SIO_UART1_RTS#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_73" CFG0_offset="0x040" CFG1_offset="0x048" Ball="AB18" PWR="V1P8S" Name="SIO_UART1_CTS#" Bump="SIO_UART1_CTS#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_74" CFG0_offset="0x060" CFG1_offset="0x068" Ball="AD18" PWR="V1P8S" Name="SIO_UART2_RXD" Bump="SIO_UART2_RXD" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_75" CFG0_offset="0x070" CFG1_offset="0x078" Ball="AE18" PWR="V1P8S" Name="SIO_UART2_TXD" Bump="SIO_UART2_TXD" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_76" CFG0_offset="0x090" CFG1_offset="0x098" Ball="AC17" PWR="V1P8S" Name="SIO_UART2_RTS#" Bump="SIO_UART2_RTS#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_77" CFG0_offset="0x080" CFG1_offset="0x088" Ball="AE17" PWR="V1P8S" Name="SIO_UART2_CTS#" Bump="SIO_UART2_CTS#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_78" CFG0_offset="0x210" CFG1_offset="0x218" Ball="AE12" PWR="V1P8S" Name="SIO_I2C0_SDA" Bump="SIO_I2C0_SDA" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_79" CFG0_offset="0x200" CFG1_offset="0x208" Ball="AD12" PWR="V1P8S" Name="SIO_I2C0_SCL" Bump="SIO_I2C0_SCL" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_80" CFG0_offset="0x1f0" CFG1_offset="0x1f8" Ball="AE13" PWR="V1P8S" Name="SIO_I2C1_SDA" Bump="SIO_I2C1_SDA" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_81" CFG0_offset="0x1e0" CFG1_offset="0x1e8" Ball="AD14" PWR="V1P8S" Name="SIO_I2C1_SCL" Bump="SIO_I2C1_SCL" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_82" CFG0_offset="0x1d0" CFG1_offset="0x1d8" Ball="AB15" PWR="V1P8S" Name="SIO_I2C2_SDA" Bump="SIO_I2C2_SDA" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_83" CFG0_offset="0x1b0" CFG1_offset="0x1b8" Ball="AC15" PWR="V1P8S" Name="SIO_I2C2_SCL" Bump="SIO_I2C2_SCL" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_84" CFG0_offset="0x190" CFG1_offset="0x198" Ball="AB16" PWR="V1P8S" Name="SIO_I2C3_SDA" Bump="SIO_I2C3_SDA" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_85" CFG0_offset="0x1c0" CFG1_offset="0x1c8" Ball="AC16" PWR="V1P8S" Name="SIO_I2C3_SCL" Bump="SIO_I2C3_SCL" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_86" CFG0_offset="0x1a0" CFG1_offset="0x1a8" Ball="AD16" PWR="V1P8S" Name="SIO_I2C4_SDA" Bump="SIO_I2C4_SDA" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_87" CFG0_offset="0x170" CFG1_offset="0x178" Ball="AE16" PWR="V1P8S" Name="SIO_I2C4_SCL" Bump="SIO_I2C4_SCL" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_88" CFG0_offset="0x150" CFG1_offset="0x158" Ball="NA" PWR="V1P8S" Name="SIO_I2C5_SDA" Bump="SIO_I2C5_SDA" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_89" CFG0_offset="0x140" CFG1_offset="0x148" Ball="NA" PWR="V1P8S" Name="SIO_I2C5_SCL" Bump="SIO_I2C5_SCL" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_90" CFG0_offset="0x180" CFG1_offset="0x188" Ball="NA" PWR="V1P8S" Name="SIO_I2C6_SDA" Bump="SIO_I2C6_SDA" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_91" CFG0_offset="0x160" CFG1_offset="0x168" Ball="NA" PWR="V1P8S" Name="SIO_I2C6_SCL" Bump="SIO_I2C6_SCL" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_92" CFG0_offset="0x050" CFG1_offset="0x058" Ball="AA17" PWR="V1P8S" Name="D1_I2C_DATA" Bump="D1_I2C_DATA" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_93" CFG0_offset="0x030" CFG1_offset="0x038" Ball="AB17" PWR="V1P8S" Name="D1_I2C_CLK" Bump="D1_I2C_CLK" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_94" CFG0_offset="0x0a0" CFG1_offset="0x0a8" Ball="AA16" PWR="V1P8S" Name="SIO_PWM[0]" Bump="SIO_PWM[0]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_95" CFG0_offset="0x0b0" CFG1_offset="0x0b8" Ball="Y17" PWR="V1P8S" Name="SIO_PWM[1]" Bump="SIO_PWM[1]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_96" CFG0_offset="0x6a0" CFG1_offset="0x6a8" Ball="AB5" PWR="V1P8S" Name="PMC_PLT_CLK[0]" Bump="PMC_PLT_CLK[0]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_97" CFG0_offset="0x570" CFG1_offset="0x578" Ball="AE4" PWR="V1P8S" Name="PMC_PLT_CLK[1]" Bump="PMC_PLT_CLK[1]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_98" CFG0_offset="0x5b0" CFG1_offset="0x5b8" Ball="NA" PWR="V1P8S" Name="PMC_PLT_CLK[2]" Bump="PMC_PLT_CLK[2]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_99" CFG0_offset="0x680" CFG1_offset="0x688" Ball="AD4" PWR="V1P8S" Name="PMC_PLT_CLK[3]" Bump="PMC_PLT_CLK[3]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_100" CFG0_offset="0x610" CFG1_offset="0x618" Ball="AD2" PWR="V1P8S" Name="PMC_PLT_CLK[4]" Bump="PMC_PLT_CLK[4]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_101" CFG0_offset="0x640" CFG1_offset="0x648" Ball="NA" PWR="V1P8S" Name="PMC_PLT_CLK[5]" Bump="PMC_PLT_CLK[5]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SC_102" CFG0_offset="0x720" CFG1_offset="0x728" Ball="NA" PWR="V1P8S" Name="vgpio_7" Bump="vgpio_7" Module="NA" Validate="true" />
+      </Pins>
+    </Community>
+    <Community name="SUS" max="44" BaseAddress="0x2000" SBBaseAddress="0x4000" SBPort="0xA8">
+      <Pins>
+        <Pin No="GPIO_SUS_00" CFG0_offset="0x1d0" CFG1_offset="0x1d8" Ball="E9" PWR="V1P8A" Name="GPIO_S5[0]" Bump="GPIO_S5[0]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_01" CFG0_offset="0x210" CFG1_offset="0x218" Ball="D7" PWR="V1P8A" Name="GPIO_S5[1]" Bump="GPIO_S5[1]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_02" CFG0_offset="0x1e0" CFG1_offset="0x1e8" Ball="F9" PWR="V1P8A" Name="GPIO_S5[2]" Bump="GPIO_S5[2]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_03" CFG0_offset="0x1f0" CFG1_offset="0x1f8" Ball="E8" PWR="V1P8A" Name="GPIO_S5[3]" Bump="GPIO_S5[3]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_04" CFG0_offset="0x200" CFG1_offset="0x208" Ball="F8" PWR="V1P8A" Name="GPIO_S5[4]" Bump="GPIO_S5[4]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_05" CFG0_offset="0x220" CFG1_offset="0x228" Ball="D6" PWR="V1P8A" Name="GPIO_S5[5]" Bump="GPIO_S5[5]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_06" CFG0_offset="0x240" CFG1_offset="0x248" Ball="D4" PWR="V1P8A" Name="GPIO_S5[6]" Bump="GPIO_S5[6]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_07" CFG0_offset="0x230" CFG1_offset="0x238" Ball="D5" PWR="V1P8A" Name="GPIO_S5[7]" Bump="GPIO_S5[7]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_08" CFG0_offset="0x260" CFG1_offset="0x268" Ball="D3" PWR="V1P8A" Name="GPIO_S5[8]" Bump="GPIO_S5[8]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_09" CFG0_offset="0x250" CFG1_offset="0x258" Ball="E6" PWR="V1P8A" Name="GPIO_S5[9]" Bump="GPIO_S5[9]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_10" CFG0_offset="0x120" CFG1_offset="0x128" Ball="C5" PWR="V1P8A" Name="GPIO_S5[10]" Bump="GPIO_S5[10]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_11" CFG0_offset="0x070" CFG1_offset="0x078" Ball="D10" PWR="V1P8A" Name="PMC_SUSPWRDNACK" Bump="PMC_SUSPWRDNACK" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_12" CFG0_offset="0x0b0" CFG1_offset="0x0b8" Ball="A9" PWR="V1P8A" Name="PMC_SUSCLK[0]" Bump="PMC_SUSCLK[0]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_13" CFG0_offset="0x140" CFG1_offset="0x148" Ball="C7" PWR="V1P8A" Name="PMC_SLP_S0IX#" Bump="PMC_SLP_S0IX#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_14" CFG0_offset="0x110" CFG1_offset="0x118" Ball="C6" PWR="V1P8A" Name="USB_ULPI_RST#" Bump="USB_ULPI_RST#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_15" CFG0_offset="0x010" CFG1_offset="0x018" Ball="B10" PWR="V1P8A" Name="GPIO_S5[15]" Bump="GPIO_S5[15]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_16" CFG0_offset="0x080" CFG1_offset="0x088" Ball="A10" PWR="V1P8A" Name="PMC_PWRBTN#" Bump="PMC_PWRBTN#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_17" CFG0_offset="0x0a0" CFG1_offset="0x0a8" Ball="D9" PWR="V1P8A" Name="GPIO_S5[17]" Bump="GPIO_S5[17]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_18" CFG0_offset="0x130" CFG1_offset="0x138" Ball="E10" PWR="V1P8A" Name="PMC_SUS_STAT#" Bump="PMC_SUS_STAT#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_19" CFG0_offset="0x0c0" CFG1_offset="0x0c8" Ball="F13" PWR="V1P8A" Name="USB_OC[0]#" Bump="USB_OC[0]#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_20" CFG0_offset="0x000" CFG1_offset="0x008" Ball="F14" PWR="V1P8A" Name="USB_OC[1]#" Bump="USB_OC[1]#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_21" CFG0_offset="0x020" CFG1_offset="0x028" Ball="D12" PWR="V1P8A" Name="PCU_SPI_CS[1]#" Bump="PCU_SPI_CS[1]#" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_22" CFG0_offset="0x170" CFG1_offset="0x178" Ball="A6" PWR="V1P8A" Name="GPIO_S5[22]" Bump="GPIO_S5[22]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_23" CFG0_offset="0x270" CFG1_offset="0x278" Ball="B4" PWR="V1P8A" Name="GPIO_S5[23]" Bump="GPIO_S5[23]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_24" CFG0_offset="0x1c0" CFG1_offset="0x1c8" Ball="A3" PWR="V1P8A" Name="GPIO_S5[24]" Bump="GPIO_S5[24]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_25" CFG0_offset="0x1b0" CFG1_offset="0x1b8" Ball="B3" PWR="V1P8A" Name="GPIO_S5[25]" Bump="GPIO_S5[25]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_26" CFG0_offset="0x160" CFG1_offset="0x168" Ball="B2" PWR="V1P8A" Name="GPIO_S5[26]" Bump="GPIO_S5[26]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_27" CFG0_offset="0x150" CFG1_offset="0x158" Ball="C2" PWR="V1P8A" Name="GPIO_S5[27]" Bump="GPIO_S5[27]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_28" CFG0_offset="0x180" CFG1_offset="0x188" Ball="C3" PWR="V1P8A" Name="GPIO_S5[28]" Bump="GPIO_S5[28]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_29" CFG0_offset="0x190" CFG1_offset="0x198" Ball="C4" PWR="V1P8A" Name="GPIO_S5[29]" Bump="GPIO_S5[29]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_30" CFG0_offset="0x1a0" CFG1_offset="0x1a8" Ball="A5" PWR="V1P8A" Name="GPIO_S5[30]" Bump="GPIO_S5[30]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_31" CFG0_offset="0x330" CFG1_offset="0x338" Ball="N3" PWR="V1P8A" Name="USB_ULPI_CLK" Bump="USB_ULPI_CLK" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_32" CFG0_offset="0x380" CFG1_offset="0x388" Ball="J5" PWR="V1P8A" Name="USB_ULPI_DATA[0]" Bump="USB_ULPI_DATA[0]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_33" CFG0_offset="0x360" CFG1_offset="0x368" Ball="H5" PWR="V1P8A" Name="USB_ULPI_DATA[1]" Bump="USB_ULPI_DATA[1]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_34" CFG0_offset="0x310" CFG1_offset="0x318" Ball="J4" PWR="V1P8A" Name="USB_ULPI_DATA[2]" Bump="USB_ULPI_DATA[2]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_35" CFG0_offset="0x370" CFG1_offset="0x378" Ball="H1" PWR="V1P8A" Name="USB_ULPI_DATA[3]" Bump="USB_ULPI_DATA[3]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_36" CFG0_offset="0x300" CFG1_offset="0x308" Ball="H2" PWR="V1P8A" Name="USB_ULPI_DATA[4]" Bump="USB_ULPI_DATA[4]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_37" CFG0_offset="0x390" CFG1_offset="0x398" Ball="J3" PWR="V1P8A" Name="USB_ULPI_DATA[5]" Bump="USB_ULPI_DATA[5]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_38" CFG0_offset="0x320" CFG1_offset="0x328" Ball="J2" PWR="V1P8A" Name="USB_ULPI_DATA[6]" Bump="USB_ULPI_DATA[6]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_39" CFG0_offset="0x3a0" CFG1_offset="0x3a8" Ball="K2" PWR="V1P8A" Name="USB_ULPI_DATA[7]" Bump="USB_ULPI_DATA[7]" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_40" CFG0_offset="0x340" CFG1_offset="0x348" Ball="K3" PWR="V1P8A" Name="USB_ULPI_DIR" Bump="USB_ULPI_DIR" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_41" CFG0_offset="0x350" CFG1_offset="0x358" Ball="N4" PWR="V1P8A" Name="USB_ULPI_NXT" Bump="USB_ULPI_NXT" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_42" CFG0_offset="0x3b0" CFG1_offset="0x3b8" Ball="M2" PWR="V1P8A" Name="USB_ULPI_STP" Bump="USB_ULPI_STP" Module="NA" Validate="true" />
+        <Pin No="GPIO_SUS_43" CFG0_offset="0x280" CFG1_offset="0x288" Ball="F10" PWR="V1P8A" Name="USB_ULPI_REFCLK" Bump="USB_ULPI_REFCLK" Module="NA" Validate="true" />
+      </Pins>
+    </Community>
+  </GPIO>
+  <GPIOFunctions>
+    <Function>F0</Function>
+    <Function>F1</Function>
+    <Function>F2</Function>
+    <Function>F3</Function>
+    <Function>F4</Function>
+  </GPIOFunctions>
+  <GPIOInterruptType>
+    <InterruptType>Direct</InterruptType>
+    <InterruptType>None</InterruptType>
+    <InterruptType>Edge_High</InterruptType>
+    <InterruptType>Edge_Low</InterruptType>
+    <InterruptType>Level_High</InterruptType>
+    <InterruptType>Level_Low</InterruptType>
+    <InterruptType>Edge_Both</InterruptType>
+  </GPIOInterruptType>
+  <GPIOPullType>
+    <PullType>P_02K_L</PullType>
+    <PullType>P_10K_L</PullType>
+    <PullType>P_20K_L</PullType>
+    <PullType>P_40K_L</PullType>
+    <PullType>P_02K_H</PullType>
+    <PullType>P_10K_H</PullType>
+    <PullType>P_20K_H</PullType>
+    <PullType>P_40K_H</PullType>
+    <PullType>None</PullType>
+  </GPIOPullType>
+  <GPIOType>
+    <Type>GPIO</Type>
+    <Type>GPI</Type>
+    <Type>GPO</Type>
+    <Type>Tristate</Type>
+  </GPIOType>
+  <GPIODefaults>
+    <Default>High</Default>
+    <Default>Low</Default>
+  </GPIODefaults>
+</BaytrailXML>

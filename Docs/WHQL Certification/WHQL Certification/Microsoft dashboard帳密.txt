@@ -1,0 +1,23 @@
+https://partner.microsoft.com/en-us/dashboard/directory 
+
+1. Partner Center Account-global admin
+User name: globaladmin@AAEONTechHW.onmicrosoft.com
+Password: AAeonGA@456
+
+2. Albert account
+User name:albertwu@AAEONTechHW.onmicrosoft.com 
+Password: osaptest6
+
+3.
+User name: OSAP@aaeonsw.onmicrosoft.com
+Password: aaeon123456##
+
+4. 
+OSAP outlook
+ID:OSAP@aaeon.com.tw
+PW:@@201904Osap
+
+5.
+OSAP Gmail & Microsoft Account(Live ID)
+ID:AAEON.SDD1@gmail.com
+PW:aaeon123456@

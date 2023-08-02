@@ -1,0 +1,20 @@
+;*** BEGIN **********************************************************
+;**                                                                **
+;** Automatically generated on: Thu Dec 15 13:11:15 2022           **
+;**                                                                **
+;** MakeCAB Version: 5.00                                 **
+;**                                                                **
+;*** BEGIN **********************************************************
+[disk list]
+1,Disk 1
+[cabinet list]
+1,1,aaeonFramework.cab
+[file list]
+1,1,aaeonFramework\aaeonFramework.inf,71962
+1,1,aaeonFramework\aaeonFramework.sys,208536
+1,1,aaeonFramework\WdfCoinstaller01009.dll,1461992
+;*** END ************************************************************
+;**                                                                **
+;** Automatically generated on: Thu Dec 15 13:11:15 2022           **
+;**                                                                **
+;*** END ************************************************************

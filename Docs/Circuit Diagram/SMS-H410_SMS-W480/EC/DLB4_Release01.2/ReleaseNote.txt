@@ -1,0 +1,33 @@
+==========DLB4_Release01.2==========
+ITEEC_WinFlash_v4.0.0.3:
+  1.Modify timing after reset
+  2.Update the ini files of flash parts
+  3.Patch that 5213's eFlashID will be shifted 1 byte with some fw code
+ITEEC_WinFlash_v4.0.0.2:
+  1.support IT8229,IT8230,IT8232,IT8233,IT8237,IT8249,IT8250,IT8252,IT8255,IT8292,IT8292,IT8293
+  2.support 4 bytes address(256Mb) for Quick Mode
+  3.support eFlash size of IT8298 and IT8299 
+  4.support 384KB/512KB of eFlash for IT8320DX,IT8325DX,IT8326DX,IT8329DX,IT8120DX,IT8125DX,IT8126DX,IT8129DX,IT8130DX,IT8135DX,IT8136DX,IT8139DX,IT8180DX,IT8185DX,IT8186DX,IT8189DX
+
+ITENewWinECU_D2EC_V4.0.0.2:
+  1.support ChipID==5260
+  2.Add Reconnect function
+  3.Enable USB Register display
+
+DLB4_8390FW_v0007:
+  1.Support 4 bytes address(256Mb) of QuickMode
+
+==========DLB4_Release01.1==========
+ITEEC_WinFlash_v4.0.0.1:
+  1.suport 184K eFlash of IT8297/IT8257
+  2.add FM25F005 flash patrs
+  3.update new PinSet.ini
+
+ITENewWinECU_D2EC_V4.0.0.1:
+  1.add CPU_ID for RISC-V
+  2.add IT5575 in ChipID list
+  3.fix the address value of Mem/Reg for M8051W
+  4.update new PinSet.ini
+
+DLB4_8390FW_v0006:
+  10.No change

@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BasinfallsXML name="Basinfalls HEDT" shortName="BSF_HEDT" CFG0_Name="DW0" CFG1_Name="DW1" IOA="MMIO" BaseAddress="0xFD000000" SBReadOpCode="0x00" SBWriteOpCode="0x00">
+  <GPIO>
+    <Community name="Community 0" max="48" BaseAddress="0xAF0400" SBBaseAddress="0x0000" SBPort="0x00">
+      <Pins>
+        <Pin No="GPP_A_00" Name="GPP_A_0_RCINB_ESPI_ALERT1B" CFG0_offset="0x000" CFG1_offset="0x004" Ball="NK" PWR="GPP_A" Bump="RCIN_N" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_01" Name="GPP_A_1_LPC_AD0_ESPI_IO0" CFG0_offset="0x008" CFG1_offset="0x00c" Ball="NK" PWR="GPP_A" Bump="LPC_AD0" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_02" Name="GPP_A_2_LPC_AD1_ESPI_IO1" CFG0_offset="0x010" CFG1_offset="0x014" Ball="NK" PWR="GPP_A" Bump="LPC_AD1" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_03" Name="GPP_A_3_LPC_AD2_ESPI_IO2" CFG0_offset="0x018" CFG1_offset="0x01c" Ball="NK" PWR="GPP_A" Bump="LPC_AD2" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_04" Name="GPP_A_4_LPC_AD3_ESPI_IO3" CFG0_offset="0x020" CFG1_offset="0x024" Ball="NK" PWR="GPP_A" Bump="LPC_AD3" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_05" Name="GPP_A_5_LPC_FRAME_ESPI_CS0_N" CFG0_offset="0x028" CFG1_offset="0x02c" Ball="NK" PWR="GPP_A" Bump="LPC_FRAME" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_06" Name="GPP_A_6_INT_SERIRQ_ESPI_CS1_N" CFG0_offset="0x030" CFG1_offset="0x034" Ball="NK" PWR="GPP_A" Bump="SERIRQ" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_07" Name="GPP_A_7_PIRQAB_ALERT0_N" CFG0_offset="0x038" CFG1_offset="0x03c" Ball="NK" PWR="GPP_A" Bump="PCI_IRQ_A_N" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_08" Name="GPP_A_8_PM_CLKRUN_N" CFG0_offset="0x040" CFG1_offset="0x044" Ball="NK" PWR="GPP_A" Bump="BIOS_POST_COMPLETE_N_CLKRUN#" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_09" Name="GPP_A_9_LPC_CLK_ESPI_CLK" CFG0_offset="0x048" CFG1_offset="0x04c" Ball="NK" PWR="GPP_A" Bump="CLK_ LPC_0" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_10" Name="GPP_A_10_PCH_CLK_PCI_TPM" CFG0_offset="0x050" CFG1_offset="0x054" Ball="NK" PWR="GPP_A" Bump="CLK_ LPC_1" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_11" Name="GPP_A_11_NOT_USED" CFG0_offset="0x058" CFG1_offset="0x05c" Ball="NK" PWR="GPP_A" Bump="PME_N" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_12" Name="GPP_A_12_NOT_USED" CFG0_offset="0x060" CFG1_offset="0x064" Ball="NK" PWR="GPP_A" Bump="GPP_A_12_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_13" Name="GPP_A_13_SUS_PWR_ACK_R" CFG0_offset="0x068" CFG1_offset="0x06c" Ball="NK" PWR="GPP_A" Bump="PM_SUS_WARN_N" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_14" Name="GPP_A_14_PM_SUS_STAT_ESPI_RST_N" CFG0_offset="0x070" CFG1_offset="0x074" Ball="NK" PWR="GPP_A" Bump="PM_LPCPD_N" Module="LPC" Validate="true" />
+        <Pin No="GPP_A_15" Name="GPP_A_15_SUSACK_R_N" CFG0_offset="0x078" CFG1_offset="0x07c" Ball="NK" PWR="GPP_A" Bump="PM_SUSACK_N" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_16" Name="GPP_A_16_NOT_USED" CFG0_offset="0x080" CFG1_offset="0x084" Ball="NK" PWR="GPP_A" Bump="GPP_A_16_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_17" Name="GPP_A_17_NOT_USED" CFG0_offset="0x088" CFG1_offset="0x08c" Ball="NK" PWR="GPP_A" Bump="GPP_A_17_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_18" Name="GPP_A_18_ISH_GP_0_ALS" CFG0_offset="0x090" CFG1_offset="0x094" Ball="NK" PWR="GPP_A" Bump="GPP_A_18_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_19" Name="GPP_A_19_ISH_GP_1_HPS" CFG0_offset="0x098" CFG1_offset="0x09c" Ball="NK" PWR="GPP_A" Bump="GPP_A_19_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_20" Name="GPP_A_20_NOT_USED" CFG0_offset="0x0a0" CFG1_offset="0x0a4" Ball="NK" PWR="GPP_A" Bump="GPP_A_20_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_21" Name="GPP_A_21_FPS_LOCK_N" CFG0_offset="0x0a8" CFG1_offset="0x0ac" Ball="NK" PWR="GPP_A" Bump="GPP_A_21_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_22" Name="GPP_A_22_FPS_RST_N" CFG0_offset="0x0b0" CFG1_offset="0x0b4" Ball="NK" PWR="GPP_A" Bump="GPP_A_22_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_A_23" Name="GPP_A_23_FPS_INTR" CFG0_offset="0x0b8" CFG1_offset="0x0bc" Ball="NK" PWR="GPP_A" Bump="GPP_A_23_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_B_00" Name="GPP_B_0_NOT_USED" CFG0_offset="0x0c0" CFG1_offset="0x0c4" Ball="NK" PWR="GPP_B" Bump="GPP_B_0_NOT_USED" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_01" Name="GPP_B_1_NOT_USED" CFG0_offset="0x0c8" CFG1_offset="0x0cc" Ball="NK" PWR="GPP_B" Bump="GPP_B_1_NOT_USED" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_02" Name="GPP_B_2_NOT_USED" CFG0_offset="0x0d0" CFG1_offset="0x0d4" Ball="NK" PWR="GPP_B" Bump="VRALERT_PU" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_03" Name="GPP_B_3_BT_RF_KILL_N" CFG0_offset="0x0d8" CFG1_offset="0x0dc" Ball="NK" PWR="GPP_B" Bump="BT_RF_KILL_N" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_04" Name="GPP_B_4_CPU_GP3" CFG0_offset="0x0e0" CFG1_offset="0x0e4" Ball="NK" PWR="GPP_B" Bump="GPP_B_4_NOT_USED" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_05" Name="GPP_B_5_NOT_USED" CFG0_offset="0x0e8" CFG1_offset="0x0ec" Ball="NK" PWR="GPP_B" Bump="GPP_B_5_NOT_USED" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_06" Name="GPP_B_6_CLK_REQ1_M2_WLAN_N" CFG0_offset="0x0f0" CFG1_offset="0x0f4" Ball="NK" PWR="GPP_B" Bump="GPP_B_6_NOT_USED" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_07" Name="GPP_B_7_CLK_REQ2_LAN_N" CFG0_offset="0x0f8" CFG1_offset="0x0fc" Ball="NK" PWR="GPP_B" Bump="GPP_B_7_NOT_USED" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_08" Name="GPP_B_8_CLK_REQ3_M2_WIGIG_N" CFG0_offset="0x100" CFG1_offset="0x104" Ball="NK" PWR="GPP_B" Bump="GPP_B_8_NOT_USED" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_09" Name="GPP_B_9_PCIEX1_SLOT1_PRSNT2_R_N" CFG0_offset="0x108" CFG1_offset="0x10c" Ball="NK" PWR="GPP_B" Bump="GPP_B_9_NOT_USED" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_10" Name="GPP_B_10_PCIEX1_SLOT2_PRSNT2_R_N" CFG0_offset="0x110" CFG1_offset="0x114" Ball="NK" PWR="GPP_B" Bump="GPP_B_10_NOT_USED" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_11" Name="GPP_B_11_NOT_USED" CFG0_offset="0x118" CFG1_offset="0x11c" Ball="NK" PWR="GPP_B" Bump="GPP_B_11_NOT_USED" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_12" Name="GPP_B_12_NOT_USED" CFG0_offset="0x120" CFG1_offset="0x124" Ball="NK" PWR="GPP_B" Bump="PM_SLP_0_N" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_13" Name="GPP_B_13_PLT_RST_N" CFG0_offset="0x128" CFG1_offset="0x12c" Ball="NK" PWR="GPP_B" Bump="PLTRST_N" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_14" Name="GPP_B_14_SPKR" CFG0_offset="0x130" CFG1_offset="0x134" Ball="NK" PWR="GPP_B" Bump="SPKR" Module="MiscB" Validate="true" />
+        <Pin No="GPP_B_15" Name="GPP_B_15_LPSS_GSPI0_CS_R_N" CFG0_offset="0x138" CFG1_offset="0x13c" Ball="NK" PWR="GPP_B" Bump="GPP_B_15_NOT_USED" Module="gSPI" Validate="true" />
+        <Pin No="GPP_B_16" Name="GPP_B_16_GSPI0_CLK" CFG0_offset="0x140" CFG1_offset="0x144" Ball="NK" PWR="GPP_B" Bump="GPP_B_16_NOT_USED" Module="gSPI" Validate="true" />
+        <Pin No="GPP_B_17" Name="GPP_B_17_GSPI0_MISO" CFG0_offset="0x148" CFG1_offset="0x14c" Ball="NK" PWR="GPP_B" Bump="WIFI_RF_KILL_R_N" Module="gSPI" Validate="true" />
+        <Pin No="GPP_B_18" Name="GPP_B_18_GSPI0_MOSI" CFG0_offset="0x150" CFG1_offset="0x154" Ball="NK" PWR="GPP_B" Bump="GSPIO_MOSI" Module="gSPI" Validate="true" />
+        <Pin No="GPP_B_19" Name="GPP_B_19_FPS_GSPI1_CS_R1_N" CFG0_offset="0x158" CFG1_offset="0x15c" Ball="NK" PWR="GPP_B" Bump="GPP_B_19_NOT_USED" Module="gSPI" Validate="true" />
+        <Pin No="GPP_B_20" Name="GPP_B_20_FPS_GSPI1_CLK_R1" CFG0_offset="0x160" CFG1_offset="0x164" Ball="NK" PWR="GPP_B" Bump="GPP_B_20_NOT_USED" Module="gSPI" Validate="true" />
+        <Pin No="GPP_B_21" Name="GPP_B_21_FPS_GSPI1_MISO_R1" CFG0_offset="0x168" CFG1_offset="0x16c" Ball="NK" PWR="GPP_B" Bump="GPP_B_21_NOT_USED" Module="gSPI" Validate="true" />
+        <Pin No="GPP_B_22" Name="GPP_B_22_FPS_GSPI1_MOSI_R1" CFG0_offset="0x170" CFG1_offset="0x174" Ball="NK" PWR="GPP_B" Bump="GPP_B_22_GSPI1_MOSI" Module="gSPI" Validate="true" />
+        <Pin No="GPP_B_23" Name="GPP_B_23_PCH_HOT_R_N" CFG0_offset="0x178" CFG1_offset="0x17c" Ball="NK" PWR="GPP_B" Bump="PCH_HOT_N" Module="SMBus1" Validate="true" />
+      </Pins>
+    </Community>
+    <Community name="Community 1" max="133" BaseAddress="0xAE0400" SBBaseAddress="0x0000" SBPort="0x00">
+      <Pins>
+        <Pin No="GPP_C_00" Name="GPP_C_0_SMB_CLK_RESUME" CFG0_offset="0x000" CFG1_offset="0x004" Ball="NK" PWR="GPP_C" Bump="SMB_CLK_A" Module="SMBUS2" Validate="true" />
+        <Pin No="GPP_C_01" Name="GPP_C_1_SMB_DATA_RESUME" CFG0_offset="0x008" CFG1_offset="0x00c" Ball="NK" PWR="GPP_C" Bump="SMB_DATA_A" Module="SMBUS2" Validate="true" />
+        <Pin No="GPP_C_02" Name="GPP_C_2_SMBALERTB" CFG0_offset="0x010" CFG1_offset="0x014" Ball="NK" PWR="GPP_C" Bump="GPP_C_2_SMBALERT" Module="SMBUS2" Validate="true" />
+        <Pin No="GPP_C_03" Name="GPP_C_3_SMLINK0_CLK" CFG0_offset="0x018" CFG1_offset="0x01c" Ball="NK" PWR="GPP_C" Bump="SML0_CLK" Module="SMBUS2" Validate="true" />
+        <Pin No="GPP_C_04" Name="GPP_C_4_SMLINK0_DATA" CFG0_offset="0x020" CFG1_offset="0x024" Ball="NK" PWR="GPP_C" Bump="SML0_DATA" Module="SMBUS2" Validate="true" />
+        <Pin No="GPP_C_05" Name="GPP_C_5_SML0ALERTB" CFG0_offset="0x028" CFG1_offset="0x02c" Ball="NK" PWR="GPP_C" Bump="GPP_C_5" Module="SMBUS2" Validate="true" />
+        <Pin No="GPP_C_06" Name="GPP_C_6_SML1CLK_PCH" CFG0_offset="0x030" CFG1_offset="0x034" Ball="NK" PWR="GPP_C" Bump="SML1_CLK" Module="SMBUS2" Validate="true" />
+        <Pin No="GPP_C_07" Name="GPP_C_7_SML1DATA_PCH" CFG0_offset="0x038" CFG1_offset="0x03c" Ball="NK" PWR="GPP_C" Bump="SML1_DATA" Module="SMBUS2" Validate="true" />
+        <Pin No="GPP_C_08" Name="GPP_C_8_LPSS_UART0_RXD" CFG0_offset="0x040" CFG1_offset="0x044" Ball="NK" PWR="GPP_C" Bump="UART_RXD" Module="UART" Validate="true" />
+        <Pin No="GPP_C_09" Name="GPP_C_9_LPSS_UART0_TXD" CFG0_offset="0x048" CFG1_offset="0x04c" Ball="NK" PWR="GPP_C" Bump="UART_TXD" Module="UART" Validate="true" />
+        <Pin No="GPP_C_10" Name="GPP_C_10_LPSS_UART0_RTS_N" CFG0_offset="0x050" CFG1_offset="0x054" Ball="NK" PWR="GPP_C" Bump="UART_RTS" Module="UART" Validate="true" />
+        <Pin No="GPP_C_11" Name="GPP_C_11_LPSS_UART0_CTS_N" CFG0_offset="0x058" CFG1_offset="0x05c" Ball="NK" PWR="GPP_C" Bump="UART_CTS" Module="UART" Validate="true" />
+        <Pin No="GPP_C_12" Name="GPP_C_12_LPSS_ISH_UART0_RXD" CFG0_offset="0x060" CFG1_offset="0x064" Ball="NK" PWR="GPP_C" Bump="GPP_C_12_NOT_USED" Module="UART" Validate="true" />
+        <Pin No="GPP_C_13" Name="GPP_C_13_LPSS_ISH_UART0_TXD" CFG0_offset="0x068" CFG1_offset="0x06c" Ball="NK" PWR="GPP_C" Bump="GPP_C_13_NOT_USED" Module="UART" Validate="true" />
+        <Pin No="GPP_C_14" Name="GPP_C_14_LPSS_ISH_UART0_RTS_N" CFG0_offset="0x070" CFG1_offset="0x074" Ball="NK" PWR="GPP_C" Bump="GPP_C_14_NOT_USED" Module="UART" Validate="true" />
+        <Pin No="GPP_C_15" Name="GPP_C_15_LPSS_ISH_UART0_CTS_N" CFG0_offset="0x078" CFG1_offset="0x07c" Ball="NK" PWR="GPP_C" Bump="GPP_C_15_NOT_USED" Module="UART" Validate="true" />
+        <Pin No="GPP_C_16" Name="GPP_C_16_LPSS_I2C0_SDA" CFG0_offset="0x080" CFG1_offset="0x084" Ball="NK" PWR="GPP_C" Bump="VFSLA_SELECT" Module="I2C1" Validate="true" />
+        <Pin No="GPP_C_17" Name="GPP_C_17_LPSS_I2C0_SCL" CFG0_offset="0x088" CFG1_offset="0x08c" Ball="NK" PWR="GPP_C" Bump="VFSLB_SELECT" Module="I2C1" Validate="true" />
+        <Pin No="GPP_C_18" Name="GPP_C_18_LPSS_I2C1_SDA" CFG0_offset="0x090" CFG1_offset="0x094" Ball="NK" PWR="GPP_C" Bump="VFSLC_SELECT" Module="I2C1" Validate="true" />
+        <Pin No="GPP_C_19" Name="GPP_C_19_LPSS_I2C1_SCL" CFG0_offset="0x098" CFG1_offset="0x09c" Ball="NK" PWR="GPP_C" Bump="VDOC_CLK" Module="I2C1" Validate="true" />
+        <Pin No="GPP_C_20" Name="GPP_C_20_LPSS_UART2_RXD" CFG0_offset="0x0a0" CFG1_offset="0x0a4" Ball="NK" PWR="GPP_C" Bump="VDOC_0_SELECT" Module="UART" Validate="true" />
+        <Pin No="GPP_C_21" Name="GPP_C_21_LPSS_UART2_TXD" CFG0_offset="0x0a8" CFG1_offset="0x0ac" Ball="NK" PWR="GPP_C" Bump="VDOC_1_SELECT" Module="UART" Validate="true" />
+        <Pin No="GPP_C_22" Name="GPP_C_22_LPSS_UART2_RTS_N" CFG0_offset="0x0b0" CFG1_offset="0x0b4" Ball="NK" PWR="GPP_C" Bump="FINE_GRN_CLK_ENBL" Module="UART" Validate="true" />
+        <Pin No="GPP_C_23" Name="GPP_C_23_LPSS_UART2_CTS_N" CFG0_offset="0x0b8" CFG1_offset="0x0bc" Ball="NK" PWR="GPP_C" Bump="DSC_CLK_SELECT" Module="UART" Validate="true" />
+        <Pin No="GPP_D_00" Name="GPP_D_0_SPI1_TCHPNL_CS_N" CFG0_offset="0x0c0" CFG1_offset="0x0c4" Ball="NK" PWR="GPP_D" Bump="BOARD_ID_0" Module="SPI1" Validate="true" />
+        <Pin No="GPP_D_01" Name="GPP_D_1_SPI1_TCHPNL_CLK" CFG0_offset="0x0c8" CFG1_offset="0x0cc" Ball="NK" PWR="GPP_D" Bump="BOARD_ID_1" Module="SPI1" Validate="true" />
+        <Pin No="GPP_D_02" Name="GPP_D_2_SPI1_TCHPNL_MISO" CFG0_offset="0x0d0" CFG1_offset="0x0d4" Ball="NK" PWR="GPP_D" Bump="BOARD_ID_2" Module="SPI1" Validate="true" />
+        <Pin No="GPP_D_03" Name="GPP_D_3_SPI1_TCHPNL_MOSI" CFG0_offset="0x0d8" CFG1_offset="0x0dc" Ball="NK" PWR="GPP_D" Bump="BOARD_ID_3" Module="SPI1" Validate="true" />
+        <Pin No="GPP_D_04" Name="GPP_D_4_ISH_I2C2_SDA_I2C3_SDA" CFG0_offset="0x0e0" CFG1_offset="0x0e4" Ball="NK" PWR="GPP_D" Bump="GPP_D_04_NOT_USED" Module="SPI1" Validate="true" />
+        <Pin No="GPP_D_05" Name="GPP_D_5_SSP0_SFRM" CFG0_offset="0x0e8" CFG1_offset="0x0ec" Ball="NK" PWR="GPP_D" Bump="BOARD_ID_4" Module="ISH_I2C" Validate="true" />
+        <Pin No="GPP_D_06" Name="GPP_D_6_SSP0_TXD" CFG0_offset="0x0f0" CFG1_offset="0x0f4" Ball="NK" PWR="GPP_D" Bump="BOARD_ID_5" Module="ISH_I2C" Validate="true" />
+        <Pin No="GPP_D_07" Name="GPP_D_7_SSP0_RXD" CFG0_offset="0x0f8" CFG1_offset="0x0fc" Ball="NK" PWR="GPP_D" Bump="BOARD_ID_6" Module="ISH_I2C" Validate="true" />
+        <Pin No="GPP_D_08" Name="GPP_D_8_SSP0_SCLK" CFG0_offset="0x100" CFG1_offset="0x104" Ball="NK" PWR="GPP_D" Bump="BOARD_ID_7" Module="ISH_I2C" Validate="true" />
+        <Pin No="GPP_D_09" Name="GPP_D_9_ISH_SPI_CS_N" CFG0_offset="0x108" CFG1_offset="0x10c" Ball="NK" PWR="GPP_D" Bump="Rev_FAB_ID0" Module="ISH_SPI" Validate="true" />
+        <Pin No="GPP_D_10" Name="GPP_D_10_ISH_SPI_CLK" CFG0_offset="0x110" CFG1_offset="0x114" Ball="NK" PWR="GPP_D" Bump="Rev_FAB_ID1" Module="ISH_SPI" Validate="true" />
+        <Pin No="GPP_D_11" Name="GPP_D_11_ISH_MISO_USBC_BP_DCI_CLK_R" CFG0_offset="0x118" CFG1_offset="0x11c" Ball="NK" PWR="GPP_D" Bump="BSSB_DCI_CLK" Module="ISH_SPI" Validate="true" />
+        <Pin No="GPP_D_12" Name="GPP_D_12_ISH_MOSI_USBC_BP_DCI_DATA_R" CFG0_offset="0x120" CFG1_offset="0x124" Ball="NK" PWR="GPP_D" Bump="BSSB_DCI_DATA" Module="ISH_SPI" Validate="true" />
+        <Pin No="GPP_D_13" Name="GPP_D_13_ISH_UART0_RXD_SML0_DATA" CFG0_offset="0x128" CFG1_offset="0x12c" Ball="NK" PWR="GPP_D" Bump="PCH_PERST_N" Module="ISH_I2C1" Validate="true" />
+        <Pin No="GPP_D_14" Name="GPP_D_14_ISH_UART0_TXD_SML0_CLK" CFG0_offset="0x130" CFG1_offset="0x134" Ball="NK" PWR="GPP_D" Bump="CPU_PERST_N" Module="ISH_I2C1" Validate="true" />
+        <Pin No="GPP_D_15" Name="GPP_D_15_ISH_UART0_RTS_N" CFG0_offset="0x138" CFG1_offset="0x13c" Ball="NK" PWR="GPP_D" Bump="GPP_D_15_NOT_USED" Module="ISH_UART" Validate="true" />
+        <Pin No="GPP_D_16" Name="GPP_D_16_ISH_UART0_CTS_N" CFG0_offset="0x140" CFG1_offset="0x144" Ball="NK" PWR="GPP_D" Bump="FP_AUD_DETECT_N" Module="ISH_UART" Validate="true" />
+        <Pin No="GPP_D_17" Name="GPP_D_17_DMIC_CLK_1" CFG0_offset="0x148" CFG1_offset="0x14c" Ball="NK" PWR="GPP_D" Bump="GPP_D_17_NOT_USED" Module="DMIC" Validate="true" />
+        <Pin No="GPP_D_18" Name="GPP_D_18_DMIC_DATA_1" CFG0_offset="0x150" CFG1_offset="0x154" Ball="NK" PWR="GPP_D" Bump="REWORK_ID0" Module="DMIC" Validate="true" />
+        <Pin No="GPP_D_19" Name="GPP_D_19_DMIC_CLK_0" CFG0_offset="0x158" CFG1_offset="0x15c" Ball="NK" PWR="GPP_D" Bump="REWORK_ID1" Module="DMIC" Validate="true" />
+        <Pin No="GPP_D_20" Name="GPP_D_20_DMIC_DATA_0" CFG0_offset="0x160" CFG1_offset="0x164" Ball="NK" PWR="GPP_D" Bump="REWORK_ID2" Module="DMIC" Validate="true" />
+        <Pin No="GPP_D_21" Name="GPP_D_21_SPI1_TCHPNL_IO_2" CFG0_offset="0x168" CFG1_offset="0x16c" Ball="NK" PWR="GPP_D" Bump="M.2_WLAN_PE_WAKE_N" Module="DMIC" Validate="true" />
+        <Pin No="GPP_D_22" Name="GPP_D_22_SPI1_TCHPNL_IO_3" CFG0_offset="0x170" CFG1_offset="0x174" Ball="NK" PWR="GPP_D" Bump="BT_DEV_WAKE" Module="DMIC" Validate="true" />
+        <Pin No="GPP_D_23" Name="GPP_D_23_ISH_I2C2_SCL" CFG0_offset="0x178" CFG1_offset="0x17c" Ball="NK" PWR="GPP_D" Bump="GPP_D_23_NOT_USED" Module="DMIC" Validate="true" />
+        <Pin No="GPP_E_00" Name="GPP_E_0_VSACH1_CLK_PCH_GPP_E_0" CFG0_offset="0x180" CFG1_offset="0x184" Ball="NK" PWR="GPP_E" Bump="GPP_E_00_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_01" Name="GPP_E_1_VSACH1_D0_GPP_E_1" CFG0_offset="0x188" CFG1_offset="0x18c" Ball="NK" PWR="GPP_E" Bump="GPP_E_01_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_02" Name="GPP_E_2_VSACH1_D1_PCH_GPP_E_2" CFG0_offset="0x190" CFG1_offset="0x194" Ball="NK" PWR="GPP_E" Bump="GPP_E_02_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_03" Name="GPP_E_3_VSACH1_D2_PCH_GPP_E_3" CFG0_offset="0x198" CFG1_offset="0x19c" Ball="NK" PWR="GPP_E" Bump="GPP_E_03_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_04" Name="GPP_E_4_VSACH1_D3" CFG0_offset="0x1a0" CFG1_offset="0x1a4" Ball="NK" PWR="GPP_E" Bump="GPP_E_04_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_05" Name="GPP_E_5_VSACH1_D4_PCH_GPP_E_5" CFG0_offset="0x1a8" CFG1_offset="0x1ac" Ball="NK" PWR="GPP_E" Bump="GPP_E_05_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_06" Name="GPP_E_6_VSACH1_D5_PCH_GPP_E_6" CFG0_offset="0x1b0" CFG1_offset="0x1b4" Ball="NK" PWR="GPP_E" Bump="GPP_E_06_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_07" Name="GPP_E_7_VSACH1_D6_R" CFG0_offset="0x1b8" CFG1_offset="0x1bc" Ball="NK" PWR="GPP_E" Bump="GPP_E_07_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_08" Name="GPP_E_8_VSACH1_D7_R" CFG0_offset="0x1c0" CFG1_offset="0x1c4" Ball="NK" PWR="GPP_E" Bump="PCH_SATA_LED_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_09" Name="GPP_E_9_VSACH2_D0_R" CFG0_offset="0x1c8" CFG1_offset="0x1cc" Ball="NK" PWR="GPP_E" Bump="USB2OC0_RP1_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_10" Name="GPP_E_10_VSACH2_D1_R" CFG0_offset="0x1d0" CFG1_offset="0x1d4" Ball="NK" PWR="GPP_E" Bump="USB2OC1_RP2_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_11" Name="GPP_E_11_VSACH2_D2_R" CFG0_offset="0x1d8" CFG1_offset="0x1dc" Ball="NK" PWR="GPP_E" Bump="USB2OC2_FP1_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_E_12" Name="GPP_E_12_VSACH2_D3_R" CFG0_offset="0x1e0" CFG1_offset="0x1e4" Ball="NK" PWR="GPP_E" Bump="USB2OC3_FP2_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_00" Name="GPP_F_0_VSACH2_D4_PCH_GPP_F_0" CFG0_offset="0x1e8" CFG1_offset="0x1ec" Ball="BP8" PWR="GPP_F" Bump="GPP_F_00_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_01" Name="GPP_F_1_VSACH2_D5" CFG0_offset="0x1f0" CFG1_offset="0x1f4" Ball="BU5" PWR="GPP_F" Bump="GPP_F_01_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_02" Name="GPP_F_2_VSACH2_D6_PCH_GPP_F_2" CFG0_offset="0x1f8" CFG1_offset="0x1fc" Ball="NK" PWR="GPP_F" Bump="GPP_F_02_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_03" Name="GPP_F_3_VSACH2_D7_PCH_GPP_F_3" CFG0_offset="0x200" CFG1_offset="0x204" Ball="NK" PWR="GPP_F" Bump="GPP_F_03_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_04" Name="GPP_F_4_VSACH2_CLK_PCH_GPP_F_4" CFG0_offset="0x208" CFG1_offset="0x20c" Ball="NK" PWR="GPP_F" Bump="GPP_F_04_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_05" Name="GPP_F_5_PCH_CODEC_IRQ" CFG0_offset="0x210" CFG1_offset="0x214" Ball="NK" PWR="GPP_F" Bump="GPP_F_05_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_06" Name="GPP_F_6_M2_SSD_DEVSLP" CFG0_offset="0x218" CFG1_offset="0x21c" Ball="NK" PWR="GPP_F" Bump="GPP_F_06_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_07" Name="GPP_F_7_DGPU_SEL_N" CFG0_offset="0x220" CFG1_offset="0x224" Ball="NK" PWR="GPP_F" Bump="GPP_F_07_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_08" Name="GPP_F_8_DGPU_PWR_EN_N" CFG0_offset="0x228" CFG1_offset="0x22c" Ball="NK" PWR="GPP_F" Bump="GPP_F_08_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_09" Name="GPP_F_9_DGPU_PWR_OK" CFG0_offset="0x230" CFG1_offset="0x234" Ball="NK" PWR="GPP_F" Bump="GPP_F_09_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_10" Name="GPP_F_10_PCH_CONFIG_JUMPER" CFG0_offset="0x238" CFG1_offset="0x23c" Ball="NK" PWR="GPP_F" Bump="PCH_CONFIG_JUMPER" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_11" Name="GPP_F_11_PCH_RSVD" CFG0_offset="0x240" CFG1_offset="0x244" Ball="NK" PWR="GPP_F" Bump="GPP_F_11_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_12" Name="GPP_F_12_SV_ADVANCE_GP48" CFG0_offset="0x248" CFG1_offset="0x24c" Ball="NK" PWR="GPP_F" Bump="GPP_F_12_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_13" Name="GPP_F_13_GP39_GFX_CRB_DETECT" CFG0_offset="0x250" CFG1_offset="0x254" Ball="NK" PWR="GPP_F" Bump="GPP_F_13_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_14" Name="GPP_F_14_H_SKTOCC_N" CFG0_offset="0x258" CFG1_offset="0x25c" Ball="NK" PWR="GPP_F" Bump="H_SKTOCC_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_15" Name="GPP_F_15_USB_OC_BACK0_N" CFG0_offset="0x260" CFG1_offset="0x264" Ball="NK" PWR="GPP_F" Bump="USB2OC4_FP3_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_16" Name="GPP_F_16_USB_OC_BACK2_N" CFG0_offset="0x268" CFG1_offset="0x26c" Ball="NK" PWR="GPP_F" Bump="USB2OC5_FP4_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_17" Name="GPP_F_17_USBC_BP_OC_R_N" CFG0_offset="0x270" CFG1_offset="0x274" Ball="NK" PWR="GPP_F" Bump="GPP_F_17_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_18" Name="GPP_F_18_GPIO_PCIESLOT_RESET" CFG0_offset="0x278" CFG1_offset="0x27c" Ball="NK" PWR="GPP_F" Bump="GPP_F_18_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_19" Name="GPP_F_19_NOT_USED" CFG0_offset="0x280" CFG1_offset="0x284" Ball="NK" PWR="GPP_F" Bump="GPP_F_19_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_20" Name="GPP_F_20_NOT_USED" CFG0_offset="0x288" CFG1_offset="0x28c" Ball="NK" PWR="GPP_F" Bump="GPP_F_20_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_21" Name="GPP_F_21_NOT_USED" CFG0_offset="0x290" CFG1_offset="0x294" Ball="NK" PWR="GPP_F" Bump="GPP_F_21_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_22" Name="GPP_F_22_GPIO_PEG_SLOT_RESET" CFG0_offset="0x298" CFG1_offset="0x29c" Ball="NK" PWR="GPP_F" Bump="PCH_SATA_RAID_KEY_R" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_F_23" Name="GPP_F_23_NFC_IRQ" CFG0_offset="0x2a0" CFG1_offset="0x2a4" Ball="NK" PWR="GPP_F" Bump="GPP_F_23_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_00" Name="GPP_G_0_WIGIG_PWRGT_R" CFG0_offset="0x2a8" CFG1_offset="0x2ac" Ball="NK" PWR="GPP_G" Bump="PCH_GPP_G_0_OC_R" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_01" Name="GPP_G_1_NOT_USED" CFG0_offset="0x2b0" CFG1_offset="0x2b4" Ball="NK" PWR="GPP_G" Bump="PCH_GPP_G_1_OC_R" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_02" Name="GPP_G_2_NOT_USED" CFG0_offset="0x2b8" CFG1_offset="0x2bc" Ball="NK" PWR="GPP_G" Bump="PCH_GPP_G_2_OC_R" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_03" Name="GPP_G_3_SMC_RUNTIME_SCI_N" CFG0_offset="0x2c0" CFG1_offset="0x2c4" Ball="NK" PWR="GPP_G" Bump="PCH_GPP_G_3_OC_R" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_04" Name="GPP_G_4_PGIO_USBMUX_DP_SEL" CFG0_offset="0x2c8" CFG1_offset="0x2cc" Ball="NK" PWR="GPP_G" Bump="PCH_GPP_G_4_OC_R" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_05" Name="GPP_G_5_SV_DETECT" CFG0_offset="0x2d0" CFG1_offset="0x2d4" Ball="NK" PWR="GPP_G" Bump="PCH_GPP_G_5_OC_safe_mode" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_06" Name="GPP_G_6_WIGIG_SGPIO_SW" CFG0_offset="0x2d8" CFG1_offset="0x2dc" Ball="NK" PWR="GPP_G" Bump="OC_MODE_ENABLE_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_07" Name="GPP_G_7_M2_WIGIG_DISABLE_R_N" CFG0_offset="0x2e0" CFG1_offset="0x2e4" Ball="NK" PWR="GPP_G" Bump="OC_NON_OC_MODE" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_08" Name="GPP_G_8_NOT_USED" CFG0_offset="0x2e8" CFG1_offset="0x2ec" Ball="NK" PWR="GPP_G" Bump="PROC_ID_0" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_09" Name="GPP_G_9_NOT_USED" CFG0_offset="0x2f0" CFG1_offset="0x2f4" Ball="NK" PWR="GPP_G" Bump="PROC_ID_1" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_10" Name="GPP_G_10_NOT_USED" CFG0_offset="0x2f8" CFG1_offset="0x2fc" Ball="NK" PWR="GPP_G" Bump="GPP_G_10_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_11" Name="GPP_G_11_NOT_USED" CFG0_offset="0x300" CFG1_offset="0x304" Ball="NK" PWR="GPP_G" Bump="GPP_G_11_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_12" Name="GPP_G_12_TBCIO_PLUG_EVENT" CFG0_offset="0x308" CFG1_offset="0x30c" Ball="NK" PWR="GPP_G" Bump="GPP_G_12_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_13" Name="GPP_G_13_IVCAM_PWRGT_R" CFG0_offset="0x310" CFG1_offset="0x314" Ball="NK" PWR="GPP_G" Bump="GPP_G_13_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_14" Name="GPP_G_14_M2_WIGIG_WGPIO" CFG0_offset="0x318" CFG1_offset="0x31c" Ball="NK" PWR="GPP_G" Bump="GPP_G_14_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_15" Name="GPP_G_15_NOT_USED" CFG0_offset="0x320" CFG1_offset="0x324" Ball="NK" PWR="GPP_G" Bump="GPP_G_15_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_16" Name="GPP_G_16_TB_FRC_PWR" CFG0_offset="0x328" CFG1_offset="0x32c" Ball="NK" PWR="GPP_G" Bump="GPP_G_16_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_17" Name="GPP_G_17_NOT_USED" CFG0_offset="0x330" CFG1_offset="0x334" Ball="NK" PWR="GPP_G" Bump="GPP_G_17_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_18" Name="GPP_G_18_2X4_POWER_DETECT" CFG0_offset="0x338" CFG1_offset="0x33c" Ball="NK" PWR="GPP_G" Bump="GPP_G_18_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_19" Name="GPP_G_19_PCH_SMI_N" CFG0_offset="0x340" CFG1_offset="0x344" Ball="NK" PWR="GPP_G" Bump="PCH_SMI_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_20" Name="GPP_G_20_TEST_SETUP_MENU" CFG0_offset="0x348" CFG1_offset="0x34c" Ball="NK" PWR="GPP_G" Bump="GPP_G_20_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_21" Name="GPP_G_21_SPI_TPM_PIRQ" CFG0_offset="0x350" CFG1_offset="0x354" Ball="NK" PWR="GPP_G" Bump="SPI_TPM_PIRQ" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_G_22" Name="GPP_G_22_PCH_PEGSLOT1_PWREN" CFG0_offset="0x358" CFG1_offset="0x35c" Ball="NK" PWR="GPP_G" Bump="GPP_G_22_NOT_USED" Module="MiscE1" Validate="true" />		
+        <Pin No="GPP_G_23" Name="GPP_G_23_IVCAM_DFU_R" CFG0_offset="0x360" CFG1_offset="0x364" Ball="NK" PWR="GPP_G" Bump="GPP_G_23_NOT_USED" Module="MiscE1" Validate="true" />				
+        <Pin No="GPP_H_00" Name="GPP_H_0_PCIEX4_SLOT3_PRSNT2_R_N" CFG0_offset="0x368" CFG1_offset="0x36c" Ball="NK" PWR="GPP_H" Bump="CLK_REQ_LAN_N" Module="MiscA" Validate="true" />
+        <Pin No="GPP_H_01" Name="GPP_H_1_CLK_REQ7_M2_SSD_N" CFG0_offset="0x370" CFG1_offset="0x374" Ball="NK" PWR="GPP_H" Bump="WLAN_CLK_REQ_N" Module="MiscA" Validate="true" />
+        <Pin No="GPP_H_02" Name="GPP_H_2_PCIEX16_PRSNT2_R2_N" CFG0_offset="0x378" CFG1_offset="0x37c" Ball="NK" PWR="GPP_H" Bump="GPP_H_02_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_H_03" Name="GPP_H_3_NOT_USED" CFG0_offset="0x380" CFG1_offset="0x384" Ball="NK" PWR="GPP_H" Bump="SAS_CON_CLKREQ_9" Module="MiscA" Validate="true" />
+        <Pin No="GPP_H_04" Name="GPP_H_4_PCIEX4_SLOT4_PRSNT2_R_N" CFG0_offset="0x388" CFG1_offset="0x38c" Ball="NK" PWR="GPP_H" Bump="GPP_H_04_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_H_05" Name="GPP_H_5_NOT_USED" CFG0_offset="0x390" CFG1_offset="0x394" Ball="NK" PWR="GPP_H" Bump="GPP_H_5_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_H_06" Name="GPP_H_6_NOT_USED" CFG0_offset="0x398" CFG1_offset="0x39c" Ball="NK" PWR="GPP_H" Bump="GPP_H_6_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_H_07" Name="GPP_H_7_NOT_USED" CFG0_offset="0x3a0" CFG1_offset="0x3a4" Ball="NK" PWR="GPP_H" Bump="GPP_H_7_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_H_08" Name="GPP_H_8_NOT_USED" CFG0_offset="0x3a8" CFG1_offset="0x3ac" Ball="NK" PWR="GPP_H" Bump="GPP_H_8_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_H_09" Name="GPP_H_9_NOT_USED" CFG0_offset="0x3b0" CFG1_offset="0x3b4" Ball="NK" PWR="GPP_H" Bump="GPP_H_9_NOT_USED" Module="MiscA" Validate="true" />
+        <Pin No="GPP_H_10" Name="GPP_H_10_NOT_USED" CFG0_offset="0x3b8" CFG1_offset="0x3bc" Ball="NK" PWR="GPP_H" Bump="TBT_RP_I2C_IRQ2_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_11" Name="GPP_H_11_NOT_USED" CFG0_offset="0x3c0" CFG1_offset="0x3c4" Ball="NK" PWR="GPP_H" Bump="TBT_RP_I2C_IRQ1_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_12" Name="GPP_H_12_NOT_USED" CFG0_offset="0x3c8" CFG1_offset="0x3cc" Ball="NK" PWR="GPP_H" Bump="GPP_H_12" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_13" Name="GPP_H_13_SML3CLK" CFG0_offset="0x3d0" CFG1_offset="0x3d4" Ball="NK" PWR="GPP_H" Bump="TBT_RP1_SCI_EVENT" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_14" Name="GPP_H_14_SML3DATA" CFG0_offset="0x3d8" CFG1_offset="0x3dc" Ball="NK" PWR="GPP_H" Bump="TBT_RP1_FORCE_PWR" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_15" Name="GPP_H_15_SML3ALERTB" CFG0_offset="0x3e0" CFG1_offset="0x3e4" Ball="NK" PWR="GPP_H" Bump="TBT_FP_I2C_IRQ2_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_16" Name="GPP_H_16_SATA_ODD_DA_R_N" CFG0_offset="0x3e8" CFG1_offset="0x3ec" Ball="NK" PWR="GPP_H" Bump="TBT_FP_I2C_IRQ1_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_17" Name="GPP_H_17_SATA_ODD_PWRGT" CFG0_offset="0x3f0" CFG1_offset="0x3f4" Ball="NK" PWR="GPP_H" Bump="TBT_FP1_SCI_EVENT" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_18" Name="GPP_H_18_NOT_USED" CFG0_offset="0x3f8" CFG1_offset="0x3fc" Ball="NK" PWR="GPP_H" Bump="TBT_FP1_FORCE_PWR" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_19" Name="GPP_H_19_ISH_I2C0_SCL" CFG0_offset="0x400" CFG1_offset="0x404" Ball="NK" PWR="GPP_H" Bump="VPP_AB_VR_DISABLE_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_20" Name="GPP_H_20_ISH_I2C0_SDA" CFG0_offset="0x408" CFG1_offset="0x40c" Ball="NK" PWR="GPP_H" Bump="VDDQ_AB_VR_DISABLE_N" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_21" Name="GPP_H_21_ISH_I2C1_SCL" CFG0_offset="0x410" CFG1_offset="0x414" Ball="NK" PWR="GPP_H" Bump="GPP_H_21_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_H_22" Name="GPP_H_22_ISH_I2C1_SDA" CFG0_offset="0x418" CFG1_offset="0x41c" Ball="NK" PWR="GPP_H" Bump="GPP_H_22_NOT_USED" Module="MiscE1" Validate="true" />		
+        <Pin No="GPP_H_23" Name="GPP_H_23_LED_DRIVE" CFG0_offset="0x420" CFG1_offset="0x424" Ball="NK" PWR="GPP_H" Bump="PCH_FP_LED" Module="MiscE1" Validate="true" />				
+      </Pins>
+    </Community>
+    <Community name="Community 2" max="12" BaseAddress="0xAD0400" SBBaseAddress="0x0000" SBPort="0x00">
+      <Pins>
+        <Pin No="GPD_00" Name="GPD_0_NOT_USED" CFG0_offset="0x000" CFG1_offset="0x004" Ball="NK" PWR="GPD" Bump="PCH_GPD_0" Module="DSW" Validate="true" />
+        <Pin No="GPD_01" Name="GPD_1_AC_PRESENT_R" CFG0_offset="0x008" CFG1_offset="0x00c" Ball="NK" PWR="GPD" Bump="GPD_1_PU" Module="DSW" Validate="true" />
+        <Pin No="GPD_02" Name="GPD_2_LANWAKE_SMC_WAKE_SCI_N" CFG0_offset="0x010" CFG1_offset="0x014" Ball="NK" PWR="GPD" Bump="LANWAKE_N" Module="DSW" Validate="true" />
+        <Pin No="GPD_03" Name="GPD_3_SW_ON_N" CFG0_offset="0x018" CFG1_offset="0x01c" Ball="NK" PWR="GPD" Bump="PM_PWRBTN_N" Module="DSW" Validate="true" />
+        <Pin No="GPD_04" Name="GPD_4_SLP_S3_R_N" CFG0_offset="0x020" CFG1_offset="0x024" Ball="NK" PWR="GPD" Bump="PM_SLP_S3_N" Module="DSW" Validate="true" />
+        <Pin No="GPD_05" Name="GPD_5_SLP_S4_R_N" CFG0_offset="0x028" CFG1_offset="0x02c" Ball="NK" PWR="GPD" Bump="PM_SLP_S4_N" Module="DSW" Validate="true" />
+        <Pin No="GPD_06" Name="GPD_6_SLP_M_R_N" CFG0_offset="0x030" CFG1_offset="0x034" Ball="NK" PWR="GPD" Bump="PM_SLP_A_N" Module="DSW" Validate="true" />
+        <Pin No="GPD_07" Name="GPD_7_USB_WAKEOUT_N" CFG0_offset="0x038" CFG1_offset="0x03c" Ball="NK" PWR="GPD" Bump="GPD_07_NOT_USED" Module="DSW" Validate="true" />
+        <Pin No="GPD_08" Name="GPD_8_SUS_CLK" CFG0_offset="0x040" CFG1_offset="0x044" Ball="NK" PWR="GPD" Bump="PCH_SUSCLK" Module="DSW" Validate="true" />
+        <Pin No="GPD_09" Name="GPD_9_SLP_WLAN_N" CFG0_offset="0x048" CFG1_offset="0x04c" Ball="NK" PWR="GPD" Bump="PM_SLP_WLAN_N" Module="DSW" Validate="true" />
+        <Pin No="GPD_10" Name="GPD_10_SLP_S5_R_N" CFG0_offset="0x050" CFG1_offset="0x054" Ball="NK" PWR="GPD" Bump="PM_SLP_S5_N" Module="DSW" Validate="true" />
+        <Pin No="GPD_11" Name="GPD_11_LAN_DISABLE_N" CFG0_offset="0x058" CFG1_offset="0x05c" Ball="NK" PWR="GPD" Bump="PCH_LAN_DISABLE_N" Module="DSW" Validate="true" />
+      </Pins>
+    </Community>
+    <Community name="Community 3" max="11" BaseAddress="0xAC0400" SBBaseAddress="0x0000" SBPort="0x00">
+      <Pins>
+        <Pin No="GPP_I_00" Name="GPP_I_0_DDSP_1_HPD0" CFG0_offset="0x000" CFG1_offset="0x004" Ball="NK" PWR="GPP_I" Bump="GPP_I_00_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_I_01" Name="GPP_I_1_DDSP_2_HPD1" CFG0_offset="0x008" CFG1_offset="0x00c" Ball="NK" PWR="GPP_I" Bump="GPP_I_01_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_I_02" Name="GPP_I_2_DDSP_3_HPD2" CFG0_offset="0x010" CFG1_offset="0x014" Ball="NK" PWR="GPP_I" Bump="GPP_I_02_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_I_03" Name="GPP_I_3_SMC_EXTSMI_R_N" CFG0_offset="0x018" CFG1_offset="0x01c" Ball="NK" PWR="GPP_I" Bump="GPP_I_03_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_I_04" Name="GPP_I_4_NOT_USED" CFG0_offset="0x020" CFG1_offset="0x024" Ball="NK" PWR="GPP_I" Bump="GPP_I_04_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_I_05" Name="GPP_I_5_NOT_USED" CFG0_offset="0x028" CFG1_offset="0x02c" Ball="NK" PWR="GPP_I" Bump="GPP_I_05_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_I_06" Name="GPP_I_6_NOT_USED" CFG0_offset="0x030" CFG1_offset="0x034" Ball="NK" PWR="GPP_I" Bump="GPP_I_6" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_I_07" Name="GPP_I_7_NOT_USED" CFG0_offset="0x038" CFG1_offset="0x03c" Ball="NK" PWR="GPP_I" Bump="GPP_I_07_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_I_08" Name="GPP_I_8_NOT_USED" CFG0_offset="0x040" CFG1_offset="0x044" Ball="NK" PWR="GPP_I" Bump="GPP_I_8" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_I_09" Name="GPP_I_9_DDPD_CTRLCLK" CFG0_offset="0x048" CFG1_offset="0x04c" Ball="NK" PWR="GPP_I" Bump="GPP_I_09_NOT_USED" Module="MiscE1" Validate="true" />
+        <Pin No="GPP_I_10" Name="GPP_I_10_DDPD_CTRLDATA" CFG0_offset="0x050" CFG1_offset="0x054" Ball="NK" PWR="GPP_I" Bump="GPP_I_10" Module="MiscE1" Validate="true" />
+      </Pins>
+    </Community>
+  </GPIO>
+  <GPIOPadRstCfg>
+    <PadRstCfg>Powergood</PadRstCfg>
+    <PadRstCfg>DeepGPIOReset</PadRstCfg>
+    <PadRstCfg>GPIOReset</PadRstCfg>
+    <PadRstCfg>Reserved</PadRstCfg>
+  </GPIOPadRstCfg>
+  <GPIORXPadStSel>
+    <RXPadStSel>RawRX</RXPadStSel>
+    <RXPadStSel>InternalRX</RXPadStSel>
+  </GPIORXPadStSel>
+  <GPIORXRAW1>
+    <RXRAW1>NoOverride</RXRAW1>
+    <RXRAW1>RXDriveInternally</RXRAW1>
+  </GPIORXRAW1>
+  <GPIORxEvCfg>
+    <RxEvCfg>Level</RxEvCfg>
+    <RxEvCfg>Edge</RxEvCfg>
+    <RxEvCfg>Disabled</RxEvCfg>
+    <RxEvCfg>Either</RxEvCfg>
+  </GPIORxEvCfg>
+  <GPIORxInvert>
+    <RxInvert>NoInversion</RxInvert>
+    <RxInvert>Inversion</RxInvert>
+  </GPIORxInvert>
+  <GPIORouteIOxAPIC>
+    <RouteIOxAPIC>NoPeripheralIRQ</RouteIOxAPIC>
+    <RouteIOxAPIC>PeripheralIRQ</RouteIOxAPIC>
+  </GPIORouteIOxAPIC>
+  <GPIORoutSCI>
+    <RouteSCI>No SCI Routing</RouteSCI>
+    <RouteSCI>SCI Routing</RouteSCI>
+  </GPIORoutSCI>
+  <GPIORoutSMI>
+    <RouteSMI>No SMI Routing</RouteSMI>
+    <RouteSMI>SMI Routing</RouteSMI>
+  </GPIORoutSMI>
+  <GPIORoutNMI>
+    <RouteNMI>No NMI Routing</RouteNMI>
+    <RouteNMI>NMI Routing</RouteNMI>
+  </GPIORoutNMI>
+  <GPIORxDisable>
+    <RxDisable>Enable</RxDisable>
+    <RxDisable>Disable</RxDisable>
+  </GPIORxDisable>
+  <GPIOTxDisable>
+    <TxDisable>Enable</TxDisable>
+    <TxDisable>Disable</TxDisable>
+  </GPIOTxDisable>
+  <GPIOTxState>
+    <TxState>Level 0</TxState>
+    <TxState>Level 1</TxState>
+  </GPIOTxState>
+  <GPIORxState>
+    <RxState>Level 0</RxState>
+    <RxState>Level 1</RxState>
+  </GPIORxState>
+  <GPIOPullType>
+    <PullType>None</PullType>
+    <PullType>5k Pulldown</PullType>
+    <PullType>20kPulldown</PullType>
+    <PullType>1k Pullup</PullType>
+    <PullType>2k Pullup</PullType>
+    <PullType>5k Pullup</PullType>
+    <PullType>20kPullup</PullType>
+    <PullType>1k_2k Pullup</PullType>
+    <PullType>Native_padmode</PullType>
+  </GPIOPullType>
+  <GPIOInterrupt>  
+	<Interrupt>0h</Interrupt>
+	<Interrupt>1h</Interrupt>
+	<Interrupt>2h</Interrupt>
+	<Interrupt>3h</Interrupt>
+	<Interrupt>4h</Interrupt>
+	<Interrupt>5h</Interrupt>
+	<Interrupt>6h</Interrupt>
+	<Interrupt>7h</Interrupt>
+	<Interrupt>8h</Interrupt>
+	<Interrupt>9h</Interrupt>
+	<Interrupt>Ah</Interrupt>
+	<Interrupt>Bh</Interrupt>
+	<Interrupt>Ch</Interrupt>
+	<Interrupt>Dh</Interrupt>
+	<Interrupt>Eh</Interrupt>
+	<Interrupt>Fh</Interrupt>
+	<Interrupt>10h</Interrupt>
+	<Interrupt>11h</Interrupt>
+	<Interrupt>12h</Interrupt>
+	<Interrupt>13h</Interrupt>
+	<Interrupt>14h</Interrupt>
+	<Interrupt>15h</Interrupt>
+	<Interrupt>16h</Interrupt>
+	<Interrupt>17h</Interrupt>
+	<Interrupt>18h</Interrupt>
+	<Interrupt>19h</Interrupt>
+	<Interrupt>1Ah</Interrupt>
+	<Interrupt>1Bh</Interrupt>
+	<Interrupt>1Ch</Interrupt>
+	<Interrupt>1Dh</Interrupt>
+	<Interrupt>1Eh</Interrupt>
+	<Interrupt>1Fh</Interrupt>
+	<Interrupt>20h</Interrupt>
+	<Interrupt>21h</Interrupt>
+	<Interrupt>22h</Interrupt>
+	<Interrupt>23h</Interrupt>
+	<Interrupt>24h</Interrupt>
+	<Interrupt>25h</Interrupt>
+	<Interrupt>26h</Interrupt>
+	<Interrupt>27h</Interrupt>
+	<Interrupt>28h</Interrupt>
+	<Interrupt>29h</Interrupt>
+	<Interrupt>2Ah</Interrupt>
+	<Interrupt>2Bh</Interrupt>
+	<Interrupt>2Ch</Interrupt>
+	<Interrupt>2Dh</Interrupt>
+	<Interrupt>2Eh</Interrupt>
+	<Interrupt>2Fh</Interrupt>
+	<Interrupt>30h</Interrupt>
+	<Interrupt>31h</Interrupt>
+	<Interrupt>32h</Interrupt>
+	<Interrupt>33h</Interrupt>
+	<Interrupt>34h</Interrupt>
+	<Interrupt>35h</Interrupt>
+	<Interrupt>36h</Interrupt>
+	<Interrupt>37h</Interrupt>
+	<Interrupt>38h</Interrupt>
+	<Interrupt>39h</Interrupt>
+	<Interrupt>3Ah</Interrupt>
+	<Interrupt>3Bh</Interrupt>
+	<Interrupt>3Ch</Interrupt>
+	<Interrupt>3Dh</Interrupt>
+	<Interrupt>3Eh</Interrupt>
+	<Interrupt>3Fh</Interrupt>
+	<Interrupt>40h</Interrupt>
+	<Interrupt>41h</Interrupt>
+	<Interrupt>42h</Interrupt>
+	<Interrupt>43h</Interrupt>
+	<Interrupt>44h</Interrupt>
+	<Interrupt>45h</Interrupt>
+	<Interrupt>46h</Interrupt>
+	<Interrupt>47h</Interrupt>
+	<Interrupt>48h</Interrupt>
+	<Interrupt>49h</Interrupt>
+	<Interrupt>4Ah</Interrupt>
+	<Interrupt>4Bh</Interrupt>
+	<Interrupt>4Ch</Interrupt>
+	<Interrupt>4Dh</Interrupt>
+	<Interrupt>4Eh</Interrupt>
+	<Interrupt>4Fh</Interrupt>
+	<Interrupt>50h</Interrupt>
+	<Interrupt>51h</Interrupt>
+	<Interrupt>52h</Interrupt>
+	<Interrupt>53h</Interrupt>
+	<Interrupt>54h</Interrupt>
+	<Interrupt>55h</Interrupt>
+	<Interrupt>56h</Interrupt>
+	<Interrupt>57h</Interrupt>
+	<Interrupt>58h</Interrupt>
+	<Interrupt>59h</Interrupt>
+	<Interrupt>5Ah</Interrupt>
+	<Interrupt>5Bh</Interrupt>
+	<Interrupt>5Ch</Interrupt>
+	<Interrupt>5Dh</Interrupt>
+	<Interrupt>5Eh</Interrupt>
+	<Interrupt>5Fh</Interrupt>
+	<Interrupt>60h</Interrupt>
+	<Interrupt>61h</Interrupt>
+	<Interrupt>62h</Interrupt>
+	<Interrupt>63h</Interrupt>
+	<Interrupt>64h</Interrupt>
+	<Interrupt>65h</Interrupt>
+	<Interrupt>66h</Interrupt>
+	<Interrupt>67h</Interrupt>
+	<Interrupt>68h</Interrupt>
+	<Interrupt>69h</Interrupt>
+	<Interrupt>6Ah</Interrupt>
+	<Interrupt>6Bh</Interrupt>
+	<Interrupt>6Ch</Interrupt>
+	<Interrupt>6Dh</Interrupt>
+	<Interrupt>6Eh</Interrupt>
+	<Interrupt>6Fh</Interrupt>
+	<Interrupt>70h</Interrupt>
+	<Interrupt>71h</Interrupt>
+	<Interrupt>72h</Interrupt>
+	<Interrupt>73h</Interrupt>
+	<Interrupt>74h</Interrupt>
+	<Interrupt>75h</Interrupt>
+	<Interrupt>76h</Interrupt>
+	<Interrupt>77h</Interrupt>
+	<Interrupt>78h</Interrupt>
+	<Interrupt>79h</Interrupt>
+	<Interrupt>7Ah</Interrupt>
+	<Interrupt>7Bh</Interrupt>
+	<Interrupt>7Ch</Interrupt>
+	<Interrupt>7Dh</Interrupt>
+	<Interrupt>7Eh</Interrupt>
+	<Interrupt>7Fh</Interrupt>    
+  </GPIOInterrupt>
+  <GPIOFunctions>
+    <Function>GPIO Mode</Function>
+    <Function>Native Fn1</Function>
+    <Function>Native Fn2</Function>
+    <Function>Native Fn3</Function>
+  </GPIOFunctions>
+  <GPIOTxRxEnConfig>
+    <TxRxEnConfig>PadMode Controls Tx and Rx</TxRxEnConfig>
+    <TxRxEnConfig>Fn Controls Tx and Rx Set to 0</TxRxEnConfig>
+    <TxRxEnConfig>Fn Controls Tx and Rx Set to 1</TxRxEnConfig>
+    <TxRxEnConfig>Fn Controls Tx and Rx Always Enabled</TxRxEnConfig>
+  </GPIOTxRxEnConfig>  
+</BasinfallsXML>

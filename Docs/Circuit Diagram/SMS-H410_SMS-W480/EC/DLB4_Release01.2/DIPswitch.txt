@@ -1,0 +1,10 @@
+0: ITE On-line for DLB4
+7: ITE USB to UART (CDC)
+8: ITE Off-line eFlash for PD_I2C
+9: ITE Off-line Ext-Flash for SMB
+A: ITE Off-line Ext-Flash for KBS
+B: ITE Off-line 80Port for SMB
+C: ITE Off-line 80Port for KBS
+D: ITE Off-line eFlash for SMB
+E: ITE Off-line eFlash for KBS
+F: +Start Button=Update DLB4 FW

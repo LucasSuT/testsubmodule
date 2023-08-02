@@ -1,0 +1,1070 @@
+;
+; aaeonFramework.inf
+; 
+; Modified by Jerry Liao
+; Created at 2016/03/03
+;
+
+[Version]
+Signature	= "$WINDOWS NT$"
+Class		= AAEON
+ClassGuid	= {EB0C6195-5647-49D2-A28E-D5092DC05365}
+Provider	= %ManufacturerName%
+CatalogFile	= aaeonFramework.cat
+DriverVer	= 12/15/2022,22.12.15.45
+DriverVer = 12/15/2022,10.8.17.597
+
+
+[DestinationDirs]
+DefaultDestDir = 12
+aaeonFramework_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+aaeonFramework.sys  = 1,,
+WdfCoInstaller01009.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%aaeonFramework.DeviceDesc%=aaeonFramework_Device, Root\aaeonFramework ; TODO: edit hw-id
+%aaeonFramework.PWM%=NO_DRV, PCI\VEN_8086&DEV_2288 ; For CherryTrail PWM
+%aaeonFramework.PWM%=NO_DRV, PCI\VEN_8086&DEV_2289 ; For CherryTrail PWM
+%aaeonFramework.PWM%=NO_DRV, PCI\VEN_8086&DEV_5AC8 ; For ApolloLake PWM
+%aaeonFramework.DMA%=NO_DRV, PCI\VEN_8086&DEV_0F40 ; For BayTrail DMA
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_0F41 ; For BayTrail I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_0F42 ; For BayTrail I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_0F43 ; For BayTrail I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_0F44 ; For BayTrail I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_0F45 ; For BayTrail I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_0F46 ; For BayTrail I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_0F47 ; For BayTrail I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_9DE8 ; For Whiskey Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_9DE9 ; For Whiskey Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_9DEA ; For Whiskey Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_9DEB ; For Whiskey Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_9DC5 ; For Whiskey Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_9DC6 ; For Whiskey Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_9D60 ; For skylake Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_9D61 ; For skylake Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_9D62 ; For skylake Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_9D63 ; For skylake Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_06E8 ; For Comet Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_06E9 ; For Comet Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_A0C5 ; For Tiger Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_A0C6 ; For Tiger Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_A0D8 ; For Tiger Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_A0E8 ; For Tiger Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_A0EA ; For Tiger Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_A0EB ; For Tiger Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_4B78 ; For Elkhart Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_4B7A ; For Elkhart Lake I2C
+%aaeonFramework.I2C%=NO_DRV, PCI\VEN_8086&DEV_4B4B ; For Elkhart Lake I2C
+
+
+[aaeonFramework_Device.NT]
+CopyFiles=Drivers_Dir
+
+[aaeonFramework_Device.NT.HW]
+AddReg=aaeonFramework_Device.NT.HW.AddReg
+
+[Drivers_Dir]
+aaeonFramework.sys
+
+[NO_DRV]
+
+[NO_DRV.Services]
+AddService = , %SPSVCINST_ASSOCSERVICE%   ; null service install
+
+;-------------- Service installation
+[aaeonFramework_Device.NT.Services]
+AddService = aaeonFramework,%SPSVCINST_ASSOCSERVICE%, aaeonFramework_Service_Inst
+
+; -------------- aaeonFramework driver install sections
+[aaeonFramework_Service_Inst]
+DisplayName    = %aaeonFramework.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\aaeonFramework.sys
+
+;
+;--- aaeonFramework_Device Coinstaller installation ------
+;
+
+;[DestinationDirs]
+;aaeonFramework_Device_CoInstaller_CopyFiles = 11
+
+[aaeonFramework_Device.NT.CoInstallers]
+AddReg=aaeonFramework_Device_CoInstaller_AddReg
+CopyFiles=aaeonFramework_Device_CoInstaller_CopyFiles
+
+[aaeonFramework_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01009.dll,WdfCoInstaller"
+
+[aaeonFramework_Device_CoInstaller_CopyFiles]
+WdfCoInstaller01009.dll
+
+;[SourceDisksFiles]
+;WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+[aaeonFramework_Device.NT.Wdf]
+KmdfService =  aaeonFramework, aaeonFramework_wdfsect
+[aaeonFramework_wdfsect]
+KmdfLibraryVersion = 1.9
+
+[Strings]
+SPSVCINST_ASSOCSERVICE		= 0x00000002
+ManufacturerName			= "AAEON"
+ClassName					= "AAEON Framework"
+DiskName					= "aaeonFramework Installation Disk"
+aaeonFramework.DeviceDesc	= "AAEON Framework Service"
+aaeonFramework.SVCDESC		= "AAEON Framework Service"
+HiSafePath					= "SYSTEM\CurrentControlSet\Services\aaeonFramework\"
+aaeonFramework.PWM			= "AAEON Framework PWM"
+aaeonFramework.I2C			= "AAEON Framework I2C"
+aaeonFramework.DMA			= "AAEON Framework DMA"
+
+;
+; Non-Localizable Strings
+;
+REG_SZ         = 0x00000000
+REG_MULTI_SZ   = 0x00010000
+REG_DWORD      = 0x00010001
+REG_BINARY     = 0x00000001
+
+; ------------------------------ Hi-Safe Base Start ------------------------------
+[aaeonFramework_Device.NT.HW.AddReg]
+HKR,,,,%ClassName%
+HKR,,Icon,,"-5"
+HKR,,Security,,"D:P(A;;GA;;;WD)"
+
+;--------------------------- [Function Bit Table] ---------------------------
+; +==========+============+=====+======+=====+======+=======+===========+==========+
+; |   bits   |      7     |  6  |   5  |  4  |   3  |   2   |     1     |     0    |
+; +----------+------------+-----+------+-----+------+-------+-----------+----------+
+; | Function | Board Info | HWM | GPIO | WDT | SFan | SMBus | Backlignt | Reserved |
+; +==========+============+=====+======+=====+======+=======+===========+==========+
+
+;------------------------------- [Board Info] -------------------------------
+;HKLM, %HiSafePath%GWU6A, BoardName, %REG_SZ%, "GENE-WHU6"
+;HKLM, %HiSafePath%GWU6A, Function, %REG_DWORD%, 0xFE
+;HKLM, %HiSafePath%ECS7A, SIOCount, %REG_DWORD%, 0x02
+
+;------------------------------- [Backlight] --------------------------------
+;HKLM, %HiSafePath%GWU6A\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+;HKLM, %HiSafePath%GWU6A\Backlight, DevCount, %REG_DWORD%, 0x1
+;HKLM, %HiSafePath%GWU6A\Backlight, DCSlave, %REG_BINARY%, 0x5C, 0x2E
+;HKLM, %HiSafePath%GWU6A\Backlight, PWMMode, %REG_BINARY%, 0x0, 0x0
+;HKLM, %HiSafePath%GWU6A\Backlight, PWMModeParam, %REG_BINARY%, 0xC0, 0x0
+;HKLM, %HiSafePath%GWU6A\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+
+;---------------------------------- [Dio] -----------------------------------
+;HKLM, %HiSafePath%GWU6A\Dio, SIO, %REG_SZ%, "Fintek_F81966"
+;HKLM, %HiSafePath%GWU6A\Dio, PinCount, %REG_DWORD%, 0x08
+;HKLM, %HiSafePath%GWU6A\Dio, DioMode, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%GWU6A\Dio, DioValue, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+;HKLM, %HiSafePath%GWU6A\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%GWU6A\Dio, DioGroupNum, %REG_BINARY%, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08
+;HKLM, %HiSafePath%GWU6A\Dio, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
+;HKLM, %HiSafePath%GWU6A\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+;HKLM, %HiSafePath%GWU6A\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+;HKLM, %HiSafePath%UPC1B\Dio, DioDefaultSetting, %REG_DWORD%, 1
+;HKLM, %HiSafePath%C1A4A\Dio, DioOutputInversion, %REG_BINARY%, 0x01
+;HKLM, %HiSafePath%GEL5A\Dio1, SIO, %REG_SZ%, "Fintek_F75111"
+;HKLM, %HiSafePath%GEL5A\Dio1, SIOslv, %REG_DWORD%, 0x6E
+;HKLM, %HiSafePath%GEL5A\Dio1, PinCount, %REG_DWORD%, 0x08
+;HKLM, %HiSafePath%GEL5A\Dio1, DioMode, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+;HKLM, %HiSafePath%GEL5A\Dio1, DioValue, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%GEL5A\Dio1, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%GEL5A\Dio1, DioGroupNum, %REG_BINARY%, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02
+;HKLM, %HiSafePath%GEL5A\Dio1, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
+;HKLM, %HiSafePath%GEL5A\Dio1, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+;HKLM, %HiSafePath%GEL5A\Dio1, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+;HKLM, %HiSafePath%V041V\Dio1, DioDefaultSetting, %REG_DWORD%, 1
+
+;---------------------------- [Hardware Monitor] ----------------------------
+;HKLM, %HiSafePath%GWU6A\HWMon, SIO, %REG_SZ%, "Fintek_F81966"
+;HKLM, %HiSafePath%GWU6A\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x00
+;HKLM, %HiSafePath%GWU6A\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+;HKLM, %HiSafePath%GWU6A\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x01
+;HKLM, %HiSafePath%GWU6A\HWMon, TempSrcSel, %REG_BINARY%, 0xFF, 0x01, 0x02
+;HKLM, %HiSafePath%GWU6A\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%GWU6A\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x00
+;HKLM, %HiSafePath%GWU6A\HWMon, VoltSrcSel, %REG_BINARY%, 0x01, 0x00, 0x00, 0x06, 0x03, 0x07, 0x02, 0x04, 0x05
+;HKLM, %HiSafePath%GWU6A\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x01, 0x02, 0x02, 0x69, 0x01, 0x0B, 0x01, 0x02
+;HKLM, %HiSafePath%GWU6A\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x14, 0x01, 0x01, 0x01, 0x01
+;HKLM, %HiSafePath%CWHUA\HWMon1, SIO, %REG_SZ%, "Fintek_F75387"
+;HKLM, %HiSafePath%CWHUA\HWMon1, FanEnable, %REG_BINARY%, 0x01, 0x01, 0x00
+;HKLM, %HiSafePath%CWHUA\HWMon1, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x00
+;HKLM, %HiSafePath%CWHUA\HWMon1, TempEnable, %REG_BINARY%, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%CWHUA\HWMon1, TempSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+;HKLM, %HiSafePath%CWHUA\HWMon1, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%CWHUA\HWMon1, VoltEnable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%CWHUA\HWMon1, VoltSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03
+;HKLM, %HiSafePath%CWHUA\HWMon1, VoltCali1, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01
+;HKLM, %HiSafePath%CWHUA\HWMon1, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01
+
+;------------------------------- [Smart Fan] --------------------------------
+;HKLM, %HiSafePath%GWU6A\Sfan, SIO, %REG_SZ%, "Fintek_F81966"
+;HKLM, %HiSafePath%GWU6A\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%GWU6A\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x00, 0x00
+;HKLM, %HiSafePath%GWU6A\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+;HKLM, %HiSafePath%GWU6A\Sfan, FullSpeedTemp, %REG_BINARY%, 0x64, 0x64, 0x64
+;HKLM, %HiSafePath%GWU6A\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%GWU6A\Sfan, SFanDefaultSetting, %REG_DWORD%, 1
+;HKLM, %HiSafePath%GKBUC\Sfan, SFanAutoModeSelect, %REG_BINARY%, 0x00
+;HKLM, %HiSafePath%CWHUA\Sfan1, SIO, %REG_SZ%, "Fintek_F75387"
+;HKLM, %HiSafePath%CWHUA\Sfan1, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%CWHUA\Sfan1, AutoModeCap, %REG_BINARY%, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%CWHUA\Sfan1, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80	
+;HKLM, %HiSafePath%CWHUA\Sfan1, FullSpeedTemp, %REG_BINARY%, 0x64, 0x64, 0x64 
+;HKLM, %HiSafePath%CWHUA\Sfan1, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+;HKLM, %HiSafePath%CWHUA\Sfan1, SFanDefaultSetting, %REG_DWORD%, 1
+
+;----------------------------- [Watch Dog Timer] ----------------------------
+;HKLM, %HiSafePath%GWU6A\WDT, SIO, %REG_SZ%, "Fintek_F81966"
+;HKLM, %HiSafePath%GWU6A\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+
+;--------------------------------- [SMBus] ----------------------------------
+;HKLM, %HiSafePath%JDBTA\Smbus, SIO, %REG_SZ%, "EC"
+;HKLM, %HiSafePath%CIDB7\Smbus, SmbusECFun, %REG_BINARY%, 0x02
+
+;---------------------------------- [I2C] -----------------------------------
+;HKLM, %HiSafePath%GWU6A\I2C, SIO, %REG_SZ%, "Chipset_WhiskeyLake"
+
+;---------------------------------- [Bfpi] ----------------------------------
+;HKLM, %HiSafePath%GWU6A\Bfpi, BfpiDisable, %REG_BINARY%, 0x1
+
+;--------------------------- [SOME UP Series Need] --------------------------
+;HKLM, %HiSafePath%UPA1A\PWM, SIO, %REG_SZ%, "Chipset_Apollolake"
+;HKLM, %HiSafePath%UPA1A\SPI, SIO, %REG_SZ%, "Chipset_Apollolake"
+
+;-------------------------------------------------------------------------GENE-WHU6
+HKLM, %HiSafePath%GWU6A, BoardName, %REG_SZ%, "GENE-WHU6"
+HKLM, %HiSafePath%GWU6A, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%GWU6A\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GWU6A\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%GWU6A\Backlight, DCSlave, %REG_BINARY%, 0x5C, 0x2E
+HKLM, %HiSafePath%GWU6A\Backlight, PWMMode, %REG_BINARY%, 0x0, 0x0
+HKLM, %HiSafePath%GWU6A\Backlight, PWMModeParam, %REG_BINARY%, 0xC0, 0x0
+HKLM, %HiSafePath%GWU6A\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%GWU6A\Dio, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GWU6A\Dio, PinCount, %REG_DWORD%, 0x08
+HKLM, %HiSafePath%GWU6A\Dio, DioMode, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GWU6A\Dio, DioValue, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GWU6A\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GWU6A\Dio, DioGroupNum, %REG_BINARY%, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08
+HKLM, %HiSafePath%GWU6A\Dio, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
+HKLM, %HiSafePath%GWU6A\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GWU6A\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GWU6A\HWMon, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GWU6A\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GWU6A\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%GWU6A\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GWU6A\HWMon, TempSrcSel, %REG_BINARY%, 0xFF, 0x01, 0x02
+HKLM, %HiSafePath%GWU6A\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GWU6A\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x00
+HKLM, %HiSafePath%GWU6A\HWMon, VoltSrcSel, %REG_BINARY%, 0x01, 0x00, 0x00, 0x06, 0x03, 0x07, 0x02, 0x04, 0x05
+HKLM, %HiSafePath%GWU6A\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x01, 0x02, 0x02, 0x69, 0x01, 0x0B, 0x01, 0x02
+HKLM, %HiSafePath%GWU6A\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x14, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GWU6A\Sfan, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GWU6A\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GWU6A\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GWU6A\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%GWU6A\Sfan, FullSpeedTemp, %REG_BINARY%, 0x64, 0x64, 0x64
+HKLM, %HiSafePath%GWU6A\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GWU6A\Sfan, SFanDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%GWU6A\WDT, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GWU6A\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%GWU6A\I2C, SIO, %REG_SZ%, "Chipset_WhiskeyLake"
+HKLM, %HiSafePath%GWU6A\Bfpi, BfpiDisable, %REG_BINARY%, 0x1
+
+;-------------------------------------------------------------------------FAY-EHL
+HKLM, %HiSafePath%FAYEL, BoardName, %REG_SZ%, "FAY-EHL"
+HKLM, %HiSafePath%FAYEL, Function, %REG_DWORD%, 0xD6
+HKLM, %HiSafePath%FAYEL\Backlight, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%FAYEL\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%FAYEL\Backlight, DCSlave, %REG_BINARY%, 0x5C, 0x2E
+HKLM, %HiSafePath%FAYEL\Backlight, PWMMode, %REG_BINARY%, 0x1, 0x0
+HKLM, %HiSafePath%FAYEL\Backlight, PWMModeParam, %REG_BINARY%, 0x0, 0x0
+HKLM, %HiSafePath%FAYEL\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%FAYEL\Dio, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%FAYEL\Dio, PinCount, %REG_DWORD%, 0x00
+HKLM, %HiSafePath%FAYEL\HWMon, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%FAYEL\HWMon, FanEnable, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%FAYEL\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x00
+HKLM, %HiSafePath%FAYEL\HWMon, TempSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%FAYEL\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%FAYEL\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%FAYEL\HWMon, VoltSrcSel, %REG_BINARY%, 0x00, 0x00, 0x05, 0x06, 0x04, 0x07, 0x01, 0x04, 0x05
+HKLM, %HiSafePath%FAYEL\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x01, 0x8D, 0x02, 0xF7, 0x01, 0x0B, 0x01, 0x02
+HKLM, %HiSafePath%FAYEL\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x29, 0x01, 0x2F, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%FAYEL\WDT, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%FAYEL\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%FAYEL\Sfan, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%FAYEL\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%FAYEL\Sfan, AutoModeCap, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%FAYEL\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%FAYEL\Sfan, FullSpeedTemp, %REG_BINARY%, 0x64, 0x64, 0x64
+HKLM, %HiSafePath%FAYEL\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%FAYEL\Sfan, SFanDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%FAYEL\Bfpi, BfpiDisable, %REG_BINARY%, 0x0
+
+;-------------------------------------------------------------------------BOXER-6313M-C4-CX002
+HKLM, %HiSafePath%B313M, BoardName, %REG_SZ%, "BOXER-6313M-C4-CX002"
+HKLM, %HiSafePath%B313M, Function, %REG_DWORD%, 0x20
+HKLM, %HiSafePath%B313M\Dio, SIO, %REG_SZ%, "Fintek_F81866"
+HKLM, %HiSafePath%B313M\Dio, PinCount, %REG_DWORD%, 0x30
+HKLM, %HiSafePath%B313M\Dio, DioMode, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01,\
+													0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%B313M\Dio, DioValue, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00,\
+													 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%B313M\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,\
+													   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%B313M\Dio, DioGroupNum, %REG_BINARY%, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x07, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08,\
+														0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%B313M\Dio, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,\
+													  0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
+HKLM, %HiSafePath%B313M\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01,\
+														   0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%B313M\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01,\
+														  0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%B313M\Dio, GPIOSIOIndexPort, %REG_DWORD%, 0x4E
+HKLM, %HiSafePath%B313M\Dio, DioDefaultSetting, %REG_DWORD%, 1
+
+;-------------------------------------------------------------------------MIX-H310A2
+HKLM, %HiSafePath%M31A2, BoardName, %REG_SZ%, "MIX-H310A2"
+HKLM, %HiSafePath%M31A2, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%M31A2\Backlight, SIO, %REG_SZ%, "NCT6793D"
+HKLM, %HiSafePath%M31A2\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%M31A2\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%M31A2\Backlight, PWMMode, %REG_BINARY%, 0x01
+HKLM, %HiSafePath%M31A2\Backlight, PWMModeParam, %REG_BINARY%, 0x02
+HKLM, %HiSafePath%M31A2\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%M31A2\Dio, SIO, %REG_SZ%, "NCT6793D"
+HKLM, %HiSafePath%M31A2\Dio, PinCount, %REG_DWORD%, 0x8
+HKLM, %HiSafePath%M31A2\Dio, DioMode, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%M31A2\Dio, DioValue, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%M31A2\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%M31A2\Dio, DioGroupNum, %REG_BINARY%, 0x00, 0x02, 0x03, 0x05, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%M31A2\Dio, DioPinNum, %REG_BINARY%, 0x06, 0x07, 0x04, 0x04, 0x01, 0x02, 0x03, 0x05
+HKLM, %HiSafePath%M31A2\HWMon, SIO, %REG_SZ%, "NCT6793D"
+HKLM, %HiSafePath%M31A2\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%M31A2\HWMon, FanSrcSel, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%M31A2\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%M31A2\HWMon, TempSrcSel, %REG_BINARY%, 0x07, 0x00, 0x00
+HKLM, %HiSafePath%M31A2\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%M31A2\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x01, 0x00, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%M31A2\HWMon, VoltSrcSel, %REG_BINARY%, 0x00, 0x00, 0x03, 0x08, 0x04, 0x00, 0x01, 0x00, 0x07
+HKLM, %HiSafePath%M31A2\HWMon, VoltCali1, %REG_BINARY%, 0x02, 0x01, 0x02, 0x01, 0x05, 0x01, 0x0C, 0x01, 0x02
+HKLM, %HiSafePath%M31A2\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%M31A2\Sfan, SIO, %REG_SZ%, "NCT6793D"
+HKLM, %HiSafePath%M31A2\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%M31A2\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%M31A2\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%M31A2\Sfan, FullSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%M31A2\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%M31A2\Sfan, SFanDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%M31A2\WDT, SIO, %REG_SZ%, "NCT6793D"
+HKLM, %HiSafePath%M31A2\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%M31A2\Bfpi, BfpiDisable, %REG_BINARY%, 0x1
+
+;-------------------------------------------------------------------------MIX-H310A2-ONYX
+HKLM, %HiSafePath%V04YN, BoardName, %REG_SZ%, "MIX-H310A2"
+HKLM, %HiSafePath%V04YN, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%V04YN, SIOCount, %REG_DWORD%, 0x02
+HKLM, %HiSafePath%V04YN\Backlight, SIO, %REG_SZ%, "NCT6793D"
+HKLM, %HiSafePath%V04YN\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%V04YN\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%V04YN\Backlight, PWMMode, %REG_BINARY%, 0x01
+HKLM, %HiSafePath%V04YN\Backlight, PWMModeParam, %REG_BINARY%, 0x02
+HKLM, %HiSafePath%V04YN\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%V04YN\Dio, SIO, %REG_SZ%, "NCT6793D"
+HKLM, %HiSafePath%V04YN\Dio, PinCount, %REG_DWORD%, 0x8
+HKLM, %HiSafePath%V04YN\Dio, DioMode, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%V04YN\Dio, DioValue, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%V04YN\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%V04YN\Dio, DioGroupNum, %REG_BINARY%, 0x00, 0x02, 0x03, 0x05, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%V04YN\Dio, DioPinNum, %REG_BINARY%, 0x06, 0x07, 0x04, 0x04, 0x01, 0x02, 0x03, 0x05
+HKLM, %HiSafePath%V04YN\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%V04YN\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%V04YN\Dio, DioDefaultSetting, %REG_DWORD%, 1, 1, 1, 1, 1, 1, 1, 1
+HKLM, %HiSafePath%V04YN\Dio1, SIO, %REG_SZ%, "CoffeeLake"
+HKLM, %HiSafePath%V04YN\Dio1, PinCount, %REG_DWORD%, 1
+HKLM, %HiSafePath%V04YN\Dio1, DioMode, %REG_BINARY%, 0x01
+HKLM, %HiSafePath%V04YN\Dio1, DioValue, %REG_BINARY%, 0x01
+HKLM, %HiSafePath%V04YN\Dio1, DioDisable, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%V04YN\Dio1, DioGroupNum, %REG_BINARY%, 0x0A
+HKLM, %HiSafePath%V04YN\Dio1, DioPinNum, %REG_BINARY%, 0x02
+HKLM, %HiSafePath%V04YN\Dio1, DioCanBeOutput, %REG_BINARY%, 0x01
+HKLM, %HiSafePath%V04YN\Dio1, DioCanBeInput, %REG_BINARY%, 0x01
+HKLM, %HiSafePath%V04YN\Dio1, DioDefaultSetting, %REG_DWORD%, 0
+HKLM, %HiSafePath%V04YN\Dio1, nSavevalue, %REG_DWORD%, 0
+HKLM, %HiSafePath%V04YN\HWMon, SIO, %REG_SZ%, "NCT6793D"
+HKLM, %HiSafePath%V04YN\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%V04YN\HWMon, FanSrcSel, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%V04YN\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%V04YN\HWMon, TempSrcSel, %REG_BINARY%, 0x07, 0x00, 0x00
+HKLM, %HiSafePath%V04YN\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%V04YN\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x01, 0x00, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%V04YN\HWMon, VoltSrcSel, %REG_BINARY%, 0x00, 0x00, 0x03, 0x08, 0x04, 0x00, 0x01, 0x00, 0x07
+HKLM, %HiSafePath%V04YN\HWMon, VoltCali1, %REG_BINARY%, 0x02, 0x01, 0x02, 0x01, 0x05, 0x01, 0x0C, 0x01, 0x02
+HKLM, %HiSafePath%V04YN\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%V04YN\Sfan, SIO, %REG_SZ%, "NCT6793D"
+HKLM, %HiSafePath%V04YN\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%V04YN\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%V04YN\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%V04YN\Sfan, FullSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%V04YN\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%V04YN\Sfan, SFanDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%V04YN\WDT, SIO, %REG_SZ%, "NCT6793D"
+HKLM, %HiSafePath%V04YN\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%V04YN\Bfpi, BfpiDisable, %REG_BINARY%, 0x1
+
+;-------------------------------------------------------------------------PICO-TGU4
+HKLM, %HiSafePath%ZTGUA, BoardName, %REG_SZ%, "PICO-TGU4"
+HKLM, %HiSafePath%ZTGUA, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%ZTGUA\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%ZTGUA\Backlight, DevCount, %REG_DWORD%, 0x0
+HKLM, %HiSafePath%ZTGUA\Backlight, DCSlave, %REG_BINARY%, 0x5C, 0x2E
+HKLM, %HiSafePath%ZTGUA\Backlight, PWMMode, %REG_BINARY%, 0x0, 0x0
+HKLM, %HiSafePath%ZTGUA\Backlight, PWMModeParam, %REG_BINARY%, 0xC0, 0x0
+HKLM, %HiSafePath%ZTGUA\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%ZTGUA\Dio, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%ZTGUA\Dio, PinCount, %REG_DWORD%, 0x8
+HKLM, %HiSafePath%ZTGUA\Dio, DioMode, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%ZTGUA\Dio, DioValue, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%ZTGUA\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%ZTGUA\Dio, DioGroupNum, %REG_BINARY%, 0x08, 0x08, 0x08, 0x08, 0x07, 0x07, 0x08, 0x09
+HKLM, %HiSafePath%ZTGUA\Dio, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x00, 0x03, 0x06, 0x06
+HKLM, %HiSafePath%ZTGUA\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%ZTGUA\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%ZTGUA\Dio, DioDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%ZTGUA\HWMon, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%ZTGUA\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%ZTGUA\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%ZTGUA\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%ZTGUA\HWMon, TempSrcSel, %REG_BINARY%, 0xFF, 0x01, 0x02
+HKLM, %HiSafePath%ZTGUA\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%ZTGUA\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%ZTGUA\HWMon, VoltSrcSel, %REG_BINARY%, 0x01, 0x00, 0x00, 0x06, 0x03, 0x07, 0x04, 0x02, 0x05
+HKLM, %HiSafePath%ZTGUA\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x01, 0x02, 0x02, 0x69, 0x01, 0x0B, 0x01, 0x02
+HKLM, %HiSafePath%ZTGUA\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x14, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%ZTGUA\Sfan, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%ZTGUA\Sfan, AutoModeEn, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%ZTGUA\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%ZTGUA\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%ZTGUA\Sfan, FullSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%ZTGUA\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%ZTGUA\Sfan, SFanDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%ZTGUA\WDT, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%ZTGUA\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%ZTGUA\Bfpi, BfpiDisable, %REG_BINARY%, 0x00
+
+;-------------------------------------------------------------------------PICO-TGU4-SEMI
+HKLM, %HiSafePath%ZTGUS, BoardName, %REG_SZ%, "PICO-TGU4-SEMI"
+HKLM, %HiSafePath%ZTGUS, Function, %REG_DWORD%, 0xDC
+HKLM, %HiSafePath%ZTGUS\Bfpi, BfpiDisable, %REG_BINARY%, 0x00
+
+;-------------------------------------------------------------------------GENE-CML5
+HKLM, %HiSafePath%GCL5A, BoardName, %REG_SZ%, "GENE-CML5"
+HKLM, %HiSafePath%GCL5A, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%GCL5A\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GCL5A\Backlight, DevCount, %REG_DWORD%, 0x01
+HKLM, %HiSafePath%GCL5A\Backlight, DCSlave, %REG_BINARY%, 0x5C, 0x2E
+HKLM, %HiSafePath%GCL5A\Backlight, PWMMode, %REG_BINARY%, 0x00, 0x01
+HKLM, %HiSafePath%GCL5A\Backlight, PWMModeParam, %REG_BINARY%, 0xC0, 0x00
+HKLM, %HiSafePath%GCL5A\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%GCL5A\Dio, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GCL5A\Dio, PinCount, %REG_DWORD%, 0x8
+HKLM, %HiSafePath%GCL5A\Dio, DioMode, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GCL5A\Dio, DioValue, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GCL5A\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GCL5A\Dio, DioGroupNum, %REG_BINARY%, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08
+HKLM, %HiSafePath%GCL5A\Dio, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
+HKLM, %HiSafePath%GCL5A\Dio, DioDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%GCL5A\HWMon, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GCL5A\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GCL5A\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%GCL5A\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GCL5A\HWMon, TempSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%GCL5A\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GCL5A\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GCL5A\HWMon, VoltSrcSel, %REG_BINARY%, 0x01, 0x00, 0x00, 0x06, 0x03, 0x07, 0x02, 0x04, 0x05
+HKLM, %HiSafePath%GCL5A\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x01, 0x02, 0x02, 0x15, 0x01, 0x0B, 0x01, 0x02
+HKLM, %HiSafePath%GCL5A\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x04, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GCL5A\Sfan, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GCL5A\Sfan, AutoModeEn, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GCL5A\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GCL5A\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%GCL5A\Sfan, FullSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GCL5A\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GCL5A\Sfan, SFanDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%GCL5A\WDT, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GCL5A\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%GCL5A\I2C, SIO, %REG_SZ%, "Chipset_CometLake"
+
+;-------------------------------------------------------------------------GENESYS-CML5
+HKLM, %HiSafePath%GCL5S, BoardName, %REG_SZ%, "GENESYS-CML5"
+HKLM, %HiSafePath%GCL5S, Function, %REG_DWORD%, 0xDC
+HKLM, %HiSafePath%GCL5S\HWMon, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GCL5S\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GCL5S\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%GCL5S\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GCL5S\HWMon, TempSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%GCL5S\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GCL5S\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GCL5S\HWMon, VoltSrcSel, %REG_BINARY%, 0x01, 0x00, 0x00, 0x06, 0x03, 0x07, 0x02, 0x04, 0x05
+HKLM, %HiSafePath%GCL5S\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x01, 0x02, 0x02, 0x15, 0x01, 0x0B, 0x01, 0x02
+HKLM, %HiSafePath%GCL5S\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x04, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GCL5S\Sfan, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GCL5S\Sfan, AutoModeEn, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GCL5S\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GCL5S\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%GCL5S\Sfan, FullSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GCL5S\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GCL5S\Sfan, SFanDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%GCL5S\WDT, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GCL5S\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%GCL5S\I2C, SIO, %REG_SZ%, "Chipset_CometLake"
+
+;-------------------------------------------------------------------------GENE-BT05
+HKLM, %HiSafePath%GBT5A, BoardName, %REG_SZ%, "GENE-BT05"
+HKLM, %HiSafePath%GBT5A, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%GBT5A\Backlight, SIO, %REG_SZ%, "Fintek_F81866"
+HKLM, %HiSafePath%GBT5A\Backlight, DevCount, %REG_DWORD%, 0x01
+HKLM, %HiSafePath%GBT5A\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%GBT5A\Backlight, PWMMode, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%GBT5A\Backlight, PWMModeParam, %REG_BINARY%, 0xC0
+HKLM, %HiSafePath%GBT5A\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%GBT5A\Dio, SIO, %REG_SZ%, "Fintek_F81866"
+HKLM, %HiSafePath%GBT5A\Dio, PinCount, %REG_DWORD%, 0x8
+HKLM, %HiSafePath%GBT5A\Dio, DioMode, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GBT5A\Dio, DioValue, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GBT5A\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GBT5A\Dio, DioGroupNum, %REG_BINARY%, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05
+HKLM, %HiSafePath%GBT5A\Dio, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
+HKLM, %HiSafePath%GBT5A\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GBT5A\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GBT5A\HWMon, SIO, %REG_SZ%, "Fintek_F81866"
+HKLM, %HiSafePath%GBT5A\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GBT5A\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%GBT5A\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x00
+HKLM, %HiSafePath%GBT5A\HWMon, TempSrcSel, %REG_BINARY%, 0xFF, 0x01, 0x00
+HKLM, %HiSafePath%GBT5A\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GBT5A\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GBT5A\HWMon, VoltSrcSel, %REG_BINARY%, 0x01, 0x00, 0x00, 0x06, 0x03, 0x07, 0x02, 0x04, 0x05
+HKLM, %HiSafePath%GBT5A\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x01, 0x02, 0x02, 0x15, 0x01, 0x0B, 0x01, 0x02
+HKLM, %HiSafePath%GBT5A\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x04, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GBT5A\Sfan, SIO, %REG_SZ%, "Fintek_F81866"
+HKLM, %HiSafePath%GBT5A\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GBT5A\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GBT5A\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%GBT5A\Sfan, FullSpeedTemp, %REG_BINARY%, 0x64, 0x64, 0x64
+HKLM, %HiSafePath%GBT5A\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GBT5A\WDT, SIO, %REG_SZ%, "Fintek_F81866"
+HKLM, %HiSafePath%GBT5A\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%GBT5A\Bfpi, BfpiDisable, %REG_BINARY%, 0x01
+
+;-------------------------------------------------------------------------GENESYS-BT05
+HKLM, %HiSafePath%GBT5S, BoardName, %REG_SZ%, "GENESYS-BT05"
+HKLM, %HiSafePath%GBT5S, Function, %REG_DWORD%, 0xDC
+HKLM, %HiSafePath%GBT5S\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GBT5S\Backlight, DevCount, %REG_DWORD%, 0x01
+HKLM, %HiSafePath%GBT5S\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%GBT5S\Backlight, PWMMode, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%GBT5S\Backlight, PWMModeParam, %REG_BINARY%, 0xC0
+HKLM, %HiSafePath%GBT5S\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%GBT5S\Dio, SIO, %REG_SZ%, "Fintek_F81866"
+HKLM, %HiSafePath%GBT5S\Dio, PinCount, %REG_DWORD%, 0x8
+HKLM, %HiSafePath%GBT5S\Dio, DioMode, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GBT5S\Dio, DioValue, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GBT5S\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GBT5S\Dio, DioGroupNum, %REG_BINARY%, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05, 0x05
+HKLM, %HiSafePath%GBT5S\Dio, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
+HKLM, %HiSafePath%GBT5S\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GBT5S\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GBT5S\HWMon, SIO, %REG_SZ%, "Fintek_F81866"
+HKLM, %HiSafePath%GBT5S\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GBT5S\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%GBT5S\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x00
+HKLM, %HiSafePath%GBT5S\HWMon, TempSrcSel, %REG_BINARY%, 0xFF, 0x01, 0x00
+HKLM, %HiSafePath%GBT5S\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GBT5S\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GBT5S\HWMon, VoltSrcSel, %REG_BINARY%, 0x01, 0x00, 0x00, 0x06, 0x03, 0x07, 0x02, 0x04, 0x05
+HKLM, %HiSafePath%GBT5S\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x01, 0x02, 0x02, 0x15, 0x01, 0x0B, 0x01, 0x02
+HKLM, %HiSafePath%GBT5S\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x04, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%GBT5S\Sfan, SIO, %REG_SZ%, "Fintek_F81866"
+HKLM, %HiSafePath%GBT5S\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GBT5S\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%GBT5S\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%GBT5S\Sfan, FullSpeedTemp, %REG_BINARY%, 0x64, 0x64, 0x64
+HKLM, %HiSafePath%GBT5S\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%GBT5S\WDT, SIO, %REG_SZ%, "Fintek_F81866"
+HKLM, %HiSafePath%GBT5S\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%GBT5S\Bfpi, BfpiDisable, %REG_BINARY%, 0x01
+
+;-------------------------------------------------------------------------PICO-V2K4
+HKLM, %HiSafePath%ZV2K4, BoardName, %REG_SZ%, "PICO-V2K4"
+HKLM, %HiSafePath%ZV2K4, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%ZV2K4\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%ZV2K4\Backlight, DevCount, %REG_DWORD%, 0x01
+HKLM, %HiSafePath%ZV2K4\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%ZV2K4\Backlight, PWMMode, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%ZV2K4\Backlight, PWMModeParam, %REG_BINARY%, 0x40
+HKLM, %HiSafePath%ZV2K4\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%ZV2K4\Backlight, SmbusDev, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%ZV2K4\Smbus, SIO, %REG_SZ%, "AMD"
+HKLM, %HiSafePath%ZV2K4\I2C, SIO, %REG_SZ%, "Chipset_AmdV2000"
+
+;-------------------------------------------------------------------------EPIC-TGH7
+HKLM, %HiSafePath%ETH7A, BoardName, %REG_SZ%, "EPIC-TGH7"
+HKLM, %HiSafePath%ETH7A, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%ETH7A\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%ETH7A\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%ETH7A\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%ETH7A\Backlight, PWMMode, %REG_BINARY%, 0x0
+HKLM, %HiSafePath%ETH7A\Backlight, PWMModeParam, %REG_BINARY%, 0xC0
+HKLM, %HiSafePath%ETH7A\Backlight, CurrentValue, %REG_BINARY%, 0x50
+
+;-------------------------------------------------------------------------DeNext-TGU8
+HKLM, %HiSafePath%DTG8A, BoardName, %REG_SZ%, "DeNext-TGU8"
+HKLM, %HiSafePath%DTG8A, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%DTG8A\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%DTG8A\Backlight, DevCount, %REG_DWORD%, 0x0
+HKLM, %HiSafePath%DTG8A\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%DTG8A\Backlight, PWMMode, %REG_BINARY%, 0x0
+HKLM, %HiSafePath%DTG8A\Backlight, PWMModeParam, %REG_BINARY%, 0xC0
+HKLM, %HiSafePath%DTG8A\Backlight, CurrentValue, %REG_BINARY%, 0x50
+
+;-------------------------------------------------------------------------GENESYS-TGU6
+HKLM, %HiSafePath%GST6A, BoardName, %REG_SZ%, "GENESYS-TGU6"
+HKLM, %HiSafePath%GST6A, Function, %REG_DWORD%, 0xDC
+HKLM, %HiSafePath%GST6A\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GST6A\Backlight, DevCount, %REG_DWORD%, 0x0
+HKLM, %HiSafePath%GST6A\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%GST6A\Backlight, PWMMode, %REG_BINARY%, 0x0
+HKLM, %HiSafePath%GST6A\Backlight, PWMModeParam, %REG_BINARY%, 0xC0
+HKLM, %HiSafePath%GST6A\Backlight, CurrentValue, %REG_BINARY%, 0x50
+
+;-------------------------------------------------------------------------EPIC-ADS7-PUC
+HKLM, %HiSafePath%PAD7A, BoardName, %REG_SZ%, "EPIC-ADS7-PUC"
+HKLM, %HiSafePath%PAD7A, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%PAD7A\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%PAD7A\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%PAD7A\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%PAD7A\Backlight, PWMMode, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%PAD7A\Backlight, PWMModeParam, %REG_BINARY%, 0x40
+HKLM, %HiSafePath%PAD7A\Backlight, CurrentValue, %REG_BINARY%, 0x50
+
+;-------------------------------------------------------------------------BOXER-6645-ADS
+HKLM, %HiSafePath%B645A, BoardName, %REG_SZ%, "BOXER-6645-ADS"
+HKLM, %HiSafePath%B645A, Function, %REG_DWORD%, 0xFC
+
+;-------------------------------------------------------------------------GENE-ADP6
+HKLM, %HiSafePath%GAD6A, BoardName, %REG_SZ%, "GENE-ADP6"
+HKLM, %HiSafePath%GAD6A, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%GAD6A\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GAD6A\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%GAD6A\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%GAD6A\Backlight, PWMMode, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%GAD6A\Backlight, PWMModeParam, %REG_BINARY%, 0x40
+HKLM, %HiSafePath%GAD6A\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%GAD6A\I2C, SIO, %REG_SZ%, "Chipset_AlderLake"
+
+;-------------------------------------------------------------------------COM-ICDB7
+HKLM, %HiSafePath%CID7A, BoardName, %REG_SZ%, "COM-ICDB7"
+HKLM, %HiSafePath%CID7A, Function, %REG_DWORD%, 0xFC
+HKLM, %HiSafePath%CID7A\I2C, SIO, %REG_SZ%, "EC"
+;-------------------------------------------------------------------------COM-TGHB6
+HKLM, %HiSafePath%CTGHB, BoardName, %REG_SZ%, "COM-TGHB6"
+HKLM, %HiSafePath%CTGHB, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%CTGHB\I2C, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CTGHB\Backlight, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CTGHB\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%CTGHB\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%CTGHB\Backlight, PWMMode, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%CTGHB\Backlight, PWMModeParam, %REG_BINARY%, 0xC0
+HKLM, %HiSafePath%CTGHB\Backlight, CurrentValue, %REG_BINARY%, 0x50
+
+;-------------------------------------------------------------------------ATX-Q670A
+HKLM, %HiSafePath%AX67A, BoardName, %REG_SZ%, "ATX-Q670A"
+HKLM, %HiSafePath%AX67A, Function, %REG_DWORD%, 0xFC
+HKLM, %HiSafePath%AX67A\I2C, SIO, %REG_SZ%, "Chipset_AlderLake"
+
+;-------------------------------------------------------------------------NANOCOM-EHL
+HKLM, %HiSafePath%NEHLA, BoardName, %REG_SZ%, "NANOCOM-EHL"
+HKLM, %HiSafePath%NEHLA, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%NEHLA\I2C, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%NEHLA\Backlight, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%NEHLA\Backlight, DevCount, %REG_DWORD%, 0x0
+HKLM, %HiSafePath%NEHLA\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%NEHLA\Backlight, PWMMode, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%NEHLA\Backlight, PWMModeParam, %REG_BINARY%, 0x40
+HKLM, %HiSafePath%NEHLA\Backlight, CurrentValue, %REG_BINARY%, 0x50
+
+;-------------------------------------------------------------------------PICO-EHL4
+HKLM, %HiSafePath%ZEHL4, BoardName, %REG_SZ%, "PICO-EHL4"
+HKLM, %HiSafePath%ZEHL4, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%ZEHL4\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%ZEHL4\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%ZEHL4\Backlight, DCSlave, %REG_BINARY%, 0x5C, 0x2E
+HKLM, %HiSafePath%ZEHL4\Backlight, PWMMode, %REG_BINARY%, 0x0, 0x0
+HKLM, %HiSafePath%ZEHL4\Backlight, PWMModeParam, %REG_BINARY%, 0x40, 0x0
+HKLM, %HiSafePath%ZEHL4\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%ZEHL4\I2C, SIO, %REG_SZ%, "Chipset_ElkhartLake"
+
+;-------------------------------------------------------------------------COM-SKHB6
+HKLM, %HiSafePath%CSKHA, BoardName, %REG_SZ%, "COM-SKHB6"
+HKLM, %HiSafePath%CSKHA, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%CSKHA\Backlight, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CSKHA\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%CSKHA\Backlight, DCSlave, %REG_BINARY%, 0x5C,0x2E
+HKLM, %HiSafePath%CSKHA\Backlight, PWMMode, %REG_BINARY%, 0x00,0x01
+HKLM, %HiSafePath%CSKHA\Backlight, PWMModeParam, %REG_BINARY%, 0xC0,0x01
+HKLM, %HiSafePath%CSKHA\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%CSKHA\Dio, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CSKHA\Dio, PinCount, %REG_DWORD%, 0x8
+HKLM, %HiSafePath%CSKHA\Dio, DioMode, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CSKHA\Dio, DioValue, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%CSKHA\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CSKHA\Dio, DioGroupNum, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CSKHA\Dio, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
+HKLM, %HiSafePath%CSKHA\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%CSKHA\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%CSKHA\HWMon, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CSKHA\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%CSKHA\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%CSKHA\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%CSKHA\HWMon, TempSrcSel, %REG_BINARY%, 0xFF, 0x01, 0x02
+HKLM, %HiSafePath%CSKHA\HWMon, TempCali, %REG_BINARY%, 0x15, 0x00, 0x00
+HKLM, %HiSafePath%CSKHA\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x00, 0x01, 0x01, 0x00, 0x01, 0x01, 0x00
+HKLM, %HiSafePath%CSKHA\HWMon, VoltSrcSel, %REG_BINARY%, 0x00, 0x01, 0x04, 0x01, 0x03, 0x02, 0x02, 0x04, 0x03
+HKLM, %HiSafePath%CSKHA\HWMon, VoltCali1, %REG_BINARY%, 0x04, 0x02, 0x01, 0x72, 0x23, 0x02, 0x59, 0x01, 0x02
+HKLM, %HiSafePath%CSKHA\HWMon, VoltCali2, %REG_BINARY%, 0x03, 0x01, 0x01, 0x65, 0x14, 0x01, 0x0E, 0x01, 0x01
+HKLM, %HiSafePath%CSKHA\Sfan, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CSKHA\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CSKHA\Sfan, AutoModeCap, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CSKHA\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%CSKHA\Sfan, FullSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CSKHA\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CSKHA\WDT, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CSKHA\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%CSKHA\I2C, SIO, %REG_SZ%, "EC"
+
+;-------------------------------------------------------------------------COM-KBHB6
+HKLM, %HiSafePath%CKBHB, BoardName, %REG_SZ%, "COM-KBHB6"
+HKLM, %HiSafePath%CKBHB, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%CKBHB\Backlight, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CKBHB\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%CKBHB\Backlight, DCSlave, %REG_BINARY%, 0x5C,0x2E
+HKLM, %HiSafePath%CKBHB\Backlight, PWMMode, %REG_BINARY%, 0x00,0x01
+HKLM, %HiSafePath%CKBHB\Backlight, PWMModeParam, %REG_BINARY%, 0xC0,0x01
+HKLM, %HiSafePath%CKBHB\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%CKBHB\Dio, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CKBHB\Dio, PinCount, %REG_DWORD%, 0x8
+HKLM, %HiSafePath%CKBHB\Dio, DioMode, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CKBHB\Dio, DioValue, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%CKBHB\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CKBHB\Dio, DioGroupNum, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CKBHB\Dio, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
+HKLM, %HiSafePath%CKBHB\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%CKBHB\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%CKBHB\HWMon, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CKBHB\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%CKBHB\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%CKBHB\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%CKBHB\HWMon, TempSrcSel, %REG_BINARY%, 0xFF, 0x01, 0x02
+HKLM, %HiSafePath%CKBHB\HWMon, TempCali, %REG_BINARY%, 0x15, 0x00, 0x00
+HKLM, %HiSafePath%CKBHB\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x00, 0x01, 0x01, 0x00, 0x01, 0x01, 0x00
+HKLM, %HiSafePath%CKBHB\HWMon, VoltSrcSel, %REG_BINARY%, 0x00, 0x01, 0x04, 0x01, 0x03, 0x02, 0x02, 0x04, 0x03
+HKLM, %HiSafePath%CKBHB\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x02, 0x01, 0x03, 0x40, 0x02, 0x3F, 0x01, 0x02
+HKLM, %HiSafePath%CKBHB\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x04, 0x25, 0x01, 0x0A, 0x01, 0x01
+HKLM, %HiSafePath%CKBHB\Sfan, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CKBHB\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CKBHB\Sfan, AutoModeCap, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CKBHB\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%CKBHB\Sfan, FullSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CKBHB\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%CKBHB\WDT, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%CKBHB\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%CKBHB\I2C, SIO, %REG_SZ%, "EC"
+
+;-------------------------------------------------------------------------HPC-ADSC
+HKLM, %HiSafePath%HADSC, BoardName, %REG_SZ%, "HPC-ADSC"
+HKLM, %HiSafePath%HADSC, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%HADSC\I2C, SIO, %REG_SZ%, "EC"
+
+;-------------------------------------------------------------------------NANOCOM-APL
+HKLM, %HiSafePath%NAPLA, BoardName, %REG_SZ%, "NANOCOM-APL"
+HKLM, %HiSafePath%NAPLA, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%NAPLA\Backlight, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%NAPLA\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%NAPLA\Backlight, DCSlave, %REG_BINARY%, 0x5C,0x2E
+HKLM, %HiSafePath%NAPLA\Backlight, PWMMode, %REG_BINARY%, 0x00,0x01
+HKLM, %HiSafePath%NAPLA\Backlight, PWMModeParam, %REG_BINARY%, 0x40,0x01
+HKLM, %HiSafePath%NAPLA\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%NAPLA\Dio, SIO, %REG_SZ%, "Chipset_Apollolake"
+HKLM, %HiSafePath%NAPLA\Dio, PinCount, %REG_DWORD%, 0x8
+HKLM, %HiSafePath%NAPLA\Dio, DioMode, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%NAPLA\Dio, DioValue, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%NAPLA\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%NAPLA\Dio, DioGroupNum, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%NAPLA\Dio, DioPinNum, %REG_BINARY%, 0x07, 0x08, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F
+HKLM, %HiSafePath%NAPLA\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%NAPLA\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%NAPLA\Dio, DioDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%NAPLA\HWMon, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%NAPLA\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%NAPLA\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%NAPLA\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x00
+HKLM, %HiSafePath%NAPLA\HWMon, TempSrcSel, %REG_BINARY%, 0xFF, 0x00, 0x01
+HKLM, %HiSafePath%NAPLA\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%NAPLA\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0x01, 0x00
+HKLM, %HiSafePath%NAPLA\HWMon, VoltSrcSel, %REG_BINARY%, 0x00, 0x01, 0x04, 0x01, 0x03, 0x02, 0x02, 0x04, 0x03
+HKLM, %HiSafePath%NAPLA\HWMon, VoltCali1, %REG_BINARY%, 0x02, 0x02, 0x01, 0x01, 0x23, 0x02, 0x06, 0x01, 0x02
+HKLM, %HiSafePath%NAPLA\HWMon, VoltCali2, %REG_BINARY%, 0x03, 0x01, 0x01, 0x07, 0x14, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%NAPLA\Sfan, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%NAPLA\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%NAPLA\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%NAPLA\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%NAPLA\Sfan, FullSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%NAPLA\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%NAPLA\WDT, SIO, %REG_SZ%, "EC"
+HKLM, %HiSafePath%NAPLA\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%NAPLA\I2C, SIO, %REG_SZ%, "EC"
+
+;------------------------------------------------------------------------MAX-H420A
+HKLM, %HiSafePath%MH42A, BoardName, %REG_SZ%, "MAX-H420A"
+HKLM, %HiSafePath%MH42A, Function, %REG_DWORD%, 0xFC
+HKLM, %HiSafePath%MH42A\Backlight, SIO, %REG_SZ%, "IT5121E"
+HKLM, %HiSafePath%MH42A\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%MH42A\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%MH42A\Backlight, PWMMode, %REG_BINARY%, 0x07
+HKLM, %HiSafePath%MH42A\Backlight, PWMModeParam, %REG_BINARY%, 0x20
+HKLM, %HiSafePath%MH42A\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%MH42A\Dio, SIO, %REG_SZ%, "IT5121E"
+HKLM, %HiSafePath%MH42A\Dio, PinCount, %REG_DWORD%, 0x08
+HKLM, %HiSafePath%MH42A\Dio, DioMode, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%MH42A\Dio, DioValue, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%MH42A\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%MH42A\Dio, DioGroupNum, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%MH42A\Dio, DioPinNum, %REG_BINARY%, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
+HKLM, %HiSafePath%MH42A\Dio, DioDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%MH42A\HWMon, SIO, %REG_SZ%, "IT5121E"
+HKLM, %HiSafePath%MH42A\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%MH42A\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x11, 0x12
+HKLM, %HiSafePath%MH42A\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%MH42A\HWMon, TempSrcSel, %REG_BINARY%, 0x00, 0x02, 0x01
+HKLM, %HiSafePath%MH42A\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%MH42A\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x00, 0x01, 0x01, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%MH42A\HWMon, VoltSrcSel, %REG_BINARY%, 0x01, 0x00, 0x06, 0x03, 0x03, 0x04, 0x02, 0x07, 0x07
+HKLM, %HiSafePath%MH42A\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%MH42A\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%MH42A\Sfan, SIO, %REG_SZ%, "IT5121E"
+HKLM, %HiSafePath%MH42A\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%MH42A\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%MH42A\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%MH42A\Sfan, FullSpeedTemp, %REG_BINARY%, 0x64, 0x64, 0x64
+HKLM, %HiSafePath%MH42A\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%MH42A\Sfan, SFanDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%MH42A\WDT, SIO, %REG_SZ%, "IT5121E"
+HKLM, %HiSafePath%MH42A\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%MH42A\Bfpi, BfpiDisable, %REG_BINARY%, 0x1
+
+;-------------------------------------------------------------------------de next-V2K8
+HKLM, %HiSafePath%DN2KA, BoardName, %REG_SZ%, "de next-V2K8"
+HKLM, %HiSafePath%DN2KA, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%DN2KA\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%DN2KA\Backlight, DevCount, %REG_DWORD%, 0x00
+HKLM, %HiSafePath%DN2KA\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%DN2KA\Backlight, PWMMode, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%DN2KA\Backlight, PWMModeParam, %REG_BINARY%, 0x40
+HKLM, %HiSafePath%DN2KA\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%DN2KA\Backlight, SmbusDev, %REG_BINARY%, 0x00
+HKLM, %HiSafePath%DN2KA\Smbus, SIO, %REG_SZ%, "AMD"
+
+;-------------------------------------------------------------------------GENE-EHL5
+HKLM, %HiSafePath%GEL5A, BoardName, %REG_SZ%, "GENE-EHL5"
+HKLM, %HiSafePath%GEL5A, SIOCount, %REG_DWORD%, 0x02
+HKLM, %HiSafePath%GEL5A, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%GEL5A\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%GEL5A\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%GEL5A\Backlight, DCSlave, %REG_BINARY%, 0x5C, 0x2E
+HKLM, %HiSafePath%GEL5A\Backlight, PWMMode, %REG_BINARY%, 0x00, 0x0
+HKLM, %HiSafePath%GEL5A\Backlight, PWMModeParam, %REG_BINARY%, 0x40, 0x0
+HKLM, %HiSafePath%GEL5A\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%GEL5A\I2C, SIO, %REG_SZ%, "Chipset_ElkhartLake"
+
+
+;------------------------------------------------------------------------PMC-H610
+HKLM, %HiSafePath%PMC61, BoardName, %REG_SZ%, "PMC-H610"
+HKLM, %HiSafePath%PMC61, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%PMC61\Backlight, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%PMC61\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%PMC61\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%PMC61\Backlight, PWMMode, %REG_BINARY%, 0x01
+HKLM, %HiSafePath%PMC61\Backlight, PWMModeParam, %REG_BINARY%, 0x03
+HKLM, %HiSafePath%PMC61\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%PMC61\Dio, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%PMC61\Dio, PinCount, %REG_DWORD%, 0x8
+HKLM, %HiSafePath%PMC61\Dio, DioMode, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%PMC61\Dio, DioValue, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%PMC61\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%PMC61\Dio, DioGroupNum, %REG_BINARY%, 0x04, 0x04, 0x04, 0x03, 0x03, 0x03, 0x03, 0x03
+HKLM, %HiSafePath%PMC61\Dio, DioPinNum, %REG_BINARY%, 0x02, 0x01, 0x00, 0x07, 0x06, 0x05, 0x04, 0x03
+HKLM, %HiSafePath%PMC61\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%PMC61\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%PMC61\HWMon, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%PMC61\HWMon, FanEnable, %REG_BINARY%, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%PMC61\HWMon, FanSrcSel, %REG_BINARY%, 0x01, 0x02, 0x00
+HKLM, %HiSafePath%PMC61\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x00, 0x01
+HKLM, %HiSafePath%PMC61\HWMon, TempSrcSel, %REG_BINARY%, 0x01, 0x02, 0x00
+HKLM, %HiSafePath%PMC61\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%PMC61\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%PMC61\HWMon, VoltSrcSel, %REG_BINARY%, 0x00, 0x00, 0x03, 0x08, 0x04, 0x05, 0x01, 0x00, 0x07
+HKLM, %HiSafePath%PMC61\HWMon, VoltCali1, %REG_BINARY%, 0x8D, 0x01, 0xC6, 0x02, 0x15, 0xDC, 0x0B, 0x01, 0x02
+HKLM, %HiSafePath%PMC61\HWMon, VoltCali2, %REG_BINARY%, 0x64, 0x01, 0x64, 0x01, 0x04, 0x33, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%PMC61\WDT, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%PMC61\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%PMC61\Sfan, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%PMC61\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%PMC61\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%PMC61\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%PMC61\Sfan, FullSpeedTemp, %REG_BINARY%, 0x64, 0x64, 0x64
+HKLM, %HiSafePath%PMC61\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%PMC61\Sfan, SFanDefaultSetting, %REG_DWORD%, 1
+HKLM, %HiSafePath%PMC61\Bfpi, BfpiDisable, %REG_BINARY%, 0x1
+
+;-------------------------------------------------------------------------VL-PRO-PLUS
+HKLM, %HiSafePath%VPROP, BoardName, %REG_SZ%, "VL-PRO-PLUS"
+HKLM, %HiSafePath%VPROP, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%VPROP\Backlight, SIO, %REG_SZ%, "Fintek_F81966"
+HKLM, %HiSafePath%VPROP\Backlight, DevCount, %REG_DWORD%, 0x2
+HKLM, %HiSafePath%VPROP\Backlight, DCSlave, %REG_BINARY%, 0x5C, 0x2E
+HKLM, %HiSafePath%VPROP\Backlight, PWMMode, %REG_BINARY%, 0x0, 0x0
+HKLM, %HiSafePath%VPROP\Backlight, PWMModeParam, %REG_BINARY%, 0x40, 0xC0
+HKLM, %HiSafePath%VPROP\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%VPROP\I2C, SIO, %REG_SZ%, "Chipset_TigerLake"
+
+;-------------------------------------------------------------------------BOXER-6451-ADP
+HKLM, %HiSafePath%B451A, BoardName, %REG_SZ%, "BOXER-6451-ADP"
+HKLM, %HiSafePath%B451A, Function, %REG_DWORD%, 0xF4
+
+;------------------------------------------------------------------------MIX-Q670A1
+HKLM, %HiSafePath%MX67A, BoardName, %REG_SZ%, "MIX-Q670A1"
+HKLM, %HiSafePath%MX67A, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%MX67A\Backlight, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%MX67A\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%MX67A\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%MX67A\Backlight, PWMMode, %REG_BINARY%, 0x01
+HKLM, %HiSafePath%MX67A\Backlight, PWMModeParam, %REG_BINARY%, 0x03
+HKLM, %HiSafePath%MX67A\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%MX67A\Sfan, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%MX67A\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%MX67A\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%MX67A\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%MX67A\Sfan, FullSpeedTemp, %REG_BINARY%, 0x64, 0x64, 0x64
+HKLM, %HiSafePath%MX67A\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+
+;-------------------------------------------------------------------------PICO-V2K4-SEMI
+HKLM, %HiSafePath%ZV24S, BoardName, %REG_SZ%, "PICO-V2K4-SEMI"
+HKLM, %HiSafePath%ZV24S, Function, %REG_DWORD%, 0xDC
+HKLM, %HiSafePath%ZV24S\Smbus, SIO, %REG_SZ%, "AMD"
+
+;-------------------------------------------------------------------------GENESYSM-EHL5
+HKLM, %HiSafePath%GEL5S, BoardName, %REG_SZ%, "GENESYSM-EHL5"
+HKLM, %HiSafePath%GEL5S, SIOCount, %REG_DWORD%, 0x01
+HKLM, %HiSafePath%GEL5S, Function, %REG_DWORD%, 0xFC
+HKLM, %HiSafePath%GEL5S\I2C, SIO, %REG_SZ%, "Chipset_ElkhartLake"
+
+;-------------------------------------------------------------------------PICO-APL2
+HKLM, %HiSafePath%ZAP2A, BoardName, %REG_SZ%, "PICO-APL2"
+HKLM, %HiSafePath%ZAP2A, Function, %REG_DWORD%, 0xF6
+HKLM, %HiSafePath%ZAP2A\Backlight, SIO, %REG_SZ%, "Fintek_F81801"
+HKLM, %HiSafePath%ZAP2A\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%ZAP2A\Backlight, DCSlave, %REG_BINARY%, 0x5C, 0x2E
+HKLM, %HiSafePath%ZAP2A\Backlight, PWMMode, %REG_BINARY%, 0x0, 0x0
+HKLM, %HiSafePath%ZAP2A\Backlight, PWMModeParam, %REG_BINARY%, 0xC0, 0x0
+HKLM, %HiSafePath%ZAP2A\Backlight, CurrentValue, %REG_BINARY%, 0x50, 0x50
+HKLM, %HiSafePath%ZAP2A\Dio, SIO, %REG_SZ%, "Fintek_F75111"
+HKLM, %HiSafePath%ZAP2A\Dio, PinCount, %REG_DWORD%, 0x4
+HKLM, %HiSafePath%ZAP2A\Dio, DioMode, %REG_BINARY%, 0x00, 0x00, 0x01, 0x01
+HKLM, %HiSafePath%ZAP2A\Dio, DioValue, %REG_BINARY%, 0x01, 0x01, 0x00, 0x00
+HKLM, %HiSafePath%ZAP2A\Dio, DioDisable, %REG_BINARY%, 0x00, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%ZAP2A\Dio, DioGroupNum, %REG_BINARY%, 0x02, 0x02, 0x02, 0x02
+HKLM, %HiSafePath%ZAP2A\Dio, DioPinNum, %REG_BINARY%, 0x04, 0x05, 0x06, 0x07
+HKLM, %HiSafePath%ZAP2A\Dio, DioCanBeOutput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%ZAP2A\Dio, DioCanBeInput, %REG_BINARY%, 0x01, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%ZAP2A\HWMon, SIO, %REG_SZ%, "Fintek_F81801"
+HKLM, %HiSafePath%ZAP2A\HWMon, FanEnable, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%ZAP2A\HWMon, FanSrcSel, %REG_BINARY%, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%ZAP2A\HWMon, TempEnable, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%ZAP2A\HWMon, TempSrcSel, %REG_BINARY%, 0xFF, 0x00, 0x01
+HKLM, %HiSafePath%ZAP2A\HWMon, TempCali, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%ZAP2A\HWMon, VoltEnable, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00
+HKLM, %HiSafePath%ZAP2A\HWMon, VoltSrcSel, %REG_BINARY%, 0x01, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x02, 0x07
+HKLM, %HiSafePath%ZAP2A\HWMon, VoltCali1, %REG_BINARY%, 0x01, 0x00, 0x02, 0x02, 0x00, 0x00, 0x00, 0x01, 0x02
+HKLM, %HiSafePath%ZAP2A\HWMon, VoltCali2, %REG_BINARY%, 0x01, 0x00, 0x01, 0x01, 0x00, 0x00, 0x00, 0x01, 0x01
+HKLM, %HiSafePath%ZAP2A\WDT, SIO, %REG_SZ%, "Fintek_F81801"
+HKLM, %HiSafePath%ZAP2A\WDT, WdtStatus, %REG_BINARY%, 0x00, 0x05, 0x05
+HKLM, %HiSafePath%ZAP2A\I2C, SIO, %REG_SZ%, "Chipset_Apollolake"
+
+;-------------------------------------------------------------------------BOXER-6646-ADP
+HKLM, %HiSafePath%B646A, BoardName, %REG_SZ%, "BOXER-6646-ADP"
+HKLM, %HiSafePath%B646A, Function, %REG_DWORD%, 0xF4
+
+;------------------------------------------------------------------------MIX-Q670D1
+HKLM, %HiSafePath%MX67D, BoardName, %REG_SZ%, "MIX-Q670D1"
+HKLM, %HiSafePath%MX67D, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%MX67D\Backlight, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%MX67D\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%MX67D\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%MX67D\Backlight, PWMMode, %REG_BINARY%, 0x01
+HKLM, %HiSafePath%MX67D\Backlight, PWMModeParam, %REG_BINARY%, 0x03
+HKLM, %HiSafePath%MX67D\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%MX67D\Sfan, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%MX67D\Sfan, AutoModeEn, %REG_BINARY%, 0x00, 0x00, 0x00
+HKLM, %HiSafePath%MX67D\Sfan, AutoModeCap, %REG_BINARY%, 0x01, 0x01, 0x01
+HKLM, %HiSafePath%MX67D\Sfan, ManualSpeed, %REG_BINARY%, 0x80, 0x80, 0x80
+HKLM, %HiSafePath%MX67D\Sfan, FullSpeedTemp, %REG_BINARY%, 0x64, 0x64, 0x64
+HKLM, %HiSafePath%MX67D\Sfan, LowSpeedTemp, %REG_BINARY%, 0x00, 0x00, 0x00
+
+;-------------------------------------------------------------------------HPC-ADSC
+HKLM, %HiSafePath%HRPSA, BoardName, %REG_SZ%, "HPC-ADSC"
+HKLM, %HiSafePath%HRPSA, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%HRPSA\I2C, SIO, %REG_SZ%, "EC"
+
+;------------------------------------------------------------------------MAX-Q670A
+HKLM, %HiSafePath%MA67A, BoardName, %REG_SZ%, "MAX-Q670A"
+HKLM, %HiSafePath%MA67A, Function, %REG_DWORD%, 0xFE
+HKLM, %HiSafePath%MA67A\Backlight, SIO, %REG_SZ%, "NCT6126D"
+HKLM, %HiSafePath%MA67A\Backlight, DevCount, %REG_DWORD%, 0x1
+HKLM, %HiSafePath%MA67A\Backlight, DCSlave, %REG_BINARY%, 0x5C
+HKLM, %HiSafePath%MA67A\Backlight, PWMMode, %REG_BINARY%, 0x01
+HKLM, %HiSafePath%MA67A\Backlight, PWMModeParam, %REG_BINARY%, 0x03
+HKLM, %HiSafePath%MA67A\Backlight, CurrentValue, %REG_BINARY%, 0x50
+HKLM, %HiSafePath%MA67A\Sfan, SIO, %REG_SZ%, "NCT6126D"
+
+;-------------------------------------------------------------------------GENESYS-ADP6
+HKLM, %HiSafePath%GAD6S, BoardName, %REG_SZ%, "GENESYS-ADP6"
+HKLM, %HiSafePath%GAD6S, Function, %REG_DWORD%, 0xFC
+HKLM, %HiSafePath%GAD6S\I2C, SIO, %REG_SZ%, "Chipset_AlderLake"
+;------------------------------- Hi-Safe Base End -------------------------------

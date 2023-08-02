@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CanonLakeXML name="CannonLake YLPDDR4" shortName="CNL_YLPDDR4" CFG0_Name="DW0" CFG1_Name="DW1" CFG2_Name="DW2" IOA="MMIO" BaseAddress="0xFD000000" SBReadOpCode="0x00" SBWriteOpCode="0x00">
+  <GPIO>
+    <Community name="Community0" max="56" BaseAddress="0x6E0600" SBBaseAddress="0x0000" SBPort="0x6E">
+      <Pins>
+        <Pin No="GPPC_A_00" Name="GPPC_A_0_RCINB_TIME_SYNC_1" CFG0_offset="0x000" CFG1_offset="0x004" CFG2_offset="0x008" Ball="NA" PWR="NA" Bump="RCINB_TIME_SYNC_1" Module="NA" Validate="true" CFG0_ExpValue="0x40000C00" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_01" Name="GPPC_A_1_LAD_0_ESPI_IO_0" CFG0_offset="0x010" CFG1_offset="0x014" CFG2_offset="0x018" Ball="NA" PWR="NA" Bump="LAD_0_ESPI_IO_0" Module="NA" Validate="true" CFG0_ExpValue="0x40000800" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_02" Name="GPPC_A_2_LAD_1_ESPI_IO_1" CFG0_offset="0x020" CFG1_offset="0x024" CFG2_offset="0x028" Ball="NA" PWR="NA" Bump="LAD_1_ESPI_IO_1" Module="NA" Validate="true" CFG0_ExpValue="0x40000800" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_03" Name="GPPC_A_3_LAD_2_ESPI_IO_2" CFG0_offset="0x030" CFG1_offset="0x034" CFG2_offset="0x038" Ball="NA" PWR="NA" Bump="LAD_2_ESPI_IO_2" Module="NA" Validate="true" CFG0_ExpValue="0x40000800" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_04" Name="GPPC_A_4_LAD_3_ESPI_IO_3" CFG0_offset="0x040" CFG1_offset="0x044" CFG2_offset="0x048" Ball="NA" PWR="NA" Bump="LAD_3_ESPI_IO_3" Module="NA" Validate="true" CFG0_ExpValue="0x40000800" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_05" Name="GPPC_A_5_LFRAMEB_ESPI_CSB" CFG0_offset="0x050" CFG1_offset="0x054" CFG2_offset="0x058" Ball="NA" PWR="NA" Bump="LFRAMEB_ESPI_CSB" Module="NA" Validate="true" CFG0_ExpValue="0x40000800" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_06" Name="GPPC_A_6_SERIRQ" CFG0_offset="0x060" CFG1_offset="0x064" CFG2_offset="0x068" Ball="NA" PWR="NA" Bump="SERIRQ" Module="NA" Validate="true" CFG0_ExpValue="0x40080000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC01E0000" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_07" Name="GPPC_A_7_PIRQAB_GSPI0_CS1B" CFG0_offset="0x070" CFG1_offset="0x074" CFG2_offset="0x078" Ball="NA" PWR="NA" Bump="PIRQAB_GSPI0_CS1B" Module="NA" Validate="true" CFG0_ExpValue="0x42080100" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_08" Name="GPPC_A_8_CLKRUNB" CFG0_offset="0x080" CFG1_offset="0x084" CFG2_offset="0x088" Ball="NA" PWR="NA" Bump="CLKRUNB" Module="NA" Validate="true" CFG0_ExpValue="0x40000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0000000" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_09" Name="GPPC_A_9_CLKOUT_LPC_0_ESPI_CLK" CFG0_offset="0x090" CFG1_offset="0x094" CFG2_offset="0x098" Ball="NA" PWR="NA" Bump="CLKOUT_LPC_0_ESPI_CLK" Module="NA" Validate="true" CFG0_ExpValue="0x40000800" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_10" Name="GPPC_A_10_CLKOUT_LPC_1" CFG0_offset="0x0A0" CFG1_offset="0x0A4" CFG2_offset="0x0A8" Ball="NA" PWR="NA" Bump="CLKOUT_LPC_1" Module="NA" Validate="true" CFG0_ExpValue="0x40000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0000000" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_11" Name="GPPC_A_11_PMEB_GSPI1_CS1B" CFG0_offset="0x0B0" CFG1_offset="0x0B4" CFG2_offset="0x0B8" Ball="NA" PWR="NA" Bump="PMEB_GSPI1_CS1B" Module="NA" Validate="true" CFG0_ExpValue="0x40080100" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_12" Name="GPPC_A_12_BM_BUSYB_ISH_GP_6" CFG0_offset="0x0C0" CFG1_offset="0x0C4" CFG2_offset="0x0C8" Ball="NA" PWR="NA" Bump="BM_BUSYB_ISH_GP_6" Module="NA" Validate="true" CFG0_ExpValue="0x40000601" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_13" Name="GPPC_A_13_SUSWARNB_SUSPWRDNACK" CFG0_offset="0x0D0" CFG1_offset="0x0D4" CFG2_offset="0x0D8" Ball="NA" PWR="NA" Bump="SUSWARNB_SUSPWRDNACK" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_14" Name="GPPC_A_14_SUS_STATB_ESPI_RESETB" CFG0_offset="0x0E0" CFG1_offset="0x0E4" CFG2_offset="0x0E8" Ball="NA" PWR="NA" Bump="SUS_STATB_ESPI_RESETB" Module="NA" Validate="true" CFG0_ExpValue="0x40000800" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_15" Name="GPPC_A_15_SUSACKB" CFG0_offset="0x0F0" CFG1_offset="0x0F4" CFG2_offset="0x0F8" Ball="NA" PWR="NA" Bump="SUSACKB" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_16" Name="GPPC_A_16_SD_1P8_SEL" CFG0_offset="0x100" CFG1_offset="0x104" CFG2_offset="0x108" Ball="NA" PWR="NA" Bump="SD_1P8_SEL" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_17" Name="GPPC_A_17_SD_VDD1_PWR_EN_B_ISH_GP_7" CFG0_offset="0x110" CFG1_offset="0x114" CFG2_offset="0x118" Ball="NA" PWR="NA" Bump="SD_VDD1_PWR_EN_B_ISH_GP_7" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_18" Name="GPPC_A_18_ISH_GP_0" CFG0_offset="0x120" CFG1_offset="0x124" CFG2_offset="0x128" Ball="NA" PWR="NA" Bump="ISH_GP_0" Module="NA" Validate="true" CFG0_ExpValue="0x40000500" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_19" Name="GPPC_A_19_ISH_GP_1" CFG0_offset="0x130" CFG1_offset="0x134" CFG2_offset="0x138" Ball="NA" PWR="NA" Bump="ISH_GP_1" Module="NA" Validate="true" CFG0_ExpValue="0x40000500" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_20" Name="GPPC_A_20_ISH_GP_2" CFG0_offset="0x140" CFG1_offset="0x144" CFG2_offset="0x148" Ball="NA" PWR="NA" Bump="ISH_GP_2" Module="NA" Validate="true" CFG0_ExpValue="0x40000500" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_21" Name="GPPC_A_21_ISH_GP_3" CFG0_offset="0x150" CFG1_offset="0x154" CFG2_offset="0x158" Ball="NA" PWR="NA" Bump="ISH_GP_3" Module="NA" Validate="true" CFG0_ExpValue="0x40000500" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_22" Name="GPPC_A_22_ISH_GP_4" CFG0_offset="0x160" CFG1_offset="0x164" CFG2_offset="0x168" Ball="NA" PWR="NA" Bump="ISH_GP_4" Module="NA" Validate="true" CFG0_ExpValue="0x40000600" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_A_23" Name="GPPC_A_23_ISH_GP_5" CFG0_offset="0x170" CFG1_offset="0x174" CFG2_offset="0x178" Ball="NA" PWR="NA" Bump="ISH_GP_5" Module="NA" Validate="true" CFG0_ExpValue="0x40000500" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_00" Name="GPPC_B_0_CORE_VID_0" CFG0_offset="0x180" CFG1_offset="0x184" CFG2_offset="0x188" Ball="NA" PWR="NA" Bump="CORE_VID_0" Module="NA" Validate="true" CFG0_ExpValue="0x04000200" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x06800300" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_01" Name="GPPC_B_1_CORE_VID_1" CFG0_offset="0x190" CFG1_offset="0x194" CFG2_offset="0x198" Ball="NA" PWR="NA" Bump="CORE_VID_1" Module="NA" Validate="true" CFG0_ExpValue="0x04000200" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x06800300" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_02" Name="GPPC_B_2_VRALERTB" CFG0_offset="0x1A0" CFG1_offset="0x1A4" CFG2_offset="0x1A8" Ball="NA" PWR="NA" Bump="VRALERTB" Module="NA" Validate="true" CFG0_ExpValue="0x40100100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_03" Name="GPPC_B_3_CPU_GP_2" CFG0_offset="0x1B0" CFG1_offset="0x1B4" CFG2_offset="0x1B8" Ball="NA" PWR="NA" Bump="CPU_GP_2" Module="NA" Validate="true" CFG0_ExpValue="0x80100100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_04" Name="GPPC_B_4_CPU_GP_3" CFG0_offset="0x1C0" CFG1_offset="0x1C4" CFG2_offset="0x1C8" Ball="NA" PWR="NA" Bump="CPU_GP_3" Module="NA" Validate="true" CFG0_ExpValue="0x44000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_05" Name="GPPC_B_5_SRCCLKREQB_0" CFG0_offset="0x1D0" CFG1_offset="0x1D4" CFG2_offset="0x1D8" Ball="NA" PWR="NA" Bump="SRCCLKREQB_0" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_06" Name="GPPC_B_6_SRCCLKREQB_1" CFG0_offset="0x1E0" CFG1_offset="0x1E4" CFG2_offset="0x1E8" Ball="NA" PWR="NA" Bump="SRCCLKREQB_1" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_07" Name="GPPC_B_7_SRCCLKREQB_2" CFG0_offset="0x1F0" CFG1_offset="0x1F4" CFG2_offset="0x1F8" Ball="NA" PWR="NA" Bump="SRCCLKREQB_2" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_08" Name="GPPC_B_8_SRCCLKREQB_3" CFG0_offset="0x200" CFG1_offset="0x204" CFG2_offset="0x208" Ball="NA" PWR="NA" Bump="SRCCLKREQB_3" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_09" Name="GPPC_B_9_SRCCLKREQB_4" CFG0_offset="0x210" CFG1_offset="0x214" CFG2_offset="0x218" Ball="NA" PWR="NA" Bump="SRCCLKREQB_4" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_10" Name="GPPC_B_10_SRCCLKREQB_5" CFG0_offset="0x220" CFG1_offset="0x224" CFG2_offset="0x228" Ball="NA" PWR="NA" Bump="SRCCLKREQB_5" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_11" Name="GPPC_B_11_EXT_PWR_GATEB" CFG0_offset="0x230" CFG1_offset="0x234" CFG2_offset="0x238" Ball="NA" PWR="NA" Bump="EXT_PWR_GATEB" Module="NA" Validate="true" CFG0_ExpValue="0x84000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_12" Name="GPPC_B_12_SLP_S0B" CFG0_offset="0x240" CFG1_offset="0x244" CFG2_offset="0x248" Ball="NA" PWR="NA" Bump="SLP_S0B" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_13" Name="GPPC_B_13_PLTRSTB" CFG0_offset="0x250" CFG1_offset="0x254" CFG2_offset="0x258" Ball="NA" PWR="NA" Bump="PLTRSTB" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_14" Name="GPPC_B_14_SPKR" CFG0_offset="0x260" CFG1_offset="0x264" CFG2_offset="0x268" Ball="NA" PWR="NA" Bump="SPKR" Module="NA" Validate="true" CFG0_ExpValue="0x84000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_15" Name="GPPC_B_15_GSPI0_CS0B" CFG0_offset="0x270" CFG1_offset="0x274" CFG2_offset="0x278" Ball="NA" PWR="NA" Bump="GSPI0_CS0B" Module="NA" Validate="true" CFG0_ExpValue="0x84000200" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_16" Name="GPPC_B_16_GSPI0_CLK" CFG0_offset="0x280" CFG1_offset="0x284" CFG2_offset="0x288" Ball="NA" PWR="NA" Bump="GSPI0_CLK" Module="NA" Validate="true" CFG0_ExpValue="0x80000100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_17" Name="GPPC_B_17_GSPI0_MISO" CFG0_offset="0x290" CFG1_offset="0x294" CFG2_offset="0x298" Ball="NA" PWR="NA" Bump="GSPI0_MISO" Module="NA" Validate="true" CFG0_ExpValue="0x84000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_18" Name="GPPC_B_18_GSPI0_MOSI" CFG0_offset="0x2A0" CFG1_offset="0x2A4" CFG2_offset="0x2A8" Ball="NA" PWR="NA" Bump="GSPI0_MOSI" Module="NA" Validate="true" CFG0_ExpValue="0x84000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_19" Name="GPPC_B_19_GSPI1_CS0B" CFG0_offset="0x2B0" CFG1_offset="0x2B4" CFG2_offset="0x2B8" Ball="NA" PWR="NA" Bump="GSPI1_CS0B" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_20" Name="GPPC_B_20_GSPI1_CLK_NFC_CLK" CFG0_offset="0x2C0" CFG1_offset="0x2C4" CFG2_offset="0x2C8" Ball="NA" PWR="NA" Bump="GSPI1_CLK_NFC_CLK" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_21" Name="GPPC_B_21_GSPI1_MISO_NFC_CLKREQ" CFG0_offset="0x2D0" CFG1_offset="0x2D4" CFG2_offset="0x2D8" Ball="NA" PWR="NA" Bump="GSPI1_MISO_NFC_CLKREQ" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_22" Name="GPPC_B_22_GSPI1_MOSI" CFG0_offset="0x2E0" CFG1_offset="0x2E4" CFG2_offset="0x2E8" Ball="NA" PWR="NA" Bump="GSPI1_MOSI" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_B_23" Name="GPPC_B_23_SML1ALERTB_PCHHOTB" CFG0_offset="0x2F0" CFG1_offset="0x2F4" CFG2_offset="0x2F8" Ball="NA" PWR="NA" Bump="SML1ALERTB_PCHHOTB" Module="NA" Validate="true" CFG0_ExpValue="0x40000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_G_00" Name="GPPC_G_0_SD3_CMD" CFG0_offset="0x300" CFG1_offset="0x304" CFG2_offset="0x308" Ball="NA" PWR="NA" Bump="SD3_CMD" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_G_01" Name="GPPC_G_1_SD3_D0_SD4_RCLK_P" CFG0_offset="0x310" CFG1_offset="0x314" CFG2_offset="0x318" Ball="NA" PWR="NA" Bump="SD3_D0_SD4_RCLK_P" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_G_02" Name="GPPC_G_2_SD3_D1_SD4_RCLK_N" CFG0_offset="0x320" CFG1_offset="0x324" CFG2_offset="0x328" Ball="NA" PWR="NA" Bump="SD3_D1_SD4_RCLK_N" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_G_03" Name="GPPC_G_3_SD3_D2" CFG0_offset="0x330" CFG1_offset="0x334" CFG2_offset="0x338" Ball="NA" PWR="NA" Bump="SD3_D2" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_G_04" Name="GPPC_G_4_SD3_D3" CFG0_offset="0x340" CFG1_offset="0x344" CFG2_offset="0x348" Ball="NA" PWR="NA" Bump="SD3_D3" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_G_05" Name="GPPC_G_5_SD3_CDB" CFG0_offset="0x350" CFG1_offset="0x354" CFG2_offset="0x358" Ball="NA" PWR="NA" Bump="SD3_CDB" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_G_06" Name="GPPC_G_6_SD3_CLK" CFG0_offset="0x360" CFG1_offset="0x364" CFG2_offset="0x368" Ball="NA" PWR="NA" Bump="SD3_CLK" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_G_07" Name="GPPC_G_7_SD3_WP" CFG0_offset="0x370" CFG1_offset="0x374" CFG2_offset="0x378" Ball="NA" PWR="NA" Bump="SD3_WP" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+      </Pins>
+    </Community>
+    <Community name="Community1" max="72" BaseAddress="0x6D0600" SBBaseAddress="0x0000" SBPort="0x6D">
+      <Pins>
+        <Pin No="GPPC_D_00" Name="GPPC_D_0_SPI1_CSB_BK_0" CFG0_offset="0x000" CFG1_offset="0x004" CFG2_offset="0x008" Ball="NA" PWR="NA" Bump="SPI1_CSB_BK_0" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_01" Name="GPPC_D_1_SPI1_CLK_BK_1" CFG0_offset="0x010" CFG1_offset="0x014" CFG2_offset="0x018" Ball="NA" PWR="NA" Bump="SPI1_CLK_BK_1" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_02" Name="GPPC_D_2_SPI1_MISO_IO_1_BK_2" CFG0_offset="0x020" CFG1_offset="0x024" CFG2_offset="0x028" Ball="NA" PWR="NA" Bump="SPI1_MISO_IO_1_BK_2" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_03" Name="GPPC_D_3_SPI1_MOSI_IO_0_BK_3" CFG0_offset="0x030" CFG1_offset="0x034" CFG2_offset="0x038" Ball="NA" PWR="NA" Bump="SPI1_MOSI_IO_0_BK_3" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_04" Name="GPPC_D_4_IMGCLKOUT_0_BK_4" CFG0_offset="0x040" CFG1_offset="0x044" CFG2_offset="0x048" Ball="NA" PWR="NA" Bump="IMGCLKOUT_0_BK_4" Module="NA" Validate="true" CFG0_ExpValue="0x80000600" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_05" Name="GPPC_D_5_ISH_I2C0_SDA" CFG0_offset="0x050" CFG1_offset="0x054" CFG2_offset="0x058" Ball="NA" PWR="NA" Bump="ISH_I2C0_SDA" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_06" Name="GPPC_D_6_ISH_I2C0_SCL" CFG0_offset="0x060" CFG1_offset="0x064" CFG2_offset="0x068" Ball="NA" PWR="NA" Bump="ISH_I2C0_SCL" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_07" Name="GPPC_D_7_ISH_I2C1_SDA" CFG0_offset="0x070" CFG1_offset="0x074" CFG2_offset="0x078" Ball="NA" PWR="NA" Bump="ISH_I2C1_SDA" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_08" Name="GPPC_D_8_ISH_I2C1_SCL" CFG0_offset="0x080" CFG1_offset="0x084" CFG2_offset="0x088" Ball="NA" PWR="NA" Bump="ISH_I2C1_SCL" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_09" Name="GPPC_D_9_ISH_SPI_CSB" CFG0_offset="0x090" CFG1_offset="0x094" CFG2_offset="0x098" Ball="NA" PWR="NA" Bump="ISH_SPI_CSB" Module="NA" Validate="true" CFG0_ExpValue="0x84000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_10" Name="GPPC_D_10_ISH_SPI_CLK" CFG0_offset="0x0A0" CFG1_offset="0x0A4" CFG2_offset="0x0A8" Ball="NA" PWR="NA" Bump="ISH_SPI_CLK" Module="NA" Validate="true" CFG0_ExpValue="0x82100100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_11" Name="GPPC_D_11_ISH_SPI_MISO_GP_BSSB_CLK" CFG0_offset="0x0B0" CFG1_offset="0x0B4" CFG2_offset="0x0B8" Ball="NA" PWR="NA" Bump="ISH_SPI_MISO_GP_BSSB_CLK" Module="NA" Validate="true" CFG0_ExpValue="0x80880100" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_12" Name="GPPC_D_12_ISH_SPI_MOSI_GP_BSSB_DI" CFG0_offset="0x0C0" CFG1_offset="0x0C4" CFG2_offset="0x0C8" Ball="NA" PWR="NA" Bump="ISH_SPI_MOSI_GP_BSSB_DI" Module="NA" Validate="true" CFG0_ExpValue="0x84000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_13" Name="GPPC_D_13_ISH_UART0_RXD_SML0BDATA" CFG0_offset="0x0D0" CFG1_offset="0x0D4" CFG2_offset="0x0D8" Ball="NA" PWR="NA" Bump="ISH_UART0_RXD_SML0BDATA" Module="NA" Validate="true" CFG0_ExpValue="0x44000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_14" Name="GPPC_D_14_ISH_UART0_TXD_SML0BCLK" CFG0_offset="0x0E0" CFG1_offset="0x0E4" CFG2_offset="0x0E8" Ball="NA" PWR="NA" Bump="ISH_UART0_TXD_SML0BCLK" Module="NA" Validate="true" CFG0_ExpValue="0x84000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_15" Name="GPPC_D_15_ISH_UART0_RTSB_GSPI2_CS1B" CFG0_offset="0x0F0" CFG1_offset="0x0F4" CFG2_offset="0x0F8" Ball="NA" PWR="NA" Bump="ISH_UART0_RTSB_GSPI2_CS1B" Module="NA" Validate="true" CFG0_ExpValue="0x80000100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_16" Name="GPPC_D_16_ISH_UART0_CTSB_SML0BALERTB" CFG0_offset="0x100" CFG1_offset="0x104" CFG2_offset="0x108" Ball="NA" PWR="NA" Bump="ISH_UART0_CTSB_SML0BALERTB" Module="NA" Validate="true" CFG0_ExpValue="0x40880100" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_17" Name="GPPC_D_17_DMIC_CLK_1_SNDW3_CLK" CFG0_offset="0x110" CFG1_offset="0x114" CFG2_offset="0x118" Ball="NA" PWR="NA" Bump="DMIC_CLK_1_SNDW3_CLK" Module="NA" Validate="true" CFG0_ExpValue="0x44000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_18" Name="GPPC_D_18_DMIC_DATA_1_SNDW3_DATA" CFG0_offset="0x120" CFG1_offset="0x124" CFG2_offset="0x128" Ball="NA" PWR="NA" Bump="DMIC_DATA_1_SNDW3_DATA" Module="NA" Validate="true" CFG0_ExpValue="0x44000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_19" Name="GPPC_D_19_DMIC_CLK_0_SNDW4_CLK" CFG0_offset="0x130" CFG1_offset="0x134" CFG2_offset="0x138" Ball="NA" PWR="NA" Bump="DMIC_CLK_0_SNDW4_CLK" Module="NA" Validate="true" CFG0_ExpValue="0x44000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_20" Name="GPPC_D_20_DMIC_DATA_0_SNDW4_DATA" CFG0_offset="0x140" CFG1_offset="0x144" CFG2_offset="0x148" Ball="NA" PWR="NA" Bump="DMIC_DATA_0_SNDW4_DATA" Module="NA" Validate="true" CFG0_ExpValue="0x44000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_21" Name="GPPC_D_21_SPI1_IO_2" CFG0_offset="0x150" CFG1_offset="0x154" CFG2_offset="0x158" Ball="NA" PWR="NA" Bump="SPI1_IO_2" Module="NA" Validate="true" CFG0_ExpValue="0x84000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_22" Name="GPPC_D_22_SPI1_IO_3" CFG0_offset="0x160" CFG1_offset="0x164" CFG2_offset="0x168" Ball="NA" PWR="NA" Bump="SPI1_IO_3" Module="NA" Validate="true" CFG0_ExpValue="0x84000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_D_23" Name="GPPC_D_23_SSP_MCLK" CFG0_offset="0x170" CFG1_offset="0x174" CFG2_offset="0x178" Ball="NA" PWR="NA" Bump="SSP_MCLK" Module="NA" Validate="true" CFG0_ExpValue="0x44000600" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_00" Name="GPP_F_0_CNV_GNSS_PA_BLANKING" CFG0_offset="0x180" CFG1_offset="0x184" CFG2_offset="0x188" Ball="NA" PWR="NA" Bump="CNV_GNSS_PA_BLANKING" Module="NA" Validate="true" CFG0_ExpValue="0x80000100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0800300" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_01" Name="GPP_F_1_CNV_GNSS_FTA" CFG0_offset="0x190" CFG1_offset="0x194" CFG2_offset="0x198" Ball="NA" PWR="NA" Bump="CNV_GNSS_FTA" Module="NA" Validate="true" CFG0_ExpValue="0x40000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_02" Name="GPP_F_2_CNV_GNSS_SYSCK" CFG0_offset="0x1A0" CFG1_offset="0x1A4" CFG2_offset="0x1A8" Ball="NA" PWR="NA" Bump="CNV_GNSS_SYSCK" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_03" Name="GPP_F_3" CFG0_offset="0x1B0" CFG1_offset="0x1B4" CFG2_offset="0x1B8" Ball="NA" PWR="NA" Bump="GPP_F_3" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_04" Name="GPP_F_4_CNV_BRI_DT_UART0_RTSB" CFG0_offset="0x1C0" CFG1_offset="0x1C4" CFG2_offset="0x1C8" Ball="NA" PWR="NA" Bump="CNV_BRI_DT_UART0_RTSB" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_05" Name="GPP_F_5_CNV_BRI_RSP_UART0_RXD" CFG0_offset="0x1D0" CFG1_offset="0x1D4" CFG2_offset="0x1D8" Ball="NA" PWR="NA" Bump="CNV_BRI_RSP_UART0_RXD" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_06" Name="GPP_F_6_CNV_RGI_DT_UART0_TXD" CFG0_offset="0x1E0" CFG1_offset="0x1E4" CFG2_offset="0x1E8" Ball="NA" PWR="NA" Bump="CNV_RGI_DT_UART0_TXD" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_07" Name="GPP_F_7_CNV_RGI_RSP_UART0_CTSB" CFG0_offset="0x1F0" CFG1_offset="0x1F4" CFG2_offset="0x1F8" Ball="NA" PWR="NA" Bump="CNV_RGI_RSP_UART0_CTSB" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_08" Name="GPP_F_8_CNV_MFUART2_RXD" CFG0_offset="0x200" CFG1_offset="0x204" CFG2_offset="0x208" Ball="NA" PWR="NA" Bump="CNV_MFUART2_RXD" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_09" Name="GPP_F_9_CNV_MFUART2_TXD" CFG0_offset="0x210" CFG1_offset="0x214" CFG2_offset="0x218" Ball="NA" PWR="NA" Bump="CNV_MFUART2_TXD" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_10" Name="GPP_F_10" CFG0_offset="0x220" CFG1_offset="0x224" CFG2_offset="0x228" Ball="NA" PWR="NA" Bump="GPP_F_10" Module="NA" Validate="true" CFG0_ExpValue="0x80080100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_11" Name="GPP_F_11_EMMC_CMD" CFG0_offset="0x230" CFG1_offset="0x234" CFG2_offset="0x238" Ball="NA" PWR="NA" Bump="EMMC_CMD" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_12" Name="GPP_F_12_EMMC_DATA0" CFG0_offset="0x240" CFG1_offset="0x244" CFG2_offset="0x248" Ball="NA" PWR="NA" Bump="EMMC_DATA0" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_13" Name="GPP_F_13_EMMC_DATA1" CFG0_offset="0x250" CFG1_offset="0x254" CFG2_offset="0x258" Ball="NA" PWR="NA" Bump="EMMC_DATA1" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_14" Name="GPP_F_14_EMMC_DATA2" CFG0_offset="0x260" CFG1_offset="0x264" CFG2_offset="0x268" Ball="NA" PWR="NA" Bump="EMMC_DATA2" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_15" Name="GPP_F_15_EMMC_DATA3" CFG0_offset="0x270" CFG1_offset="0x274" CFG2_offset="0x278" Ball="NA" PWR="NA" Bump="EMMC_DATA3" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_16" Name="GPP_F_16_EMMC_DATA4" CFG0_offset="0x280" CFG1_offset="0x284" CFG2_offset="0x288" Ball="NA" PWR="NA" Bump="EMMC_DATA4" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_17" Name="GPP_F_17_EMMC_DATA5" CFG0_offset="0x290" CFG1_offset="0x294" CFG2_offset="0x298" Ball="NA" PWR="NA" Bump="EMMC_DATA5" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_18" Name="GPP_F_18_EMMC_DATA6" CFG0_offset="0x2A0" CFG1_offset="0x2A4" CFG2_offset="0x2A8" Ball="NA" PWR="NA" Bump="EMMC_DATA6" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_19" Name="GPP_F_19_EMMC_DATA7" CFG0_offset="0x2B0" CFG1_offset="0x2B4" CFG2_offset="0x2B8" Ball="NA" PWR="NA" Bump="EMMC_DATA7" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_20" Name="GPP_F_20_EMMC_RCLK" CFG0_offset="0x2C0" CFG1_offset="0x2C4" CFG2_offset="0x2C8" Ball="NA" PWR="NA" Bump="EMMC_RCLK" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_21" Name="GPP_F_21_EMMC_CLK" CFG0_offset="0x2D0" CFG1_offset="0x2D4" CFG2_offset="0x2D8" Ball="NA" PWR="NA" Bump="EMMC_CLK" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_22" Name="GPP_F_22_EMMC_RESETB" CFG0_offset="0x2E0" CFG1_offset="0x2E4" CFG2_offset="0x2E8" Ball="NA" PWR="NA" Bump="EMMC_RESETB" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPP_F_23" Name="GPP_F_23_A4WP_PRESENT" CFG0_offset="0x2F0" CFG1_offset="0x2F4" CFG2_offset="0x2F8" Ball="NA" PWR="NA" Bump="A4WP_PRESENT" Module="NA" Validate="true" CFG0_ExpValue="0x80000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0000000" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_00" Name="GPPC_H_0_SSP2_SCLK" CFG0_offset="0x300" CFG1_offset="0x304" CFG2_offset="0x308" Ball="NA" PWR="NA" Bump="SSP2_SCLK" Module="NA" Validate="true" CFG0_ExpValue="0x40000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_01" Name="GPPC_H_1_SSP2_SFRM" CFG0_offset="0x310" CFG1_offset="0x314" CFG2_offset="0x318" Ball="NA" PWR="NA" Bump="SSP2_SFRM" Module="NA" Validate="true" CFG0_ExpValue="0x40000C00" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_02" Name="GPPC_H_2_SSP2_TXD" CFG0_offset="0x320" CFG1_offset="0x324" CFG2_offset="0x328" Ball="NA" PWR="NA" Bump="SSP2_TXD" Module="NA" Validate="true" CFG0_ExpValue="0x40000C00" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_03" Name="GPPC_H_3_SSP2_RXD" CFG0_offset="0x330" CFG1_offset="0x334" CFG2_offset="0x338" Ball="NA" PWR="NA" Bump="SSP2_RXD" Module="NA" Validate="true" CFG0_ExpValue="0x40000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_04" Name="GPPC_H_4_I2C2_SDA" CFG0_offset="0x340" CFG1_offset="0x344" CFG2_offset="0x348" Ball="NA" PWR="NA" Bump="I2C2_SDA" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_05" Name="GPPC_H_5_I2C2_SCL" CFG0_offset="0x350" CFG1_offset="0x354" CFG2_offset="0x358" Ball="NA" PWR="NA" Bump="I2C2_SCL" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_06" Name="GPPC_H_6_I2C3_SDA" CFG0_offset="0x360" CFG1_offset="0x364" CFG2_offset="0x368" Ball="NA" PWR="NA" Bump="I2C3_SDA" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_07" Name="GPPC_H_7_I2C3_SCL" CFG0_offset="0x370" CFG1_offset="0x374" CFG2_offset="0x378" Ball="NA" PWR="NA" Bump="I2C3_SCL" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_08" Name="GPPC_H_8_I2C4_SDA" CFG0_offset="0x380" CFG1_offset="0x384" CFG2_offset="0x388" Ball="NA" PWR="NA" Bump="I2C4_SDA" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_09" Name="GPPC_H_9_I2C4_SCL" CFG0_offset="0x390" CFG1_offset="0x394" CFG2_offset="0x398" Ball="NA" PWR="NA" Bump="I2C4_SCL" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_10" Name="GPPC_H_10_I2C5_SDA_ISH_I2C2_SDA" CFG0_offset="0x3A0" CFG1_offset="0x3A4" CFG2_offset="0x3A8" Ball="NA" PWR="NA" Bump="I2C5_SDA_ISH_I2C2_SDA" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_11" Name="GPPC_H_11_I2C5_SCL_ISH_I2C2_SCL" CFG0_offset="0x3B0" CFG1_offset="0x3B4" CFG2_offset="0x3B8" Ball="NA" PWR="NA" Bump="I2C5_SCL_ISH_I2C2_SCL" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_12" Name="GPPC_H_12_M2_SKT2_CFG_0_DFLEXIO_0" CFG0_offset="0x3C0" CFG1_offset="0x3C4" CFG2_offset="0x3C8" Ball="NA" PWR="NA" Bump="M2_SKT2_CFG_0_DFLEXIO_0" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_13" Name="GPPC_H_13_M2_SKT2_CFG_1_DFLEXIO_1" CFG0_offset="0x3D0" CFG1_offset="0x3D4" CFG2_offset="0x3D8" Ball="NA" PWR="NA" Bump="M2_SKT2_CFG_1_DFLEXIO_1" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_14" Name="GPPC_H_14_M2_SKT2_CFG_2" CFG0_offset="0x3E0" CFG1_offset="0x3E4" CFG2_offset="0x3E8" Ball="NA" PWR="NA" Bump="M2_SKT2_CFG_2" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_15" Name="GPPC_H_15_M2_SKT2_CFG_3" CFG0_offset="0x3F0" CFG1_offset="0x3F4" CFG2_offset="0x3F8" Ball="NA" PWR="NA" Bump="M2_SKT2_CFG_3" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_16" Name="GPPC_H_16_DDPF_CTRLCLK" CFG0_offset="0x400" CFG1_offset="0x404" CFG2_offset="0x408" Ball="NA" PWR="NA" Bump="DDPF_CTRLCLK" Module="NA" Validate="true" CFG0_ExpValue="0x80000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0000000" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_17" Name="GPPC_H_17_DDPF_CTRLDATA" CFG0_offset="0x410" CFG1_offset="0x414" CFG2_offset="0x418" Ball="NA" PWR="NA" Bump="DDPF_CTRLDATA" Module="NA" Validate="true" CFG0_ExpValue="0x80000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0000000" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_18" Name="GPPC_H_18_BOOTMPC" CFG0_offset="0x420" CFG1_offset="0x424" CFG2_offset="0x428" Ball="NA" PWR="NA" Bump="BOOTMPC" Module="NA" Validate="true" CFG0_ExpValue="0x80000600" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_19" Name="GPPC_H_19_TIMESYNC_0" CFG0_offset="0x430" CFG1_offset="0x434" CFG2_offset="0x438" Ball="NA" PWR="NA" Bump="TIMESYNC_0" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_20" Name="GPPC_H_20_IMGCLKOUT_1" CFG0_offset="0x440" CFG1_offset="0x444" CFG2_offset="0x448" Ball="NA" PWR="NA" Bump="IMGCLKOUT_1" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_21" Name="GPPC_H_21" CFG0_offset="0x450" CFG1_offset="0x454" CFG2_offset="0x458" Ball="NA" PWR="NA" Bump="GPPC_H_21" Module="NA" Validate="true" CFG0_ExpValue="0x00000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00000000" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_22" Name="GPPC_H_22" CFG0_offset="0x460" CFG1_offset="0x464" CFG2_offset="0x468" Ball="NA" PWR="NA" Bump="GPPC_H_22" Module="NA" Validate="true" CFG0_ExpValue="0x80000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_H_23" Name="GPPC_H_23" CFG0_offset="0x470" CFG1_offset="0x474" CFG2_offset="0x478" Ball="NA" PWR="NA" Bump="GPPC_H_23" Module="NA" Validate="true" CFG0_ExpValue="0x00000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00000000" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+      </Pins>
+    </Community>
+    <Community name="Community2" max="12" BaseAddress="0x6C0600" SBBaseAddress="0x0000" SBPort="0x6C">
+      <Pins>
+        <Pin No="GPD_00" Name="GPD_0_BATLOWB" CFG0_offset="0x000" CFG1_offset="0x004" CFG2_offset="0x008" Ball="NA" PWR="NA" Bump="BATLOWB" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_01" Name="GPD_1_ACPRESENT" CFG0_offset="0x010" CFG1_offset="0x014" CFG2_offset="0x018" Ball="NA" PWR="NA" Bump="ACPRESENT" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_02" Name="GPD_2_LAN_WAKEB" CFG0_offset="0x020" CFG1_offset="0x024" CFG2_offset="0x028" Ball="NA" PWR="NA" Bump="LAN_WAKEB" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_03" Name="GPD_3_PWRBTNB" CFG0_offset="0x030" CFG1_offset="0x034" CFG2_offset="0x038" Ball="NA" PWR="NA" Bump="PWRBTNB" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_04" Name="GPD_4_SLP_S3B" CFG0_offset="0x040" CFG1_offset="0x044" CFG2_offset="0x048" Ball="NA" PWR="NA" Bump="SLP_S3B" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_05" Name="GPD_5_SLP_S4B" CFG0_offset="0x050" CFG1_offset="0x054" CFG2_offset="0x058" Ball="NA" PWR="NA" Bump="SLP_S4B" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_06" Name="GPD_6_SLP_AB" CFG0_offset="0x060" CFG1_offset="0x064" CFG2_offset="0x068" Ball="NA" PWR="NA" Bump="SLP_AB" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_07" Name="GPD_7" CFG0_offset="0x070" CFG1_offset="0x074" CFG2_offset="0x078" Ball="NA" PWR="NA" Bump="GPD_7" Module="NA" Validate="true" CFG0_ExpValue="0x00000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00000000" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_08" Name="GPD_8_SUSCLK" CFG0_offset="0x080" CFG1_offset="0x084" CFG2_offset="0x088" Ball="NA" PWR="NA" Bump="SUSCLK" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_09" Name="GPD_9_SLP_WLANB" CFG0_offset="0x090" CFG1_offset="0x094" CFG2_offset="0x098" Ball="NA" PWR="NA" Bump="SLP_WLANB" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_10" Name="GPD_10_SLP_S5B" CFG0_offset="0x0A0" CFG1_offset="0x0A4" CFG2_offset="0x0A8" Ball="NA" PWR="NA" Bump="SLP_S5B" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPD_11" Name="GPD_11_LANPHYPC" CFG0_offset="0x0B0" CFG1_offset="0x0B4" CFG2_offset="0x0B8" Ball="NA" PWR="NA" Bump="LANPHYPC" Module="NA" Validate="true" CFG0_ExpValue="0x00000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0x00003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+      </Pins>
+    </Community>
+    <Community name="Community4" max="48" BaseAddress="0x6A0600" SBBaseAddress="0x0000" SBPort="0x6A">
+      <Pins>
+        <Pin No="GPPC_C_00" Name="GPPC_C_0_SMBCLK" CFG0_offset="0x000" CFG1_offset="0x004" CFG2_offset="0x008" Ball="NA" PWR="NA" Bump="SMBCLK" Module="NA" Validate="true" CFG0_ExpValue="0x44000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_01" Name="GPPC_C_1_SMBDATA" CFG0_offset="0x010" CFG1_offset="0x014" CFG2_offset="0x018" Ball="NA" PWR="NA" Bump="SMBDATA" Module="NA" Validate="true" CFG0_ExpValue="0x44000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_02" Name="GPPC_C_2_SMBALERTB" CFG0_offset="0x020" CFG1_offset="0x024" CFG2_offset="0x028" Ball="NA" PWR="NA" Bump="SMBALERTB" Module="NA" Validate="true" CFG0_ExpValue="0x44000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_03" Name="GPPC_C_3_SML0CLK" CFG0_offset="0x030" CFG1_offset="0x034" CFG2_offset="0x038" Ball="NA" PWR="NA" Bump="SML0CLK" Module="NA" Validate="true" CFG0_ExpValue="0x40000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_04" Name="GPPC_C_4_SML0DATA" CFG0_offset="0x040" CFG1_offset="0x044" CFG2_offset="0x048" Ball="NA" PWR="NA" Bump="SML0DATA" Module="NA" Validate="true" CFG0_ExpValue="0x40000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_05" Name="GPPC_C_5_SML0ALERTB" CFG0_offset="0x050" CFG1_offset="0x054" CFG2_offset="0x058" Ball="NA" PWR="NA" Bump="SML0ALERTB" Module="NA" Validate="true" CFG0_ExpValue="0x40080100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_06" Name="GPPC_C_6_SML1CLK" CFG0_offset="0x060" CFG1_offset="0x064" CFG2_offset="0x068" Ball="NA" PWR="NA" Bump="SML1CLK" Module="NA" Validate="true" CFG0_ExpValue="0x40000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0800300" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_07" Name="GPPC_C_7_SML1DATA" CFG0_offset="0x070" CFG1_offset="0x074" CFG2_offset="0x078" Ball="NA" PWR="NA" Bump="SML1DATA" Module="NA" Validate="true" CFG0_ExpValue="0x40000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0800300" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_08" Name="GPPC_C_8_UART0_RXD" CFG0_offset="0x080" CFG1_offset="0x084" CFG2_offset="0x088" Ball="NA" PWR="NA" Bump="UART0_RXD" Module="NA" Validate="true" CFG0_ExpValue="0x40100100" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_09" Name="GPPC_C_9_UART0_TXD" CFG0_offset="0x090" CFG1_offset="0x094" CFG2_offset="0x098" Ball="NA" PWR="NA" Bump="UART0_TXD" Module="NA" Validate="true" CFG0_ExpValue="0x82880100" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_10" Name="GPPC_C_10_UART0_RTSB" CFG0_offset="0x0A0" CFG1_offset="0x0A4" CFG2_offset="0x0A8" Ball="NA" PWR="NA" Bump="UART0_RTSB" Module="NA" Validate="true" CFG0_ExpValue="0x80000200" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_11" Name="GPPC_C_11_UART0_CTSB" CFG0_offset="0x0B0" CFG1_offset="0x0B4" CFG2_offset="0x0B8" Ball="NA" PWR="NA" Bump="UART0_CTSB" Module="NA" Validate="true" CFG0_ExpValue="0x40080100" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_12" Name="GPPC_C_12_UART1_RXD_ISH_UART1_RXD" CFG0_offset="0x0C0" CFG1_offset="0x0C4" CFG2_offset="0x0C8" Ball="NA" PWR="NA" Bump="UART1_RXD_ISH_UART1_RXD" Module="NA" Validate="true" CFG0_ExpValue="0x84000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_13" Name="GPPC_C_13_UART1_TXD_ISH_UART1_TXD" CFG0_offset="0x0D0" CFG1_offset="0x0D4" CFG2_offset="0x0D8" Ball="NA" PWR="NA" Bump="UART1_TXD_ISH_UART1_TXD" Module="NA" Validate="true" CFG0_ExpValue="0x84000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_14" Name="GPPC_C_14_UART1_RTSB_ISH_UART1_RTSB" CFG0_offset="0x0E0" CFG1_offset="0x0E4" CFG2_offset="0x0E8" Ball="NA" PWR="NA" Bump="UART1_RTSB_ISH_UART1_RTSB" Module="NA" Validate="true" CFG0_ExpValue="0x84000200" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_15" Name="GPPC_C_15_UART1_CTSB_ISH_UART1_CTSB" CFG0_offset="0x0F0" CFG1_offset="0x0F4" CFG2_offset="0x0F8" Ball="NA" PWR="NA" Bump="UART1_CTSB_ISH_UART1_CTSB" Module="NA" Validate="true" CFG0_ExpValue="0x84000201" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F01" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_16" Name="GPPC_C_16_I2C0_SDA" CFG0_offset="0x100" CFG1_offset="0x104" CFG2_offset="0x108" Ball="NA" PWR="NA" Bump="I2C0_SDA" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_17" Name="GPPC_C_17_I2C0_SCL" CFG0_offset="0x110" CFG1_offset="0x114" CFG2_offset="0x118" Ball="NA" PWR="NA" Bump="I2C0_SCL" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_18" Name="GPPC_C_18_I2C1_SDA" CFG0_offset="0x120" CFG1_offset="0x124" CFG2_offset="0x128" Ball="NA" PWR="NA" Bump="I2C1_SDA" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_19" Name="GPPC_C_19_I2C1_SCL" CFG0_offset="0x130" CFG1_offset="0x134" CFG2_offset="0x138" Ball="NA" PWR="NA" Bump="I2C1_SCL" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_20" Name="GPPC_C_20_UART2_RXD" CFG0_offset="0x140" CFG1_offset="0x144" CFG2_offset="0x148" Ball="NA" PWR="NA" Bump="UART2_RXD" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_21" Name="GPPC_C_21_UART2_TXD" CFG0_offset="0x150" CFG1_offset="0x154" CFG2_offset="0x158" Ball="NA" PWR="NA" Bump="UART2_TXD" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_22" Name="GPPC_C_22_UART2_RTSB" CFG0_offset="0x160" CFG1_offset="0x164" CFG2_offset="0x168" Ball="NA" PWR="NA" Bump="UART2_RTSB" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_C_23" Name="GPPC_C_23_UART2_CTSB" CFG0_offset="0x170" CFG1_offset="0x174" CFG2_offset="0x178" Ball="NA" PWR="NA" Bump="UART2_CTSB" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_00" Name="GPPC_E_0_SATAXPCIE_0_SATAGP_0" CFG0_offset="0x180" CFG1_offset="0x184" CFG2_offset="0x188" Ball="NA" PWR="NA" Bump="SATAXPCIE_0_SATAGP_0" Module="NA" Validate="true" CFG0_ExpValue="0x80080100" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E0300" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_01" Name="GPPC_E_1_SATAXPCIE_1_SATAGP_1" CFG0_offset="0x190" CFG1_offset="0x194" CFG2_offset="0x198" Ball="NA" PWR="NA" Bump="SATAXPCIE_1_SATAGP_1" Module="NA" Validate="true" CFG0_ExpValue="0x80080500" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_02" Name="GPPC_E_2_SATAXPCIE_2_SATAGP_2" CFG0_offset="0x1A0" CFG1_offset="0x1A4" CFG2_offset="0x1A8" Ball="NA" PWR="NA" Bump="SATAXPCIE_2_SATAGP_2" Module="NA" Validate="true" CFG0_ExpValue="0x80080100" CFG1_ExpValue="0x00003000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_03" Name="GPPC_E_3_CPU_GP_0" CFG0_offset="0x1B0" CFG1_offset="0x1B4" CFG2_offset="0x1B8" Ball="NA" PWR="NA" Bump="CPU_GP_0" Module="NA" Validate="true" CFG0_ExpValue="0x82840100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_04" Name="GPPC_E_4_SATA_DEVSLP_0" CFG0_offset="0x1C0" CFG1_offset="0x1C4" CFG2_offset="0x1C8" Ball="NA" PWR="NA" Bump="SATA_DEVSLP_0" Module="NA" Validate="true" CFG0_ExpValue="0x80080100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC69E3F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_05" Name="GPPC_E_5_SATA_DEVSLP_1" CFG0_offset="0x1D0" CFG1_offset="0x1D4" CFG2_offset="0x1D8" Ball="NA" PWR="NA" Bump="SATA_DEVSLP_1" Module="NA" Validate="true" CFG0_ExpValue="0x80000500" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_06" Name="GPPC_E_6_SATA_DEVSLP_2" CFG0_offset="0x1E0" CFG1_offset="0x1E4" CFG2_offset="0x1E8" Ball="NA" PWR="NA" Bump="SATA_DEVSLP_2" Module="NA" Validate="true" CFG0_ExpValue="0x80000500" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_07" Name="GPPC_E_7_CPU_GP_1" CFG0_offset="0x1F0" CFG1_offset="0x1F4" CFG2_offset="0x1F8" Ball="NA" PWR="NA" Bump="CPU_GP_1" Module="NA" Validate="true" CFG0_ExpValue="0x82000100" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6803F00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_08" Name="GPPC_E_8_SATA_LEDB" CFG0_offset="0x200" CFG1_offset="0x204" CFG2_offset="0x208" Ball="NA" PWR="NA" Bump="SATA_LEDB" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_09" Name="GPPC_E_9_USB2_OCB_0_GP_BSSB_CLk" CFG0_offset="0x210" CFG1_offset="0x214" CFG2_offset="0x218" Ball="NA" PWR="NA" Bump="USB2_OCB_0_GP_BSSB_CLk" Module="NA" Validate="true" CFG0_ExpValue="0x40000800" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_10" Name="GPPC_E_10_USB2_OCB_1_GP_BSSB_DI" CFG0_offset="0x220" CFG1_offset="0x224" CFG2_offset="0x228" Ball="NA" PWR="NA" Bump="USB2_OCB_1_GP_BSSB_DI" Module="NA" Validate="true" CFG0_ExpValue="0x40000800" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_11" Name="GPPC_E_11_USB2_OCB_2" CFG0_offset="0x230" CFG1_offset="0x234" CFG2_offset="0x238" Ball="NA" PWR="NA" Bump="USB2_OCB_2" Module="NA" Validate="true" CFG0_ExpValue="0x40000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_12" Name="GPPC_E_12_USB2_OCB_3" CFG0_offset="0x240" CFG1_offset="0x244" CFG2_offset="0x248" Ball="NA" PWR="NA" Bump="USB2_OCB_3" Module="NA" Validate="true" CFG0_ExpValue="0x40000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_13" Name="GPPC_E_13_DDSP_HPD_0_DISP_MISC_0" CFG0_offset="0x250" CFG1_offset="0x254" CFG2_offset="0x258" Ball="NA" PWR="NA" Bump="DDSP_HPD_0_DISP_MISC_0" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_14" Name="GPPC_E_14_DDSP_HPD_1_DISP_MISC_1" CFG0_offset="0x260" CFG1_offset="0x264" CFG2_offset="0x268" Ball="NA" PWR="NA" Bump="DDSP_HPD_1_DISP_MISC_1" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_15" Name="GPPC_E_15_DDSP_HPD_2_DISP_MISC_2" CFG0_offset="0x270" CFG1_offset="0x274" CFG2_offset="0x278" Ball="NA" PWR="NA" Bump="DDSP_HPD_2_DISP_MISC_2" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_16" Name="GPPC_E_16_DDSP_HPD_3_DISP_MISC_3" CFG0_offset="0x280" CFG1_offset="0x284" CFG2_offset="0x288" Ball="NA" PWR="NA" Bump="DDSP_HPD_3_DISP_MISC_3" Module="NA" Validate="true" CFG0_ExpValue="0x84000000" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC6000000" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_17" Name="GPPC_E_17_EDP_HPD_DISP_MISC_4" CFG0_offset="0x290" CFG1_offset="0x294" CFG2_offset="0x298" Ball="NA" PWR="NA" Bump="EDP_HPD_DISP_MISC_4" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_18" Name="GPPC_E_18_DDPB_CTRLCLK" CFG0_offset="0x2A0" CFG1_offset="0x2A4" CFG2_offset="0x2A8" Ball="NA" PWR="NA" Bump="DDPB_CTRLCLK" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_19" Name="GPPC_E_19_DDPB_CTRLDATA" CFG0_offset="0x2B0" CFG1_offset="0x2B4" CFG2_offset="0x2B8" Ball="NA" PWR="NA" Bump="DDPB_CTRLDATA" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_20" Name="GPPC_E_20_DDPC_CTRLCLK" CFG0_offset="0x2C0" CFG1_offset="0x2C4" CFG2_offset="0x2C8" Ball="NA" PWR="NA" Bump="DDPC_CTRLCLK" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_21" Name="GPPC_E_21_DDPC_CTRLDATA" CFG0_offset="0x2D0" CFG1_offset="0x2D4" CFG2_offset="0x2D8" Ball="NA" PWR="NA" Bump="DDPC_CTRLDATA" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_22" Name="GPPC_E_22_DDPD_CTRLCLK" CFG0_offset="0x2E0" CFG1_offset="0x2E4" CFG2_offset="0x2E8" Ball="NA" PWR="NA" Bump="DDPD_CTRLCLK" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+        <Pin No="GPPC_E_23" Name="GPPC_E_23_DDPD_CTRLDATA" CFG0_offset="0x2F0" CFG1_offset="0x2F4" CFG2_offset="0x2F8" Ball="NA" PWR="NA" Bump="DDPD_CTRLDATA" Module="NA" Validate="true" CFG0_ExpValue="0x80000400" CFG1_ExpValue="0x00002000" CFG2_ExpValue="0x00000000" CFG0_MaskValue="0xC0003C00" CFG1_MaskValue="0x00003C00" CFG2_MaskValue="0x00000001" />
+      </Pins>
+    </Community>
+  </GPIO>
+  <GPIOPadRstCfg>
+    <PadRstCfg>Powergood</PadRstCfg>
+    <PadRstCfg>Deep GPIO Reset</PadRstCfg>
+    <PadRstCfg>GPIO Reset</PadRstCfg>
+    <PadRstCfg>Reserved</PadRstCfg>
+  </GPIOPadRstCfg>
+  <GPIORXPadStSel>
+    <RXPadStSel>Raw RX</RXPadStSel>
+    <RXPadStSel>Internal RX Pad State</RXPadStSel>
+  </GPIORXPadStSel>
+  <GPIORXRAW1>
+    <RXRAW1>NoOverride</RXRAW1>
+    <RXRAW1>RX Drive 1 Internally</RXRAW1>
+  </GPIORXRAW1>
+  <GPIORxEvCfg>
+    <RxEvCfg>Level</RxEvCfg>
+    <RxEvCfg>Edge</RxEvCfg>
+    <RxEvCfg>Disabled</RxEvCfg>
+    <RxEvCfg>Either Edge</RxEvCfg>
+  </GPIORxEvCfg>
+  <GPIORxInvert>
+    <RxInvert>No Inversion</RxInvert>
+    <RxInvert>Inversion</RxInvert>
+  </GPIORxInvert>
+  <GPIORouteIOxAPIC>
+    <RouteIOxAPIC>Routing doesn't cause Peripheral IRQ</RouteIOxAPIC>
+    <RouteIOxAPIC>Routing can cause Peripheral IRQ</RouteIOxAPIC>
+  </GPIORouteIOxAPIC>
+  <GPIORoutSCI>
+    <RouteSCI>Routing doesn't cause SCI</RouteSCI>
+    <RouteSCI>Routing can cause SCI</RouteSCI>
+  </GPIORoutSCI>
+  <GPIORoutSMI>
+    <RouteSMI>Routing doesn't cause SMI</RouteSMI>
+    <RouteSMI>Routing can cause SMI</RouteSMI>
+  </GPIORoutSMI>
+  <GPIORoutNMI>
+    <RouteNMI>Routing doesn't cause NMI</RouteNMI>
+    <RouteNMI>Routing can cause NMI</RouteNMI>
+  </GPIORoutNMI>
+  <GPIORxDisable>
+    <RxDisable>Enable Input Buffer</RxDisable>
+    <RxDisable>Disable Input Buffer</RxDisable>
+  </GPIORxDisable>
+  <GPIOTxDisable>
+    <TxDisable>Enable Output Buffer</TxDisable>
+    <TxDisable>Disable Output Buffer</TxDisable>
+  </GPIOTxDisable>
+  <GPIOTxState>
+    <TxState>Level 0</TxState>
+    <TxState>Level 1</TxState>
+  </GPIOTxState>
+  <GPIORxState>
+    <RxState>Level 0</RxState>
+    <RxState>Level 1</RxState>
+  </GPIORxState>
+  <GPIOPullType>
+    <PullType>Disable</PullType>
+    <PullType>1k wpd</PullType>
+    <PullType>5k wpd</PullType>
+    <PullType>Reserved_3</PullType>
+    <PullType>20k wpd</PullType>
+    <PullType>Reserved_5</PullType>
+    <PullType>Reserved_6</PullType>
+    <PullType>Reserved_7</PullType>
+    <PullType>None</PullType>
+    <PullType>1k wpu</PullType>
+    <PullType>5k wpu</PullType>
+    <PullType>2k wpu</PullType>
+    <PullType>20k wpu</PullType>
+    <PullType>1k_2k wpu</PullType>
+    <PullType>Reserved_14</PullType>
+    <PullType>Native controller pad mode</PullType>
+  </GPIOPullType>
+  <GPIOInterrupt>
+    <Interrupt>0h</Interrupt>
+    <Interrupt>1h</Interrupt>
+    <Interrupt>2h</Interrupt>
+    <Interrupt>3h</Interrupt>
+    <Interrupt>4h</Interrupt>
+    <Interrupt>5h</Interrupt>
+    <Interrupt>6h</Interrupt>
+    <Interrupt>7h</Interrupt>
+    <Interrupt>8h</Interrupt>
+    <Interrupt>9h</Interrupt>
+    <Interrupt>Ah</Interrupt>
+    <Interrupt>Bh</Interrupt>
+    <Interrupt>Ch</Interrupt>
+    <Interrupt>Dh</Interrupt>
+    <Interrupt>Eh</Interrupt>
+    <Interrupt>Fh</Interrupt>
+    <Interrupt>10h</Interrupt>
+    <Interrupt>11h</Interrupt>
+    <Interrupt>12h</Interrupt>
+    <Interrupt>13h</Interrupt>
+    <Interrupt>14h</Interrupt>
+    <Interrupt>15h</Interrupt>
+    <Interrupt>16h</Interrupt>
+    <Interrupt>17h</Interrupt>
+    <Interrupt>18h</Interrupt>
+    <Interrupt>19h</Interrupt>
+    <Interrupt>1Ah</Interrupt>
+    <Interrupt>1Bh</Interrupt>
+    <Interrupt>1Ch</Interrupt>
+    <Interrupt>1Dh</Interrupt>
+    <Interrupt>1Eh</Interrupt>
+    <Interrupt>1Fh</Interrupt>
+    <Interrupt>20h</Interrupt>
+    <Interrupt>21h</Interrupt>
+    <Interrupt>22h</Interrupt>
+    <Interrupt>23h</Interrupt>
+    <Interrupt>24h</Interrupt>
+    <Interrupt>25h</Interrupt>
+    <Interrupt>26h</Interrupt>
+    <Interrupt>27h</Interrupt>
+    <Interrupt>28h</Interrupt>
+    <Interrupt>29h</Interrupt>
+    <Interrupt>2Ah</Interrupt>
+    <Interrupt>2Bh</Interrupt>
+    <Interrupt>2Ch</Interrupt>
+    <Interrupt>2Dh</Interrupt>
+    <Interrupt>2Eh</Interrupt>
+    <Interrupt>2Fh</Interrupt>
+    <Interrupt>30h</Interrupt>
+    <Interrupt>31h</Interrupt>
+    <Interrupt>32h</Interrupt>
+    <Interrupt>33h</Interrupt>
+    <Interrupt>34h</Interrupt>
+    <Interrupt>35h</Interrupt>
+    <Interrupt>36h</Interrupt>
+    <Interrupt>37h</Interrupt>
+    <Interrupt>38h</Interrupt>
+    <Interrupt>39h</Interrupt>
+    <Interrupt>3Ah</Interrupt>
+    <Interrupt>3Bh</Interrupt>
+    <Interrupt>3Ch</Interrupt>
+    <Interrupt>3Dh</Interrupt>
+    <Interrupt>3Eh</Interrupt>
+    <Interrupt>3Fh</Interrupt>
+    <Interrupt>40h</Interrupt>
+    <Interrupt>41h</Interrupt>
+    <Interrupt>42h</Interrupt>
+    <Interrupt>43h</Interrupt>
+    <Interrupt>44h</Interrupt>
+    <Interrupt>45h</Interrupt>
+    <Interrupt>46h</Interrupt>
+    <Interrupt>47h</Interrupt>
+    <Interrupt>48h</Interrupt>
+    <Interrupt>49h</Interrupt>
+    <Interrupt>4Ah</Interrupt>
+    <Interrupt>4Bh</Interrupt>
+    <Interrupt>4Ch</Interrupt>
+    <Interrupt>4Dh</Interrupt>
+    <Interrupt>4Eh</Interrupt>
+    <Interrupt>4Fh</Interrupt>
+    <Interrupt>50h</Interrupt>
+    <Interrupt>51h</Interrupt>
+    <Interrupt>52h</Interrupt>
+    <Interrupt>53h</Interrupt>
+    <Interrupt>54h</Interrupt>
+    <Interrupt>55h</Interrupt>
+    <Interrupt>56h</Interrupt>
+    <Interrupt>57h</Interrupt>
+    <Interrupt>58h</Interrupt>
+    <Interrupt>59h</Interrupt>
+    <Interrupt>5Ah</Interrupt>
+    <Interrupt>5Bh</Interrupt>
+    <Interrupt>5Ch</Interrupt>
+    <Interrupt>5Dh</Interrupt>
+    <Interrupt>5Eh</Interrupt>
+    <Interrupt>5Fh</Interrupt>
+    <Interrupt>60h</Interrupt>
+    <Interrupt>61h</Interrupt>
+    <Interrupt>62h</Interrupt>
+    <Interrupt>63h</Interrupt>
+    <Interrupt>64h</Interrupt>
+    <Interrupt>65h</Interrupt>
+    <Interrupt>66h</Interrupt>
+    <Interrupt>67h</Interrupt>
+    <Interrupt>68h</Interrupt>
+    <Interrupt>69h</Interrupt>
+    <Interrupt>6Ah</Interrupt>
+    <Interrupt>6Bh</Interrupt>
+    <Interrupt>6Ch</Interrupt>
+    <Interrupt>6Dh</Interrupt>
+    <Interrupt>6Eh</Interrupt>
+    <Interrupt>6Fh</Interrupt>
+    <Interrupt>70h</Interrupt>
+    <Interrupt>71h</Interrupt>
+    <Interrupt>72h</Interrupt>
+    <Interrupt>73h</Interrupt>
+    <Interrupt>74h</Interrupt>
+    <Interrupt>75h</Interrupt>
+    <Interrupt>76h</Interrupt>
+    <Interrupt>77h</Interrupt>
+    <Interrupt>78h</Interrupt>
+    <Interrupt>79h</Interrupt>
+    <Interrupt>7Ah</Interrupt>
+    <Interrupt>7Bh</Interrupt>
+    <Interrupt>7Ch</Interrupt>
+    <Interrupt>7Dh</Interrupt>
+    <Interrupt>7Eh</Interrupt>
+    <Interrupt>7Fh</Interrupt>
+    <Interrupt>80h</Interrupt>
+    <Interrupt>81h</Interrupt>
+    <Interrupt>82h</Interrupt>
+    <Interrupt>83h</Interrupt>
+    <Interrupt>84h</Interrupt>
+    <Interrupt>85h</Interrupt>
+    <Interrupt>86h</Interrupt>
+    <Interrupt>87h</Interrupt>
+    <Interrupt>88h</Interrupt>
+    <Interrupt>89h</Interrupt>
+    <Interrupt>8Ah</Interrupt>
+    <Interrupt>8Bh</Interrupt>
+    <Interrupt>8Ch</Interrupt>
+    <Interrupt>8Dh</Interrupt>
+    <Interrupt>8Eh</Interrupt>
+    <Interrupt>8Fh</Interrupt>
+    <Interrupt>90h</Interrupt>
+    <Interrupt>91h</Interrupt>
+    <Interrupt>92h</Interrupt>
+    <Interrupt>93h</Interrupt>
+    <Interrupt>94h</Interrupt>
+    <Interrupt>95h</Interrupt>
+    <Interrupt>96h</Interrupt>
+    <Interrupt>97h</Interrupt>
+    <Interrupt>98h</Interrupt>
+    <Interrupt>99h</Interrupt>
+    <Interrupt>9Ah</Interrupt>
+    <Interrupt>9Bh</Interrupt>
+    <Interrupt>9Ch</Interrupt>
+    <Interrupt>9Dh</Interrupt>
+    <Interrupt>9Eh</Interrupt>
+    <Interrupt>9Fh</Interrupt>
+    <Interrupt>A0h</Interrupt>
+    <Interrupt>A1h</Interrupt>
+    <Interrupt>A2h</Interrupt>
+    <Interrupt>A3h</Interrupt>
+    <Interrupt>A4h</Interrupt>
+    <Interrupt>A5h</Interrupt>
+    <Interrupt>A6h</Interrupt>
+    <Interrupt>A7h</Interrupt>
+    <Interrupt>A8h</Interrupt>
+    <Interrupt>A9h</Interrupt>
+    <Interrupt>AAh</Interrupt>
+    <Interrupt>ABh</Interrupt>
+    <Interrupt>ACh</Interrupt>
+    <Interrupt>ADh</Interrupt>
+    <Interrupt>AEh</Interrupt>
+    <Interrupt>AFh</Interrupt>
+    <Interrupt>B0h</Interrupt>
+    <Interrupt>B1h</Interrupt>
+    <Interrupt>B2h</Interrupt>
+    <Interrupt>B3h</Interrupt>
+    <Interrupt>B4h</Interrupt>
+    <Interrupt>B5h</Interrupt>
+    <Interrupt>B6h</Interrupt>
+    <Interrupt>B7h</Interrupt>
+    <Interrupt>B8h</Interrupt>
+    <Interrupt>B9h</Interrupt>
+    <Interrupt>BAh</Interrupt>
+    <Interrupt>BBh</Interrupt>
+    <Interrupt>BCh</Interrupt>
+    <Interrupt>BDh</Interrupt>
+    <Interrupt>BEh</Interrupt>
+    <Interrupt>BFh</Interrupt>
+    <Interrupt>C0h</Interrupt>
+    <Interrupt>C1h</Interrupt>
+    <Interrupt>C2h</Interrupt>
+    <Interrupt>C3h</Interrupt>
+    <Interrupt>C4h</Interrupt>
+    <Interrupt>C5h</Interrupt>
+    <Interrupt>C6h</Interrupt>
+    <Interrupt>C7h</Interrupt>
+    <Interrupt>C8h</Interrupt>
+    <Interrupt>C9h</Interrupt>
+    <Interrupt>CAh</Interrupt>
+    <Interrupt>CBh</Interrupt>
+    <Interrupt>CCh</Interrupt>
+    <Interrupt>CDh</Interrupt>
+    <Interrupt>CEh</Interrupt>
+    <Interrupt>CFh</Interrupt>
+    <Interrupt>D0h</Interrupt>
+    <Interrupt>D1h</Interrupt>
+    <Interrupt>D2h</Interrupt>
+    <Interrupt>D3h</Interrupt>
+    <Interrupt>D4h</Interrupt>
+    <Interrupt>D5h</Interrupt>
+    <Interrupt>D6h</Interrupt>
+    <Interrupt>D7h</Interrupt>
+    <Interrupt>D8h</Interrupt>
+    <Interrupt>D9h</Interrupt>
+    <Interrupt>DAh</Interrupt>
+    <Interrupt>DBh</Interrupt>
+    <Interrupt>DCh</Interrupt>
+    <Interrupt>DDh</Interrupt>
+    <Interrupt>DEh</Interrupt>
+    <Interrupt>DFh</Interrupt>
+    <Interrupt>E0h</Interrupt>
+    <Interrupt>E1h</Interrupt>
+    <Interrupt>E2h</Interrupt>
+    <Interrupt>E3h</Interrupt>
+    <Interrupt>E4h</Interrupt>
+    <Interrupt>E5h</Interrupt>
+    <Interrupt>E6h</Interrupt>
+    <Interrupt>E7h</Interrupt>
+    <Interrupt>E8h</Interrupt>
+    <Interrupt>E9h</Interrupt>
+    <Interrupt>EAh</Interrupt>
+    <Interrupt>EBh</Interrupt>
+    <Interrupt>ECh</Interrupt>
+    <Interrupt>EDh</Interrupt>
+    <Interrupt>EEh</Interrupt>
+    <Interrupt>EFh</Interrupt>
+    <Interrupt>F0h</Interrupt>
+    <Interrupt>F1h</Interrupt>
+    <Interrupt>F2h</Interrupt>
+    <Interrupt>F3h</Interrupt>
+    <Interrupt>F4h</Interrupt>
+    <Interrupt>F5h</Interrupt>
+    <Interrupt>F6h</Interrupt>
+    <Interrupt>F7h</Interrupt>
+    <Interrupt>F8h</Interrupt>
+    <Interrupt>F9h</Interrupt>
+    <Interrupt>FAh</Interrupt>
+    <Interrupt>FBh</Interrupt>
+    <Interrupt>FCh</Interrupt>
+    <Interrupt>FDh</Interrupt>
+    <Interrupt>FEh</Interrupt>
+    <Interrupt>FFh</Interrupt>
+  </GPIOInterrupt>
+  <GPIOFunctions>
+    <Function>GPIO Mode</Function>
+    <Function>Function 1</Function>
+    <Function>Function 2</Function>
+    <Function>Function 3</Function>
+    <Function>Function 4</Function>
+    <Function>Function 5</Function>
+    <Function>Function 6</Function>
+    <Function>Function 7</Function>
+    <Function>Function 8</Function>
+    <Function>Function 9</Function>
+    <Function>Function 10</Function>
+    <Function>Function 11</Function>
+    <Function>Function 12</Function>
+    <Function>Function 13</Function>
+    <Function>Function 14</Function>
+    <Function>Function 15</Function>
+  </GPIOFunctions>
+  <GPIOTxRxEnConfig>
+    <TxRxEnConfig>PadMode Controls Tx and Rx</TxRxEnConfig>
+    <TxRxEnConfig>Function Controls Tx, Rx disabled and Set to 0</TxRxEnConfig>
+    <TxRxEnConfig>Function Controls Tx, Rx disabled and Set to 1</TxRxEnConfig>
+    <TxRxEnConfig>Function Controls Tx, Rx Always Enabled</TxRxEnConfig>
+  </GPIOTxRxEnConfig>
+  <GPIOBusHoldEnable>
+    <BusHoldEnable>Disable Bus Hold</BusHoldEnable>
+    <BusHoldEnable>Enable Bus Hold</BusHoldEnable>
+  </GPIOBusHoldEnable>
+  <GPIOVCCIOSelection>
+    <VCCIOSelection>High Voltage</VCCIOSelection>
+    <VCCIOSelection>Low Voltage</VCCIOSelection>
+  </GPIOVCCIOSelection>
+  <GPIODebounceDuration>
+    <DebounceDuration>0</DebounceDuration>
+    <DebounceDuration>1</DebounceDuration>
+    <DebounceDuration>2</DebounceDuration>
+    <DebounceDuration>3</DebounceDuration>
+    <DebounceDuration>4</DebounceDuration>
+    <DebounceDuration>5</DebounceDuration>
+    <DebounceDuration>6</DebounceDuration>
+    <DebounceDuration>7</DebounceDuration>
+    <DebounceDuration>8</DebounceDuration>
+    <DebounceDuration>9</DebounceDuration>
+    <DebounceDuration>10</DebounceDuration>
+    <DebounceDuration>11</DebounceDuration>
+    <DebounceDuration>12</DebounceDuration>
+    <DebounceDuration>13</DebounceDuration>
+    <DebounceDuration>14</DebounceDuration>
+    <DebounceDuration>15</DebounceDuration>
+  </GPIODebounceDuration>
+  <GPIODebounceEnable>
+    <DebounceEnable>Disable the debouncer of the pad</DebounceEnable>
+    <DebounceEnable>Enable the debouncer of the pad</DebounceEnable>
+  </GPIODebounceEnable>
+</CanonLakeXML>

@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CherrytrailXML name="CherryTrail(CR)" shortName="CHT_CR" CFG0_Name="CFG0" CFG1_Name="CFG1" IOA="SB" BaseAddress="0xFED80000" SBReadOpCode="0x06" SBWriteOpCode="0x07">
+  <GPIO>
+    <Community name="North" max="73" BaseAddress="0x8000" SBBaseAddress="0x0000" SBPort="0x13">
+      <Pins>
+        <Pin No="GPIO_N_00" Name="GPIO_N0" CFG0_offset="0x4400" CFG1_offset="0x4404" Ball="E17" PWR="V1P8A" Bump="GPIO_N0/C0_BPM0_TX/C1_BPM0_TX" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_N_01" Name="GPIO_N1" CFG0_offset="0x4408" CFG1_offset="0x440c" Ball="F17" PWR="V1P8A" Bump="GPIO_N1/C0_BPM3_TX/C1_BPM3_TX" Module="BT" Validate="true" />
+        <Pin No="GPIO_N_02" Name="GPIO_N2" CFG0_offset="0x4410" CFG1_offset="0x4414" Ball="F16" PWR="V1P8A" Bump="GPIO_N2/C0_BPM2_TX/C1_BPM2_TX" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_N_03" Name="GPIO_N3" CFG0_offset="0x4418" CFG1_offset="0x441c" Ball="C17" PWR="V1P8A" Bump="GPIO_N3/C0_BPM1_TX/C1_BPM1_TX" Module="BT" Validate="true" />
+        <Pin No="GPIO_N_04" Name="GPIO_N4" CFG0_offset="0x4420" CFG1_offset="0x4424" Ball="E16" PWR="V1P8A" Bump="GPIO_N4/C0_BPM0_TX/C1_BPM0_TX" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_N_05" Name="GPIO_DFX4" CFG0_offset="0x4428" CFG1_offset="0x442c" Ball="F18" PWR="V1P8A" Bump="GPIO_DFX4" Module="Charger" Validate="true" />
+        <Pin No="GPIO_N_06" Name="GPIO_N6" CFG0_offset="0x4430" CFG1_offset="0x4434" Ball="C16" PWR="V1P8A" Bump="GPIO_N6/C0_BPM3_TX/C1_BPM3_TX" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_N_07" Name="ISH_GPIO[13]" CFG0_offset="0x4438" CFG1_offset="0x443c" Ball="D17" PWR="V1P8A" Bump="ISH_GPIO[13]/C0_BPM2_TX/C1_BPM2_TX" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_N_08" Name="GPIO_N8" CFG0_offset="0x4440" CFG1_offset="0x4444" Ball="D16" PWR="V1P8A" Bump="GPIO_N8/C0_BPM1_TX/C1_BPM1_TX" Module="Button" Validate="true" />
+        <Pin No="GPIO_N_15" Name="GPIO_SUS0" CFG0_offset="0x4800" CFG1_offset="0x4804" Ball="A14" PWR="V1P8A" Bump="GPIO_SUS0" Module="PMIC" Validate="true" />
+        <Pin No="GPIO_N_17" Name="JTAG2_TDI" CFG0_offset="0x4810" CFG1_offset="0x4814" Ball="B14" PWR="V1P8A" Bump="JTAG2_TDI" Module="Unused" Validate="true" />
+        <Pin No="GPIO_N_18" Name="PMC_SUSCLK[3]" CFG0_offset="0x4818" CFG1_offset="0x481c" Ball="B12" PWR="V1P8A" Bump="PMC_SUSCLK[3]" Module="GPS" Validate="true" />
+        <Pin No="GPIO_N_19" Name="JTAG2_TCK" CFG0_offset="0x4820" CFG1_offset="0x4824" Ball="C15" PWR="V1P8A" Bump="JTAG2_TCK" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_N_22" Name="JTAG2_TDO" CFG0_offset="0x4838" CFG1_offset="0x483c" Ball="D14" PWR="V1P8A" Bump="JTAG2_TDO" Module="OS/TOUCH" Validate="true" />
+        <Pin No="GPIO_N_23" Name="GPIO_SUS8" CFG0_offset="0x4840" CFG1_offset="0x4844" Ball="C13" PWR="V1P8A" Bump="GPIO_SUS8" Module="NFC" Validate="true" />
+        <Pin No="GPIO_N_24" Name="JTAG2_TMS" CFG0_offset="0x4848" CFG1_offset="0x484c" Ball="D15" PWR="V1P8A" Bump="JTAG2_TMS" Module="GPS" Validate="true" />
+        <Pin No="GPIO_N_25" Name="PMC_SUSCLK[2]" CFG0_offset="0x4850" CFG1_offset="0x4854" Ball="C14" PWR="V1P8A" Bump="PMC_SUSCLK[2]" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_N_27" Name="GPIO_SUS9" CFG0_offset="0x4860" CFG1_offset="0x4864" Ball="A13" PWR="V1P8A" Bump="GPIO_SUS9" Module="NFC" Validate="true" />
+        <Pin No="GPIO_N_30" Name="JTAG_TRST_N" CFG0_offset="0x4c00" CFG1_offset="0x4c04" Ball="E13" PWR="V1P8A" Bump="JTAG_TRST_N" Module="Debug" Validate="true" />
+        <Pin No="GPIO_N_31" Name="JTAG_TCK" CFG0_offset="0x4c08" CFG1_offset="0x4c0c" Ball="E14" PWR="V1P8A" Bump="JTAG_TCK" Module="Debug" Validate="true" />
+        <Pin No="GPIO_N_32" Name="PROCHOT_N" CFG0_offset="0x4c10" CFG1_offset="0x4c14" Ball="F9" PWR="V1P8A" Bump="PROCHOT_N" Module="Thermal" Validate="true" />
+        <Pin No="GPIO_N_33" Name="SVID_DATA" CFG0_offset="0x4c18" CFG1_offset="0x4c1c" Ball="F12" PWR="V1P8A" Bump="SVID_DATA" Module="SVID" Validate="true" />
+        <Pin No="GPIO_N_34" Name="JTAG_TMS" CFG0_offset="0x4c20" CFG1_offset="0x4c24" Ball="F14" PWR="V1P8A" Bump="JTAG_TMS" Module="Debug" Validate="true" />
+        <Pin No="GPIO_N_38" Name="SVID_ALERT_N" CFG0_offset="0x4c40" CFG1_offset="0x4c44" Ball="E12" PWR="V1P8A" Bump="SVID_ALERT_N" Module="SVID" Validate="true" />
+        <Pin No="GPIO_N_39" Name="JTAG_TDO" CFG0_offset="0x4c48" CFG1_offset="0x4c4c" Ball="F13" PWR="V1P8A" Bump="JTAG_TDO" Module="Debug" Validate="true" />
+        <Pin No="GPIO_N_40" Name="SVID_CLK" CFG0_offset="0x4c50" CFG1_offset="0x4c54" Ball="F1" PWR="V1P8A" Bump="SVID_CLK" Module="SVID" Validate="true" />
+        <Pin No="GPIO_N_41" Name="JTAG_TDI" CFG0_offset="0x4c58" CFG1_offset="0x4c5c" Ball="C12" PWR="V1P8A" Bump="JTAG_TDI" Module="Debug" Validate="true" />
+        <Pin No="GPIO_N_47" Name="GPIO_CAMERASB08" CFG0_offset="0x5010" CFG1_offset="0x5014" Ball="D1" PWR="V1P8A" Bump="GPIO_CAMERASB08" Module="Camera" Validate="true" />
+        <Pin No="GPIO_N_50" Name="GPIO_CAMERASB10" CFG0_offset="0x5028" CFG1_offset="0x502c" Ball="B10" PWR="V1P8A" Bump="GPIO_CAMERASB10" Module="Camera" Validate="true" />
+        <Pin No="GPIO_N_52" Name="GPIO_CAMERASB09" CFG0_offset="0x5038" CFG1_offset="0x503c" Ball="D10" PWR="V1P8A" Bump="GPIO_CAMERASB09" Module="Camera" Validate="true" />
+        <Pin No="GPIO_N_55" Name="GPIO_CAMERASB11" CFG0_offset="0x5050" CFG1_offset="0x5054" Ball="C11" PWR="V1P8A" Bump="GPIO_CAMERASB11" Module="Camera" Validate="true" />
+        <Pin No="GPIO_N_60" Name="GPIO_CAMERASB1" CFG0_offset="0x5400" CFG1_offset="0x5404" Ball="C1" PWR="V1P8A" Bump="GPIO_CAMERASB1" Module="Camera" Validate="true" />
+        <Pin No="GPIO_N_61" Name="DDI0_BKLTEN" CFG0_offset="0x5408" CFG1_offset="0x540c" Ball="C8" PWR="V1P8A" Bump="DDI0_BKLTEN" Module="OS/TOUCH" Validate="true" />
+        <Pin No="GPIO_N_62" Name="DDI0_HPD" CFG0_offset="0x5410" CFG1_offset="0x5414" Ball="D9" PWR="V1P8A" Bump="DDI0_HPD" Module="DP" Validate="true" />
+        <Pin No="GPIO_N_63" Name="DDI2_DDC_DATA" CFG0_offset="0x5418" CFG1_offset="0x541c" Ball="C9" PWR="V1P8A" Bump="DDI2_DDC_DATA/DDI1_DDC_DATA/UART0_DATAIN/MDSI_DDC_DATA/MDSI_C_TE" Module="Debug" Validate="true" />
+        <Pin No="GPIO_N_65" Name="DDI1_BKLTCTL" CFG0_offset="0x5428" CFG1_offset="0x542c" Ball="D8" PWR="V1P8A" Bump="DDI1_BKLTCTL/MDSI_A_TE/MDSI_C_TE" Module="eDP" Validate="true" />
+        <Pin No="GPIO_N_66" Name="DDI0_BKLTCTL" CFG0_offset="0x5430" CFG1_offset="0x5434" Ball="B8" PWR="V1P8A" Bump="DDI0_BKLTCTL" Module="Display" Validate="true" />
+        <Pin No="GPIO_N_67" Name="DDI0_DDC_DATA" CFG0_offset="0x5438" CFG1_offset="0x543c" Ball="C10" PWR="V1P8A" Bump="DDI0_DDC_DATA/DDI1_DDC_DATA/MDSI_DDC_DATA" Module="DP" Validate="true" />
+        <Pin No="GPIO_N_68" Name="DDI2_DDC_CLK" CFG0_offset="0x5440" CFG1_offset="0x5444" Ball="E10" PWR="V1P8A" Bump="DDI2_DDC_CLK/DDI1_DDC_CLK/UART0_DATAOUT/MDSI_DDC_CLK/MDSI_A_TE" Module="Debug" Validate="true" />
+        <Pin No="GPIO_N_71" Name="DDI2_HPD" CFG0_offset="0x5458" CFG1_offset="0x545c" Ball="E9" PWR="V1P8A" Bump="DDI2_HPD" Module="HDMI" Validate="true" />
+        <Pin No="GPIO_N_72" Name="DDI0_DDC_CLK" CFG0_offset="0x5460" CFG1_offset="0x5464" Ball="A10" PWR="V1P8A" Bump="DDI0_DDC_CLK/DDI1_DDC_CLK/MDSI_DDC_CLK" Module="DP" Validate="true" />
+      </Pins>
+    </Community>
+    <Community name="South-West" max="98" BaseAddress="0x0000" SBBaseAddress="0x0000" SBPort="0xB2">
+      <Pins>
+        <Pin No="GPIO_SW_01" Name="DDI0_VDDEN" CFG0_offset="0x4408" CFG1_offset="0x440c" Ball="A9" PWR="V1P8A" Bump="DDI0_VDDEN" Module="Display" Validate="true" />
+        <Pin No="GPIO_SW_02" Name="FST_SPI_D[0]" CFG0_offset="0x4410" CFG1_offset="0x4414" Ball="AB1" PWR="V1P8A" Bump="FST_SPI_D[0]" Module="SPI" Validate="true" />
+        <Pin No="GPIO_SW_05" Name="FST_SPI_CLK" CFG0_offset="0x4428" CFG1_offset="0x442c" Ball="AB12" PWR="V1P8A" Bump="FST_SPI_CLK" Module="SPI" Validate="true" />
+        <Pin No="GPIO_SW_06" Name="FST_SPI_D[1]" CFG0_offset="0x4430" CFG1_offset="0x4434" Ball="AC1" PWR="V1P8A" Bump="FST_SPI_D[1]" Module="SPI" Validate="true" />
+        <Pin No="GPIO_SW_15" Name="FST_SPI_CS[0]_N" CFG0_offset="0x4800" CFG1_offset="0x4804" Ball="AA12" PWR="V1P8A" Bump="FST_SPI_CS[0]_N" Module="SPI" Validate="true" />
+        <Pin No="GPIO_SW_16" Name="UART1_RTS_N" CFG0_offset="0x4808" CFG1_offset="0x480c" Ball="AE13" PWR="V1P8A" Bump="UART1_RTS_N" Module="BT" Validate="true" />
+        <Pin No="GPIO_SW_17" Name="UART1_DATAIN" CFG0_offset="0x4810" CFG1_offset="0x4814" Ball="AD14" PWR="V1P8A" Bump="UART1_DATAIN/UART0_DATAIN" Module="BT" Validate="true" />
+        <Pin No="GPIO_SW_18" Name="UART2_DATAIN" CFG0_offset="0x4818" CFG1_offset="0x481c" Ball="AE12" PWR="V1P8A" Bump="UART2_DATAIN" Module="GPS" Validate="true" />
+        <Pin No="GPIO_SW_19" Name="UART1_CTS_N" CFG0_offset="0x4820" CFG1_offset="0x4824" Ball="AC13" PWR="V1P8A" Bump="UART1_CTS_N" Module="BT" Validate="true" />
+        <Pin No="GPIO_SW_20" Name="UART2_RTS_N" CFG0_offset="0x4828" CFG1_offset="0x482c" Ball="AC12" PWR="V1P8A" Bump="UART2_RTS_N" Module="GPS" Validate="true" />
+        <Pin No="GPIO_SW_21" Name="UART1_DATAOUT" CFG0_offset="0x4830" CFG1_offset="0x4834" Ball="AC14" PWR="V1P8A" Bump="UART1_DATAOUT/UART0_DATAOUT" Module="BT" Validate="true" />
+        <Pin No="GPIO_SW_22" Name="UART2_DATAOUT" CFG0_offset="0x4838" CFG1_offset="0x483c" Ball="AB13" PWR="V1P8A" Bump="UART2_DATAOUT" Module="GPS" Validate="true" />
+        <Pin No="GPIO_SW_30" Name="UART2_CTS_N" CFG0_offset="0x4c00" CFG1_offset="0x4c04" Ball="AD12" PWR="V1P8A" Bump="UART2_CTS_N" Module="GPS" Validate="true" />
+        <Pin No="GPIO_SW_31" Name="LPE_I2S0_DATAOUT" CFG0_offset="0x4c08" CFG1_offset="0x4c0c" Ball="AA15" PWR="V1P8A" Bump="LPE_I2S0_DATAOUT" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_SW_32" Name="LPE_I2S0_CLK" CFG0_offset="0x4c10" CFG1_offset="0x4c14" Ball="AA16" PWR="V1P8A" Bump="LPE_I2S0_CLK" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_SW_33" Name="LPE_I2S1_CLK" CFG0_offset="0x4c18" CFG1_offset="0x4c1c" Ball="AB14" PWR="V1P8A" Bump="LPE_I2S1_CLK" Module="BT" Validate="true" />
+        <Pin No="GPIO_SW_34" Name="LPE_I2S0_DATAIN" CFG0_offset="0x4c20" CFG1_offset="0x4c24" Ball="AB15" PWR="V1P8A" Bump="LPE_I2S0_DATAIN" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_SW_35" Name="LPE_I2S1_DATAOUT" CFG0_offset="0x4c28" CFG1_offset="0x4c2c" Ball="Y14" PWR="V1P8A" Bump="LPE_I2S1_DATAOUT" Module="BT" Validate="true" />
+        <Pin No="GPIO_SW_36" Name="LPE_I2S0_FRM" CFG0_offset="0x4c30" CFG1_offset="0x4c34" Ball="Y16" PWR="V1P8A" Bump="LPE_I2S0_FRM" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_SW_37" Name="LPE_I2S1_FRM" CFG0_offset="0x4c38" CFG1_offset="0x4c3c" Ball="AA14" PWR="V1P8A" Bump="LPE_I2S1_FRM" Module="BT" Validate="true" />
+        <Pin No="GPIO_SW_45" Name="LPE_I2S1_DATAIN" CFG0_offset="0x5000" CFG1_offset="0x5004" Ball="Y13" PWR="V1P8A" Bump="LPE_I2S1_DATAIN" Module="BT" Validate="true" />
+        <Pin No="GPIO_SW_46" Name="I2C5_DATA" CFG0_offset="0x5008" CFG1_offset="0x500c" Ball="AE17" PWR="V1P8A" Bump="I2C5_DATA" Module="Touch/Digitizer" Validate="true" />
+        <Pin No="GPIO_SW_49" Name="I2C4_DATA" CFG0_offset="0x5010" CFG1_offset="0x5014" Ball="AB18" PWR="V1P8A" Bump="I2C4_DATA/DDI1_DDC_DATA/DDI2_DDC_DATA/MDSI_DDC_DATA" Module="HDMI" Validate="true" />
+        <Pin No="GPIO_SW_50" Name="I2C6_DATA" CFG0_offset="0x5018" CFG1_offset="0x501c" Ball="AD16" PWR="V1P8A" Bump="I2C6_DATA/SD3_WP" Module="PMIC,GPIO" Validate="true" />
+        <Pin No="GPIO_SW_51" Name="I2C5_CLK" CFG0_offset="0x5020" CFG1_offset="0x5024" Ball="AB16" PWR="V1P8A" Bump="I2C5_CLK" Module="Touch/Digitizer" Validate="true" />
+        <Pin No="GPIO_SW_52" Name="NFC_I2C_DATA" CFG0_offset="0x5028" CFG1_offset="0x502c" Ball="AC15" PWR="V1P8A" Bump="NFC_I2C_DATA" Module="NFC" Validate="true" />
+        <Pin No="GPIO_SW_53" Name="I2C4_CLK" CFG0_offset="0x5030" CFG1_offset="0x5034" Ball="AB17" PWR="V1P8A" Bump="I2C4_CLK/DDI1_DDC_CLK/DDI2_DDC_CLK/MDSI_DDC_CLK" Module="HDMI" Validate="true" />
+        <Pin No="GPIO_SW_54" Name="I2C6_CLK" CFG0_offset="0x5038" CFG1_offset="0x503c" Ball="AE16" PWR="V1P8A" Bump="I2C6_CLK/NMI_N" Module="PMIC,GPIO" Validate="true" />
+        <Pin No="GPIO_SW_60" Name="NFC_I2C_CLK" CFG0_offset="0x5400" CFG1_offset="0x5404" Ball="AC16" PWR="V1P8A" Bump="NFC_I2C_CLK" Module="NFC" Validate="true" />
+        <Pin No="GPIO_SW_61" Name="I2C1_DATA" CFG0_offset="0x5408" CFG1_offset="0x540c" Ball="W15" PWR="V1P8A" Bump="I2C1_DATA" Module="Audio" Validate="true" />
+        <Pin No="GPIO_SW_62" Name="I2C0_DATA" CFG0_offset="0x5410" CFG1_offset="0x5414" Ball="Y18" PWR="V1P8A" Bump="I2C0_DATA" Module="Charger/Fuel" Validate="true" />
+        <Pin No="GPIO_SW_63" Name="I2C2_DATA" CFG0_offset="0x5418" CFG1_offset="0x541c" Ball="AC17" PWR="V1P8A" Bump="I2C2_DATA" Module="NFC" Validate="true" />
+        <Pin No="GPIO_SW_65" Name="I2C1_CLK" CFG0_offset="0x5428" CFG1_offset="0x542c" Ball="W16" PWR="V1P8A" Bump="I2C1_CLK" Module="Audio" Validate="true" />
+        <Pin No="GPIO_SW_66" Name="I2C0_CLK" CFG0_offset="0x5430" CFG1_offset="0x5434" Ball="Y17" PWR="V1P8A" Bump="I2C0_CLK" Module="Charger/Fuel" Validate="true" />
+        <Pin No="GPIO_SW_77" Name="I2C2_CLK" CFG0_offset="0x5810" CFG1_offset="0x5814" Ball="AA17" PWR="V1P8A" Bump="I2C2_CLK" Module="NFC" Validate="true" />
+        <Pin No="GPIO_SW_78" Name="UART0_DATAIN" CFG0_offset="0x5818" CFG1_offset="0x581c" Ball="AE18" PWR="V1P8A" Bump="UART0_DATAIN" Module="Button" Validate="true" />
+        <Pin No="GPIO_SW_80" Name="GPIO_SW78" CFG0_offset="0x5828" CFG1_offset="0x582c" Ball="AC18" PWR="V1P8A" Bump="GPIO_SW78" Module="MODEM" Validate="true" />
+        <Pin No="GPIO_SW_90" Name="MMC1_RESET_N" CFG0_offset="0x5c00" CFG1_offset="0x5c04" Ball="AD18" PWR="V1P8A" Bump="MMC1_RESET_N" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SW_92" Name="PCIE_CLKREQ[0]_N" CFG0_offset="0x5c10" CFG1_offset="0x5c14" Ball="AB20" PWR="V1P8A" Bump="PCIE_CLKREQ[0]_N" Module="PCIE" Validate="true" />
+        <Pin No="GPIO_SW_93" Name="LPE_I2S2_CLK" CFG0_offset="0x5c18" CFG1_offset="0x5c1c" Ball="AB19" PWR="V1P8A" Bump="LPE_I2S2_CLK" Module="AUDIO" Validate="true" />
+        <Pin No="GPIO_SW_94" Name="GPIO_SW93" CFG0_offset="0x5c20" CFG1_offset="0x5c24" Ball="AC20" PWR="V1P8A" Bump="GPIO_SW93" Module="Button" Validate="true" />
+        <Pin No="GPIO_SW_95" Name="LPE_I2S2_DATAIN" CFG0_offset="0x5c28" CFG1_offset="0x5c2c" Ball="U17" PWR="V1P8A" Bump="LPE_I2S2_DATAIN" Module="AUDIO" Validate="true" />
+        <Pin No="GPIO_SW_96" Name="SD3_WP" CFG0_offset="0x5c30" CFG1_offset="0x5c34" Ball="AD20" PWR="V1P8A" Bump="SD3_WP" Module="Button" Validate="true" />
+        <Pin No="GPIO_SW_97" Name="LPE_I2S2_FRM" CFG0_offset="0x5c38" CFG1_offset="0x5c3c" Ball="AC19" PWR="V1P8A" Bump="LPE_I2S2_FRM" Module="AUDIO" Validate="true" />
+      </Pins>
+    </Community>
+    <Community name="East" max="27" BaseAddress="0x10000" SBBaseAddress="0x0000" SBPort="0xA8">
+      <Pins>
+        <Pin No="GPIO_E_02" Name="LPE_I2S2_DATAOUT" CFG0_offset="0x4410" CFG1_offset="0x4414" Ball="V18" PWR="V1P8A" Bump="LPE_I2S2_DATAOUT" Module="AUDIO" Validate="true" />
+        <Pin No="GPIO_E_03" Name="PMC_SUS_STAT_N" CFG0_offset="0x4418" CFG1_offset="0x441c" Ball="V5" PWR="V1P8A" Bump="PMC_SUS_STAT_N" Module="PMU" Validate="true" />
+        <Pin No="GPIO_E_05" Name="PMC_SLP_S0IX_N" CFG0_offset="0x4428" CFG1_offset="0x442c" Ball="W4" PWR="V1P8A" Bump="PMC_SLP_S0IX_N" Module="PMU" Validate="true" />
+        <Pin No="GPIO_E_06" Name="PMC_PLTRST_N" CFG0_offset="0x4430" CFG1_offset="0x4434" Ball="Y5" PWR="V1P8A" Bump="PMC_PLTRST_N" Module="PMU" Validate="true" />
+        <Pin No="GPIO_E_08" Name="PMC_SUSCLK[0]" CFG0_offset="0x4440" CFG1_offset="0x4444" Ball="Y4" PWR="V1P8A" Bump="PMC_SUSCLK[0]" Module="PMU" Validate="true" />
+        <Pin No="GPIO_E_10" Name="PMC_PWRBTN_N" CFG0_offset="0x4450" CFG1_offset="0x4454" Ball="W3" PWR="V1P8A" Bump="PMC_PWRBTN_N" Module="WLAN" Validate="true" />
+        <Pin No="GPIO_E_15" Name="PMC_WAKE_N" CFG0_offset="0x4800" CFG1_offset="0x4804" Ball="Y3" PWR="V1P8A" Bump="PMC_WAKE_N" Module="WLAN" Validate="true" />
+        <Pin No="GPIO_E_16" Name="ISH_GPIO[3]" CFG0_offset="0x4808" CFG1_offset="0x480c" Ball="Y1" PWR="V1P8A" Bump="ISH_GPIO[3]/I2S3_DATAIN" Module="SENSOR-GYROSCOPE" Validate="true" />
+        <Pin No="GPIO_E_17" Name="ISH_GPIO[7]" CFG0_offset="0x4810" CFG1_offset="0x4814" Ball="AC1" PWR="V1P8A" Bump="ISH_GPIO[7]/I2S4_DATAIN" Module="SENSOR_SAR" Validate="true" />
+        <Pin No="GPIO_E_18" Name="ISH_I2C1_CLK" CFG0_offset="0x4818" CFG1_offset="0x481c" Ball="AA3" PWR="V1P8A" Bump="ISH_I2C1_CLK/ISH_SPI_CLK/I2S5_DATAIN" Module="SENSOR" Validate="true" />
+        <Pin No="GPIO_E_20" Name="ISH_GPIO[1]" CFG0_offset="0x4828" CFG1_offset="0x482c" Ball="Y2" PWR="V1P8A" Bump="ISH_GPIO[1]/I2S3_FS" Module="SENSOR-ACCELEROMETER" Validate="true" />
+        <Pin No="GPIO_E_21" Name="ISH_GPIO[9]" CFG0_offset="0x4830" CFG1_offset="0x4834" Ball="AA4" PWR="V1P8A" Bump="ISH_GPIO[9]/ISH_SPI_MISO/I2S5_FS" Module="SENSOR-GYROSCOPE" Validate="true" />
+        <Pin No="GPIO_E_22" Name="ISH_GPIO[0]" CFG0_offset="0x4838" CFG1_offset="0x483c" Ball="AB2" PWR="V1P8A" Bump="ISH_GPIO[0]/I2S3_CLK" Module="SENSOR-ACCELEROMETER" Validate="true" />
+        <Pin No="GPIO_E_24" Name="ISH_GPIO[4]" CFG0_offset="0x4848" CFG1_offset="0x4834" Ball="AC2" PWR="V1P8A" Bump="ISH_GPIO[4]/I2S4_CLK" Module="SENSOR-BAROMETER" Validate="true" />
+        <Pin No="GPIO_E_26" Name="ISH_GPIO[2]" CFG0_offset="0x4858" CFG1_offset="0x483c" Ball="AB3" PWR="V1P8A" Bump="ISH_GPIO[2]/I2S3_DATAOUT" Module="MODEM" Validate="true" />
+      </Pins>
+    </Community>
+    <Community name="South-East" max="86" BaseAddress="0x18000" SBBaseAddress="0x0000" SBPort="0x48">
+      <Pins>
+        <Pin No="GPIO_SE_01" Name="ISH_I2C1_DATA" CFG0_offset="0x4408" CFG1_offset="0x440c" Ball="AA5" PWR="V1P8A" Bump="ISH_I2C1_DATA/ISH_SPI_MOSI/I2S5_DATAOUT" Module="SENSOR" Validate="true" />
+        <Pin No="GPIO_SE_03" Name="PWM[1]" CFG0_offset="0x4418" CFG1_offset="0x441c" Ball="AD2" PWR="V1P8A" Bump="PWM[1]/ISH_GPIO[10]/ISH_UART_DATAOUT" Module="Fuel Gauge" Validate="true" />
+        <Pin No="GPIO_SE_04" Name="PMC_PLT_CLK[4]" CFG0_offset="0x4420" CFG1_offset="0x4424" Ball="AC3" PWR="V1P8A" Bump="PMC_PLT_CLK[4]/ISH_GPIO[14]/ISH_I2C0_DATA/SPI2_MISO" Module="SENSOR" Validate="true" />
+        <Pin No="GPIO_SE_05" Name="PMC_PLT_CLK[3]" CFG0_offset="0x4428" CFG1_offset="0x442c" Ball="AB4" PWR="V1P8A" Bump="PMC_PLT_CLK[3]/ISH_GPIO[13]/ISH_UART_RTS_N/SPI2_CLK" Module="AUDIO" Validate="true" />
+        <Pin No="GPIO_SE_06" Name="PWM[0]" CFG0_offset="0x4430" CFG1_offset="0x4434" Ball="AD3" PWR="V1P8A" Bump="PWM[0]" Module="Charger" Validate="true" />
+        <Pin No="GPIO_SE_07" Name="PMC_PLT_CLK[5]" CFG0_offset="0x4438" CFG1_offset="0x443c" Ball="AE3" PWR="V1P8A" Bump="PMC_PLT_CLK[5]/ISH_GPIO[15]/ISH_I2C0_CLK/SPI2_MOSI" Module="SENSOR" Validate="true" />
+        <Pin No="GPIO_SE_15" Name="PMC_PLT_CLK[2]" CFG0_offset="0x4800" CFG1_offset="0x4804" Ball="AC4" PWR="V1P8A" Bump="PMC_PLT_CLK[2]/ISH_GPIO[12]/ISH_UART_CTS_N/SPI2_CS[0]_N" Module="Camera" Validate="true" />
+        <Pin No="GPIO_SE_16" Name="SD2_D[3]_CD_N" CFG0_offset="0x4808" CFG1_offset="0x480c" Ball="AD6" PWR="V1P8A" Bump="SD2_D[3]_CD_N" Module="WLAN" Validate="true" />
+        <Pin No="GPIO_SE_17" Name="MMC1_CLK" CFG0_offset="0x4810" CFG1_offset="0x4814" Ball="AD8" PWR="V1P8A" Bump="MMC1_CLK" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_18" Name="MMC1_D[0]" CFG0_offset="0x4818" CFG1_offset="0x481c" Ball="AA8" PWR="V1P8A" Bump="MMC1_D[0]" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_19" Name="SD2_D[1]" CFG0_offset="0x4820" CFG1_offset="0x4824" Ball="AE4" PWR="V1P8A" Bump="SD2_D[1]" Module="WLAN" Validate="true" />
+        <Pin No="GPIO_SE_20" Name="SD2_CLK" CFG0_offset="0x4828" CFG1_offset="0x482c" Ball="AD5" PWR="V1P8A" Bump="SD2_CLK" Module="WLAN" Validate="true" />
+        <Pin No="GPIO_SE_21" Name="MMC1_D[2]" CFG0_offset="0x4830" CFG1_offset="0x4834" Ball="AB6" PWR="V1P8A" Bump="MMC1_D[2]" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_22" Name="SD2_D[2]" CFG0_offset="0x4838" CFG1_offset="0x483c" Ball="AE5" PWR="V1P8A" Bump="SD2_D[2]" Module="WLAN" Validate="true" />
+        <Pin No="GPIO_SE_23" Name="SD2_CMD" CFG0_offset="0x4840" CFG1_offset="0x482c" Ball="AB5" PWR="V1P8A" Bump="SD2_CMD" Module="WLAN" Validate="true" />
+        <Pin No="GPIO_SE_24" Name="MMC1_CMD" CFG0_offset="0x4848" CFG1_offset="0x4834" Ball="AA6" PWR="V1P8A" Bump="MMC1_CMD" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_25" Name="MMC1_D[1]" CFG0_offset="0x4850" CFG1_offset="0x483c" Ball="Y8" PWR="V1P8A" Bump="MMC1_D[1]" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_26" Name="SD2_D[0]" CFG0_offset="0x4858" CFG1_offset="0x483c" Ball="AD4" PWR="V1P8A" Bump="SD2_D[0]" Module="WLAN" Validate="true" />
+        <Pin No="GPIO_SE_30" Name="MMC1_D[3]" CFG0_offset="0x4c00" CFG1_offset="0x4c04" Ball="AC6" PWR="V1P8A" Bump="MMC1_D[3]" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_31" Name="SD3_D[1]" CFG0_offset="0x4c08" CFG1_offset="0x4c0c" Ball="AB9" PWR="V3P3A_V1P8A" Bump="SD3_D[1]" Module="SDCARD" Validate="true" />
+        <Pin No="GPIO_SE_32" Name="SD3_CLK" CFG0_offset="0x4c10" CFG1_offset="0x4c14" Ball="AC9" PWR="V3P3A_V1P8A" Bump="SD3_CLK" Module="SDCARD" Validate="true" />
+        <Pin No="GPIO_SE_33" Name="SD3_D[3]" CFG0_offset="0x4c18" CFG1_offset="0x4c1c" Ball="AD10" PWR="V3P3A_V1P8A" Bump="SD3_D[3]" Module="SDCARD" Validate="true" />
+        <Pin No="GPIO_SE_34" Name="SD3_D[2]" CFG0_offset="0x4c20" CFG1_offset="0x4c24" Ball="AB10" PWR="V3P3A_V1P8A" Bump="SD3_D[2]" Module="SDCARD" Validate="true" />
+        <Pin No="GPIO_SE_35" Name="SD3_CMD" CFG0_offset="0x4c28" CFG1_offset="0x4c2c" Ball="AA10" PWR="V3P3A_V1P8A" Bump="SD3_CMD" Module="SDCARD" Validate="true" />
+        <Pin No="GPIO_SE_46" Name="SD3_D[0]" CFG0_offset="0x5008" CFG1_offset="0x500c" Ball="AC10" PWR="V3P3A_V1P8A" Bump="SD3_D[0]" Module="SDCARD" Validate="true" />
+        <Pin No="GPIO_SE_48" Name="UART0_DATAOUT" CFG0_offset="0x5018" CFG1_offset="0x501c" Ball="Y12" PWR="V3P3A_V1P8A" Bump="UART0_DATAOUT" Module="TPM/Debug" Validate="true" />
+        <Pin No="GPIO_SE_63" Name="UART0_DATAIN" CFG0_offset="0x5418" CFG1_offset="0x541c" Ball="V13" PWR="V3P3A_V1P8A" Bump="UART0_DATAIN" Module="TPM/Debug" Validate="true" />
+        <Pin No="GPIO_SE_65" Name="MMC1_D[6]" CFG0_offset="0x5428" CFG1_offset="0x542c" Ball="AB7" PWR="V1P8A" Bump="MMC1_D[6]" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_67" Name="MMC1_D[5]" CFG0_offset="0x5438" CFG1_offset="0x543c" Ball="AC8" PWR="V1P8A" Bump="MMC1_D[5]" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_68" Name="MMC1_D[4]" CFG0_offset="0x5440" CFG1_offset="0x5444" Ball="AC7" PWR="V1P8A" Bump="MMC1_D[4]" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_69" Name="MMC1_D[7]" CFG0_offset="0x5448" CFG1_offset="0x544c" Ball="AA7" PWR="V1P8A" Bump="MMC1_D[7]" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_78" Name="MMC1_RCLK" CFG0_offset="0x5818" CFG1_offset="0x581c" Ball="AE8" PWR="V1P8A" Bump="MMC1_RCLK/MMC1_RESET_N" Module="eMMC" Validate="true" />
+        <Pin No="GPIO_SE_79" Name="SD3_PWREN_N" CFG0_offset="0x5820" CFG1_offset="0x5824" Ball="AA9" PWR="V1P8A" Bump="SD3_PWREN_N" Module="SDCARD" Validate="true" />
+        <Pin No="GPIO_SE_80" Name="GPIO_SE79" CFG0_offset="0x5828" CFG1_offset="0x582c" Ball="AA13" PWR="V1P8A" Bump="GPIO_SE79" Module="AUDIO" Validate="true" />
+        <Pin No="GPIO_SE_81" Name="USB_OC[0]_N" CFG0_offset="0x5830" CFG1_offset="0x5834" Ball="Y9" PWR="V1P8A" Bump="USB_OC[0]_N" Module="USB" Validate="true" />
+        <Pin No="GPIO_SE_83" Name="SD3_CD_N" CFG0_offset="0x5840" CFG1_offset="0x5844" Ball="AE9" PWR="V1P8A" Bump="SD3_CD_N" Module="SDCARD" Validate="true" />
+        <Pin No="GPIO_SE_85" Name="PMC_SUSPWRDNACK" CFG0_offset="0x5850" CFG1_offset="0x5854" Ball="V12" PWR="V1P8A" Bump="PMC_SUSPWRDNACK" Module="PMU" Validate="true" />
+      </Pins>
+    </Community>
+  </GPIO>
+  <GPIOFunctions>
+    <Function>GPIO Mode</Function>
+    <Function>Mode 0</Function>
+    <Function>Mode 1</Function>
+    <Function>Mode 2</Function>
+    <Function>Mode 3</Function>
+    <Function>Mode 4</Function>
+    <Function>Mode 5</Function>
+  </GPIOFunctions>
+  <GPIOInterrupt>
+    <Interrupt>Line 0</Interrupt>
+    <Interrupt>Line 1</Interrupt>
+    <Interrupt>Line 2</Interrupt>
+    <Interrupt>Line 3</Interrupt>
+    <Interrupt>Line 4</Interrupt>
+    <Interrupt>Line 5</Interrupt>
+    <Interrupt>Line 6</Interrupt>
+    <Interrupt>Line 7</Interrupt>
+    <Interrupt>Line 8</Interrupt>
+    <Interrupt>Line 9</Interrupt>
+    <Interrupt>Line 10</Interrupt>
+    <Interrupt>Line 11</Interrupt>
+    <Interrupt>Line 12</Interrupt>
+    <Interrupt>Line 13</Interrupt>
+    <Interrupt>Line 14</Interrupt>
+    <Interrupt>Line 15</Interrupt>
+  </GPIOInterrupt>
+  <GPIOPullType>
+    <PullType>1K PullUp</PullType>
+    <PullType>1K PullDown</PullType>
+    <PullType>5K PullUp</PullType>
+    <PullType>20K PullUp</PullType>
+    <PullType>5K PullDown</PullType>
+    <PullType>20K PullDown</PullType>
+    <PullType>None</PullType>
+  </GPIOPullType>
+  <GPIOConfig>
+    <Config>GPIO</Config>
+    <Config>Output</Config>
+    <Config>Input</Config>
+    <Config>Hi_Z</Config>
+  </GPIOConfig>
+  <GPIOState>
+    <State>Low</State>
+    <State>High</State>
+  </GPIOState>
+  <GPIOIntCfgWake>
+    <IntCfgWake>Disable</IntCfgWake>
+    <IntCfgWake>Falling Edge</IntCfgWake>
+    <IntCfgWake>Rising Edge</IntCfgWake>
+    <IntCfgWake>Edge Both</IntCfgWake>
+    <IntCfgWake>Level Trigger</IntCfgWake>
+  </GPIOIntCfgWake>
+  <GPIOTermination>
+    <Termination>TERM Value</Termination>
+    <Termination>No Pull</Termination>
+    <Termination>Pull Down</Termination>
+    <Termination>Pull Up</Termination>
+  </GPIOTermination>
+  <GPIOOpenDrain>
+    <OpenDrain>Disable</OpenDrain>
+    <OpenDrain>Enable</OpenDrain>
+  </GPIOOpenDrain>
+</CherrytrailXML>

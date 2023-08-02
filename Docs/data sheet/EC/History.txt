@@ -1,0 +1,75 @@
+  
+###########################################################################
+		AQ7-APL
+###########################################################################
+---------------------------------------------------------------------------
+Chipset:	ApolloLake
+
+---------------------------------------------------------------------------
+Note:
+
+---------------------------------------------------------------------------
+PICO - EC functionality.
+.CPU Board:
+Full UART x1 (QAPLAE03 no confirm yet)
+Dynamic Digital IO x 4 (QAPLAE03 H/W no support)
+Board ID (QAPLAE03)
+WDT x 1 (QAPLAE03)
+
+.BIO Connector:
+DIO (QAPLAE03)
+I2C/SMBUS host controller (QAPLAE02).
+Map to EC I2C/SMBUS host contoller channel 3
+
+.HAT Connector:
+GPIO x28   (QAPLAE02)
+TX/RX x1   (QAPLAE02)
+I2C   x2   (QAPLAE02)
+I2C0 map to EC I2C/SMBUS host contoller channel 1.
+I2C1 map to EC I2C/SMBUS host contoller channel 2.
+
+---------------------------------------------------------------------------
+To Do List:
+SPI Host Controller x 1
+PWM x 4
+
+===========================================================================
+EC Version:	ZAP2AE04.BIN                      (Base On: )
+Build Date:	03/23/2017
+Build Time:	13:17:27
+Checksum:	DB20h
+Changes:
+1 Merge HAT GPIO function into EC DIO controller.
+Reason:     For SW development request.
+===========================================================================
+EC Version:	ZAP2AE03                      (Base On:ZAP2AE02)
+Build Date:	03/22/2017
+Build Time:	17:35:52
+Checksum:	0776h
+Changes:
+1. Support DIO function
+DIO 0~3 reserve for PICO-series's DIO function.
+DIO 4   BIO Board's DIO function.
+DIO 5~7 Board ID 0,1,2
+2. HAT function maintain.
+3. EC AC Power Loss function maintain.
+4. EC WDT function maintain.
+===========================================================================
+EC Version:	QAPLAE02                     (Base On:QAPLAE01)
+Build Date:	02/22/2017
+Build Time:	15:38:59
+Checksum:	CEE3h
+Changes:
+1. Support HAT flexible IO controller main feature. 
+(refer to HAT_draft_SPEC_T001)
+2. Support I2C/SMBUS host controller function.
+===========================================================================
+EC Version:	QAPLAE01.BIN                     (Base On: )
+Build Date:	12/08/2016
+Build Time:	11:47:01
+Checksum:	0915h
+Changes:
+1. GPIO porting for project
+2. Power Sequence porting.
+3. Modify for project.
+===========================================================================

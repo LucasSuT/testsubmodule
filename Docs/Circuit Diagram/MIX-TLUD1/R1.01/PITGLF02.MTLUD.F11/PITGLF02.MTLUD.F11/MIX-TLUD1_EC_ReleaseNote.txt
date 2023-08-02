@@ -1,0 +1,26 @@
+###########################################################################
+				MIX-TLUD1 EC Release Note
+###########################################################################
+Note:
+  N/A
+###########################################################################
+
+
+---------------------------------------------------------------------------
+EC Name:	PITGLF02.MTLUD.F11
+Build Date:	2020/12/03
+checksum:0x012001F8
+Released By: Ayers Deng (¾H¬F§»)
+Changes:
+  1. Support Panel Brightness control functions.
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+EC Name:	PITGLF02.MTLUD.F10
+Build Date:	2020/12/03
+checksum:0x0122E6F6
+Released By: Ayers Deng (¾H¬F§»)
+Changes:
+  1. First release for DVT phase.
+     Note: due to Power Sequence changes, the version(and afterward) can't backward compatible for EVT motherboard.
+---------------------------------------------------------------------------

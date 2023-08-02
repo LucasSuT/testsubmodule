@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+   <board id="01">
+	    <boardid>0x04</boardid>
+	    <boardname>SKL Y LPDDR3 RVP(RVP3)</boardname>
+      <boardtype>SKL_Y</boardtype>    
+	    <cpuid>0x406E</cpuid>
+      <pchid>0xFFFF</pchid>
+	    <cpuname>SkyLake Y</cpuname>
+  </board>  
+  <board id="02">
+	    <boardid>0x04</boardid>
+	    <boardname>SKL Y LPDDR3 RVP(RVP3)</boardname>
+      <boardtype>KBL_Y</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake Y</cpuname>
+  </board>
+  <board id="03">
+	    <boardid>0x04</boardid>
+	    <boardname>SKL Y LPDDR3 RVP(RVP3)</boardname>
+      <boardtype>KBL_Y</boardtype>    
+	    <cpuid>0x806E9</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake Y</cpuname>
+  </board>
+  <board id="04">
+	    <boardid>0x05</boardid>
+	    <boardname>SKL Y LPDDR3 SIP(RVP13)</boardname>
+      <boardtype>SKL_Y</boardtype>    
+	    <cpuid>0x406E</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>SkyLake Y</cpuname>
+  </board>    
+  <board id="05">
+	    <boardid>0x05</boardid>
+	    <boardname>SKL Y LPDDR3 SIP(RVP13)</boardname>
+      <boardtype>KBL_Y</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake Y</cpuname>
+  </board>
+  <board id="06">
+	    <boardid>0x05</boardid>
+	    <boardname>SKL Y LPDDR3 SIP(RVP13)</boardname>
+      <boardtype>KBL_Y</boardtype>    
+	    <cpuid>0x806E9</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake Y</cpuname>
+  </board>
+  <board id="07">
+	    <boardid>0x0A</boardid>
+	    <boardname>SKL U LPDDR3 RVP(RVP5)</boardname>
+      <boardtype>SKL_U</boardtype>    
+	    <cpuid>0x406E</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>SkyLake U</cpuname>
+  </board>  
+  <board id="08">
+	    <boardid>0x0A</boardid>
+	    <boardname>SKL U LPDDR3 RVP(RVP5)</boardname>
+      <boardtype>KBL_U</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake U</cpuname>
+  </board>
+  <board id="09">
+	    <boardid>0x0A</boardid>
+	    <boardname>SKL U LPDDR3 RVP(RVP5)</boardname>
+      <boardtype>KBL_U</boardtype>    
+	    <cpuid>0x806E9</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake U</cpuname>
+  </board>
+  <board id="10">
+	    <boardid>0x0B</boardid>
+	    <boardname>SKL U DDR3L RVP(RVP7)</boardname>
+      <boardtype>SKL_U</boardtype>    
+	    <cpuid>0x406E</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>SkyLake U</cpuname>
+  </board>  
+  <board id="11">
+	    <boardid>0x0B</boardid>
+	    <boardname>SKL U DDR3L RVP(RVP7)</boardname>
+      <boardtype>KBL_U</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake U</cpuname>
+  </board>
+  <board id="12">
+	    <boardid>0x0B</boardid>
+			<boardname>SKL U DDR3L RVP(RVP7)</boardname>
+      <boardtype>KBL_U</boardtype>    
+	    <cpuid>0x806E9</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake U</cpuname>
+  </board> 
+  <board id="13">
+	    <boardid>0x0C</boardid>
+	    <boardname>SKL U DDR4 RVP SIP(RVP15)</boardname>
+      <boardtype>SKL_U</boardtype>    
+	    <cpuid>0x406E</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>SkyLake U</cpuname>
+  </board>  
+  <board id="14">
+	    <boardid>0x0C</boardid>
+	    <boardname>SKL U DDR4 RVP SIP(RVP15)</boardname>
+      <boardtype>KBL_U</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake U</cpuname>
+  </board>
+  <board id="15">
+	    <boardid>0x0C</boardid>
+	    <boardname>SKL U DDR4 RVP SIP(RVP15)</boardname>
+      <boardtype>KBL_U</boardtype>    
+	    <cpuid>0x806E9</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake U</cpuname>
+  </board>  
+  <board id="16">
+	    <boardid>0x44</boardid>
+	    <boardname>Skylake Halo RVP11 Fab2</boardname>
+      <boardtype>KBL_Halo</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake Halo</cpuname>		
+  </board>
+  <board id="17">
+	    <boardid>0x49</boardid>
+	    <boardname>ApolloLake RVP1 FAB2</boardname>
+      <boardtype>APL_RVP1</boardtype>    
+	    <cpuid>0x506C9</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>ApolloLake RVP1</cpuname>
+  </board>  
+  <board id="18">
+	    <boardid>0x60</boardid>
+	    <boardname>KBL Y LPDDR3 RVP3</boardname>
+      <boardtype>KBL_Y</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake Y</cpuname>
+  </board>
+  <board id="19">
+	    <boardid>0x60</boardid>
+	    <boardname>KBL Y LPDDR3 RVP3</boardname>
+      <boardtype>KBL_Y</boardtype>    
+	    <cpuid>0x806E9</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake Y</cpuname>
+  </board>
+  <board id="20">
+	    <boardid>0x64</boardid>
+	    <boardname>Kabylake U DDR3L RVP7</boardname>
+      <boardtype>KBL_U</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake U</cpuname>
+  </board>  
+  <board id="21">
+	    <boardid>0x64</boardid>
+	    <boardname>Kabylake U DDR3L RVP7</boardname>
+      <boardtype>KBL_U</boardtype>    
+	    <cpuid>0x806E9</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake U</cpuname>
+  </board>
+  <board id="22">
+	    <boardid>0x69</boardid>
+	    <boardname>KBL S DDR4 UDIMM CRB</boardname>
+      <boardtype>KBL_DT</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake DT</cpuname>
+  </board>    
+  <board id="23">
+	    <boardid>0x6B</boardid>
+	    <boardname>BasinFalls EV</boardname>
+      <boardtype>KBL_HEDT</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake HEDT</cpuname>
+  </board>  
+  <board id="24">
+	    <boardid>0x6C</boardid>
+	    <boardname>BasinFalls CRB</boardname>
+      <boardtype>KBL_HEDT</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+      <pchid>0xFFFF</pchid>
+      <cpuname>KabyLake HEDT</cpuname>
+  </board>
+  <board id="25">
+	    <boardid>0x6D</boardid>
+	    <boardname>BasinFalls PPV</boardname>
+        <boardtype>KBL_HEDT</boardtype>    
+	    <cpuid>0x506E8</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>KabyLake HEDT</cpuname>
+  </board>
+  <board id="26">
+	    <boardid>0x04</boardid>
+	    <boardname>GeminiLake RVP1</boardname>
+        <boardtype>GLK</boardtype>    
+	    <cpuid>0x706A0</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>GeminiLake</cpuname>
+  </board>
+  <board id="27">
+	    <boardid>0x05</boardid>
+	    <boardname>GeminiLake RVP1</boardname>
+        <boardtype>GLK</boardtype>    
+	    <cpuid>0x706A0</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>GeminiLake</cpuname>
+  </board>  
+  <board id="28">
+	    <boardid>0x07</boardid>
+	    <boardname>GeminiLake RVP2</boardname>
+        <boardtype>GLK</boardtype>    
+	    <cpuid>0x706A0</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>GeminiLake</cpuname>
+  </board>
+  <board id="29">
+	    <boardid>0x08</boardid>
+	    <boardname>GeminiLake RVP2</boardname>
+        <boardtype>GLK</boardtype>    
+	    <cpuid>0x706A0</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>GeminiLake</cpuname>
+  </board>  
+  <board id="30">
+	    <boardid>0x02</boardid>
+	    <boardname>GeminiLake RVP3</boardname>
+        <boardtype>GLK</boardtype>    
+	    <cpuid>0x706A0</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>GeminiLake</cpuname>
+  </board>
+  <board id="31">
+	    <boardid>0x03</boardid>
+	    <boardname>GeminiLake RVP3</boardname>
+        <boardtype>GLK</boardtype>    
+	    <cpuid>0x706A0</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>GeminiLake</cpuname>
+  </board>      
+  <board id="32">
+	    <boardid>0x01</boardid>
+	    <boardname>GeminiLake ERB3</boardname>
+        <boardtype>GLK</boardtype>    
+	    <cpuid>0x706A0</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>GeminiLake</cpuname>
+  </board>
+    <board id="33">
+	    <boardid>0xF8</boardid>
+	    <boardname>GeminiLake RVP3 ERB</boardname>
+            <boardtype>GLK</boardtype>    
+	    <cpuid>0x506C9</cpuid>
+        <pchid>0x5AE8</pchid>
+        <cpuname>GeminiLake</cpuname>
+  </board>
+  <board id="34">
+	    <boardid>0xF8</boardid>
+	    <boardname>GeminiLake DDR4 RVP1</boardname>
+        <boardtype>GLK_RVP1</boardtype>    
+	    <cpuid>0x706A0</cpuid>
+        <pchid>0x3188</pchid>
+        <cpuname>GeminiLake RVP1</cpuname>
+  </board>
+  <board id="35">
+	    <boardid>0x01</boardid>
+	    <boardname>CNL U DDR4 SODIMM RVP</boardname>
+        <boardtype>CNL_UDDR4</boardtype>    
+	    <cpuid>0x60667</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>CanonLake ULT_DDR</cpuname>
+  </board>  
+  <board id="36">
+	    <boardid>0x02</boardid>
+	    <boardname>CNL U LPDDR4 RVP</boardname>
+        <boardtype>CNL_ULPDDR4</boardtype>    
+	    <cpuid>0x60667</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>CanonLake ULT_DDR</cpuname>
+  </board>  
+  <board id="37">
+	    <boardid>0x05</boardid>
+	    <boardname>CNL U SDS</boardname>
+        <boardtype>CNL_USDS</boardtype>    
+	    <cpuid>0x60667</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>CanonLake ULT_DDR</cpuname>
+  </board>
+  <board id="38">
+	    <boardid>0x06</boardid>
+	    <boardname>CNL Y LPDDR3 RVP</boardname>
+        <boardtype>CNL_YLPDDR3</boardtype>    
+	    <cpuid>0x60660</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>CanonLake ULX_DDR</cpuname>
+  </board>  
+  <board id="39">
+	    <boardid>0x07</boardid>
+	    <boardname>CNL Y LPDDR4 RVP</boardname>
+        <boardtype>CNL_YLPDDR4</boardtype>    
+	    <cpuid>0x60660</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>CanonLake ULX_DDR</cpuname>
+  </board>
+  <board id="40">
+	    <boardid>0x69</boardid>
+	    <boardname>KBL S DDR4 UDIMM CRB</boardname>
+        <boardtype>KBL_DT</boardtype>    
+	    <cpuid>0x906E9</cpuid>
+		<pchid>0xFFFF</pchid>
+	    <cpuname>KabyLake DT</cpuname>
+  </board>
+  <board id="41">
+	    <boardid>0x01</boardid>
+	    <boardname>CNL U DDR4 SODIMM</boardname>
+        <boardtype>CNL_UDDR4</boardtype>    
+	    <cpuid>0x406E3</cpuid>
+        <pchid>0xFFFF</pchid>
+        <cpuname>CanonLake ULT_DDR</cpuname>
+  </board>
+  <board id="42">
+	    <boardid>0x44</boardid>
+	    <boardname>KBL H RVP11</boardname>
+        <boardtype>KBL_Halo</boardtype>    
+	    <cpuid>0x906E9</cpuid>
+		<pchid>0xFFFF</pchid>
+	    <cpuname>KabyLake DT</cpuname>
+  </board>
+  <board id="43">
+    <boardid>0x6B</boardid>
+    <boardname>BasinFalls EV</boardname>
+    <boardtype>SKL_HEDT</boardtype>
+    <cpuid>0x50652</cpuid>
+    <pchid>0xFFFF</pchid>
+    <cpuname>KabyLake HEDT</cpuname>
+  </board>
+  <board id="44">
+    <boardid>0x6C</boardid>
+    <boardname>BasinFalls CRB</boardname>
+    <boardtype>SKL_HEDT</boardtype>
+    <cpuid>0x50652</cpuid>
+    <pchid>0xFFFF</pchid>
+    <cpuname>KabyLake HEDT</cpuname>
+  </board>
+  <board id="45">
+    <boardid>0x6D</boardid>
+    <boardname>BasinFalls PPV</boardname>
+    <boardtype>SKL_HEDT</boardtype>
+    <cpuid>0x50652</cpuid>
+    <pchid>0xFFFF</pchid>
+    <cpuname>KabyLake HEDT</cpuname>
+  </board>
+</config>

@@ -1,0 +1,18 @@
+#################################
+####  SPI FLASH COMMAND SET  ####
+#################################
+
+Fast Read           : 0x0B
+Read Status Reg     : 0x05
+Write Status Reg    : 0x01
+Enable Write Status : 0x50
+Write enable        : 0x06
+Write disable       : 0x04
+Chip earse          : 0xC7
+Sector earse        : 0xDB
+Page program        : 0x02
+
+SST Chip earse      : 0x60
+SST Sector earse    : 0x20
+SST AAI Program     : 0xAF
+SST AAI2 Program    : 0xAD

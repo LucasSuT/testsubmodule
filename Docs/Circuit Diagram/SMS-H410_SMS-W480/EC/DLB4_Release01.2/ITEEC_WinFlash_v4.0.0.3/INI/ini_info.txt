@@ -1,0 +1,99 @@
+[ReadID_CommandMode]
+
+[Read_CommandMode]
+
+[Erase_CommandMode]
+## 必須參考 EraseType ##
+(Chip Erase)
+0: Flash_Chip_Erase();		    //AMD
+1: Flash_Chip_Erase_1M();		  //AMD 1M
+2: Intel_Flash_Chip_Erase();	//Intel
+3: KBS_Write(DBUS_ADDR_3, 0xff);
+	 KBS_Write(DBUS_ADDR_2, 0xff);
+	 KBS_Write(DBUS_ADDR_0, 0xff);
+	 SPI_Flash_Write_Enable();
+	 SPI_Flash_Chip_Erase();
+4: KBS_Write(DBUS_ADDR_3, 0xff);
+	 KBS_Write(DBUS_ADDR_2, 0xff);
+	 KBS_Write(DBUS_ADDR_0, 0xff);	
+	 //SPI_Flash_Write_Enable();				
+	 SPI_Flash_Enable_Write_Status();
+	 SPI_Flash_Write_Status_Reg(0x00);
+	 SPI_Flash_Write_Enable();
+	 SST_SPI_Flash_Chip_Erase();
+(Sector Erase)
+0: Flash_Sector_Erase(BA, A1);	  //AMD
+1: Flash_Sector_Erase_1M(BA, A1);	//AMD 1M
+3: KBS_Write(DBUS_ADDR_3, 0xff);
+	 KBS_Write(DBUS_ADDR_2, 0xff);
+	 KBS_Write(DBUS_ADDR_0, 0xff);	
+	 SPI_Flash_Write_Enable();				
+	 SPI_Flash_Sector_Erase(BA,A1);
+4: KBS_Write(DBUS_ADDR_3, 0xff);
+	 KBS_Write(DBUS_ADDR_2, 0xff);
+	 KBS_Write(DBUS_ADDR_0, 0xff);	
+	 //SPI_Flash_Write_Enable();				
+	 SPI_Flash_Enable_Write_Status();
+	 SPI_Flash_Write_Status_Reg(0x00);
+	 SPI_Flash_Write_Enable();				
+	 SST_SPI_Flash_Sector_Erase(BA,A1);
+(Block Erase)
+0: Flash_Block_Erase(BA);	         //AMD
+1: Flash_Block_Erase_1M(BA);	     //AMD 1M
+2: Intel_Flash_Block_Erase(BA, A1);//Intel
+
+--------------------------------------------------
+	if (Erase_CommandMode > 2)
+	{
+	    SPI_Flash_Read_Status_Reg();
+		for(wait=0; wait<0x100000; wait++)				//Check Busy?
+		{
+			if((KBS_Read_Data()&0x01)==0)
+				break;
+		}		
+		SPI_Flash_Write_Disable();
+	}
+	else
+	{
+		for(wait=0; wait<0x100000; wait++)
+		{
+			if(KBS_Read_Data()&0x80)
+				break;
+		}	
+	}
+---------------------------------------------------
+
+[Write_CommandMode]
+Command Type (ISA/LPC/Intel)
+
+
+[Flashblock]
+1: Flash Size : 512 KByte
+2: Flash Size : 1   MByte
+4: Flash Size : 2   MByte
+8: Flash Size : 4   MByte
+16:Flash Size : 8   MByte
+32:Flash Size : 16  MByte
+64:Flash Size : 32  MByte
+
+Flashblock = 這顆 Flash 共有幾個 64KByte 
+
+[EraseType]
+0:EraseType : Chip Erase
+1:EraseType : Sector Erase
+2:EraseType : Block Erase
+
+[SectorOffset]
+範例 SectorOffset=64,07,32,01,08,02,16,01
+
+[SectorSize]
+## 必須參考 SectorOffset ##
+if(Flash.SectorOffset==NULL)
+{
+// Fixed Sector Size for 64(KByte) and 4(KByte) 	
+}  
+
+[PageWriteSize]
+1:  Flash Page Write : None (1 Byte)
+128:Flash Page Write : 128 Bytes
+256:Flash Page Write : 256 Bytes

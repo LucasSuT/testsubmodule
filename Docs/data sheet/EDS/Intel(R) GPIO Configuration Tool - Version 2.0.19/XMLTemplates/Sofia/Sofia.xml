@@ -1,0 +1,2570 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SofiaXML name="Sofia" shortName="SFA" CFG0_Name="PAD Register" CFG1_Name="PIN Register" IOA="MMIO" BaseAddress="0xE4800000" SBReadOpCode="0x06" SBWriteOpCode="0x07">
+  <GPIO>
+    <Community name="GPIO" max="83" BaseAddress="0x000000" SBBaseAddress="0x0000" SBPort="0xC5">
+      <Pins>
+        <Pin No="GPIO_000" CFG0_offset="0x200" CFG1_offset="0x800" Ball="D12" PWR="VDD_IO18" SignalName="Keypad In" Name="KP_IN0" Bump="KP_IN0" Module="#DBB Keypad I/F" Validate="true">
+
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_DATA0</Value>
+            <Value>MIPI2_TRACE_DATA0</Value>
+            <Value>TPIU_TRACEPKT0</Value>
+            <Value>TRACE_CADATA</Value>
+            <Value>HW_MON4</Value>
+            <Value>TPIU_TRACEPKT8</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>KP_IN0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+
+        <Pin No="GPIO_001" CFG0_offset="0x204" CFG1_offset="0x804" Ball="B11" PWR="VDD_IO18" SignalName="Keypad In" Name="KP_IN1" Bump="KP_IN1" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_DATA1</Value>
+            <Value>MIPI2_TRACE_DATA1</Value>
+            <Value>TPIU_TRACEPKT1</Value>
+            <Value>TRACE_CAFLAG</Value>
+            <Value>HW_MON5</Value>
+            <Value>TPIU_TRACEPKT9</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>KP_IN1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_002" CFG0_offset="0x208" CFG1_offset="0x808" Ball="A12" PWR="VDD_IO18" SignalName="Keypad In" Name="KP_IN2" Bump="KP_IN2" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_DATA2</Value>
+            <Value>MIPI2_TRACE_DATA2</Value>
+            <Value>TPIU_TRACEPKT2</Value>
+            <Value>TRACE_CAREADY</Value>
+            <Value>HW_MON6</Value>
+            <Value>TPIU_TRACEPKT10</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>KP_IN2</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_003" CFG0_offset="0x20C" CFG1_offset="0x80C" Ball="B10" PWR="VDD_IO18" SignalName="Keypad In" Name="KP_IN3" Bump="KP_IN3" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>KP_OUT0</Value>
+            <Value>MIPI1_TRACE_DATA3</Value>
+            <Value>MIPI2_TRACE_DATA3</Value>
+            <Value>TPIU_TRACEPKT3</Value>
+            <Value>TRACE_ACDATA</Value>
+            <Value>HW_MON7</Value>
+            <Value>TPIU_TRACEPKT11</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_004" CFG0_offset="0x210" CFG1_offset="0x810" Ball="A14" PWR="VDD_IO18" SignalName="Keypad In" Name="KP_IN4" Bump="KP_IN4" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>KP_OUT1</Value>
+            <Value>MIPI1_TRACE_CLK</Value>
+            <Value>MIPI2_TRACE_CLK</Value>
+            <Value>TPIU_TRACECLK</Value>
+            <Value>TRACE_ACFLAG</Value>
+            <Value>HW_MON8</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_005" CFG0_offset="0x214" CFG1_offset="0x814" Ball="D11" PWR="VDD_IO18" SignalName="Keypad In" Name="KP_IN5" Bump="KP_IN5" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>KP_OUT2</Value>
+            <Value>MIPI1_TRACE_DATA4</Value>
+            <Value>Invalid</Value>
+            <Value>TPIU_TRACEPKT4</Value>
+            <Value>TRACE_ACREADY</Value>
+            <Value>HW_MON9</Value>
+            <Value>TPIU_TRACEPKT12</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>DSP_2G_IN0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_006" CFG0_offset="0x218" CFG1_offset="0x818" Ball="B13" PWR="VDD_IO18" SignalName="Keypad In" Name="KP_IN6" Bump="KP_IN6" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>KP_OUT3</Value>
+            <Value>MIPI1_TRACE_DATA5</Value>
+            <Value>Invalid</Value>
+            <Value>TPIU_TRACEPKT5</Value>
+            <Value>GPO_3G_0</Value>
+            <Value>HW_MON10</Value>
+            <Value>TPIU_TRACEPKT13</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>DSP_2G_IN1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_007" CFG0_offset="0x21C" CFG1_offset="0x81C" Ball="A13" PWR="VDD_IO18" SignalName="Keypad In" Name="KP_IN7" Bump="KP_IN7" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_DATA6</Value>
+            <Value>POS_FTA_FTR</Value>
+            <Value>TPIU_TRACEPKT6</Value>
+            <Value>GPO_3G_1</Value>
+            <Value>HW_MON11</Value>
+            <Value>TPIU_TRACEPKT14</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>KP_IN3</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_008" CFG0_offset="0x220" CFG1_offset="0x820" Ball="B12" PWR="VDD_IO18" SignalName="Keypad Out" Name="KP_OUT0" Bump="KP_OUT0" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_DATA7</Value>
+            <Value>CC0_CC1IO</Value>
+            <Value>TPIU_TRACEPKT7</Value>
+            <Value>GPO_3G_2</Value>
+            <Value>HW_MON12</Value>
+            <Value>TPIU_TRACEPKT15</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>KP_IN4</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_CC1IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_009" CFG0_offset="0x224" CFG1_offset="0x824" Ball="C14" PWR="VDD_IO18" SignalName="Keypad Out" Name="KP_OUT1" Bump="KP_OUT1" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_CC0IO</Value>
+            <Value>DSP_2G_OUT0</Value>
+            <Value>TPIU_TRACECTL</Value>
+            <Value>GPO_3G_3</Value>
+            <Value>HW_MON13</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>KP_IN5</Value>
+            <Value>CC0_CC0IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_010" CFG0_offset="0x228" CFG1_offset="0x828" Ball="D13" PWR="VDD_IO18" SignalName="Keypad Out" Name="KP_OUT2" Bump="KP_OUT2" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>I2C3_SDA</Value>
+            <Value>POS_FTA_FTR</Value>
+            <Value>CC0_CC2IO</Value>
+            <Value>DSP_AUDIO_OUT0</Value>
+            <Value>HW_MON14</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>KP_IN6</Value>
+            <Value>2C3_SDA</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_CC2IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_011" CFG0_offset="0x22C" CFG1_offset="0x82C" Ball="C11" PWR="VDD_IO18" SignalName="Keypad Out" Name="KP_OUT3" Bump="KP_OUT3" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>KP_OUT4</Value>
+            <Value>I2C3_SCL</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_CC5IO</Value>
+            <Value>DSP_AUDIO_OUT1</Value>
+            <Value>HW_MON15</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>I2C3_SCL</Value>
+            <Value>EINT_4</Value>
+            <Value>CC0_CC5IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_012" CFG0_offset="0x230" CFG1_offset="0x830" Ball="C10" PWR="VDD_IO18" SignalName="Keypad Out" Name="KP_OUT4" Bump="KP_OUT4" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>USIF1_RXD_MRST</Value>
+            <Value>DSP_AUDIO_OUT2</Value>
+            <Value>HW_MON16</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>USIF1_RXD_MRST</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_0</Value>
+            <Value>I2S1_RX</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_013" CFG0_offset="0x234" CFG1_offset="0x834" Ball="C13" PWR="VDD_IO18" SignalName="Keypad Out" Name="KP_OUT5" Bump="KP_OUT5" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>USIF1_TXD_MTSR</Value>
+            <Value>Invalid</Value>
+            <Value>KP_OUT5</Value>
+            <Value>I2S1_TX</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>USIF1_TXD_MTSR</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_1</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_014" CFG0_offset="0x238" CFG1_offset="0x838" Ball="A15" PWR="VDD_IO18" SignalName="Keypad Out" Name="KP_OUT6" Bump="KP_OUT6" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>USIF1_CSO0</Value>
+            <Value>Invalid</Value>
+            <Value>KP_OUT6</Value>
+            <Value>I2S1_WA0</Value>
+            <Value>Invalid</Value>
+            <Value>USIF1_CTS_N</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>USIF1_CSO0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>I2S1_WA0</Value>
+            <Value>EINT_3</Value>
+            <Value>USIF1_CTS_N</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_015" CFG0_offset="0x23C" CFG1_offset="0x83C" Ball="B14" PWR="VDD_IO18" SignalName="Keypad Out" Name="KP_OUT7" Bump="KP_OUT7" Module="#DBB Keypad I/F" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>USIF1_SCLK</Value>
+            <Value>Invalid</Value>
+            <Value>KP_OUT7</Value>
+            <Value>I2S1_CLK0</Value>
+            <Value>Invalid</Value>
+            <Value>USIF1_RTS_N</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>USIF1_SCLK</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>I2S1_CLK0</Value>
+            <Value>CC2_IN</Value>
+            <Value>USIF1_RTS_N</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_016" CFG0_offset="0x240" CFG1_offset="0x840" Ball="F1" PWR="VDD_IO18" SignalName="I2C Serial clock" Name="I2C1_SCL" Bump="I2C1_SCL" Module="#DBB I2C 1: PMIC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>USIF2_RXD_MRST</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_CC4IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>USIF2_RXD_MRST</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_10</Value>
+            <Value>EINT_2</Value>
+            <Value>CC0_CC4IO</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_017" CFG0_offset="0x244" CFG1_offset="0x844" Ball="F2" PWR="VDD_IO18" SignalName="I2C Serial data input/output" Name="I2C1_SDA" Bump="I2C1_SDA" Module="#DBB I2C 1: PMIC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>USIF2_TXD_MTSR</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_CC0IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>POS_FTA_FTR</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>USIF2_TXD_MTSR</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_CC0IO</Value>
+            <Value>EINT_11</Value>
+            <Value>USI_T_IN_TIME_EXT</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_018" CFG0_offset="0x248" CFG1_offset="0x848" Ball="F28" PWR="VDD_IO18" SignalName="I2C Serial clock" Name="I2C2_SCL" Bump="I2C2_SCL" Module="#DBB I2C 2:" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>USIF2_RTS_N</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>USIF2_CSO0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>USIF2_RTS_N</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_12</Value>
+            <Value>USIF2_CSO0</Value>
+            <Value>KP_IN7</Value>
+            <Value>USIF2_CSI_N</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_019" CFG0_offset="0x24C" CFG1_offset="0x84C" Ball="G28" PWR="VDD_IO18" SignalName="I2C Serial data input/output" Name="I2C2_SDA" Bump="I2C2_SDA" Module="#DBB I2C 2:" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>USIF2_CTS_N</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>USIF2_SCLK</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>USIF2_CTS_N</Value>
+            <Value>Invalid</Value>
+            <Value>BREAK_IN</Value>
+            <Value>USIF2_SCLK</Value>
+            <Value>CC1_IN</Value>
+            <Value>EINT_13</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_020" CFG0_offset="0x250" CFG1_offset="0x850" Ball="G29" PWR="VDD_IO18" SignalName="I2C Serial clock" Name="I2C3_SCL" Bump="I2C3_SCL" Module="#DBB I2C 3:" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_CMD</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_CC4IO</Value>
+            <Value>Invalid</Value>
+            <Value>USIRFSEQGP0_3G</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_CMD</Value>
+            <Value>NAND_RY_BY</Value>
+            <Value>CC1_CC4IO</Value>
+            <Value>I2S1_RX</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_3</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_021" CFG0_offset="0x254" CFG1_offset="0x854" Ball="H29" PWR="VDD_IO18" SignalName="I2C Serial data input/output" Name="I2C3_SDA" Bump="I2C3_SDA" Module="#DBB I2C 3:" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT0</Value>
+            <Value>NAND_IO0</Value>
+            <Value>CC0_CC7IO</Value>
+            <Value>I2S1_TX</Value>
+            <Value>USIRFSEQGP1_3G</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT0</Value>
+            <Value>NAND_IO0</Value>
+            <Value>CC0_CC7IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_022" CFG0_offset="0x258" CFG1_offset="0x858" Ball="H27" PWR="VDD_IO18" SignalName="I2C Serial clock" Name="I2C4_SCL" Bump="I2C4_SCL" Module="#DBB I2C 4:" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT1</Value>
+            <Value>NAND_IO1</Value>
+            <Value>CC1_CC6IO</Value>
+            <Value>I2S1_CLK0</Value>
+            <Value>USIRFSEQGP2_3G</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT1</Value>
+            <Value>NAND_IO1</Value>
+            <Value>CC1_CC6IO</Value>
+            <Value>I2S1_CLK0</Value>
+            <Value>Invalid</Value>
+            <Value>CC2_IN</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_023" CFG0_offset="0x25C" CFG1_offset="0x85C" Ball="H28" PWR="VDD_IO18" SignalName="I2C Serial data input/output" Name="I2C4_SDA" Bump="I2C4_SDA" Module="#DBB I2C 4:" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT2</Value>
+            <Value>NAND_IO2</Value>
+            <Value>KP_OUT6</Value>
+            <Value>I2S1_WA0</Value>
+            <Value>USIRFSEQGP3_3G</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT2</Value>
+            <Value>NAND_IO2</Value>
+            <Value>Invalid</Value>
+            <Value>I2S1_WA0</Value>
+            <Value>Invalid</Value>
+            <Value>GPI_3G_3</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_024" CFG0_offset="0x260" CFG1_offset="0x860" Ball="G26" PWR="VDD_IO18" SignalName="I2C Serial clock" Name="I2C5_SCL" Bump="I2C5_SCL" Module="#DBB I2C 5:" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT3</Value>
+            <Value>NAND_IO3</Value>
+            <Value>KP_OUT5</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>POS_FTA_FTR</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT3</Value>
+            <Value>NAND_IO3</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_4</Value>
+            <Value>GPI_3G_0</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_025" CFG0_offset="0x264" CFG1_offset="0x864" Ball="G27" PWR="VDD_IO18" SignalName="I2C Serial data input/output" Name="I2C5_SDA" Bump="I2C5_SDA" Module="#DBB I2C 5:" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_CLK</Value>
+            <Value>NAND_WP</Value>
+            <Value>CC1_CC5IO</Value>
+            <Value>I2S1_CLK1</Value>
+            <Value>Invalid</Value>
+            <Value>DSP_2G_OUT1</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_CC5IO</Value>
+            <Value>I2S1_CLK1</Value>
+            <Value>GPI_3G_1</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_026" CFG0_offset="0x268" CFG1_offset="0x868" Ball="C15" PWR="VDD_SIM1" SignalName="Card Input/Output" Name="CC1_IO" Bump="CC1_IO" Module="#DBB SIM Card (USIM1)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_RESET</Value>
+            <Value>NAND_CLE</Value>
+            <Value>Invalid</Value>
+            <Value>I2S1_WA1</Value>
+            <Value>Invalid</Value>
+            <Value>DSP_2G_OUT2</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>KP_IN7</Value>
+            <Value>2S1_WA1</Value>
+            <Value>GPI_3G_2</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_027" CFG0_offset="0x26C" CFG1_offset="0x86C" Ball="D15" PWR="VDD_SIM1" SignalName="Card Clock" Name="CC1_CLK" Bump="CC1_CLK" Module="#DBB SIM Card (USIM1)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT4</Value>
+            <Value>NAND_IO4</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT4</Value>
+            <Value>NAND_IO4</Value>
+            <Value>KP_IN6</Value>
+            <Value>DSP_AUDIO_IN0</Value>
+            <Value>CC0_T0IN</Value>
+            <Value>EINT_5</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_028" CFG0_offset="0x270" CFG1_offset="0x870" Ball="C16" PWR="VDD_SIM1" SignalName="Card Reset Signal" Name="CC1_RST" Bump="CC1_RST" Module="#DBB SIM Card (USIM1)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT5</Value>
+            <Value>NAND_IO5</Value>
+            <Value>KP_OUT4</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>USIF1_CSO0</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT5</Value>
+            <Value>NAND_IO5</Value>
+            <Value>Invalid</Value>
+            <Value>DSP_AUDIO_IN1</Value>
+            <Value>CC0_T1IN</Value>
+            <Value>USIF1_CSO0</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_029" CFG0_offset="0x274" CFG1_offset="0x874" Ball="B16" PWR="VDD_IO18" SignalName="Card available interrupt input" Name="CC1_IN" Bump="CC1_IN" Module="#DBB SIM Card (USIM1)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT6</Value>
+            <Value>NAND_IO6</Value>
+            <Value>KP_OUT5</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT6</Value>
+            <Value>NAND_IO6</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_T0IN</Value>
+            <Value>USIF1_CSI_N</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_030" CFG0_offset="0x278" CFG1_offset="0x878" Ball="J5" PWR="VDD_SIM2" SignalName="Card Input/Output" Name="CC2_IO" Bump="CC2_IO" Module="#DBB SIM Card (USIM2)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT7</Value>
+            <Value>NAND_IO7</Value>
+            <Value>KP_OUT6</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>EMMC_DAT7</Value>
+            <Value>NAND_IO7</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_T1IN</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_031" CFG0_offset="0x27C" CFG1_offset="0x87C" Ball="J4" PWR="VDD_SIM2" SignalName="Card Clock" Name="CC2_CLK" Bump="CC2_CLK" Module="#DBB SIM Card (USIM2)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO8</Value>
+            <Value>MIPI1_TRACE_DATA0</Value>
+            <Value>USIRFSEQGP0_3G</Value>
+            <Value>POS_FTA_FTR</Value>
+            <Value>TPIU_TRACEPKT0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO8</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_032" CFG0_offset="0x280" CFG1_offset="0x880" Ball="K5" PWR="VDD_SIM2" SignalName="Card Reset Signal" Name="CC2_RST" Bump="CC2_RST" Module="#DBB SIM Card (USIM2)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO9</Value>
+            <Value>MIPI1_TRACE_DATA1</Value>
+            <Value>USIRFSEQGP1_3G</Value>
+            <Value>Invalid</Value>
+            <Value>TPIU_TRACEPKT1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO9</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>KP_IN6</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_033" CFG0_offset="0x284" CFG1_offset="0x884" Ball="K4" PWR="VDD_IO18" SignalName="Card available interrupt input" Name="CC2_IN" Bump="CC2_IN" Module="#DBB SIM Card (USIM2)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO10</Value>
+            <Value>MIPI1_TRACE_DATA2</Value>
+            <Value>USIRFSEQGP2_3G</Value>
+            <Value>KP_OUT4</Value>
+            <Value>TPIU_TRACEPKT2</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO10</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_034" CFG0_offset="0x288" CFG1_offset="0x888" Ball="AG7" PWR="VDD_IO18" SignalName="Multimedia Card Clock" Name="MMCI3_CLK" Bump="MMCI3_CLK" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO11</Value>
+            <Value>MIPI1_TRACE_DATA3</Value>
+            <Value>USIRFSEQGP3_3G</Value>
+            <Value>KP_OUT5</Value>
+            <Value>TPIU_TRACEPKT3</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO11</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_035" CFG0_offset="0x28C" CFG1_offset="0x88C" Ball="AG6" PWR="VDD_IO18" SignalName="Multimedia Card Command" Name="MMCI3_CMD" Bump="MMCI3_CMD" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO12</Value>
+            <Value>MIPI1_TRACE_DATA4</Value>
+            <Value>CIF_SHUTTER_OPEN</Value>
+            <Value>KP_OUT6</Value>
+            <Value>TPIU_TRACEPKT4</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO12</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_036" CFG0_offset="0x290" CFG1_offset="0x890" Ball="AH6" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI3_DAT_0" Bump="MMCI3_DAT_0" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO13</Value>
+            <Value>MIPI1_TRACE_DATA5</Value>
+            <Value>Invalid</Value>
+            <Value>KP_OUT7</Value>
+            <Value>TPIU_TRACEPKT5</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO13</Value>
+            <Value>Invalid</Value>
+            <Value>CIF_SHUTTER_TRIG</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_037" CFG0_offset="0x294" CFG1_offset="0x894" Ball="AJ5" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI3_DAT_1" Bump="MMCI3_DAT_1" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO14</Value>
+            <Value>MIPI1_TRACE_DATA6</Value>
+            <Value>CIF_FL_TRIG_OUT</Value>
+            <Value>CC1_CC4IO</Value>
+            <Value>TPIU_TRACEPKT6</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO14</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_CC4IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_038" CFG0_offset="0x298" CFG1_offset="0x898" Ball="AF7" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI3_DAT_2" Bump="MMCI3_DAT_2" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO15</Value>
+            <Value>MIPI1_TRACE_DATA7</Value>
+            <Value>CIF_PRELIGHT_TRIG</Value>
+            <Value>CC0_CC7IO</Value>
+            <Value>TPIU_TRACEPKT7</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_IO15</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_CC7IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_039" CFG0_offset="0x29C" CFG1_offset="0x89C" Ball="AH7" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI3_DAT_3" Bump="MMCI3_DAT_3" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_ALE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>TPIU_TRACECTL</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_040" CFG0_offset="0x2A0" CFG1_offset="0x8A0" Ball="AJ7" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI3_DAT_4" Bump="MMCI3_DAT_4" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_RDN</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_041" CFG0_offset="0x2A4" CFG1_offset="0x8A4" Ball="AH5" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI3_DAT_5" Bump="MMCI3_DAT_5" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_WRN</Value>
+            <Value>MIPI1_TRACE_CLK</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>TPIU_TRACECLK</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_042" CFG0_offset="0x2A8" CFG1_offset="0x8A8" Ball="AF5" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI3_DAT_6" Bump="MMCI3_DAT_6" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>NAND_CS</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_043" CFG0_offset="0x2AC" CFG1_offset="0x8AC" Ball="AE7" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI3_DAT_7" Bump="MMCI3_DAT_7" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_CMD</Value>
+            <Value>USIF2_RXD_MRST</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT1</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_CMD</Value>
+            <Value>USIF2_RXD_MRST</Value>
+            <Value>EINT_2</Value>
+            <Value>KP_IN7</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT1</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVH</Value>
+            <Value>DRVG</Value>
+            <Value>DRVF</Value>
+            <Value>DRVE</Value>
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_044" CFG0_offset="0x2B0" CFG1_offset="0x8B0" Ball="AE6" PWR="VDD_IO18" SignalName="Multimedia Card Reset" Name="MMCI3_RST_N" Bump="MMCI3_RST_N" Module="#DBB eMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_DAT0</Value>
+            <Value>MIPI2_TRACE_DATA0</Value>
+            <Value>CC0_CC3IO</Value>
+            <Value>DUMMY_INOUT8</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT2</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_DAT0</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_CC3IO</Value>
+            <Value>DUMMY_INOUT8</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT2</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVH</Value>
+            <Value>DRVG</Value>
+            <Value>DRVF</Value>
+            <Value>DRVE</Value>
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_045" CFG0_offset="0x2B4" CFG1_offset="0x8B4" Ball="AH4" PWR="VDD_MMC" SignalName="Multimedia Card Command" Name="MMCI1_CMD" Bump="MMCI1_CMD" Module="#DBB SDMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_DAT1</Value>
+            <Value>MIPI2_TRACE_DATA1</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_CC6IO</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT3</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_DAT1</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_7</Value>
+            <Value>CC0_CC6IO</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT3</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVH</Value>
+            <Value>DRVG</Value>
+            <Value>DRVF</Value>
+            <Value>DRVE</Value>
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_046" CFG0_offset="0x2B8" CFG1_offset="0x8B8" Ball="AJ3" PWR="VDD_MMC" SignalName="Multimedia Card Clock" Name="MMCI1_CLK" Bump="MMCI1_CLK" Module="#DBB SDMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_DAT2</Value>
+            <Value>MIPI2_TRACE_DATA2</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_CC1IO</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT4</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_DAT2</Value>
+            <Value>Invalid</Value>
+            <Value>BREAK_IN</Value>
+            <Value>CC1_CC1IO</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT4</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVH</Value>
+            <Value>DRVG</Value>
+            <Value>DRVF</Value>
+            <Value>DRVE</Value>
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_047" CFG0_offset="0x2BC" CFG1_offset="0x8BC" Ball="AH3" PWR="VDD_MMC" SignalName="Multimedia Card Data" Name="MMCI1_DAT_0" Bump="MMCI1_DAT_0" Module="#DBB SDMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_DAT3</Value>
+            <Value>MIPI2_TRACE_DATA3</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT5</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_DAT3</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_6</Value>
+            <Value>SDMMC_CARD_DETECT</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT5</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVH</Value>
+            <Value>DRVG</Value>
+            <Value>DRVF</Value>
+            <Value>DRVE</Value>
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_048" CFG0_offset="0x2C0" CFG1_offset="0x8C0" Ball="AG3" PWR="VDD_MMC" SignalName="Multimedia Card Data" Name="MMCI1_DAT_1" Bump="MMCI1_DAT_1" Module="#DBB SDMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_CLK</Value>
+            <Value>MIPI2_TRACE_CLK</Value>
+            <Value>CC0_CC4IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT6</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_CC4IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT6</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVH</Value>
+            <Value>DRVG</Value>
+            <Value>DRVF</Value>
+            <Value>DRVE</Value>
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_049" CFG0_offset="0x2C4" CFG1_offset="0x8C4" Ball="AG4" PWR="VDD_MMC" SignalName="Multimedia Card Data" Name="MMCI1_DAT_2" Bump="MMCI1_DAT_2" Module="#DBB SDMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>SDMMC_RESET</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT7</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDMMC_CARD_DETECT</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_8</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>DUMMY_INOUT7</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_050" CFG0_offset="0x2C8" CFG1_offset="0x8C8" Ball="AG2" PWR="VDD_MMC" SignalName="Multimedia Card Data" Name="MMCI1_DAT_3" Bump="MMCI1_DAT_3" Module="#DBB SDMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_CMD</Value>
+            <Value>USIF1_TXD_MTSR</Value>
+            <Value>USIF2_RXD_MRST</Value>
+            <Value>Invalid</Value>
+            <Value>T_OUT5</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_CMD</Value>
+            <Value>USIF1_TXD_MTSR</Value>
+            <Value>USIF2_RXD_MRST</Value>
+            <Value>EINT_2</Value>
+            <Value>Invalid</Value>
+            <Value>USIF5_RXD_MRST</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_051" CFG0_offset="0x2CC" CFG1_offset="0x8CC" Ball="AF4" PWR="VDD_IO18" SignalName="Multimedia Card Detect" Name="MMCI1_CD_N" Bump="MMCI1_CD_N" Module="#DBB SDMMC" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_DAT0</Value>
+            <Value>USIF1_RXD_MRST</Value>
+            <Value>MIPI2_TRACE_DATA0</Value>
+            <Value>CC1_CC2IO</Value>
+            <Value>T_OUT4</Value>
+            <Value>CIF_SHUTTER_OPEN</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_DAT0</Value>
+            <Value>USIF1_RXD_MRST</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_CC2IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_052" CFG0_offset="0x2D0" CFG1_offset="0x8D0" Ball="K29" PWR="VDD_IO18" SignalName="Multimedia Card Command" Name="MMCI2_CMD" Bump="MMCI2_CMD" Module="#DBB SDIO" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_DAT1</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI2_TRACE_DATA1</Value>
+            <Value>Invalid</Value>
+            <Value>T_OUT2</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_DAT1</Value>
+            <Value>DM_DAT2</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_14</Value>
+            <Value>Invalid</Value>
+            <Value>CIF_SHUTTER_TRIG</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_053" CFG0_offset="0x2D4" CFG1_offset="0x8D4" Ball="J27" PWR="VDD_IO18" SignalName="Multimedia Card Clock" Name="MMCI2_CLK" Bump="MMCI2_CLK" Module="#DBB SDIO" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_DAT2</Value>
+            <Value>DM_CLK</Value>
+            <Value>MIPI2_TRACE_DATA2</Value>
+            <Value>CLKOUT0</Value>
+            <Value>Invalid</Value>
+            <Value>USIF5_TXD_MTSR</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_DAT2</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_8</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_054" CFG0_offset="0x2D8" CFG1_offset="0x8D8" Ball="J26" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI2_DAT_0" Bump="MMCI2_DAT_0" Module="#DBB SDIO" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_DAT3</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI2_TRACE_DATA3</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_DAT3</Value>
+            <Value>DM_DAT1</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_13</Value>
+            <Value>CIF_FL_TRIG_IN</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_055" CFG0_offset="0x2DC" CFG1_offset="0x8DC" Ball="K27" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI2_DAT_1" Bump="MMCI2_DAT_1" Module="#DBB SDIO" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_CLK</Value>
+            <Value>USIF1_SCLK</Value>
+            <Value>MIPI2_TRACE_CLK</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>USIF1_RTS_N</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>USIF1_SCLK</Value>
+            <Value>Invalid</Value>
+            <Value>GPI_3G_1</Value>
+            <Value>BREAK_IN</Value>
+            <Value>USIF1_RTS_N</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_056" CFG0_offset="0x2E0" CFG1_offset="0x8E0" Ball="K28" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI2_DAT_2" Bump="MMCI2_DAT_2" Module="#DBB SDIO" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SDIO_RESET</Value>
+            <Value>USIF1_CSO0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_CC3IO</Value>
+            <Value>USIF1_CTS_N</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>USIF1_CSO0</Value>
+            <Value>EINT_15</Value>
+            <Value>GPI_3G_0</Value>
+            <Value>CC1_CC3IO</Value>
+            <Value>USIF1_CTS_N</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_057" CFG0_offset="0x2E4" CFG1_offset="0x8E4" Ball="K26" PWR="VDD_IO18" SignalName="Multimedia Card Data" Name="MMCI2_DAT_3" Bump="MMCI2_DAT_3" Module="#DBB SDIO" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D0</Value>
+            <Value>Invalid</Value>
+            <Value>CIF_SHUTTER_OPEN</Value>
+            <Value>MIPI1_TRACE_DATA0</Value>
+            <Value>ETM7_PIPESTAT1</Value>
+            <Value>TPIU_TRACEPKT0</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D0</Value>
+            <Value>CIF_D0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_058" CFG0_offset="0x2E8" CFG1_offset="0x8E8" Ball="H26" PWR="VDD_IO18" SignalName="Multimedia Card Reset" Name="MMCI2_RST_N" Bump="MMCI2_RST_N" Module="#DBB SDIO" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_DATA1</Value>
+            <Value>ETM7_PIPESTAT2</Value>
+            <Value>TPIU_TRACEPKT1</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D1</Value>
+            <Value>CIF_D1</Value>
+            <Value>CIF_SHUTTER_TRIG</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_059" CFG0_offset="0x2EC" CFG1_offset="0x8EC" Ball="D27" PWR="VDD_IO18" SignalName="Master Data Transmit  / Slave Data Receive" Name="USIF1_TXD_MTSR" Bump="USIF1_TXD_MTSR" Module="#DBB USIF1" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D2</Value>
+            <Value>Invalid</Value>
+            <Value>CIF_FL_TRIG_OUT</Value>
+            <Value>MIPI1_TRACE_DATA2</Value>
+            <Value>ETM7_TRACESYNC</Value>
+            <Value>TPIU_TRACEPKT2</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D2</Value>
+            <Value>CIF_D2</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_060" CFG0_offset="0x2F0" CFG1_offset="0x8F0" Ball="E26" PWR="VDD_IO18" SignalName="Master Data Receive  / Slave Data Transmit" Name="USIF1_RXD_MRST" Bump="USIF1_RXD_MRST" Module="#DBB USIF1" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D3</Value>
+            <Value>Invalid</Value>
+            <Value>CIF_PRELIGHT_TRIG</Value>
+            <Value>MIPI1_TRACE_DATA3</Value>
+            <Value>ETM7_TRACEPKT0</Value>
+            <Value>TPIU_TRACEPKT3</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D3</Value>
+            <Value>CIF_D3</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_061" CFG0_offset="0x2F4" CFG1_offset="0x8F4" Ball="E27" PWR="VDD_IO18" SignalName="Shift clock" Name="USIF1_SCLK" Bump="USIF1_SCLK" Module="#DBB USIF1" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D4</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_DATA4</Value>
+            <Value>ETM7_TRACEPKT1</Value>
+            <Value>TPIU_TRACEPKT4</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D4</Value>
+            <Value>CIF_D4</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_062" CFG0_offset="0x2F8" CFG1_offset="0x8F8" Ball="C27" PWR="VDD_IO18" SignalName="Request to send" Name="USIF1_RTS_N" Bump="USIF1_RTS_N" Module="#DBB USIF1" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D5</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_DATA5</Value>
+            <Value>ETM7_TRACEPKT2</Value>
+            <Value>TPIU_TRACEPKT5</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D5</Value>
+            <Value>CIF_D5</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_063" CFG0_offset="0x2FC" CFG1_offset="0x8FC" Ball="D29" PWR="VDD_IO18" SignalName="Clear to send" Name="USIF1_CTS_N" Bump="USIF1_CTS_N" Module="#DBB USIF1" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D6</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_DATA6</Value>
+            <Value>ETM7_TRACEPKT3</Value>
+            <Value>TPIU_TRACEPKT6</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D6</Value>
+            <Value>CIF_D6</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_064" CFG0_offset="0x300" CFG1_offset="0x900" Ball="B22" PWR="VDD_IO18" SignalName="Master Data Transmit  / Slave Data Receive" Name="USIF_GNSS_TXD" Bump="USIF_GNSS_TXD" Module="#DBB USIF_GNSS" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D7</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_DATA7</Value>
+            <Value>ETM7_TRACEPKT4</Value>
+            <Value>TPIU_TRACEPKT7</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D7</Value>
+            <Value>CIF_D7</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_065" CFG0_offset="0x304" CFG1_offset="0x904" Ball="B23" PWR="VDD_IO18" SignalName="Master Data Receive  / Slave Data Transmit" Name="USIF_GNSS_RXD" Bump="USIF_GNSS_RXD" Module="#DBB USIF_GNSS" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D8</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_CC4IO</Value>
+            <Value>DIF_CS2</Value>
+            <Value>ETM7_TRACEPKT5</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_D8</Value>
+            <Value>KP_IN7</Value>
+            <Value>CC0_CC4IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_T0IN</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_066" CFG0_offset="0x308" CFG1_offset="0x908" Ball="A23" PWR="VDD_IO18" SignalName="Request to send" Name="USIF_GNSS_RTS_N" Bump="USIF_GNSS_RTS_N" Module="#DBB USIF_GNSS" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_CS1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>MIPI1_TRACE_CLK</Value>
+            <Value>ETM7_TRACECLK</Value>
+            <Value>TPIU_TRACECLK</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_067" CFG0_offset="0x30C" CFG1_offset="0x90C" Ball="C22" PWR="VDD_IO18" SignalName="Clear to send" Name="USIF_GNSS_CTS_N" Bump="USIF_GNSS_CTS_N" Module="#DBB USIF_GNSS" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_CD</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>ETM7_TRACEPKT6</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_1</Value>
+            <Value>Invalid</Value>
+            <Value>DIF_SSC_MR</Value>
+            <Value>Invalid</Value>
+            <Value>CC0_T1IN</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_068" CFG0_offset="0x310" CFG1_offset="0x910" Ball="B28" PWR="VDD_IO18" SignalName="Master Data Transmit  / Slave Data Receive" Name="USIF3_TXD_MTSR" Bump="USIF3_TXD_MTSR" Module="#DBB USIF3" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_WR</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>DIF_SSC_MT</Value>
+            <Value>ETM7_PIPESTAT0</Value>
+            <Value>TPIU_TRACECTL</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>CIF_VSYNC</Value>
+            <Value>Invalid</Value>
+            <Value>DIF_SSC_MT</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_069" CFG0_offset="0x314" CFG1_offset="0x914" Ball="C28" PWR="VDD_IO18" SignalName="Master Data Receive  / Slave Data Transmit" Name="USIF3_RXD_MRST" Bump="USIF3_RXD_MRST" Module="#DBB USIF3" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_RD</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_CC0IO</Value>
+            <Value>DIF_SSC_CLK</Value>
+            <Value>ETM7_TRACEPKT7</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>CIF_HSYNC</Value>
+            <Value>CC1_CC0IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_T0IN</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_070" CFG0_offset="0x318" CFG1_offset="0x918" Ball="A28" PWR="VDD_IO18" SignalName="Shift clock" Name="USIF3_SCLK" Bump="USIF3_SCLK" Module="#DBB USIF3" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_HD</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_CC7IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_HD</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC2_IN</Value>
+            <Value>CC1_CC7IO</Value>
+            <Value>EINT_9</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_071" CFG0_offset="0x31C" CFG1_offset="0x91C" Ball="A27" PWR="VDD_IO18" SignalName="Chip Select Out 0" Name="USIF3_CSO0" Bump="USIF3_CSO0" Module="#DBB USIF3" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_VD</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>USIF2_RXD_MRST</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_VD</Value>
+            <Value>CIF_PCLK</Value>
+            <Value>Invalid</Value>
+            <Value>USIF2_RXD_MRST</Value>
+            <Value>Invalid</Value>
+            <Value>EINT_2</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_072" CFG0_offset="0x320" CFG1_offset="0x920" Ball="D28" PWR="VDD_IO18" SignalName="Request to send" Name="USIF3_RTS_N" Bump="USIF3_RTS_N" Module="#DBB USIF3" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>DIF_RESET</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>RTCK</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>CC1_T1IN</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_073" CFG0_offset="0x324" CFG1_offset="0x924" Ball="B29" PWR="VDD_IO18" SignalName="Clear to send" Name="USIF3_CTS_N" Bump="USIF3_CTS_N" Module="#DBB USIF3" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>I2C1_SCL</Value>
+            <Value>USIF1_CSO1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>I2C1_SCL</Value>
+            <Value>USIF1_CSO1</Value>
+            <Value>GSICTRL0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>Is Invalid</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_074" CFG0_offset="0x328" CFG1_offset="0x928" Ball="B26" PWR="VDD_IO18" SignalName="IDC UART TXD" Name="IDC_LTE_UART_TXD" Bump="IDC_LTE_UART_TXD" Module="#DBB USIF_LTE" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>I2C1_SDA</Value>
+            <Value>USIF2_CSO1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>I2C1_SDA</Value>
+            <Value>USIF2_CSO1</Value>
+            <Value>GSICTRL1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>Is Invalid</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_075" CFG0_offset="0x32C" CFG1_offset="0x92C" Ball="B27" PWR="VDD_IO18" SignalName="IDC UART RXD" Name="IDC_LTE_UART_RXD" Bump="IDC_LTE_UART_RXD" Module="#DBB USIF_LTE" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>I2C2_SCL</Value>
+            <Value>T_OUT0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>I2C2_SCL</Value>
+            <Value>Invalid</Value>
+            <Value>USIF1_CSI_N</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>Invalid</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_076" CFG0_offset="0x330" CFG1_offset="0x930" Ball="A25" PWR="VDD_IO18" SignalName="Serial Clock" Name="I2S1_CLK0" Bump="I2S1_CLK0" Module="#DBB I2S1: Connectivity (BT/FMR)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>I2C2_SDA</Value>
+            <Value>T_OUT1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>I2C2_SDA</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>Invalid</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_077" CFG0_offset="0x334" CFG1_offset="0x934" Ball="A26" PWR="VDD_IO18" SignalName="Serial Clock" Name="I2S1_CLK1" Bump="I2S1_CLK1" Module="#DBB I2S1: Connectivity (BT/FMR)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>CC1_IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>CC1_IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_078" CFG0_offset="0x338" CFG1_offset="0x938" Ball="C24" PWR="VDD_IO18" SignalName="Serial receive data" Name="I2S1_RX" Bump="I2S1_RX" Module="#DBB I2S1: Connectivity (BT/FMR)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>CC1_RST</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_079" CFG0_offset="0x33C" CFG1_offset="0x93C" Ball="C23" PWR="VDD_IO18" SignalName="Serial transmit data" Name="I2S1_TX" Bump="I2S1_TX" Module="#DBB I2S1: Connectivity (BT/FMR)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>CC1_CLK</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_080" CFG0_offset="0x340" CFG1_offset="0x940" Ball="A24" PWR="VDD_IO18" SignalName="Word alignment / select" Name="I2S1_WA0" Bump="I2S1_WA0" Module="#DBB I2S1: Connectivity (BT/FMR)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>CC2_IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>CC2_IO</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_081" CFG0_offset="0x344" CFG1_offset="0x944" Ball="B25" PWR="VDD_IO18" SignalName="Word alignment / select" Name="I2S1_WA1" Bump="I2S1_WA1" Module="#DBB I2S1: Connectivity (BT/FMR)" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>CC2_RST</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_082" CFG0_offset="0x348" CFG1_offset="0x948" Ball="AC2" PWR="VDD_IO18" SignalName="Serial Clock" Name="I2S2_CLK0" Bump="I2S2_CLK0" Module="#DBB I2S2: Audio Processor" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>CC2_CLK</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_083" CFG0_offset="0x34C" CFG1_offset="0x94C" Ball="AB2" PWR="VDD_IO18" SignalName="Serial Clock" Name="I2S2_CLK1" Bump="I2S2_CLK1" Module="#DBB I2S2: Audio Processor" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>TDO</Value>
+            <Value>CIF_FL_TRIG_OUT</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_084" CFG0_offset="0x350" CFG1_offset="0x950" Ball="AB1" PWR="VDD_IO18" SignalName="Serial receive data" Name="I2S2_RX" Bump="I2S2_RX" Module="#DBB I2S2: Audio Processor" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>CIF_PRELIGHT_TRIG</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>TDI</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_085" CFG0_offset="0x354" CFG1_offset="0x954" Ball="AB3" PWR="VDD_IO18" SignalName="Serial receive data" Name="I2S2_TX" Bump="I2S2_TX" Module="#DBB I2S2: Audio Processor" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>HW_MON3</Value>
+            <Value>BREAK_OUT</Value>
+            <Value>CIF_SHUTTER_OPEN</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>HW_MON3</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_086" CFG0_offset="0x358" CFG1_offset="0x958" Ball="AA2" PWR="VDD_IO18" SignalName="Word alignment / select" Name="I2S2_WA0" Bump="I2S2_WA0" Module="#DBB I2S2: Audio Processor" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>HW_MON2</Value>
+            <Value>RTCK</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>HW_MON2</Value>
+            <Value>Invalid</Value>
+            <Value>CIF_SHUTTER_TRIG</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_087" CFG0_offset="0x35C" CFG1_offset="0x95C" Ball="AA1" PWR="VDD_IO18" SignalName="Word alignment / select" Name="I2S2_WA1" Bump="I2S2_WA1" Module="#DBB I2S2: Audio Processor" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>HW_MON1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>HW_MON1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_088" CFG0_offset="0x360" CFG1_offset="0x960" Ball="R4" PWR="VDD_IO18" SignalName="External interrupt 1" Name="EINT1" Bump="EINT1" Module="#DBB External Interrupts" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>PMU_CTRL_0</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_089" CFG0_offset="0x364" CFG1_offset="0x964" Ball="T3" PWR="VDD_IO18" SignalName="External interrupt 2" Name="EINT2" Bump="EINT2" Module="#DBB External Interrupts" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>PMU_CTRL_1</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_090" CFG0_offset="0x368" CFG1_offset="0x968" Ball="U3" PWR="VDD_IO18" SignalName="External interrupt 3" Name="EINT3" Bump="EINT3" Module="#DBB External Interrupts" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>PMU_CTRL_2</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_091" CFG0_offset="0x36C" CFG1_offset="0x96C" Ball="D20" PWR="VDD_IO18" SignalName="External interrupt 4" Name="EINT4" Bump="EINT4" Module="#DBB External Interrupts" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>SYS_CLK_EN</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+        <Pin No="GPIO_092" CFG0_offset="0x370" CFG1_offset="0x970" Ball="C19" PWR="VDD_IO18" SignalName="External interrupt 5" Name="EINT5" Bump="EINT5" Module="#DBB External Interrupts" Validate="true" >
+          <F1 Name="OutputSelection">
+            <Value>NONE</Value>
+            <Value>CLKOUT2</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F1>
+          <F2 Name="InputSelection">
+            <Value>NONE</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+            <Value>Invalid</Value>
+          </F2>
+          <F3 Name="DriveStrength">
+            <Value>DRVD</Value>
+            <Value>DRVC</Value>
+            <Value>DRVB</Value>
+            <Value>DRVA</Value>
+          </F3>
+        </Pin>
+      </Pins>
+    </Community>
+
+  </GPIO>
+  <GPIOOutputFunction>
+    <OutputFunction>Default</OutputFunction>
+    <OutputFunction>Tristate</OutputFunction>
+  </GPIOOutputFunction>
+  <GPIOPullInfo>
+    <PullInfo>NoPullUpPullDown</PullInfo>
+    <PullInfo>PullUp</PullInfo>
+    <PullInfo>PullDown</PullInfo>
+    <PullInfo>Forbidden</PullInfo>
+  </GPIOPullInfo>
+  <GPIOFunction>
+    <Function>OpenDrain</Function>
+    <Function>PushPull</Function>
+  </GPIOFunction>
+  <GPIODirectionPin>
+    <DirectionPin>Input</DirectionPin>
+    <DirectionPin>Output</DirectionPin>
+  </GPIODirectionPin>
+  <GPIOPortIO>
+    <PortIO>0</PortIO>
+    <PortIO>1</PortIO>
+  </GPIOPortIO>
+  <GPIOPortSelect>
+    <PortSelect>Port</PortSelect>
+    <PortSelect>GPIO</PortSelect>
+  </GPIOPortSelect>
+  <GPIOFeedbackDisable>
+    <FeedbackDisable>ON</FeedbackDisable>
+    <FeedbackDisable>OFF</FeedbackDisable>
+  </GPIOFeedbackDisable>
+  <GPIOInputDisable>
+    <InputDisable>0</InputDisable>
+    <InputDisable>1</InputDisable>
+  </GPIOInputDisable>
+</SofiaXML>
