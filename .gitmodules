@@ -13,3 +13,6 @@
 [submodule "aaeonTypeScriptSDKs"]
 	path = aaeonTypeScriptSDKs
 	url = https://github.com/LucasSuT/aaeonTypeScriptSDKs.git
+[submodule "aaeonBFPI"]
+	path = aaeonBFPI
+	url = https://github.com/LucasSuT/aaeonBFPI.git
